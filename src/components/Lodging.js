@@ -4,8 +4,8 @@ import { Card, CardHeader, CardText, CardBody, CardTitle } from 'reactstrap';
 
 export default () => {
   const cardStyle = {
-    minWidth: '200px',
-    maxWidth: '200px',
+    minWidth: '300px',
+    maxWidth: '300px',
     marginBottom: '20px',
   }
 
