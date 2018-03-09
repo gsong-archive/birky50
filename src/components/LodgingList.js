@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Row, Col, CardDeck } from 'reactstrap';
+import { Container, Row, Col, CardDeck } from "reactstrap";
 
-import Lodging from './Lodging';
-
+import Lodging from "./Lodging";
 
 export default () => (
   <Container fluid>
@@ -25,4 +24,4 @@ export default () => (
       </Col>
     </Row>
   </Container>
-)
+);
