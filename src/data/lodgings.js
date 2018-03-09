@@ -20,6 +20,17 @@ const LODGINGS = [
       "https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536"
   },
   {
+    name: "Hilton Garden Inn Kalispell",
+    url:
+      "http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html",
+    price: "",
+    address: "1840 Highway 93 South, Kalispell, MT, 59901",
+    address_url: "https://goo.gl/maps/ZdHX7Scv3Z22",
+    phone: "(406) 756-4500",
+    img_url:
+      "https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no"
+  },
+  {
     name: "Somer’s Bay Log Cabin",
     url: "http://www.somersbaycabins.com",
     price: "",
