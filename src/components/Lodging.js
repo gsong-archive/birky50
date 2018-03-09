@@ -1,24 +1,42 @@
-import React from 'react';
-import { Card, CardHeader, CardText, CardBody, CardTitle } from 'reactstrap';
+import React from "react";
+import {
+  Card,
+  CardImg,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText
+} from "reactstrap";
 
+import PhoneNumber from "./PhoneNumber";
+import Address from "./Address";
 
-export default () => {
+export default ({ name, url, price, address, address_url, phone, img_url }) => {
   const cardStyle = {
-    minWidth: '300px',
-    maxWidth: '300px',
-    marginBottom: '20px',
-  }
+    minWidth: "300px",
+    maxWidth: "300px",
+    marginBottom: "20px"
+  };
 
   return (
     <Card style={cardStyle}>
-      <CardHeader>Name of the place</CardHeader>
+      <a href={url}>
+        <CardImg top width="100%" src={img_url} alt={name} />
+      </a>
       <CardBody>
-        <CardTitle>$100–$150/Night</CardTitle>
-        <CardText>
-          1827 N Skidmore Street<br />
-          Portland, OR 97217
+        <CardTitle>
+          <a href={url}>{name}</a>
+        </CardTitle>
+        {price && <CardSubtitle>{price}</CardSubtitle>}
+        <CardText tag="div" style={{ marginTop: "1rem" }}>
+          <Address address={address} url={address_url} />
         </CardText>
+        {phone && (
+          <CardText tag="div">
+            <PhoneNumber number={phone} />
+          </CardText>
+        )}
       </CardBody>
     </Card>
-  )
-}
+  );
+};

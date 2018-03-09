@@ -2,16 +2,24 @@ import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
 
+import PhoneNumber from "./PhoneNumber";
+import Address from "./Address";
+
 export default () => (
   <Container fluid>
     <Row>
       <Col>
         <h1>Where?</h1>
-        <h2>Vista Linda Mexican & Catering</h2>
-        <p>
-          240 Boon Rd<br />
-          Somers, MT 59932
-        </p>
+        <h2>
+          <a href="http://vistalindacatering.com/">
+            Vista Linda Mexican & Catering
+          </a>
+        </h2>
+        <Address
+          address="240 Boon Rd, Somers, MT 59932"
+          url="https://goo.gl/maps/THRyvih62562"
+        />
+        <PhoneNumber number="(406) 857-3158" />
       </Col>
       <Col>
         <iframe
