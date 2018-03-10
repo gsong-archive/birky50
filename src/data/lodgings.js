@@ -2,7 +2,7 @@ const LODGINGS = [
   {
     name: "Outlook Inn Bed and Breakfast",
     url: "http://outlookinnbandb.com",
-    price: "$1,000,000",
+    price: "",
     address: "175 Boon Rd, Somers, MT 59932",
     address_url: "https://goo.gl/maps/am3u2e5nG9Q2",
     phone: "(406) 857-2060",
