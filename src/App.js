@@ -2,14 +2,14 @@ import React from "react";
 
 import LodgingList from "./components/LodgingList";
 import Header from "./components/Header";
-import Venue from "./components/Venue";
+import Event from "./components/Event";
 
 import "./App.css";
 
 export default () => (
   <div>
     <Header />
-    <Venue />
+    <Event />
     <LodgingList />
   </div>
 );

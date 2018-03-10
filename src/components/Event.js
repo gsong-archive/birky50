@@ -2,8 +2,8 @@ import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
 
-import PhoneNumber from "./PhoneNumber";
-import Address from "./Address";
+import PhoneNumber from "./shared/PhoneNumber";
+import Address from "./shared/Address";
 
 export default () => (
   <Container fluid>

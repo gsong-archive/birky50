@@ -2,12 +2,12 @@ import React from "react";
 
 import { Container, Row, Col, CardDeck } from "reactstrap";
 
-import Lodging from "./Lodging";
+import Card from "./shared/Card";
 import LODGINGS from "../data/lodgings.js";
 
 export default () => {
   const lodgindCards = LODGINGS.map((lodging, i) => (
-    <Lodging key={i} {...lodging} />
+    <Card key={i} {...lodging} />
   ));
 
   return (
