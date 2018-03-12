@@ -3,7 +3,7 @@ const FOOD = [
     name: "Glacier Perks Coffee House",
     url: "https://www.facebook.com/glacier.perks.coffee/",
     price: "",
-    address: "7235 US Highway 93 S, Lakeside, Montana 59922",
+    address: "7235 US Highway 93 S, Lakeside, MT 59922",
     address_url: "https://goo.gl/maps/jugv4Y9a1cB2",
     phone: "(406) 844-0908",
     img_url:
@@ -23,7 +23,7 @@ const FOOD = [
     name: "Tamarack Brewing Company",
     url: "https://www.tamarackbrewing.com/lakeside",
     price: "",
-    address: "105 Blacktail Road, Lakeside, Montana",
+    address: "105 Blacktail Road, Lakeside, MT",
     address_url: "https://goo.gl/maps/sTZ8XbjgAiG2",
     phone: "(406) 844-0244",
     img_url:
@@ -33,7 +33,7 @@ const FOOD = [
     name: "Homestead Cafe",
     url: "https://www.facebook.com/homesteadcafebarandcasino/",
     price: "",
-    address: "7262 US Highway 93, Lakeside, Montana 59922",
+    address: "7262 US Highway 93, Lakeside, MT 59922",
     address_url: "https://goo.gl/maps/9YQK8DymPK52",
     phone: "(406) 844-3926",
     img_url:
@@ -49,6 +49,27 @@ const FOOD = [
     phone: "(406) 844-3844",
     img_url:
       "https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
+  },
+  {
+    name: "Winchester Steak House",
+    url:
+      "https://www.facebook.com/pages/Winchester-Steak-House/325894450829601",
+    price: "",
+    address: "2205 US Highway 93 S, Kalispell, MT 59901",
+    address_url: "https://goo.gl/maps/RN46pwo4Be92",
+    phone: "(406) 257-8188",
+    img_url:
+      "https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
+  },
+  {
+    name: "Scotty's Bar",
+    url: "http://scottysmt.com",
+    price: "",
+    address: "2205 US Highway 93 S, Kalispell, MT 59901",
+    address_url: "https://goo.gl/maps/fpx285LR8JL2",
+    phone: "(406) 257-8188",
+    img_url:
+      "https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
   }
 ];
 
