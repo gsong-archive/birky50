@@ -9,7 +9,11 @@ export default () => (
   <Container fluid>
     <Row>
       <Col>
-        <h1>Where?</h1>
+        <h1>Celebration Details</h1>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
         <h2>
           <a href="http://vistalindacatering.com/">
             Vista Linda Mexican & Catering
