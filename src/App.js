@@ -2,6 +2,7 @@ import React from "react";
 
 import ActivityList from "./components/ActivityList";
 import Airport from "./components/Airport";
+import ContactUs from "./components/ContactUs";
 import Event from "./components/Event";
 import FoodList from "./components/FoodList";
 import Header from "./components/Header";
@@ -17,5 +18,6 @@ export default () => (
     <LodgingList />
     <FoodList />
     <ActivityList />
+    <ContactUs />
   </div>
 );
