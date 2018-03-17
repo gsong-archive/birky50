@@ -6,8 +6,6 @@ import faPhone from "@fortawesome/fontawesome-free-solid/faPhone";
 export default ({ number }) => (
   <div>
     <FontAwesomeIcon icon={faPhone} />
-    <a href={`tel:${number}`} className="after-fa">
-      {number}
-    </a>
+    <a href={`tel:${number}`}>{number}</a>
   </div>
 );
