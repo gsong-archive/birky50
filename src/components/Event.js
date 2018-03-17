@@ -4,6 +4,41 @@ import { Row, Col } from "reactstrap";
 
 import Address from "./shared/Address";
 import PhoneNumber from "./shared/PhoneNumber";
+import { Consumer } from "../providers/WindowSizeProvider";
+
+const getHeightFromWidth = width => {
+  const max = 500;
+  const min = 300;
+  let height = Math.min(Math.floor(width / 4 * 3), max);
+  height = Math.max(height, min);
+  return height;
+};
+
+class Map extends React.PureComponent {
+  state = { mapContainer: { width: 400, height: 300 } };
+
+  handleWindowResize = () => {
+    const width = this.mapContainer
+      ? this.mapContainer.clientWidth
+      : this.state.mapContainer.width;
+    const height = getHeightFromWidth(width);
+    this.setState({ mapContainer: { width, height } });
+  };
+
+  render = () => (
+    <div ref={el => (this.mapContainer = el)}>
+      <Consumer>{this.handleWindowResize}</Consumer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
+        title="map"
+        width={this.state.mapContainer.width}
+        height={this.state.mapContainer.height}
+        frameBorder="0"
+        allowFullScreen
+      />
+    </div>
+  );
+}
 
 export default () => (
   <React.Fragment>
@@ -13,7 +48,7 @@ export default () => (
       </Col>
     </Row>
     <Row>
-      <Col>
+      <Col md="4">
         <h2>
           <a href="http://vistalindacatering.com/">
             Vista Linda Mexican & Catering
@@ -25,15 +60,8 @@ export default () => (
         />
         <PhoneNumber number="(406) 857-3158" />
       </Col>
-      <Col>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
-          title="map"
-          width="400"
-          height="300"
-          frameBorder="0"
-          allowFullScreen
-        />
+      <Col md="8">
+        <Map />
       </Col>
     </Row>
   </React.Fragment>
