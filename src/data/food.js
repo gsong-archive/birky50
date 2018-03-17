@@ -10,7 +10,7 @@ const FOOD = [
       "https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
   },
   {
-    name: "The Famrhouse Restaurant",
+    name: "The Farmhouse Restaurant",
     url: "http://www.farmhouselakeside.com",
     price: "",
     address: "306 Stoner Loop, Lakeside, MT 59922",
