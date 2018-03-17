@@ -1,12 +1,12 @@
 import React from "react";
 
-import { Container, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 import Address from "./shared/Address";
 import PhoneNumber from "./shared/PhoneNumber";
 
 export default () => (
-  <Container fluid>
+  <React.Fragment>
     <Row>
       <Col>
         <h1>Celebration Details</h1>
@@ -32,10 +32,9 @@ export default () => (
           width="400"
           height="300"
           frameBorder="0"
-          style={{ border: 0 }}
           allowFullScreen
         />
       </Col>
     </Row>
-  </Container>
+  </React.Fragment>
 );

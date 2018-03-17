@@ -12,32 +12,26 @@ import {
 import PhoneNumber from "./PhoneNumber";
 import Address from "./Address";
 
-export default ({ name, url, price, address, address_url, phone, img_url }) => {
-  const cardStyle = {
-    minWidth: "300px",
-    maxWidth: "300px",
-    marginBottom: "20px"
-  };
+import "./Card.css";
 
-  return (
-    <Card style={cardStyle}>
-      <a href={url}>
-        <CardImg top width="100%" src={img_url} alt={name} />
-      </a>
-      <CardBody>
-        <CardTitle>
-          <a href={url}>{name}</a>
-        </CardTitle>
-        {price && <CardSubtitle>{price}</CardSubtitle>}
-        <CardText tag="div" style={{ marginTop: "1rem" }}>
-          <Address address={address} url={address_url} />
+export default ({ name, url, price, address, address_url, phone, img_url }) => (
+  <Card>
+    <a href={url}>
+      <CardImg top width="100%" src={img_url} alt={name} />
+    </a>
+    <CardBody>
+      <CardTitle>
+        <a href={url}>{name}</a>
+      </CardTitle>
+      {price && <CardSubtitle>{price}</CardSubtitle>}
+      <CardText tag="div" className="card-text-top-margin">
+        <Address address={address} url={address_url} />
+      </CardText>
+      {phone && (
+        <CardText tag="div">
+          <PhoneNumber number={phone} />
         </CardText>
-        {phone && (
-          <CardText tag="div">
-            <PhoneNumber number={phone} />
-          </CardText>
-        )}
-      </CardBody>
-    </Card>
-  );
-};
+      )}
+    </CardBody>
+  </Card>
+);

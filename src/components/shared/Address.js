@@ -6,8 +6,6 @@ import faMapMarker from "@fortawesome/fontawesome-free-solid/faMapMarker";
 export default ({ address, url }) => (
   <div>
     <FontAwesomeIcon icon={faMapMarker} />
-    <a href={url} className="after-fa">
-      {address}
-    </a>
+    <a href={url}>{address}</a>
   </div>
 );
