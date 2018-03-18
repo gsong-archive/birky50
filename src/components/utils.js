@@ -14,27 +14,26 @@ function calculateBackgroundOffset(width) {
     case width >= 1060:
       offsetY = -width * 0.07;
       break;
-    case width >= 1000:
+    case width >= 992:
       offsetY = -width * 0.06;
       break;
-    case width >= 920:
-      offsetX = width * 0.1;
-      offsetY = -width * 0.05;
+    case width >= 900:
+      offsetX = width * 0.2;
       break;
     case width >= 870:
       offsetX = width * 0.2;
       break;
-    case width >= 700:
-      offsetX = width * 0.3;
+    case width >= 768:
+      offsetX = width * 0.2;
       offsetY = width * 0.06;
       break;
-    case width >= 600:
+    case width >= 576:
       offsetX = width * 0.35;
       offsetY = width * 0.15;
       break;
     case width >= 535:
       offsetX = width * 0.35;
-      offsetY = width * 0.2;
+      offsetY = width * 0.4;
       break;
     case width >= 460:
       offsetX = width * 0.35;
@@ -42,7 +41,7 @@ function calculateBackgroundOffset(width) {
       break;
     case width >= 300:
       offsetX = width * 0.4;
-      offsetY = width * 0.65;
+      offsetY = width * 0.5;
       break;
     default:
       offsetX = 0;

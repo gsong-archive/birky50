@@ -5,6 +5,8 @@ import { Jumbotron, Container } from "reactstrap";
 import { Consumer } from "../providers/WindowSizeProvider";
 import { calculateBackgroundOffset } from "./utils";
 
+import "./Header.css";
+
 export default class Header extends React.PureComponent {
   state = {
     backgroundPositionX: "0",
@@ -26,7 +28,7 @@ export default class Header extends React.PureComponent {
         <Consumer>{this.handleWindowResize}</Consumer>
         <Jumbotron fluid style={this.state}>
           <Container fluid>
-            <h1 className="display-3 text-white">
+            <h1 className="header-title text-white">
               Sam & Sue’s 50th Anniversary
             </h1>
             <p className="lead text-white">Saturday, June 23, 2018</p>
