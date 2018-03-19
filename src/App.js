@@ -65,5 +65,5 @@ const sections = {
   lodgingList: { component: <LodgingList />, label: "🏩 Lodging" },
   foodList: { component: <FoodList />, label: "🍔 Food" },
   activityList: { component: <ActivityList />, label: "🚴🏽‍♀️ Activities" },
-  contactUs: { component: <ContactUs />, label: "Questions?" }
+  contactUs: { component: <ContactUs />, label: "🙋🏻‍♀️ Questions?" }
 };

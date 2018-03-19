@@ -10,7 +10,7 @@ export default () => {
   return (
     <Row>
       <Col>
-        <h1>Questions?</h1>
+        <h1>🙋🏻‍♀️ Questions?</h1>
         <Form action={`https://formspree.io/${sendTo}`} method="POST">
           <FormGroup row>
             <Label for="contact_us_name" md={labelWidth}>
