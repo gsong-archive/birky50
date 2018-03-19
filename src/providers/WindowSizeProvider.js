@@ -6,10 +6,6 @@ const { Provider, Consumer } = WindowSizeContext;
 export default class WindowSizeProvider extends React.Component {
   state = { width: window.innerWidth, height: window.innerHeight };
 
-  updateWindowDimensions = () => {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
-  };
-
   componentDidMount = () => {
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
@@ -22,6 +18,10 @@ export default class WindowSizeProvider extends React.Component {
   render = () => {
     const context = { state: this.state };
     return <Provider value={context}>{this.props.children}</Provider>;
+  };
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   };
 }
 

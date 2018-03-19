@@ -13,6 +13,21 @@ export default class Header extends React.PureComponent {
     backgroundPositionY: "0"
   };
 
+  render = () => (
+    <React.Fragment>
+      <Consumer>{this.handleWindowResize}</Consumer>
+      <Jumbotron fluid style={this.state}>
+        <Container fluid>
+          <h1 className="header-title text-white">
+            Sam & Sue’s 50th Anniversary
+          </h1>
+          <p className="lead text-white">Saturday, June 23, 2018</p>
+          <p className="lead text-white">Somers, Montana</p>
+        </Container>
+      </Jumbotron>
+    </React.Fragment>
+  );
+
   handleWindowResize = ({ state }) => {
     const { width } = state;
     const { offsetX, offsetY } = calculateBackgroundOffset(width);
@@ -20,22 +35,5 @@ export default class Header extends React.PureComponent {
     const backgroundPositionY = `${offsetY}px`;
 
     this.setState({ backgroundPositionX, backgroundPositionY });
-  };
-
-  render = () => {
-    return (
-      <React.Fragment>
-        <Consumer>{this.handleWindowResize}</Consumer>
-        <Jumbotron fluid style={this.state}>
-          <Container fluid>
-            <h1 className="header-title text-white">
-              Sam & Sue’s 50th Anniversary
-            </h1>
-            <p className="lead text-white">Saturday, June 23, 2018</p>
-            <p className="lead text-white">Somers, Montana</p>
-          </Container>
-        </Jumbotron>
-      </React.Fragment>
-    );
   };
 }
