@@ -7,7 +7,7 @@ import { Row, Col } from "reactstrap";
 export default () => (
   <Row>
     <Col>
-      <h1>Where to Fly Into?</h1>
+      <h1>✈️ Where to Fly Into?</h1>
       <div>
         <FontAwesomeIcon icon={faFighterJet} />
         <a href="http://www.iflyglacier.com">

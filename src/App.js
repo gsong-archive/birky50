@@ -60,10 +60,10 @@ const NavMenu = ({ sections, onClick }) => {
 };
 
 const sections = {
-  event: { component: <Event />, label: "Event Details" },
-  airport: { component: <Airport />, label: "Airport Info" },
-  lodgingList: { component: <LodgingList />, label: "Lodging" },
-  foodList: { component: <FoodList />, label: "Food" },
-  activityList: { component: <ActivityList />, label: "Activities" },
+  event: { component: <Event />, label: "🎉 Details" },
+  airport: { component: <Airport />, label: "✈️ Airport" },
+  lodgingList: { component: <LodgingList />, label: "🏩 Lodging" },
+  foodList: { component: <FoodList />, label: "🍔 Food" },
+  activityList: { component: <ActivityList />, label: "🚴🏽‍♀️ Activities" },
   contactUs: { component: <ContactUs />, label: "Questions?" }
 };

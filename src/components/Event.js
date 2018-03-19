@@ -10,7 +10,7 @@ export default () => (
   <React.Fragment>
     <Row>
       <Col>
-        <h1>Celebration Details</h1>
+        <h1>🎉 Celebration Details</h1>
       </Col>
     </Row>
     <Row>
