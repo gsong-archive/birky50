@@ -11,7 +11,7 @@ import Header from "./components/Header";
 import LodgingList from "./components/LodgingList";
 import WindowSizeProvider from "./providers/WindowSizeProvider";
 import {
-  Airport as AirportEmoji,
+  Airplane,
   Burger,
   Hotel,
   PartyHat,
@@ -74,7 +74,7 @@ const sections = {
   },
   airport: {
     component: <Airport />,
-    label: <AirportEmoji label="Airport" />
+    label: <Airplane label="Airport" />
   },
   lodgingList: {
     component: <LodgingList />,
