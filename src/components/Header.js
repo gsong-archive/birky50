@@ -23,6 +23,12 @@ export default class Header extends React.PureComponent {
           </h1>
           <p className="lead text-white">Saturday, June 23, 2018</p>
           <p className="lead text-white">Somers, Montana</p>
+          <a
+            href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
+            className="btn btn-secondary btn-lg"
+          >
+            RSVP
+          </a>
         </Container>
       </Jumbotron>
     </React.Fragment>
