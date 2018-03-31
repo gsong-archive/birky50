@@ -21,6 +21,10 @@ export const Burger = ({ label }) => (
   <EmojiLabel emoji="🍔" aria-label="burger" label={label} />
 );
 
+export const Calendar = ({ label }) => (
+  <EmojiLabel emoji="📆" aria-label="calendar" label={label} />
+);
+
 export const Hotel = ({ label }) => (
   <EmojiLabel emoji="🏩" aria-label="hotel" label={label} />
 );
