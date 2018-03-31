@@ -10,6 +10,14 @@ import FoodList from "./components/FoodList";
 import Header from "./components/Header";
 import LodgingList from "./components/LodgingList";
 import WindowSizeProvider from "./providers/WindowSizeProvider";
+import {
+  Airport as AirportEmoji,
+  Burger,
+  Hotel,
+  PartyHat,
+  WomanBiking,
+  WomanRaisingHand
+} from "./components/shared/EmojiLabels";
 
 import "./App.css";
 
@@ -60,10 +68,28 @@ const NavMenu = ({ sections, onClick }) => {
 };
 
 const sections = {
-  event: { component: <Event />, label: "🎉 Details" },
-  airport: { component: <Airport />, label: "✈️ Airport" },
-  lodgingList: { component: <LodgingList />, label: "🏩 Lodging" },
-  foodList: { component: <FoodList />, label: "🍔 Food" },
-  activityList: { component: <ActivityList />, label: "🚴🏽‍♀️ Activities" },
-  contactUs: { component: <ContactUs />, label: "🙋🏻‍♀️ Questions?" }
+  event: {
+    component: <Event />,
+    label: <PartyHat label="Details" />
+  },
+  airport: {
+    component: <Airport />,
+    label: <AirportEmoji label="Airport" />
+  },
+  lodgingList: {
+    component: <LodgingList />,
+    label: <Hotel label="Lodging" />
+  },
+  foodList: {
+    component: <FoodList />,
+    label: <Burger label="Food" />
+  },
+  activityList: {
+    component: <ActivityList />,
+    label: <WomanBiking label="Activities" />
+  },
+  contactUs: {
+    component: <ContactUs />,
+    label: <WomanRaisingHand label="Questions?" />
+  }
 };

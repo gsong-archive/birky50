@@ -2,6 +2,8 @@ import React from "react";
 
 import { Row, Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
+import { WomanRaisingHand } from "./shared/EmojiLabels";
+
 export default () => {
   const labelWidth = 1;
   const inputWidth = 5;
@@ -10,7 +12,9 @@ export default () => {
   return (
     <Row>
       <Col>
-        <h1>🙋🏻‍♀️ Questions?</h1>
+        <h1>
+          <WomanRaisingHand label="Questions?" />
+        </h1>
         <Form action={`https://formspree.io/${sendTo}`} method="POST">
           <FormGroup row>
             <Label for="contact_us_name" md={labelWidth}>

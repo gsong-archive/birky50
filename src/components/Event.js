@@ -5,12 +5,15 @@ import { Row, Col } from "reactstrap";
 import Address from "./shared/Address";
 import PhoneNumber from "./shared/PhoneNumber";
 import { Consumer } from "../providers/WindowSizeProvider";
+import { PartyHat } from "./shared/EmojiLabels";
 
 export default () => (
   <React.Fragment>
     <Row>
       <Col>
-        <h1>🎉 Celebration Details</h1>
+        <h1>
+          <PartyHat label="Celebration Details" />
+        </h1>
       </Col>
     </Row>
     <Row>

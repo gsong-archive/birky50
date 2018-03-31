@@ -4,10 +4,14 @@ import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import faFighterJet from "@fortawesome/fontawesome-free-solid/faFighterJet";
 import { Row, Col } from "reactstrap";
 
+import { Airport } from "./shared/EmojiLabels";
+
 export default () => (
   <Row>
     <Col>
-      <h1>✈️ Where to Fly Into?</h1>
+      <h1>
+        <Airport label="Where to Fly Into?" />
+      </h1>
       <div>
         <FontAwesomeIcon icon={faFighterJet} />
         <a href="http://www.iflyglacier.com">
