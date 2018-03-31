@@ -9,8 +9,12 @@ const EmojiLabel = ({ emoji, ariaLabel, label }) => (
   </React.Fragment>
 );
 
-export const Airport = ({ label }) => (
+export const Airplane = ({ label }) => (
   <EmojiLabel emoji="✈️" aria-label="airplane" label={label} />
+);
+
+export const Airport = ({ label }) => (
+  <EmojiLabel emoji="🛬" aria-label="flight arrival" label={label} />
 );
 
 export const Burger = ({ label }) => (
@@ -21,8 +25,16 @@ export const Hotel = ({ label }) => (
   <EmojiLabel emoji="🏩" aria-label="hotel" label={label} />
 );
 
+export const Location = ({ label }) => (
+  <EmojiLabel emoji="📍" aria-label="round pushpin" label={label} />
+);
+
 export const PartyHat = ({ label }) => (
   <EmojiLabel emoji="🎉" aria-label="party hat" label={label} />
+);
+
+export const Phone = ({ label }) => (
+  <EmojiLabel emoji="📞" aria-label="phone receiver" label={label} />
 );
 
 export const WomanBiking = ({ label }) => (

@@ -1,11 +1,11 @@
 import React from "react";
 
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import faMapMarker from "@fortawesome/fontawesome-free-solid/faMapMarker";
+import { Location } from "./EmojiLabels";
+
+import "./Address.css";
 
 export default ({ address, url }) => (
-  <div>
-    <FontAwesomeIcon icon={faMapMarker} />
-    <a href={url}>{address}</a>
+  <div className="address-link">
+    <Location label={<a href={url}>{address}</a>} />
   </div>
 );

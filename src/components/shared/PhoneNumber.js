@@ -1,11 +1,9 @@
 import React from "react";
 
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import faPhone from "@fortawesome/fontawesome-free-solid/faPhone";
+import { Phone } from "./EmojiLabels";
 
 export default ({ number }) => (
   <div>
-    <FontAwesomeIcon icon={faPhone} />
-    <a href={`tel:${number}`}>{number}</a>
+    <Phone label={<a href={`tel:${number}`}>{number}</a>} />
   </div>
 );
