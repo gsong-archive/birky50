@@ -3,6 +3,7 @@ import React from "react";
 import { Row, Col, CardDeck } from "reactstrap";
 
 import Card from "./Card";
+import SectionHeader from "./SectionHeader";
 
 export default ({ title, items }) => {
   const cards = items.map((item, i) => <Card key={i} {...item} />);
@@ -11,7 +12,7 @@ export default ({ title, items }) => {
     <React.Fragment>
       <Row>
         <Col>
-          <h1>{title}</h1>
+          <SectionHeader>{title}</SectionHeader>
         </Col>
       </Row>
       <Row>

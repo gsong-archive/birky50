@@ -2,6 +2,7 @@ import React from "react";
 
 import { Row, Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
+import SectionHeader from "./shared/SectionHeader";
 import { WomanRaisingHand } from "./shared/EmojiLabels";
 
 export default () => {
@@ -12,9 +13,9 @@ export default () => {
   return (
     <Row>
       <Col>
-        <h1>
+        <SectionHeader>
           <WomanRaisingHand label="Questions?" />
-        </h1>
+        </SectionHeader>
         <Form action={`https://formspree.io/${sendTo}`} method="POST">
           <FormGroup row>
             <Label for="contact_us_name" md={labelWidth}>

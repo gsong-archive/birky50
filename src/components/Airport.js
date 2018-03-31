@@ -2,14 +2,15 @@ import React from "react";
 
 import { Row, Col } from "reactstrap";
 
+import SectionHeader from "./shared/SectionHeader";
 import { Airplane, Airport } from "./shared/EmojiLabels";
 
 export default () => (
   <Row>
     <Col>
-      <h1>
+      <SectionHeader>
         <Airplane label="Where to Fly Into?" />
-      </h1>
+      </SectionHeader>
       <div>
         <Airport
           label={
