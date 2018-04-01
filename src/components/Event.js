@@ -8,7 +8,7 @@ import SectionHeader from "./shared/SectionHeader";
 import { Calendar, PartyHat } from "./shared/EmojiLabels";
 import { Consumer } from "../providers/WindowSizeProvider";
 
-import eventIcs from "../data/event.ics";
+import eventIcs from "../static/files/event.ics";
 
 export default () => (
   <React.Fragment>
