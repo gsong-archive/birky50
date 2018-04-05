@@ -7,7 +7,7 @@ services:
       context: .
     image: birky50/app
     container_name: birky50_app
-    command: npm run start
+    command: yarn start
     volumes:
       - .:/app
     ports:
