@@ -1,15 +1,17 @@
 import React from "react";
 
 import { Container, Nav, NavItem, NavLink } from "reactstrap";
+import { Provider, Subscribe } from "unstated";
 
 import ActivityList from "./components/ActivityList";
 import Airport from "./components/Airport";
+import AppContainer from "./components/AppContainer";
 import ContactUs from "./components/ContactUs";
 import Event from "./components/Event";
 import FoodList from "./components/FoodList";
 import Header from "./components/Header";
 import LodgingList from "./components/LodgingList";
-import WindowSizeProvider from "./providers/WindowSizeProvider";
+import WindowSizeContainer from "./containers/WindowSizeContainer";
 import {
   Airplane,
   Burger,
@@ -23,13 +25,19 @@ import "./App.css";
 
 export default class App extends React.PureComponent {
   render = () => (
-    <React.StrictMode>
-      <WindowSizeProvider>
-        <Header />
-        <NavMenu sections={sections} onClick={this.scrollTo} />
-        {this.renderSections()}
-      </WindowSizeProvider>
-    </React.StrictMode>
+    <Provider>
+      <Subscribe to={[WindowSizeContainer]}>
+        {container => (
+          <AppContainer
+            updateWindowDimensions={container.updateWindowDimensions}
+          >
+            <Header />
+            <NavMenu sections={sections} onClick={this.scrollTo} />
+            {this.renderSections()}
+          </AppContainer>
+        )}
+      </Subscribe>
+    </Provider>
   );
 
   renderSections = () => {

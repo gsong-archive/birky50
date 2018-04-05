@@ -1,9 +1,10 @@
 import React from "react";
 
 import { Jumbotron, Container } from "reactstrap";
+import { Subscribe } from "unstated";
 
-import { Consumer } from "../providers/WindowSizeProvider";
 import { calculateBackgroundOffset } from "./utils";
+import WindowSizeContainer from "../containers/WindowSizeContainer";
 
 import "./Header.css";
 
@@ -15,7 +16,9 @@ export default class Header extends React.PureComponent {
 
   render = () => (
     <React.Fragment>
-      <Consumer>{this.handleWindowResize}</Consumer>
+      <Subscribe to={[WindowSizeContainer]}>
+        {this.handleWindowResize}
+      </Subscribe>
       <Jumbotron fluid style={this.state}>
         <Container fluid>
           <h1 className="header-title text-white">
@@ -34,12 +37,13 @@ export default class Header extends React.PureComponent {
     </React.Fragment>
   );
 
-  handleWindowResize = ({ state }) => {
-    const { width } = state;
+  handleWindowResize = container => {
+    const { width } = container.state;
     const { offsetX, offsetY } = calculateBackgroundOffset(width);
     const backgroundPositionX = `${offsetX}px`;
     const backgroundPositionY = `${offsetY}px`;
 
     this.setState({ backgroundPositionX, backgroundPositionY });
+    return null;
   };
 }

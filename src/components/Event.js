@@ -1,12 +1,13 @@
 import React from "react";
 
 import { Row, Col } from "reactstrap";
+import { Subscribe } from "unstated";
 
 import Address from "./shared/Address";
 import PhoneNumber from "./shared/PhoneNumber";
 import SectionHeader from "./shared/SectionHeader";
+import WindowSizeContainer from "../containers/WindowSizeContainer";
 import { Calendar, PartyHat } from "./shared/EmojiLabels";
-import { Consumer } from "../providers/WindowSizeProvider";
 
 import eventIcs from "../static/files/event.ics";
 
@@ -64,7 +65,9 @@ class Map extends React.PureComponent {
 
   render = () => (
     <div ref={el => (this.mapContainer = el)}>
-      <Consumer>{this.handleWindowResize}</Consumer>
+      <Subscribe to={[WindowSizeContainer]}>
+        {this.handleWindowResize}
+      </Subscribe>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
         title="map"
@@ -82,6 +85,7 @@ class Map extends React.PureComponent {
       : this.state.width;
     const height = getHeightFromWidth(width);
     this.setState({ width, height });
+    return null;
   };
 }
 
