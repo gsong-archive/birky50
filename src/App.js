@@ -23,11 +23,13 @@ import "./App.css";
 
 export default class App extends React.PureComponent {
   render = () => (
-    <WindowSizeProvider>
-      <Header />
-      <NavMenu sections={sections} onClick={this.scrollTo} />
-      {this.renderSections()}
-    </WindowSizeProvider>
+    <React.StrictMode>
+      <WindowSizeProvider>
+        <Header />
+        <NavMenu sections={sections} onClick={this.scrollTo} />
+        {this.renderSections()}
+      </WindowSizeProvider>
+    </React.StrictMode>
   );
 
   renderSections = () => {
