@@ -9,17 +9,18 @@ import WindowSizeContainer from "../containers/WindowSizeContainer";
 import "./Header.css";
 
 export default class Header extends React.PureComponent {
-  state = {
-    backgroundPositionX: "0",
-    backgroundPositionY: "0"
-  };
-
   render = () => (
-    <React.Fragment>
-      <Subscribe to={[WindowSizeContainer]}>
-        {this.handleWindowResize}
-      </Subscribe>
-      <Jumbotron fluid style={this.state}>
+    <Subscribe to={[WindowSizeContainer]}>{this.renderHeader}</Subscribe>
+  );
+
+  renderHeader = container => {
+    const { width } = container.state;
+    const { offsetX, offsetY } = calculateBackgroundOffset(width);
+    const backgroundPositionX = `${offsetX}px`;
+    const backgroundPositionY = `${offsetY}px`;
+
+    return (
+      <Jumbotron fluid style={{ backgroundPositionX, backgroundPositionY }}>
         <Container fluid>
           <h1 className="header-title text-white">
             Sam & Sue’s 50th Anniversary
@@ -34,16 +35,6 @@ export default class Header extends React.PureComponent {
           </a>
         </Container>
       </Jumbotron>
-    </React.Fragment>
-  );
-
-  handleWindowResize = container => {
-    const { width } = container.state;
-    const { offsetX, offsetY } = calculateBackgroundOffset(width);
-    const backgroundPositionX = `${offsetX}px`;
-    const backgroundPositionY = `${offsetY}px`;
-
-    this.setState({ backgroundPositionX, backgroundPositionY });
-    return null;
+    );
   };
 }
