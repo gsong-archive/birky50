@@ -25,19 +25,21 @@ import "./App.css";
 
 export default class App extends React.PureComponent {
   render = () => (
-    <Provider>
-      <Subscribe to={[WindowSizeContainer]}>
-        {container => (
-          <AppContainer
-            updateWindowDimensions={container.updateWindowDimensions}
-          >
-            <Header />
-            <NavMenu sections={sections} onClick={this.scrollTo} />
-            {this.renderSections()}
-          </AppContainer>
-        )}
-      </Subscribe>
-    </Provider>
+    <React.StrictMode>
+      <Provider>
+        <Subscribe to={[WindowSizeContainer]}>
+          {container => (
+            <AppContainer
+              updateWindowDimensions={container.updateWindowDimensions}
+            >
+              <Header />
+              <NavMenu sections={sections} onClick={this.scrollTo} />
+              {this.renderSections()}
+            </AppContainer>
+          )}
+        </Subscribe>
+      </Provider>
+    </React.StrictMode>
   );
 
   renderSections = () => {
