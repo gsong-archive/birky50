@@ -9,6 +9,6 @@ services:
     container_name: birky50_app
     command: yarn start
     volumes:
-      - .:/app
+      - .:/app:delegated
     ports:
       - 3000:3000
