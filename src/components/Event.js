@@ -62,16 +62,17 @@ export default () => (
 class Map extends React.PureComponent {
   defaultWidth = 400;
 
-  render = () => {
-    return (
-      <div ref={el => (this.mapContainer = el)}>
-        <Consumer>{this.renderMap}</Consumer>
-      </div>
-    );
-  };
+  render = () => (
+    <div ref={el => (this.mapContainer = el)}>
+      <Consumer>{this.renderMap}</Consumer>
+    </div>
+  );
 
   renderMap = () => {
-    const { width, height } = this.calculateMapSize();
+    const width = this.mapContainer
+      ? this.mapContainer.clientWidth
+      : this.defaultWidth;
+    const height = getHeightFromWidth(width);
 
     return (
       <iframe
@@ -83,14 +84,6 @@ class Map extends React.PureComponent {
         allowFullScreen
       />
     );
-  };
-
-  calculateMapSize = () => {
-    const width = this.mapContainer
-      ? this.mapContainer.clientWidth
-      : this.defaultWidth;
-    const height = getHeightFromWidth(width);
-    return { width, height };
   };
 }
 
