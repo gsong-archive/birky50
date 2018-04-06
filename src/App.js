@@ -25,8 +25,8 @@ import "./App.css";
 
 export default class App extends React.PureComponent {
   render = () => (
-    <React.StrictMode>
-      <Provider>
+    <Provider>
+      <React.StrictMode>
         <Subscribe to={[WindowSizeContainer]}>
           {container => (
             <AppContainer
@@ -38,8 +38,8 @@ export default class App extends React.PureComponent {
             </AppContainer>
           )}
         </Subscribe>
-      </Provider>
-    </React.StrictMode>
+      </React.StrictMode>
+    </Provider>
   );
 
   renderSections = () => {
