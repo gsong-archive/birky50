@@ -16,8 +16,7 @@ export default class WindowSizeProvider extends React.Component {
   };
 
   render = () => {
-    const context = { state: this.state };
-    return <Provider value={context}>{this.props.children}</Provider>;
+    return <Provider value={this.state}>{this.props.children}</Provider>;
   };
 
   updateWindowDimensions = () => {

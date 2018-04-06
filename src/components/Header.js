@@ -8,15 +8,15 @@ import { calculateBackgroundOffset } from "./utils";
 import "./Header.css";
 
 export default class Header extends React.PureComponent {
-  state = {
-    backgroundPositionX: "0",
-    backgroundPositionY: "0"
-  };
+  render = () => <Consumer>{this.renderHeader}</Consumer>;
 
-  render = () => (
-    <React.Fragment>
-      <Consumer>{this.handleWindowResize}</Consumer>
-      <Jumbotron fluid style={this.state}>
+  renderHeader = ({ width }) => {
+    const { offsetX, offsetY } = calculateBackgroundOffset(width);
+    const backgroundPositionX = `${offsetX}px`;
+    const backgroundPositionY = `${offsetY}px`;
+
+    return (
+      <Jumbotron fluid style={{ backgroundPositionX, backgroundPositionY }}>
         <Container fluid>
           <h1 className="header-title text-white">
             Sam & Sue’s 50th Anniversary
@@ -31,15 +31,6 @@ export default class Header extends React.PureComponent {
           </a>
         </Container>
       </Jumbotron>
-    </React.Fragment>
-  );
-
-  handleWindowResize = ({ state }) => {
-    const { width } = state;
-    const { offsetX, offsetY } = calculateBackgroundOffset(width);
-    const backgroundPositionX = `${offsetX}px`;
-    const backgroundPositionY = `${offsetY}px`;
-
-    this.setState({ backgroundPositionX, backgroundPositionY });
+    );
   };
 }

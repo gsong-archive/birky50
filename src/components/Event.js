@@ -60,28 +60,37 @@ export default () => (
 );
 
 class Map extends React.PureComponent {
-  state = { width: 400, height: 300 };
+  defaultWidth = 400;
 
-  render = () => (
-    <div ref={el => (this.mapContainer = el)}>
-      <Consumer>{this.handleWindowResize}</Consumer>
+  render = () => {
+    return (
+      <div ref={el => (this.mapContainer = el)}>
+        <Consumer>{this.renderMap}</Consumer>
+      </div>
+    );
+  };
+
+  renderMap = () => {
+    const { width, height } = this.calculateMapSize();
+
+    return (
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
         title="map"
-        width={this.state.width}
-        height={this.state.height}
+        width={width}
+        height={height}
         frameBorder="0"
         allowFullScreen
       />
-    </div>
-  );
+    );
+  };
 
-  handleWindowResize = () => {
+  calculateMapSize = () => {
     const width = this.mapContainer
       ? this.mapContainer.clientWidth
-      : this.state.width;
+      : this.defaultWidth;
     const height = getHeightFromWidth(width);
-    this.setState({ width, height });
+    return { width, height };
   };
 }
 
