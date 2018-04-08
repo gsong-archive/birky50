@@ -62,16 +62,17 @@ export default () => (
 
 class Map extends React.PureComponent {
   defaultWidth = 400;
+  mapContainer = React.createRef()
 
   render = () => (
-    <div ref={el => (this.mapContainer = el)}>
+    <div ref={this.mapContainer}>
       <Subscribe to={[WindowSizeContainer]}>{this.renderMap}</Subscribe>
     </div>
   );
 
   renderMap = () => {
-    const width = this.mapContainer
-      ? this.mapContainer.clientWidth
+    const width = this.mapContainer.current
+      ? this.mapContainer.current.clientWidth
       : this.defaultWidth;
     const height = getHeightFromWidth(width);
 
