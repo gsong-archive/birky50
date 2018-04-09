@@ -9,7 +9,7 @@ import Event from "./components/Event";
 import FoodList from "./components/FoodList";
 import Header from "./components/Header";
 import LodgingList from "./components/LodgingList";
-import WindowSizeProvider from "./providers/WindowSizeProvider";
+import { WindowSizeProvider } from "./contexts/WindowSizeContext";
 import {
   Airplane,
   Burger,

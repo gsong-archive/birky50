@@ -5,8 +5,8 @@ import { Row, Col } from "reactstrap";
 import Address from "./shared/Address";
 import PhoneNumber from "./shared/PhoneNumber";
 import SectionHeader from "./shared/SectionHeader";
+import WindowSizeContext from "../contexts/WindowSizeContext";
 import { Calendar, PartyHat } from "./shared/EmojiLabels";
-import { Consumer } from "../providers/WindowSizeProvider";
 
 import eventIcs from "../static/files/event.ics";
 
@@ -61,11 +61,11 @@ export default () => (
 
 class Map extends React.PureComponent {
   defaultWidth = 400;
-  mapContainer = React.createRef()
+  mapContainer = React.createRef();
 
   render = () => (
     <div ref={this.mapContainer}>
-      <Consumer>{this.renderMap}</Consumer>
+      <WindowSizeContext.Consumer>{this.renderMap}</WindowSizeContext.Consumer>
     </div>
   );
 

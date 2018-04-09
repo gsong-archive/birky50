@@ -1,9 +1,8 @@
 import React from "react";
 
 const WindowSizeContext = React.createContext();
-const { Provider, Consumer } = WindowSizeContext;
 
-export default class WindowSizeProvider extends React.Component {
+export class WindowSizeProvider extends React.Component {
   state = { width: window.innerWidth, height: window.innerHeight };
 
   componentDidMount = () => {
@@ -16,7 +15,11 @@ export default class WindowSizeProvider extends React.Component {
   };
 
   render = () => {
-    return <Provider value={this.state}>{this.props.children}</Provider>;
+    return (
+      <WindowSizeContext.Provider value={this.state}>
+        {this.props.children}
+      </WindowSizeContext.Provider>
+    );
   };
 
   updateWindowDimensions = () => {
@@ -24,4 +27,4 @@ export default class WindowSizeProvider extends React.Component {
   };
 }
 
-export { Consumer };
+export default WindowSizeContext;

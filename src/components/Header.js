@@ -2,13 +2,15 @@ import React from "react";
 
 import { Jumbotron, Container } from "reactstrap";
 
-import { Consumer } from "../providers/WindowSizeProvider";
+import WindowSizeContext from "../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
 
 import "./Header.css";
 
 export default class Header extends React.PureComponent {
-  render = () => <Consumer>{this.renderHeader}</Consumer>;
+  render = () => (
+    <WindowSizeContext.Consumer>{this.renderHeader}</WindowSizeContext.Consumer>
+  );
 
   renderHeader = ({ width }) => {
     const { offsetX, offsetY } = calculateBackgroundOffset(width);
