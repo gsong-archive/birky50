@@ -2,15 +2,15 @@ import React from "react";
 
 import {
   Card,
-  CardImg,
   CardBody,
-  CardTitle,
+  CardImg,
   CardSubtitle,
-  CardText
+  CardText,
+  CardTitle
 } from "reactstrap";
 
-import PhoneNumber from "./PhoneNumber";
 import Address from "./Address";
+import PhoneNumber from "./PhoneNumber";
 
 import "./Card.css";
 

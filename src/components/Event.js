@@ -62,7 +62,7 @@ export default () => (
 
 class Map extends React.PureComponent {
   defaultWidth = 400;
-  mapContainer = React.createRef()
+  mapContainer = React.createRef();
 
   render = () => (
     <div ref={this.mapContainer}>
