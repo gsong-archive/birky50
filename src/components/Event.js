@@ -59,33 +59,53 @@ export default () => (
   </React.Fragment>
 );
 
-class Map extends React.PureComponent {
+const MapContainerSizeContext = React.createContext();
+
+class MapContainer extends React.PureComponent {
   defaultWidth = 400;
   mapContainer = React.createRef();
 
   render = () => (
-    <div ref={this.mapContainer}>
-      <WindowSizeContext.Consumer>{this.renderMap}</WindowSizeContext.Consumer>
-    </div>
+    <WindowSizeContext.Consumer>
+      {this.renderContainer}
+    </WindowSizeContext.Consumer>
   );
 
-  renderMap = () => {
+  renderContainer = () => {
     const width = this.mapContainer.current
       ? this.mapContainer.current.clientWidth
       : this.defaultWidth;
     const height = getHeightFromWidth(width);
 
     return (
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
-        title="map"
-        width={width}
-        height={height}
-        frameBorder="0"
-        allowFullScreen
-      />
+      <div ref={this.mapContainer}>
+        <MapContainerSizeContext.Provider value={{ height, width }}>
+          {this.props.children}
+        </MapContainerSizeContext.Provider>
+      </div>
     );
   };
+}
+
+class Map extends React.PureComponent {
+  render = () => (
+    <MapContainer>
+      <MapContainerSizeContext.Consumer>
+        {this.renderMap}
+      </MapContainerSizeContext.Consumer>
+    </MapContainer>
+  );
+
+  renderMap = ({ height, width }) => (
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
+      title="map"
+      width={width}
+      height={height}
+      frameBorder="0"
+      allowFullScreen
+    />
+  );
 }
 
 const getHeightFromWidth = width => {
