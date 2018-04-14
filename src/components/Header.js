@@ -1,11 +1,15 @@
 import React from "react";
 
+import facepaint from "facepaint";
 import { Jumbotron, Container } from "reactstrap";
+import { css } from "emotion";
 
 import WindowSizeContext from "../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
 
-import "./Header.css";
+const breakpoints = [576, 768, 992, 1200];
+const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const styles = css(mq({ fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"] }));
 
 export default class Header extends React.PureComponent {
   render = () => (
@@ -20,7 +24,7 @@ export default class Header extends React.PureComponent {
     return (
       <Jumbotron fluid style={{ backgroundPositionX, backgroundPositionY }}>
         <Container fluid>
-          <h1 className="header-title text-white">
+          <h1 className={`${styles} text-white`}>
             Sam & Sue’s 50th Anniversary
           </h1>
           <p className="lead text-white">Saturday, June 23, 2018</p>
