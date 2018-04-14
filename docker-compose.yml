@@ -16,6 +16,6 @@ services:
   prettier:
     image: birky50/app
     container_name: birky50_prettier
-    command: npx onchange 'src/**/*.js' 'src/**/*.scss' -- npx prettier --write {{changed}}
+    command: onchange 'src/**/*.js' 'src/**/*.scss' -- prettier --write {{changed}}
     volumes:
       - .:/app
