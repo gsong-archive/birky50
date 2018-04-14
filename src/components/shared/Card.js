@@ -1,5 +1,6 @@
 import React from "react";
 
+import { css } from "emotion";
 import {
   Card,
   CardBody,
@@ -12,7 +13,9 @@ import {
 import Address from "./Address";
 import PhoneNumber from "./PhoneNumber";
 
-import "./Card.css";
+const style = css`
+  margin-top: 1rem;
+`;
 
 export default ({ name, url, price, address, address_url, phone, img_url }) => (
   <Card>
@@ -24,7 +27,7 @@ export default ({ name, url, price, address, address_url, phone, img_url }) => (
         <a href={url}>{name}</a>
       </CardTitle>
       {price && <CardSubtitle>{price}</CardSubtitle>}
-      <CardText tag="div" className="card-text-top-margin">
+      <CardText tag="div" className={style}>
         <Address address={address} url={address_url} />
       </CardText>
       {phone && (

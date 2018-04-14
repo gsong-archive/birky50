@@ -3,7 +3,7 @@ import React from "react";
 const WindowSizeContext = React.createContext();
 
 export class WindowSizeProvider extends React.Component {
-  state = { width: window.innerWidth, height: window.innerHeight };
+  state = { width: window.innerWidth };
 
   componentDidMount = () => {
     this.updateWindowDimensions();
@@ -23,7 +23,7 @@ export class WindowSizeProvider extends React.Component {
   };
 
   updateWindowDimensions = () => {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setState({ width: window.innerWidth });
   };
 }
 
