@@ -2,6 +2,7 @@ import React from "react";
 
 import { Container, Nav, NavItem, NavLink } from "reactstrap";
 import { Provider, Subscribe } from "unstated";
+import { css } from "emotion";
 
 import ActivityList from "./components/ActivityList";
 import Airport from "./components/Airport";
@@ -48,22 +49,17 @@ export default class App extends React.PureComponent {
   };
 
   renderSection = ([ref, { component }], i) => {
-    const backgroundColor1 = "rgba(64, 60, 127, 0.2)";
-    const backgroundColor2 = "rgba(182, 174, 71, 0.2)";
-    const bgColor = i % 2 === 0 ? backgroundColor1 : backgroundColor2;
-    const style = { backgroundColor: bgColor };
-
+    const style = i % 2 === 0 ? backgroundColor1 : backgroundColor2;
+    this[ref] = React.createRef();
     return (
-      <div ref={el => (this[ref] = el)} key={i}>
-        <Container fluid className="p-md-4 py-4" style={style}>
-          {component}
-        </Container>
-      </div>
+      <Section className={style} sectionRef={this[ref]} key={i}>
+        {component}
+      </Section>
     );
   };
 
   scrollTo = ref => () => {
-    this[ref].scrollIntoView({ behavior: "smooth", block: "start" });
+    this[ref].current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 }
 
@@ -78,6 +74,16 @@ const NavMenu = ({ sections, onClick }) => {
 
   return <Nav fill={true}>{navItems}</Nav>;
 };
+
+class Section extends React.PureComponent {
+  render = () => (
+    <div ref={this.props.sectionRef} className={this.props.className}>
+      <Container fluid className="p-md-4 py-4">
+        {this.props.children}
+      </Container>
+    </div>
+  );
+}
 
 const sections = {
   event: {
@@ -105,3 +111,10 @@ const sections = {
     label: <WomanRaisingHand label="Questions?" />
   }
 };
+
+const backgroundColor1 = css`
+  background-color: rgba(64, 60, 127, 0.2);
+`;
+const backgroundColor2 = css`
+  background-color: rgba(182, 174, 71, 0.2);
+`;
