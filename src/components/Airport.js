@@ -14,7 +14,7 @@ export default () => (
       <div>
         <Airport
           label={
-            <a href="http://www.iflyglacier.com">
+            <a href="http://www.iflyglacier.com" rel="nofollow">
               Glacier Park International Airport
             </a>
           }

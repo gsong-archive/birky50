@@ -30,7 +30,7 @@ export default () => (
         </a>
 
         <h2 className="mt-4">Where?</h2>
-        <a href="http://vistalindacatering.com/">
+        <a href="http://vistalindacatering.com/" rel="nofollow">
           Vista Linda Mexican & Catering
         </a>
         <Address
