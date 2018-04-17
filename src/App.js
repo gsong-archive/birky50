@@ -67,11 +67,11 @@ const NavMenu = ({ sections, onClick }) => {
 
 class Section extends React.PureComponent {
   render = () => (
-    <div ref={this.props.sectionRef} className={this.props.className}>
+    <section ref={this.props.sectionRef} className={this.props.className}>
       <Container fluid className="p-md-4 py-4">
         {this.props.children}
       </Container>
-    </div>
+    </section>
   );
 }
 
