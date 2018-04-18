@@ -23,6 +23,8 @@ import {
 import "./App.css";
 
 export default class App extends React.PureComponent {
+  _refs = {};
+
   render = () => (
     <React.StrictMode>
       <WindowSizeProvider>
@@ -40,22 +42,25 @@ export default class App extends React.PureComponent {
 
   renderSection = ([ref, { component }], i) => {
     const style = i % 2 === 0 ? backgroundColor1 : backgroundColor2;
-    this[ref] = React.createRef();
+    this._refs[ref] = React.createRef();
     return (
-      <Section className={style} sectionRef={this[ref]} key={i}>
+      <Section className={style} ref={this._refs[ref]} key={ref}>
         {component}
       </Section>
     );
   };
 
   scrollTo = ref => () => {
-    this[ref].current.scrollIntoView({ behavior: "smooth", block: "start" });
+    this._refs[ref].current.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   };
 }
 
 const NavMenu = ({ sections, onClick }) => {
-  const navItems = Object.entries(sections).map(([ref, { label }], i) => (
-    <NavItem key={i}>
+  const navItems = Object.entries(sections).map(([ref, { label }]) => (
+    <NavItem key={ref}>
       <NavLink href="#" onClick={onClick(ref)}>
         {label}
       </NavLink>
@@ -65,15 +70,21 @@ const NavMenu = ({ sections, onClick }) => {
   return <Nav fill={true}>{navItems}</Nav>;
 };
 
-class Section extends React.PureComponent {
-  render = () => (
-    <section ref={this.props.sectionRef} className={this.props.className}>
+const forwardRef = (render, displayName = "") => {
+  render.displayName = displayName;
+  return React.forwardRef(render);
+};
+
+const Section = forwardRef(
+  (props, ref) => (
+    <section ref={ref} className={props.className}>
       <Container fluid className="p-md-4 py-4">
-        {this.props.children}
+        {props.children}
       </Container>
     </section>
-  );
-}
+  ),
+  "Section"
+);
 
 const sections = {
   event: {
