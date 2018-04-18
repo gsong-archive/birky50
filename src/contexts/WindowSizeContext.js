@@ -14,13 +14,11 @@ export class WindowSizeProvider extends React.Component {
     window.removeEventListener("resize", this.updateWindowDimensions);
   };
 
-  render = () => {
-    return (
-      <WindowSizeContext.Provider value={this.state}>
-        {this.props.children}
-      </WindowSizeContext.Provider>
-    );
-  };
+  render = () => (
+    <WindowSizeContext.Provider value={this.state}>
+      {this.props.children}
+    </WindowSizeContext.Provider>
+  );
 
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth });
