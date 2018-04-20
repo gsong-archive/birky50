@@ -1,6 +1,6 @@
 import React from "react";
 
-const WindowSizeContext = React.createContext();
+const WindowSizeContext = React.createContext({ width: 800 });
 
 export class WindowSizeProvider extends React.Component {
   state = { width: window.innerWidth };
