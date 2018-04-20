@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmojiLabel is rendered 1`] = `
+<div>
+  <span
+    role="img"
+    aria-label="unicorn"
+  >
+    🦄
+  </span>
+  Very Important
+</div>
+`;

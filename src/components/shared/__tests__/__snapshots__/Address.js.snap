@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address is rendered 1`] = `
+.emotion-0 {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+<div
+  class="emotion-0"
+>
+  <span
+    role="img"
+    aria-label="round pushpin"
+  >
+    📍
+  </span>
+  <a
+    href="https://example.com"
+  >
+    123 Main Street
+  </a>
+</div>
+`;

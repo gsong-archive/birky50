@@ -1,6 +1,6 @@
 import React from "react";
 
-const EmojiLabel = ({ emoji, ariaLabel, label }) => (
+export const EmojiLabel = ({ emoji, ariaLabel, label }) => (
   <React.Fragment>
     <span role="img" aria-label={ariaLabel}>
       {emoji}

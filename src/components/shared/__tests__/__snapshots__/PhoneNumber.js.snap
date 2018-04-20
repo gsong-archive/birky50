@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneNumber is rendered 1`] = `
+<div>
+  <span
+    role="img"
+    aria-label="phone receiver"
+  >
+    📞
+  </span>
+  <a
+    href="tel:503-123-4567"
+  >
+    503-123-4567
+  </a>
+</div>
+`;
