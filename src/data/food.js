@@ -4,9 +4,9 @@ const FOOD = [
     url: "https://www.facebook.com/glacier.perks.coffee/",
     price: "",
     address: "7235 US Highway 93 S, Lakeside, MT 59922",
-    address_url: "https://goo.gl/maps/jugv4Y9a1cB2",
+    addressUrl: "https://goo.gl/maps/jugv4Y9a1cB2",
     phone: "(406) 844-0908",
-    img_url:
+    imgUrl:
       "https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
   },
   {
@@ -14,9 +14,9 @@ const FOOD = [
     url: "http://www.farmhouselakeside.com",
     price: "",
     address: "306 Stoner Loop, Lakeside, MT 59922",
-    address_url: "https://goo.gl/maps/torto64XEY12",
+    addressUrl: "https://goo.gl/maps/torto64XEY12",
     phone: "(406) 844-0610",
-    img_url:
+    imgUrl:
       "https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024"
   },
   {
@@ -24,9 +24,9 @@ const FOOD = [
     url: "https://www.tamarackbrewing.com/lakeside",
     price: "",
     address: "105 Blacktail Road, Lakeside, MT",
-    address_url: "https://goo.gl/maps/sTZ8XbjgAiG2",
+    addressUrl: "https://goo.gl/maps/sTZ8XbjgAiG2",
     phone: "(406) 844-0244",
-    img_url:
+    imgUrl:
       "https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024"
   },
   {
@@ -34,9 +34,9 @@ const FOOD = [
     url: "https://www.facebook.com/homesteadcafebarandcasino/",
     price: "",
     address: "7262 US Highway 93, Lakeside, MT 59922",
-    address_url: "https://goo.gl/maps/9YQK8DymPK52",
+    addressUrl: "https://goo.gl/maps/9YQK8DymPK52",
     phone: "(406) 844-3926",
-    img_url:
+    imgUrl:
       "https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024"
   },
   {
@@ -45,9 +45,9 @@ const FOOD = [
       "https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&",
     price: "",
     address: "7170 HWY 93 S, Lakeside, MT 59922",
-    address_url: "https://goo.gl/maps/LR9qrqDZ3DN2",
+    addressUrl: "https://goo.gl/maps/LR9qrqDZ3DN2",
     phone: "(406) 844-3844",
-    img_url:
+    imgUrl:
       "https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
   },
   {
@@ -56,9 +56,9 @@ const FOOD = [
       "https://www.facebook.com/pages/Winchester-Steak-House/325894450829601",
     price: "",
     address: "2205 US Highway 93 S, Kalispell, MT 59901",
-    address_url: "https://goo.gl/maps/RN46pwo4Be92",
+    addressUrl: "https://goo.gl/maps/RN46pwo4Be92",
     phone: "(406) 257-8188",
-    img_url:
+    imgUrl:
       "https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
   },
   {
@@ -66,9 +66,9 @@ const FOOD = [
     url: "http://scottysmt.com",
     price: "",
     address: "2205 US Highway 93 S, Kalispell, MT 59901",
-    address_url: "https://goo.gl/maps/fpx285LR8JL2",
+    addressUrl: "https://goo.gl/maps/fpx285LR8JL2",
     phone: "(406) 257-8188",
-    img_url:
+    imgUrl:
       "https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
   }
 ];

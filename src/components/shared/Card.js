@@ -17,10 +17,10 @@ const style = css`
   margin-top: 1rem;
 `;
 
-export default ({ name, url, price, address, address_url, phone, img_url }) => (
+export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
   <Card>
     <a href={url} rel="nofollow">
-      <CardImg top width="100%" src={img_url} alt={name} />
+      <CardImg top width="100%" src={imgUrl} alt={name} />
     </a>
     <CardBody>
       <CardTitle>
@@ -30,7 +30,7 @@ export default ({ name, url, price, address, address_url, phone, img_url }) => (
       </CardTitle>
       {price && <CardSubtitle>{price}</CardSubtitle>}
       <CardText tag="div" className={style}>
-        <Address address={address} url={address_url} />
+        <Address address={address} url={addressUrl} />
       </CardText>
       {phone && (
         <CardText tag="div">
