@@ -21,5 +21,6 @@ test("Address is rendered", () => {
     url: "https://example.com"
   };
   const { container } = render(<Address {...props} />);
+
   expect(container.firstChild).toMatchSnapshot();
 });

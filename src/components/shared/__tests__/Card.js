@@ -26,6 +26,7 @@ describe("User sees a card", () => {
 
 test("Card is rendered", () => {
   const { container } = render(<Card {...snapshotProps} />);
+
   expect(container.firstChild).toMatchSnapshot();
 });
 
@@ -35,6 +36,7 @@ test("Card w/o price is rendered", () => {
   const { container: complete } = render(<Card {...snapshotProps} />);
   const { container: partial } = render(<Card {...props} />);
   const diff = snapshotDiff(complete.firstChild, partial.firstChild);
+
   expect(diff).toMatchSnapshot();
 });
 
@@ -44,6 +46,7 @@ test("Card w/o phone is rendered", () => {
   const { container: complete } = render(<Card {...snapshotProps} />);
   const { container: partial } = render(<Card {...props} />);
   const diff = snapshotDiff(complete.firstChild, partial.firstChild);
+
   expect(diff).toMatchSnapshot();
 });
 
@@ -54,6 +57,7 @@ test("Card w/o price and phone is rendered", () => {
   const { container: complete } = render(<Card {...snapshotProps} />);
   const { container: partial } = render(<Card {...props} />);
   const diff = snapshotDiff(complete.firstChild, partial.firstChild);
+
   expect(diff).toMatchSnapshot();
 });
 

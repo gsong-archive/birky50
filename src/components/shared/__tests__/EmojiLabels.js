@@ -36,6 +36,7 @@ test("Emojis are rendered properly", () => {
     const props = { label: generate.words() };
     const { container, getByText } = render(<Component {...props} />);
     const emojiNode = getByText(emoji);
+
     expect(emojiNode.textContent).toBe(emoji);
     expect(container.textContent).toMatch(props.label);
     expect(emojiNode.getAttribute("aria-label")).not.toBeNull();
@@ -45,5 +46,6 @@ test("Emojis are rendered properly", () => {
 test("EmojiLabel is rendered", () => {
   const props = { emoji: "🦄", ariaLabel: "unicorn", label: "Very Important" };
   const { container } = render(<EmojiLabel {...props} />);
+
   expect(container).toMatchSnapshot();
 });

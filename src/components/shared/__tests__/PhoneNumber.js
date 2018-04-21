@@ -18,5 +18,6 @@ test("User can see phone number and link", () => {
 test("PhoneNumber is rendered", () => {
   const props = { number: "503-123-4567" };
   const { container } = render(<PhoneNumber {...props} />);
+
   expect(container.firstChild).toMatchSnapshot();
 });
