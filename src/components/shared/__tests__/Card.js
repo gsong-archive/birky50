@@ -19,8 +19,8 @@ describe("User sees a card", () => {
   });
 
   test("image is present", () => {
-    expect(imgNode.getAttribute("src")).toBe(props.imgUrl);
-    expect(imgNode.parentNode.getAttribute("href")).toBe(props.url);
+    expect(imgNode.src).toBe(props.imgUrl);
+    expect(imgNode.parentNode.href).toMatch(props.url);
   });
 });
 

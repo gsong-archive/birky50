@@ -12,7 +12,7 @@ test("User can see address and map link", () => {
   const link = container.querySelector("a");
 
   expect(container.textContent).toMatch(props.address);
-  expect(link.getAttribute("href")).toBe(props.url);
+  expect(link.href).toMatch(props.url);
 });
 
 test("Address is rendered", () => {

@@ -13,7 +13,7 @@ test("ContactUs form elements are properly labeled", () => {
   const emailInput = getByLabelText(EMAIL);
   const messageInput = getByLabelText(MESSAGE);
 
-  expect(nameInput.getAttribute("name")).toBe(NAME);
-  expect(emailInput.getAttribute("name")).toBe(EMAIL);
-  expect(messageInput.getAttribute("name")).toBe(MESSAGE);
+  expect(nameInput.name).toBe(NAME);
+  expect(emailInput.name).toBe(EMAIL);
+  expect(messageInput.name).toBe(MESSAGE);
 });

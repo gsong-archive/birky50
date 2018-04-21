@@ -12,7 +12,7 @@ test("User can see phone number and link", () => {
   const link = container.querySelector("a");
 
   expect(container.textContent).toMatch(props.number);
-  expect(link.getAttribute("href")).toBe(`tel:${props.number}`);
+  expect(link.href).toBe(`tel:${props.number}`);
 });
 
 test("PhoneNumber is rendered", () => {
