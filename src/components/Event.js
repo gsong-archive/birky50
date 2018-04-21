@@ -59,8 +59,7 @@ export default () => (
   </React.Fragment>
 );
 
-// TODO: This should just receive props
-class Map extends React.PureComponent {
+class Map extends React.Component {
   defaultWidth = 400;
   mapContainer = React.createRef();
 

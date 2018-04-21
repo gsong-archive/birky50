@@ -12,7 +12,7 @@ const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 const styles = css(mq({ fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"] }));
 
 // TODO: Find out when this component re-renders
-export default class Header extends React.PureComponent {
+export default class Header extends React.Component {
   render = () => (
     <WindowSizeContext.Consumer>{this.renderHeader}</WindowSizeContext.Consumer>
   );

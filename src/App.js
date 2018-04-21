@@ -22,7 +22,7 @@ import {
 
 import "./App.css";
 
-export default class App extends React.PureComponent {
+export default class App extends React.Component {
   _refs = {};
 
   render = () => (
