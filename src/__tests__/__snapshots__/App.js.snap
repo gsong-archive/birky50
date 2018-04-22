@@ -77,106 +77,108 @@ exports[`App renders 1`] = `
       </a>
     </div>
   </div>
-  <ul
-    class="nav nav-fill"
-  >
-    <li
-      class="nav-item"
+  <nav>
+    <ul
+      class="nav nav-fill"
     >
-      <a
-        href="#"
-        class="nav-link"
+      <li
+        class="nav-item"
       >
-        <span
-          role="img"
-          aria-label="party hat"
+        <a
+          href="#"
+          class="nav-link"
         >
-          🎉
-        </span>
-        Details
-      </a>
-    </li>
-    <li
-      class="nav-item"
-    >
-      <a
-        href="#"
-        class="nav-link"
+          <span
+            role="img"
+            aria-label="party hat"
+          >
+            🎉
+          </span>
+          Details
+        </a>
+      </li>
+      <li
+        class="nav-item"
       >
-        <span
-          role="img"
-          aria-label="airplane"
+        <a
+          href="#"
+          class="nav-link"
         >
-          ✈️
-        </span>
-        Airport
-      </a>
-    </li>
-    <li
-      class="nav-item"
-    >
-      <a
-        href="#"
-        class="nav-link"
+          <span
+            role="img"
+            aria-label="airplane"
+          >
+            ✈️
+          </span>
+          Airport
+        </a>
+      </li>
+      <li
+        class="nav-item"
       >
-        <span
-          role="img"
-          aria-label="hotel"
+        <a
+          href="#"
+          class="nav-link"
         >
-          🏩
-        </span>
-        Lodging
-      </a>
-    </li>
-    <li
-      class="nav-item"
-    >
-      <a
-        href="#"
-        class="nav-link"
+          <span
+            role="img"
+            aria-label="hotel"
+          >
+            🏩
+          </span>
+          Lodging
+        </a>
+      </li>
+      <li
+        class="nav-item"
       >
-        <span
-          role="img"
-          aria-label="burger"
+        <a
+          href="#"
+          class="nav-link"
         >
-          🍔
-        </span>
-        Food
-      </a>
-    </li>
-    <li
-      class="nav-item"
-    >
-      <a
-        href="#"
-        class="nav-link"
+          <span
+            role="img"
+            aria-label="burger"
+          >
+            🍔
+          </span>
+          Food
+        </a>
+      </li>
+      <li
+        class="nav-item"
       >
-        <span
-          role="img"
-          aria-label="biking woman"
+        <a
+          href="#"
+          class="nav-link"
         >
-          🚴🏽‍♀️
-        </span>
-        Activities
-      </a>
-    </li>
-    <li
-      class="nav-item"
-    >
-      <a
-        href="#"
-        class="nav-link"
+          <span
+            role="img"
+            aria-label="biking woman"
+          >
+            🚴🏽‍♀️
+          </span>
+          Activities
+        </a>
+      </li>
+      <li
+        class="nav-item"
       >
-        <span
-          role="img"
-          aria-label="woman raising hand"
+        <a
+          href="#"
+          class="nav-link"
         >
-          🙋🏻‍♀️
-        </span>
-        Questions?
-      </a>
-    </li>
-  </ul>
+          <span
+            role="img"
+            aria-label="woman raising hand"
+          >
+            🙋🏻‍♀️
+          </span>
+          Questions?
+        </a>
+      </li>
+    </ul>
+  </nav>
   <section
     class="emotion-2"
   >

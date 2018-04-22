@@ -29,7 +29,9 @@ export default class App extends React.Component {
     <React.StrictMode>
       <WindowSizeProvider>
         <Header />
-        <NavMenu sections={sections} onClick={this.scrollTo} />
+        <nav>
+          <NavMenu sections={sections} onClick={this.scrollTo} />
+        </nav>
         {this.renderSections()}
       </WindowSizeProvider>
     </React.StrictMode>
