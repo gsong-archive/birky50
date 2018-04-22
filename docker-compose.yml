@@ -5,8 +5,13 @@ services:
   app:
     build:
       context: .
+      args:
+        TINI_VERSION: v0.18.0
     image: birky50/app
     container_name: birky50_app
+    environment:
+      IN_DOCKER: 'true'
+      PUPPETEER_EXECUTABLE_PATH: '/usr/bin/google-chrome'
     command: yarn start
     volumes:
       - .:/app:delegated

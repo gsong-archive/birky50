@@ -17,15 +17,20 @@ beforeAll(async () => {
     process.env.PUPPETEER_SLOW_MO === undefined
       ? 0
       : Number(process.env.PUPPETEER_SLOW_MO);
+  const args =
+    process.env.IN_DOCKER === undefined
+      ? []
+      : ["--no-sandbox", "--disable-setuid-sandbox"];
   const appUrl =
     process.env.APP_URL !== undefined ? process.env.APP_URL : DEFAULT_APP_URL;
 
   browser = await puppeteer.launch({
     headless,
     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
-    slowMo
+    slowMo,
+    args
   });
-  console.log(await browser.version());
+  console.log(await browser.version(), appUrl);
   page = await browser.newPage();
   await page.goto(appUrl);
 });
