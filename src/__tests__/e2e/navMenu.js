@@ -24,12 +24,14 @@ describe("Click item in nav menu should scroll to section", () => {
 
   Object.entries(sections).forEach(([item, sectionLabel], i) => {
     test(item, async () => {
-      const link = await getByText("a", item);
-      const section = await getByText("section//*", sectionLabel);
+      const link = await getByText(page, "a", item);
+      const section = await getByText(page, "section//*", sectionLabel);
 
+      // 1. Click on nav menu link
+      // 2. Wait for the screen to stop scrolling
+      // 3. Make sure the section associated with the link is visible
       await link.click();
       const boundingBox = await boundingBoxAfterScroll(section);
-
       expect(boundingBox.y).toBeLessThan(page.viewport().height);
 
       await page.screenshot({
@@ -49,7 +51,7 @@ const boundingBoxAfterScroll = async element => {
 
   while (stillScrolling) {
     await delay(50);
-    const oldBoundingBox = { ...boundingBox };
+    const oldBoundingBox = boundingBox;
     boundingBox = await element.boundingBox();
     if (oldBoundingBox.y === boundingBox.y) stillScrolling = false;
   }
@@ -57,8 +59,8 @@ const boundingBoxAfterScroll = async element => {
   return boundingBox;
 };
 
-const getByText = async (selector, text) => {
-  const elements = await page.$x(
+const getByText = async (container, selector, text) => {
+  const elements = await container.$x(
     `//${selector}[text()[contains(., '${text}')]]`
   );
   return elements[0];

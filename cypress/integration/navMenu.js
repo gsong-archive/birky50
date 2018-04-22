@@ -3,7 +3,7 @@ before(() => {
 });
 
 describe("Click item in nav menu should scroll to section", () => {
-  let rect;
+  let boundingBox;
   const sections = {
     Details: "Details",
     Airport: "Where to Fly",
@@ -19,32 +19,37 @@ describe("Click item in nav menu should scroll to section", () => {
         .get("section")
         .contains(section)
         .as("sections")
-        .then(sections => (rect = getRect(sections)));
+        .then(sections => (boundingBox = getBoundingBox(sections)));
 
+      // 1. Click on nav menu link
+      // 2. Wait for the screen to stop scrolling
+      // 3. The section associated with the link should be visible
       cy.contains(item).click();
-      cy.get("@sections").should(stopScrolling);
       cy.window().then(window => {
-        cy.get("@sections").should(beVisibleIn(window));
+        cy
+          .get("@sections")
+          .should(stopScrolling)
+          .and(beVisibleIn(window));
       });
 
       cy.screenshot(`${i}-${item}`);
     });
   });
 
-  const getRect = $elements => {
-    const element = $elements[0];
-    const _rect = element.getBoundingClientRect();
-    return _rect;
-  };
-
   const stopScrolling = $elements => {
-    const prevRect = rect;
-    rect = getRect($elements);
-    expect(rect.top).to.equal(prevRect.top);
+    const prevBoundingBox = boundingBox;
+    boundingBox = getBoundingBox($elements);
+    expect(boundingBox.top).to.equal(prevBoundingBox.top);
   };
 
   const beVisibleIn = window => $elements => {
-    const rect = getRect($elements);
-    expect(rect.top).to.be.lt(window.innerHeight);
+    const boundingBox = getBoundingBox($elements);
+    expect(boundingBox.top).to.be.lt(window.innerHeight);
+  };
+
+  const getBoundingBox = $elements => {
+    const element = $elements[0];
+    const boundingBox = element.getBoundingClientRect();
+    return boundingBox;
   };
 });
