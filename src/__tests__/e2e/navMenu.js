@@ -3,7 +3,7 @@ import puppeteer from "puppeteer";
 import "../../env";
 
 const DEFAULT_APP_URL = "http://localhost:3000";
-const DEFAULT_SCROLL_CHECK_DELAY = 50;
+const DEFAULT_SCROLL_CHECK_DELAY = 100;
 let browser, page;
 
 beforeAll(async () => {
