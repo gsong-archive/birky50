@@ -3,7 +3,11 @@ import puppeteer from "puppeteer";
 let browser, page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch();
+  browser = await puppeteer.launch({
+    // headless: false,
+    // executablePath:
+    //   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  });
   page = await browser.newPage();
   await page.goto("http://localhost:3000");
 });
