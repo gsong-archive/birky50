@@ -1,5 +1,11 @@
+const DEFAULT_APP_URL = "http://localhost:3000";
+
 before(() => {
-  cy.visit("http://localhost:3000");
+  const appUrl =
+    Cypress.env("APP_URL") !== undefined
+      ? Cypress.env("APP_URL")
+      : DEFAULT_APP_URL;
+  cy.visit(appUrl);
 });
 
 describe("Click item in nav menu should scroll to section", () => {

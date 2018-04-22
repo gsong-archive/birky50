@@ -1,15 +1,33 @@
 import puppeteer from "puppeteer";
 
+import "../../env";
+
+const DEFAULT_APP_URL = "http://localhost:3000";
+const DEFAULT_SCROLL_CHECK_DELAY = 50;
 let browser, page;
 
 beforeAll(async () => {
+  const headless =
+    process.env.PUPPETEER_HEADLESS === undefined
+      ? true
+      : process.env.PUPPETEER_HEADLESS.toLowerCase() === "true"
+        ? true
+        : false;
+  const slowMo =
+    process.env.PUPPETEER_SLOW_MO === undefined
+      ? 0
+      : Number(process.env.PUPPETEER_SLOW_MO);
+  const appUrl =
+    process.env.APP_URL !== undefined ? process.env.APP_URL : DEFAULT_APP_URL;
+
   browser = await puppeteer.launch({
-    // headless: false,
-    // executablePath:
-    //   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    headless,
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+    slowMo
   });
+  console.log(await browser.version());
   page = await browser.newPage();
-  await page.goto("http://localhost:3000");
+  await page.goto(appUrl);
 });
 
 describe("Click item in nav menu should scroll to section", () => {
@@ -50,7 +68,9 @@ const boundingBoxAfterScroll = async element => {
   let stillScrolling = true;
 
   while (stillScrolling) {
-    await delay(50);
+    await delay(
+      process.env.PUPPETEER_SCROLL_CHECK_DELAY || DEFAULT_SCROLL_CHECK_DELAY
+    );
     const oldBoundingBox = boundingBox;
     boundingBox = await element.boundingBox();
     if (oldBoundingBox.y === boundingBox.y) stillScrolling = false;
