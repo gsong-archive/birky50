@@ -25,5 +25,4 @@ yarn-error.log*
 Debug.js
 cypress.env.json
 cypress/videos
-screenshots/
 src/**/*.css
