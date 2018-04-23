@@ -4,26 +4,10 @@ import "../../env";
 
 const DEFAULT_APP_URL = "http://localhost:3000";
 const DEFAULT_SCROLL_CHECK_DELAY = 100;
+const DEFAULT_SCREENSHOTS_FOLDER = "screenshots/puppeteer";
 let browser, page;
 
 beforeAll(async () => {
-  const headless =
-    process.env.PUPPETEER_HEADLESS === undefined
-      ? true
-      : process.env.PUPPETEER_HEADLESS.toLowerCase() === "true"
-        ? true
-        : false;
-  const slowMo =
-    process.env.PUPPETEER_SLOW_MO === undefined
-      ? 0
-      : Number(process.env.PUPPETEER_SLOW_MO);
-  const args =
-    process.env.IN_DOCKER === undefined
-      ? []
-      : ["--no-sandbox", "--disable-setuid-sandbox"];
-  const appUrl =
-    process.env.APP_URL !== undefined ? process.env.APP_URL : DEFAULT_APP_URL;
-
   browser = await puppeteer.launch({
     headless,
     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
@@ -58,7 +42,7 @@ describe("Click item in nav menu should scroll to section", () => {
       expect(boundingBox.y).toBeLessThan(page.viewport().height);
 
       await page.screenshot({
-        path: `src/__tests__/e2e/screenshots/${i}-${item}.png`
+        path: `${screenshotsFolder}/${i}-${item}.png`
       });
     });
   });
@@ -92,3 +76,24 @@ const getByText = async (container, selector, text) => {
 };
 
 const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
+
+const headless =
+  process.env.PUPPETEER_HEADLESS === undefined
+    ? true
+    : process.env.PUPPETEER_HEADLESS.toLowerCase() === "true"
+      ? true
+      : false;
+const slowMo =
+  process.env.PUPPETEER_SLOW_MO === undefined
+    ? 0
+    : Number(process.env.PUPPETEER_SLOW_MO);
+const args =
+  process.env.IN_DOCKER === undefined
+    ? []
+    : ["--no-sandbox", "--disable-setuid-sandbox"];
+const appUrl =
+  process.env.APP_URL !== undefined ? process.env.APP_URL : DEFAULT_APP_URL;
+const screenshotsFolder =
+  process.env.PUPPETEER_SCREENSHOTS_FOLDER !== undefined
+    ? process.env.PUPPETEER_SCREENSHOTS_FOLDER
+    : DEFAULT_SCREENSHOTS_FOLDER;
