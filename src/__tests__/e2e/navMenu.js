@@ -49,6 +49,11 @@ describe("Click item in nav menu should scroll to section", () => {
 });
 
 afterAll(async () => {
+  await page.screenshot({
+    fullPage: true,
+    path: `${screenshotsFolder}/full-page.png`
+  });
+
   await browser.close();
 });
 
