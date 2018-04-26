@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section renders properly 1`] = `
+<section
+  id="id"
+>
+  <div
+    class="p-md-4 py-4 container-fluid"
+  >
+    Child
+  </div>
+</section>
+`;
