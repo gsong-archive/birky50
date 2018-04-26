@@ -85,7 +85,7 @@ exports[`App renders 1`] = `
         class="nav-item"
       >
         <a
-          href="#"
+          href="#event"
           class="nav-link"
         >
           <span
@@ -101,7 +101,7 @@ exports[`App renders 1`] = `
         class="nav-item"
       >
         <a
-          href="#"
+          href="#airport"
           class="nav-link"
         >
           <span
@@ -117,7 +117,7 @@ exports[`App renders 1`] = `
         class="nav-item"
       >
         <a
-          href="#"
+          href="#lodgingList"
           class="nav-link"
         >
           <span
@@ -133,7 +133,7 @@ exports[`App renders 1`] = `
         class="nav-item"
       >
         <a
-          href="#"
+          href="#foodList"
           class="nav-link"
         >
           <span
@@ -149,7 +149,7 @@ exports[`App renders 1`] = `
         class="nav-item"
       >
         <a
-          href="#"
+          href="#activityList"
           class="nav-link"
         >
           <span
@@ -165,7 +165,7 @@ exports[`App renders 1`] = `
         class="nav-item"
       >
         <a
-          href="#"
+          href="#contactUs"
           class="nav-link"
         >
           <span
@@ -180,6 +180,7 @@ exports[`App renders 1`] = `
     </ul>
   </nav>
   <section
+    id="event"
     class="emotion-2"
   >
     <div
@@ -309,6 +310,7 @@ exports[`App renders 1`] = `
     </div>
   </section>
   <section
+    id="airport"
     class="emotion-3"
   >
     <div
@@ -358,6 +360,7 @@ exports[`App renders 1`] = `
     </div>
   </section>
   <section
+    id="lodgingList"
     class="emotion-2"
   >
     <div
@@ -893,6 +896,7 @@ exports[`App renders 1`] = `
     </div>
   </section>
   <section
+    id="foodList"
     class="emotion-3"
   >
     <div
@@ -1387,6 +1391,7 @@ exports[`App renders 1`] = `
     </div>
   </section>
   <section
+    id="activityList"
     class="emotion-2"
   >
     <div
@@ -1999,6 +2004,7 @@ exports[`App renders 1`] = `
     </div>
   </section>
   <section
+    id="contactUs"
     class="emotion-3"
   >
     <div
@@ -2099,9 +2105,8 @@ exports[`App renders 1`] = `
               value="Birky 50th Anniversary Message"
             />
             <input
-              type="text"
+              type="hidden"
               name="_gotcha"
-              style="display: none;"
             />
             <div
               class="row"

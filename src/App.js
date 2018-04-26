@@ -46,13 +46,15 @@ export default class App extends React.Component {
     const style = i % 2 === 0 ? backgroundColor1 : backgroundColor2;
     this._refs[ref] = React.createRef();
     return (
-      <Section className={style} ref={this._refs[ref]} key={ref}>
+      <Section id={ref} className={style} ref={this._refs[ref]} key={ref}>
         {component}
       </Section>
     );
   };
 
-  scrollTo = ref => () => {
+  scrollTo = ref => event => {
+    event.preventDefault();
+    window.history.pushState(null, null, `#${ref}`);
     this._refs[ref].current.scrollIntoView({
       behavior: "smooth",
       block: "start"
@@ -63,7 +65,7 @@ export default class App extends React.Component {
 const NavMenu = ({ sections, onClick }) => {
   const navItems = Object.entries(sections).map(([ref, { label }]) => (
     <NavItem key={ref}>
-      <NavLink href="#" onClick={onClick(ref)}>
+      <NavLink href={`#${ref}`} onClick={onClick(ref)}>
         {label}
       </NavLink>
     </NavItem>
@@ -79,7 +81,7 @@ const forwardRef = (render, displayName = "") => {
 
 const Section = forwardRef(
   (props, ref) => (
-    <section ref={ref} className={props.className}>
+    <section id={props.id} ref={ref} className={props.className}>
       <Container fluid className="p-md-4 py-4">
         {props.children}
       </Container>

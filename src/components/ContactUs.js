@@ -65,7 +65,7 @@ export default () => {
             name="_subject"
             value="Birky 50th Anniversary Message"
           />
-          <input type="text" name="_gotcha" style={{ display: "none" }} />
+          <input type="hidden" name="_gotcha" />
           <Row>
             <Col md={{ size: inputWidth, offset: labelWidth }}>
               <Button type="submit" color="primary">
