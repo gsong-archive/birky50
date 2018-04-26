@@ -2,6 +2,7 @@
 
 exports[`SectionHeader is rendered 1`] = `
 <h1
+  id="uniqueId-description"
   class="mb-3"
 >
   I'm a child.
