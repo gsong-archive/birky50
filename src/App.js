@@ -38,16 +38,20 @@ export default class App extends React.Component {
   );
 
   renderSections = () => {
-    const renderedSections = Object.entries(sections).map(this.renderSection);
+    const renderedSections = sections.map(this.renderSection);
     return renderedSections;
   };
 
-  renderSection = ([ref, { component }], i) => {
+  renderSection = (
+    { id, sectionLabel, SectionComponent, LabelComponent },
+    i
+  ) => {
     const style = i % 2 === 0 ? backgroundColor1 : backgroundColor2;
-    this._refs[ref] = React.createRef();
+    const sectionProps = { LabelComponent, sectionLabel };
+    this._refs[id] = React.createRef();
     return (
-      <Section id={ref} className={style} ref={this._refs[ref]} key={ref}>
-        {component}
+      <Section id={id} className={style} ref={this._refs[id]} key={id}>
+        <SectionComponent {...sectionProps} />
       </Section>
     );
   };
@@ -63,10 +67,10 @@ export default class App extends React.Component {
 }
 
 const NavMenu = ({ sections, onClick }) => {
-  const navItems = Object.entries(sections).map(([ref, { label }]) => (
-    <NavItem key={ref}>
-      <NavLink href={`#${ref}`} onClick={onClick(ref)}>
-        {label}
+  const navItems = sections.map(({ id, navLabel, LabelComponent }) => (
+    <NavItem key={id}>
+      <NavLink href={`#${id}`} onClick={onClick(id)}>
+        <LabelComponent label={navLabel} />
       </NavLink>
     </NavItem>
   ));
@@ -90,32 +94,50 @@ const Section = forwardRef(
   "Section"
 );
 
-const sections = {
-  event: {
-    component: <Event />,
-    label: <PartyHat label="Details" />
+const sections = [
+  {
+    id: "event",
+    navLabel: "Details",
+    sectionLabel: "Celebration Details",
+    SectionComponent: Event,
+    LabelComponent: PartyHat
   },
-  airport: {
-    component: <Airport />,
-    label: <Airplane label="Airport" />
+  {
+    id: "airport",
+    navLabel: "Airport",
+    sectionLabel: "Where to Fly Into?",
+    SectionComponent: Airport,
+    LabelComponent: Airplane
   },
-  lodgingList: {
-    component: <LodgingList />,
-    label: <Hotel label="Lodging" />
+  {
+    id: "lodgingList",
+    navLabel: "Lodging",
+    sectionLabel: "Where to Stay?",
+    SectionComponent: LodgingList,
+    LabelComponent: Hotel
   },
-  foodList: {
-    component: <FoodList />,
-    label: <Burger label="Food" />
+  {
+    id: "foodList",
+    navLabel: "Food",
+    sectionLabel: "Where to Eat?",
+    SectionComponent: FoodList,
+    LabelComponent: Burger
   },
-  activityList: {
-    component: <ActivityList />,
-    label: <WomanBiking label="Activities" />
+  {
+    id: "activityList",
+    navLabel: "Activities",
+    sectionLabel: "What to Do?",
+    SectionComponent: ActivityList,
+    LabelComponent: WomanBiking
   },
-  contactUs: {
-    component: <ContactUs />,
-    label: <WomanRaisingHand label="Questions?" />
+  {
+    id: "contactUs",
+    navLabel: "Questions?",
+    sectionLabel: "Questions?",
+    SectionComponent: ContactUs,
+    LabelComponent: WomanRaisingHand
   }
-};
+];
 
 const backgroundColor1 = css`
   background-color: rgba(64, 60, 127, 0.2);

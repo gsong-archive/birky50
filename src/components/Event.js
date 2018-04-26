@@ -6,58 +6,60 @@ import Address from "./shared/Address";
 import PhoneNumber from "./shared/PhoneNumber";
 import SectionHeader from "./shared/SectionHeader";
 import WindowSizeContext from "../contexts/WindowSizeContext";
-import { Calendar, PartyHat } from "./shared/EmojiLabels";
+import { Calendar } from "./shared/EmojiLabels";
 
 import eventIcs from "../static/files/event.ics";
 
-export default () => (
-  <React.Fragment>
-    <Row>
-      <Col>
-        <SectionHeader>
-          <PartyHat label="Celebration Details" />
-        </SectionHeader>
-      </Col>
-    </Row>
+export default ({ LabelComponent, sectionLabel }) => {
+  return (
+    <React.Fragment>
+      <Row>
+        <Col>
+          <SectionHeader>
+            <LabelComponent label={sectionLabel} />
+          </SectionHeader>
+        </Col>
+      </Row>
 
-    <Row>
-      <Col md="4">
-        <h2>When?</h2>
-        <p className="mb-0">Saturday, June 23, 2018</p>
-        <p className="mb-0">Starts at 4:00pm, dinner buffet at 5:00pm</p>
-        <a href={eventIcs} download>
-          <Calendar label="Add to calendar" />
-        </a>
+      <Row>
+        <Col md="4">
+          <h2>When?</h2>
+          <p className="mb-0">Saturday, June 23, 2018</p>
+          <p className="mb-0">Starts at 4:00pm, dinner buffet at 5:00pm</p>
+          <a href={eventIcs} download>
+            <Calendar label="Add to calendar" />
+          </a>
 
-        <h2 className="mt-4">Where?</h2>
-        <a href="http://vistalindacatering.com/" rel="nofollow">
-          Vista Linda Mexican & Catering
-        </a>
-        <Address
-          address="240 Boon Rd, Somers, MT 59932"
-          url="https://goo.gl/maps/THRyvih62562"
-        />
-        <PhoneNumber number="(406) 857-3158" />
+          <h2 className="mt-4">Where?</h2>
+          <a href="http://vistalindacatering.com/" rel="nofollow">
+            Vista Linda Mexican & Catering
+          </a>
+          <Address
+            address="240 Boon Rd, Somers, MT 59932"
+            url="https://goo.gl/maps/THRyvih62562"
+          />
+          <PhoneNumber number="(406) 857-3158" />
 
-        <ul className="pt-4 pl-3">
-          <li>Event will take place outdoors in a covered pavilion</li>
-          <li>Dressy casual attire</li>
-        </ul>
+          <ul className="pt-4 pl-3">
+            <li>Event will take place outdoors in a covered pavilion</li>
+            <li>Dressy casual attire</li>
+          </ul>
 
-        <a
-          href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
-          className="btn btn-secondary btn-lg btn-block mb-4 mb-md-0"
-        >
-          RSVP
-        </a>
-      </Col>
+          <a
+            href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
+            className="btn btn-secondary btn-lg btn-block mb-4 mb-md-0"
+          >
+            RSVP
+          </a>
+        </Col>
 
-      <Col md="8">
-        <Map />
-      </Col>
-    </Row>
-  </React.Fragment>
-);
+        <Col md="8">
+          <Map />
+        </Col>
+      </Row>
+    </React.Fragment>
+  );
+};
 
 class Map extends React.Component {
   defaultWidth = 400;

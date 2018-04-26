@@ -3,13 +3,13 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 
 import SectionHeader from "./shared/SectionHeader";
-import { Airplane, Airport } from "./shared/EmojiLabels";
+import { Airport } from "./shared/EmojiLabels";
 
-export default () => (
+export default ({ LabelComponent, sectionLabel }) => (
   <Row>
     <Col>
       <SectionHeader>
-        <Airplane label="Where to Fly Into?" />
+        <LabelComponent label={sectionLabel} />
       </SectionHeader>
       <div>
         <Airport

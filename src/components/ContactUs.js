@@ -3,9 +3,8 @@ import React from "react";
 import { Row, Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 import SectionHeader from "./shared/SectionHeader";
-import { WomanRaisingHand } from "./shared/EmojiLabels";
 
-export default () => {
+export default ({ LabelComponent, sectionLabel }) => {
   const labelWidth = 1;
   const inputWidth = 5;
   const sendTo = "birky50@damacy.net";
@@ -14,7 +13,7 @@ export default () => {
     <Row>
       <Col>
         <SectionHeader>
-          <WomanRaisingHand label="Questions?" />
+          <LabelComponent label={sectionLabel} />
         </SectionHeader>
         <Form action={`https://formspree.io/${sendTo}`} method="POST">
           <FormGroup row>
