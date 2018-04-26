@@ -5,11 +5,11 @@ before(() => {
     Cypress.env("APP_URL") !== undefined
       ? Cypress.env("APP_URL")
       : DEFAULT_APP_URL;
+
   cy.visit(appUrl);
 });
 
 describe("Click item in nav menu should scroll to section", () => {
-  let boundingBox;
   const sections = {
     Details: "Details",
     Airport: "Where to Fly",
@@ -18,6 +18,7 @@ describe("Click item in nav menu should scroll to section", () => {
     Activities: "What to Do",
     Questions: "Questions"
   };
+  let boundingBox;
 
   Object.entries(sections).forEach(([item, section], i) => {
     it(item, () => {
@@ -44,18 +45,22 @@ describe("Click item in nav menu should scroll to section", () => {
 
   const stopScrolling = $elements => {
     const prevBoundingBox = boundingBox;
+
     boundingBox = getBoundingBox($elements);
     expect(boundingBox.top).to.equal(prevBoundingBox.top);
   };
 
   const beVisibleIn = window => $elements => {
     const boundingBox = getBoundingBox($elements);
-    expect(boundingBox.top).to.be.lt(window.innerHeight);
+
+    expect(boundingBox.top).to.be.gt(0);
+    expect(boundingBox.bottom).to.be.lt(window.innerHeight);
   };
 
   const getBoundingBox = $elements => {
-    const element = $elements[0];
+    const element = $elements[0]; // jQuery
     const boundingBox = element.getBoundingClientRect();
+
     return boundingBox;
   };
 });

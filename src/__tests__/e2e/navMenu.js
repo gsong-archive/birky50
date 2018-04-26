@@ -8,12 +8,7 @@ const DEFAULT_SCREENSHOTS_FOLDER = "screenshots/puppeteer";
 let browser, page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch({
-    headless,
-    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
-    slowMo,
-    args
-  });
+  browser = await puppeteer.launch(launchOptions);
   console.log(await browser.version(), appUrl);
   page = await browser.newPage();
   await page.goto(appUrl);
@@ -38,26 +33,20 @@ describe("Click item in nav menu should scroll to section", () => {
       // 2. Wait for the screen to stop scrolling
       // 3. Make sure the section associated with the link is visible
       await link.click();
-      const boundingBox = await boundingBoxAfterScroll(section);
-      expect(boundingBox.y).toBeLessThan(page.viewport().height);
+      await stoppedScrolling(section);
+      await isVisibleInViewPort(section);
 
-      await page.screenshot({
-        path: `${screenshotsFolder}/${i}-${item}.png`
-      });
+      await screenshot(`${i}-${item}`);
     });
   });
 });
 
 afterAll(async () => {
-  await page.screenshot({
-    fullPage: true,
-    path: `${screenshotsFolder}/full-page.png`
-  });
-
+  await screenshot("full-page", { fullPage: true });
   await browser.close();
 });
 
-const boundingBoxAfterScroll = async element => {
+const stoppedScrolling = async element => {
   let boundingBox = await element.boundingBox();
   let stillScrolling = true;
 
@@ -69,36 +58,54 @@ const boundingBoxAfterScroll = async element => {
     boundingBox = await element.boundingBox();
     if (oldBoundingBox.y === boundingBox.y) stillScrolling = false;
   }
+};
 
-  return boundingBox;
+const isVisibleInViewPort = async element => {
+  const boundingBox = await element.boundingBox();
+
+  expect(boundingBox.y).toBeGreaterThan(0);
+  expect(boundingBox.y + boundingBox.height).toBeLessThan(
+    page.viewport().height
+  );
 };
 
 const getByText = async (container, selector, text) => {
   const elements = await container.$x(
     `//${selector}[text()[contains(., '${text}')]]`
   );
+
   return elements[0];
+};
+
+const screenshot = async (imageName, options = {}) => {
+  await page.screenshot({
+    path: `${screenshotsFolder}/${imageName}.png`,
+    ...options
+  });
 };
 
 const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
 
-const headless =
-  process.env.PUPPETEER_HEADLESS === undefined
-    ? true
-    : process.env.PUPPETEER_HEADLESS.toLowerCase() === "true"
+const launchOptions = {
+  executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+  headless:
+    process.env.PUPPETEER_HEADLESS === undefined
       ? true
-      : false;
-const slowMo =
-  process.env.PUPPETEER_SLOW_MO === undefined
-    ? 0
-    : Number(process.env.PUPPETEER_SLOW_MO);
-const args =
-  process.env.IN_DOCKER === undefined
-    ? []
-    : ["--no-sandbox", "--disable-setuid-sandbox"];
+      : process.env.PUPPETEER_HEADLESS.toLowerCase() === "true"
+        ? true
+        : false,
+  slowMo:
+    process.env.PUPPETEER_SLOW_MO === undefined
+      ? 0
+      : Number(process.env.PUPPETEER_SLOW_MO),
+  args:
+    process.env.IN_DOCKER === undefined
+      ? []
+      : ["--no-sandbox", "--disable-setuid-sandbox"]
+};
 const appUrl =
-  process.env.APP_URL !== undefined ? process.env.APP_URL : DEFAULT_APP_URL;
+  process.env.APP_URL === undefined ? DEFAULT_APP_URL : process.env.APP_URL;
 const screenshotsFolder =
-  process.env.PUPPETEER_SCREENSHOTS_FOLDER !== undefined
-    ? process.env.PUPPETEER_SCREENSHOTS_FOLDER
-    : DEFAULT_SCREENSHOTS_FOLDER;
+  process.env.PUPPETEER_SCREENSHOTS_FOLDER === undefined
+    ? DEFAULT_SCREENSHOTS_FOLDER
+    : process.env.PUPPETEER_SCREENSHOTS_FOLDER;
