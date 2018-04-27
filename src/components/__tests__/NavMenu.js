@@ -9,8 +9,8 @@ test("NavMenu renders properly", () => {
     sections: [
       {
         id: "id",
-        navLabel: "label",
-        LabelComponent: props => <div>{props.label}</div>
+        navLabel: "Menu Item",
+        LabelComponent: props => props.label
       }
     ],
     onClick: jest.fn()

@@ -11,9 +11,7 @@ exports[`NavMenu renders properly 1`] = `
       href="#id"
       class="nav-link"
     >
-      <div>
-        label
-      </div>
+      Menu Item
     </a>
   </li>
 </ul>
