@@ -1,7 +1,6 @@
-version: '3.5'
+version: '2.4'
 
 services:
-  # Primary services
   app:
     build:
       context: .
@@ -14,7 +13,7 @@ services:
       PUPPETEER_EXECUTABLE_PATH: '/usr/bin/google-chrome'
     command: yarn start
     volumes:
-      - .:/app:delegated
+      - .:/app
     ports:
       - 3000:3000
 

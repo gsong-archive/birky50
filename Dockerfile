@@ -1,6 +1,6 @@
 FROM cypress/browsers:chrome65-ff57
 
-ARG packages="npm cypress onchange prettier yarn"
+ARG packages="npm onchange"
 RUN npm install -g -U ${packages} && npm cache clean --force
 
 WORKDIR /app
