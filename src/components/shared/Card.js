@@ -13,10 +13,6 @@ import {
 import Address from "./Address";
 import PhoneNumber from "./PhoneNumber";
 
-const style = css`
-  margin-top: 1rem;
-`;
-
 export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
   <Card>
     <a href={url} rel="nofollow">
@@ -40,3 +36,7 @@ export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
     </CardBody>
   </Card>
 );
+
+const style = css`
+  margin-top: 1rem;
+`;
