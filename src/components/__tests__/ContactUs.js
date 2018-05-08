@@ -12,9 +12,9 @@ test("ContactUs form elements are properly labeled", () => {
   const { getByLabelText } = render(
     <ContactUs LabelComponent={WomanRaisingHand} sectionLabel="Questions?" />
   );
-  const nameInput = getByLabelText(NAME);
-  const emailInput = getByLabelText(EMAIL);
-  const messageInput = getByLabelText(MESSAGE);
+  const nameInput = getByLabelText(RegExp(NAME, "i"));
+  const emailInput = getByLabelText(RegExp(EMAIL, "i"));
+  const messageInput = getByLabelText(RegExp(MESSAGE, "i"));
 
   expect(nameInput.name).toBe(NAME);
   expect(emailInput.name).toBe(EMAIL);
