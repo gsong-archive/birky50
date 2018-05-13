@@ -54,7 +54,8 @@ exports[`App renders 1`] = `
 
 .emotion-3 {
   color: white;
-  background-color: deeppink;
+  font-weight: bold;
+  background-color: rgb(225,18,130);
   width: auto;
   display: inline-block;
   font-size: 1rem;
@@ -96,14 +97,14 @@ exports[`App renders 1`] = `
 }
 
 .emotion-5 {
-  color: #8a5e1e;
+  color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
   display: block;
   padding: 0.75rem 1rem;
 }
 
-.emotion-34 {
+.emotion-35 {
   background-color: rgba(64,60,127,0.2);
   padding: 1.5rem;
 }
@@ -120,7 +121,7 @@ exports[`App renders 1`] = `
   margin-bottom: 1rem;
 }
 
-.emotion-33 {
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -132,7 +133,7 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:900px) {
-  .emotion-33 {
+  .emotion-34 {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -166,7 +167,7 @@ exports[`App renders 1`] = `
 }
 
 .emotion-21 {
-  color: #8a5e1e;
+  color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -182,7 +183,8 @@ exports[`App renders 1`] = `
 
 .emotion-30 {
   color: white;
-  background-color: deeppink;
+  font-weight: bold;
+  background-color: rgb(225,18,130);
   width: 100%;
   display: inline-block;
   font-size: 1rem;
@@ -198,7 +200,7 @@ exports[`App renders 1`] = `
   border-radius: 0.3rem;
 }
 
-.emotion-32 {
+.emotion-33 {
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
@@ -214,7 +216,7 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:900px) {
-  .emotion-32 {
+  .emotion-33 {
     -webkit-flex-basis: calc(100% / 3 * 2);
     -ms-flex-preferred-size: calc(100% / 3 * 2);
     flex-basis: calc(100% / 3 * 2);
@@ -222,27 +224,32 @@ exports[`App renders 1`] = `
   }
 }
 
-.emotion-38 {
+.emotion-32 {
+  width: 100%;
+  border: 0;
+}
+
+.emotion-39 {
   background-color: rgba(182,174,71,0.2);
   padding: 1.5rem;
 }
 
-.emotion-37 {
+.emotion-38 {
   font-weight: bold;
 }
 
-.emotion-102 {
+.emotion-103 {
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3,1fr);
   margin-bottom: 0.75em;
 }
 
-.emotion-46 {
+.emotion-47 {
   margin: 1rem;
 }
 
-.emotion-47 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,32 +261,32 @@ exports[`App renders 1`] = `
   border-radius: 0.25rem;
 }
 
-.emotion-40 {
+.emotion-41 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   width: 100%;
 }
 
-.emotion-42 {
+.emotion-43 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
-.emotion-242 {
+.emotion-243 {
   display: block;
 }
 
 @media (min-width:600px) {
-  .emotion-242 {
+  .emotion-243 {
     display: grid;
     grid-template-columns: 5rem 30rem;
     grid-row-gap: 1rem;
   }
 }
 
-.emotion-238 {
+.emotion-239 {
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
   border: 1px solid #ced4da;
@@ -290,13 +297,13 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-238 {
+  .emotion-239 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-241 {
+.emotion-242 {
   grid-column-start: 2;
   justify-self: start;
   cursor: pointer;
@@ -314,7 +321,8 @@ exports[`App renders 1`] = `
 }
 
 <div>
-  <section
+  <header
+    aria-label="Event header"
     style="background-position-x: 0px; background-position-y: -61.44px;"
     class="emotion-4"
   >
@@ -339,7 +347,7 @@ exports[`App renders 1`] = `
     >
       RSVP
     </a>
-  </section>
+  </header>
   <nav>
     <ul
       class="emotion-17"
@@ -444,7 +452,7 @@ exports[`App renders 1`] = `
   </nav>
   <section
     id="event"
-    class="emotion-34"
+    class="emotion-35"
     aria-labelledby="event-description"
   >
     <h1
@@ -460,7 +468,7 @@ exports[`App renders 1`] = `
       Celebration Details
     </h1>
     <div
-      class="emotion-33"
+      class="emotion-34"
     >
       <div
         class="emotion-31"
@@ -471,7 +479,11 @@ exports[`App renders 1`] = `
         <p
           class="emotion-19"
         >
-          Saturday, June 23, 2018
+          <time
+            datetime="2018-06-23 16:00"
+          >
+            Saturday, June 23, 2018
+          </time>
         </p>
         <p
           class="emotion-19"
@@ -558,16 +570,15 @@ exports[`App renders 1`] = `
         </a>
       </div>
       <div
-        class="emotion-32"
+        class="emotion-33"
       >
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
             title="map"
-            width="100%"
             height="300"
-            frameborder="0"
             allowfullscreen=""
+            class="emotion-32"
           />
         </div>
       </div>
@@ -575,7 +586,7 @@ exports[`App renders 1`] = `
   </section>
   <section
     id="airport"
-    class="emotion-38"
+    class="emotion-39"
     aria-labelledby="airport-description"
   >
     <h1
@@ -606,7 +617,7 @@ exports[`App renders 1`] = `
       </a>
       <p>
         <span
-          class="emotion-37"
+          class="emotion-38"
         >
           Code
         </span>
@@ -616,7 +627,7 @@ exports[`App renders 1`] = `
   </section>
   <section
     id="lodgingList"
-    class="emotion-34"
+    class="emotion-35"
     aria-labelledby="lodgingList-description"
   >
     <h1
@@ -632,10 +643,10 @@ exports[`App renders 1`] = `
       Where to Stay?
     </h1>
     <div
-      class="emotion-102"
+      class="emotion-103"
     >
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://outlookinnbandb.com"
@@ -644,14 +655,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh5.googleusercontent.com/p/AF1QipP6DfmJnGhCT_brALxXqoV-ldPxWuavT-KKvPPe=w408-h273-k-no"
             alt="Outlook Inn Bed and Breakfast"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://outlookinnbandb.com"
@@ -696,7 +707,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://bestwesternflatheadlake.com"
@@ -705,14 +716,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536"
             alt="Best Western Plus Flathead Lake Inn and Suites"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://bestwesternflatheadlake.com"
@@ -760,7 +771,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
@@ -769,14 +780,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no"
             alt="Hilton Garden Inn Kalispell"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
@@ -821,7 +832,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.somersbaycabins.com"
@@ -830,14 +841,14 @@ exports[`App renders 1`] = `
           <img
             src="https://cdn.ostrovok.ru/t/1024x768/mec/hotels/8000000/7120000/7118600/7118558/7118558_15_b.jpg"
             alt="Somer’s Bay Log Cabin"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.somersbaycabins.com"
@@ -868,7 +879,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
@@ -877,14 +888,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipMwGIaY-rFy-uL4pYwy2zgApjQdN9ZJiCn_ZYSj=s1024"
             alt="FairBridge Inn & Suites"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
@@ -932,7 +943,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://sunrisevistainn.weebly.com"
@@ -941,14 +952,14 @@ exports[`App renders 1`] = `
           <img
             src="http://sunrisevistainn.weebly.com/uploads/5/3/4/1/53416569/8098879_orig.jpg"
             alt="Sunrise Vista Inn"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://sunrisevistainn.weebly.com"
@@ -993,7 +1004,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://edgewaterrv.com"
@@ -1002,14 +1013,14 @@ exports[`App renders 1`] = `
           <img
             src="http://www.passportamerica.com/img/campgrounds/3358/CG-3278_4.png"
             alt="Edgewater RV Resort & Motel"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://edgewaterrv.com"
@@ -1054,7 +1065,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.peacefulbayresort.com"
@@ -1063,14 +1074,14 @@ exports[`App renders 1`] = `
           <img
             src="http://www.peacefulbayresort.com/images/pb-on-the-hill-sm.jpg"
             alt="Peaceful Bay Resort & Club"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.peacefulbayresort.com"
@@ -1104,7 +1115,7 @@ exports[`App renders 1`] = `
   </section>
   <section
     id="foodList"
-    class="emotion-38"
+    class="emotion-39"
     aria-labelledby="foodList-description"
   >
     <h1
@@ -1120,10 +1131,10 @@ exports[`App renders 1`] = `
       Where to Eat?
     </h1>
     <div
-      class="emotion-102"
+      class="emotion-103"
     >
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://www.facebook.com/glacier.perks.coffee/"
@@ -1132,14 +1143,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
             alt="Glacier Perks Coffee House"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://www.facebook.com/glacier.perks.coffee/"
@@ -1184,7 +1195,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.farmhouselakeside.com"
@@ -1193,14 +1204,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024"
             alt="The Farmhouse Restaurant"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.farmhouselakeside.com"
@@ -1245,7 +1256,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://www.tamarackbrewing.com/lakeside"
@@ -1254,14 +1265,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024"
             alt="Tamarack Brewing Company"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://www.tamarackbrewing.com/lakeside"
@@ -1306,7 +1317,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://www.facebook.com/homesteadcafebarandcasino/"
@@ -1315,14 +1326,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024"
             alt="Homestead Cafe"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://www.facebook.com/homesteadcafebarandcasino/"
@@ -1367,7 +1378,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
@@ -1376,14 +1387,14 @@ exports[`App renders 1`] = `
           <img
             src="https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
             alt="Dairy Queen"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
@@ -1428,7 +1439,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
@@ -1437,14 +1448,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
             alt="Winchester Steak House"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
@@ -1489,7 +1500,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://scottysmt.com"
@@ -1498,14 +1509,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
             alt="Scotty's Bar"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://scottysmt.com"
@@ -1553,7 +1564,7 @@ exports[`App renders 1`] = `
   </section>
   <section
     id="activityList"
-    class="emotion-34"
+    class="emotion-35"
     aria-labelledby="activityList-description"
   >
     <h1
@@ -1569,10 +1580,10 @@ exports[`App renders 1`] = `
       What to Do?
     </h1>
     <div
-      class="emotion-102"
+      class="emotion-103"
     >
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://www.nps.gov/glac/index.htm"
@@ -1581,14 +1592,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipMneZ7VhRLaiEaUTBhRo1CWqUzv3hs-gBP3fYkM=s1024"
             alt="Glacier National Park"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://www.nps.gov/glac/index.htm"
@@ -1633,7 +1644,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.flatheadlakeboattour.com"
@@ -1642,14 +1653,14 @@ exports[`App renders 1`] = `
           <img
             src="http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
             alt="Far West Boat Tours"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.flatheadlakeboattour.com"
@@ -1697,7 +1708,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.spokeandpaddle.com"
@@ -1706,14 +1717,14 @@ exports[`App renders 1`] = `
           <img
             src="http://www.spokeandpaddle.com/images/sandflats.jpg"
             alt="Spoke & Paddle Outdoor Adventures"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.spokeandpaddle.com"
@@ -1758,7 +1769,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.seamepaddle.com"
@@ -1767,14 +1778,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipNbgLiDCF3vj9_AMegijlQMaBJf9OvAImYPjqyN=s1024"
             alt="Sea Me Paddle Kayaking Tours"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.seamepaddle.com"
@@ -1819,7 +1830,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="https://glacierraftco.com"
@@ -1828,14 +1839,14 @@ exports[`App renders 1`] = `
           <img
             src="https://www.bmwunstoppable.com/wp-content/uploads/2017/04/maxresdefault-1-7.jpg"
             alt="Glacier Raft Company"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="https://glacierraftco.com"
@@ -1880,7 +1891,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
@@ -1889,14 +1900,14 @@ exports[`App renders 1`] = `
           <img
             src="https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg"
             alt="Bigfork"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
@@ -1927,7 +1938,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.boatrentalsandrides.com"
@@ -1936,14 +1947,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipPOnBM5O5btlHaud1AH-QlcdmbFp-apN3jGtF8j=s1024"
             alt="Boat Rentals and Rides"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.boatrentalsandrides.com"
@@ -1988,7 +1999,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.flatheadlakesailing.com"
@@ -1997,14 +2008,14 @@ exports[`App renders 1`] = `
           <img
             src="https://static1.squarespace.com/static/54da76f0e4b004762df44faa/t/54f7394ce4b0aff87aef4f08/1425488206828/FLR2032.jpg"
             alt="Flathead Lake Sailing & Charters"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.flatheadlakesailing.com"
@@ -2049,7 +2060,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-48"
       >
         <a
           href="http://www.wildhorseislandboattrips.com"
@@ -2058,14 +2069,14 @@ exports[`App renders 1`] = `
           <img
             src="https://lh3.ggpht.com/p/AF1QipMuV4H2G2h4_I0oCPKyTxmuMVOBeEEqjqcTvdDb=s1024"
             alt="WildHorse Island Boat Trips"
-            class="emotion-40"
+            class="emotion-41"
           />
         </a>
         <div
-          class="emotion-46"
+          class="emotion-47"
         >
           <div
-            class="emotion-42"
+            class="emotion-43"
           >
             <a
               href="http://www.wildhorseislandboattrips.com"
@@ -2113,7 +2124,7 @@ exports[`App renders 1`] = `
   </section>
   <section
     id="contactUs"
-    class="emotion-38"
+    class="emotion-39"
     aria-labelledby="contactUs-description"
   >
     <h1
@@ -2131,7 +2142,7 @@ exports[`App renders 1`] = `
     <form
       action="https://formspree.io/birky50@damacy.net"
       method="POST"
-      class="emotion-242"
+      class="emotion-243"
     >
       <label
         for="contact_us_name"
@@ -2144,7 +2155,7 @@ exports[`App renders 1`] = `
         id="contact_us_name"
         placeholder="Your Name"
         required=""
-        class="emotion-238"
+        class="emotion-239"
       />
       <label
         for="contact_us_email"
@@ -2157,7 +2168,7 @@ exports[`App renders 1`] = `
         id="contact_us_email"
         placeholder="Your Email"
         required=""
-        class="emotion-238"
+        class="emotion-239"
       />
       <label
         for="contact_us_message"
@@ -2170,7 +2181,7 @@ exports[`App renders 1`] = `
         placeholder="Message"
         rows="3"
         required=""
-        class="emotion-238"
+        class="emotion-239"
       />
       <input
         type="hidden"
@@ -2183,7 +2194,7 @@ exports[`App renders 1`] = `
       />
       <button
         type="submit"
-        class="emotion-241"
+        class="emotion-242"
       >
         Send
       </button>

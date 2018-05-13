@@ -13,6 +13,7 @@ export default props => (
 
 const Link = styled("a")`
   color: white;
+  font-weight: bold;
   background-color: ${colors.secondary};
   width: ${props => (props.width ? props.width : "auto")};
   ${btn};

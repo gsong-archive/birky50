@@ -1,6 +1,6 @@
 export const colors = {
   primary: "#100d44",
-  secondary: "deeppink",
-  link: "#8a5e1e",
+  secondary: "rgb(225,18,130)",
+  link: "maroon",
   gray: "#ced4da"
 };

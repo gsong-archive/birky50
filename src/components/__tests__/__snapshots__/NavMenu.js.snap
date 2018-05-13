@@ -27,7 +27,7 @@ exports[`NavMenu renders properly 1`] = `
 }
 
 .emotion-0 {
-  color: #8a5e1e;
+  color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
   display: block;

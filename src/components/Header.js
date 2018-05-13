@@ -22,7 +22,10 @@ export default class Header extends React.Component {
     const backgroundPositionY = `${offsetY}px`;
 
     return (
-      <Jumbotron style={{ backgroundPositionX, backgroundPositionY }}>
+      <Jumbotron
+        aria-label="Event header"
+        style={{ backgroundPositionX, backgroundPositionY }}
+      >
         <Title>Sam & Sue’s 50th Anniversary</Title>
         <Subtitle>Saturday, June 23, 2018</Subtitle>
         <Subtitle>Somers, Montana</Subtitle>
@@ -52,7 +55,7 @@ const Title = styled("h1")(
 
 breakpoints = [1200];
 mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
-const Jumbotron = styled("section")(
+const Jumbotron = styled("header")(
   css`
     background-color: ${colors.primary};
     background-image: ${`url(${backgroundImage})`};

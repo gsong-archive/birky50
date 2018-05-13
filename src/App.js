@@ -17,15 +17,10 @@ export default class App extends React.Component {
       <WindowSizeProvider>
         <Header />
         <NavMenu sections={sections} onClick={this.scrollTo} />
-        {this.renderSections()}
+        {sections.map(this.renderSection)}
       </WindowSizeProvider>
     </React.StrictMode>
   );
-
-  renderSections = () => {
-    const renderedSections = sections.map(this.renderSection);
-    return renderedSections;
-  };
 
   renderSection = (
     { id, sectionLabel, SectionComponent, LabelComponent },
