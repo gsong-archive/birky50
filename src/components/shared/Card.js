@@ -1,42 +1,52 @@
 import React from "react";
 
-import { css } from "emotion";
-import {
-  Card,
-  CardBody,
-  CardImg,
-  CardSubtitle,
-  CardText,
-  CardTitle
-} from "reactstrap";
+import styled, { css } from "react-emotion";
 
 import Address from "./Address";
 import PhoneNumber from "./PhoneNumber";
+import { Link } from "../../styles/components";
+import { borderRadius } from "../../styles";
 
 export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
   <Card>
     <a href={url} rel="nofollow">
-      <CardImg top width="100%" src={imgUrl} alt={name} />
+      <CardImg src={imgUrl} alt={name} />
     </a>
-    <CardBody>
+    <div
+      className={css`
+        margin: 1rem;
+      `}
+    >
       <CardTitle>
-        <a href={url} rel="nofollow">
+        <Link href={url} rel="nofollow">
           {name}
-        </a>
+        </Link>
       </CardTitle>
-      {price && <CardSubtitle>{price}</CardSubtitle>}
-      <CardText tag="div" className={style}>
+      {price && <p>{price}</p>}
+      <address>
         <Address address={address} url={addressUrl} />
-      </CardText>
-      {phone && (
-        <CardText tag="div">
-          <PhoneNumber number={phone} />
-        </CardText>
-      )}
-    </CardBody>
+        {phone && <PhoneNumber number={phone} />}
+      </address>
+    </div>
   </Card>
 );
 
-const style = css`
-  margin-top: 1rem;
+const Card = styled("div")`
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  ${borderRadius};
+`;
+
+const CardImg = styled("img")`
+  ${borderRadius};
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+`;
+
+const CardTitle = styled("div")`
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
 `;

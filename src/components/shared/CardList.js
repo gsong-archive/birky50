@@ -1,7 +1,6 @@
 import React from "react";
 
-import styled from "react-emotion";
-import { Row, Col } from "reactstrap";
+import { css } from "emotion";
 
 import Card from "./Card";
 import SectionHeader from "./SectionHeader";
@@ -12,26 +11,25 @@ export default ({ title, items }) => {
 
   return (
     <React.Fragment>
-      <Row>
-        <Col>
-          <SectionHeader>{title}</SectionHeader>
-        </Col>
-      </Row>
+      <SectionHeader>{title}</SectionHeader>
       <WindowSizeContext.Consumer>
         {({ width }) => {
           const numberOfColumns = Math.max(1, Math.floor(width / 275));
-          const style = {
-            gridTemplateColumns: `repeat(${numberOfColumns}, 1fr)`
-          };
 
-          return <CardContainer style={style}>{cards}</CardContainer>;
+          return (
+            <div
+              className={css`
+                display: grid;
+                grid-gap: 1.5rem;
+                grid-template-columns: ${`repeat(${numberOfColumns}, 1fr)`};
+                margin-bottom: 0.75em;
+              `}
+            >
+              {cards}
+            </div>
+          );
         }}
       </WindowSizeContext.Consumer>
     </React.Fragment>
   );
 };
-
-const CardContainer = styled("div")`
-  display: grid;
-  grid-gap: 1.5rem;
-`;

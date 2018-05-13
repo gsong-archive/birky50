@@ -1,15 +1,14 @@
 import React from "react";
 
 import facepaint from "facepaint";
-import { Jumbotron, Container } from "reactstrap";
-import { css } from "emotion";
+import styled, { css } from "react-emotion";
 
+import RSVPLink from "./shared/RSVPLink";
 import WindowSizeContext from "../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
+import { colors } from "../styles/variables";
 
-const breakpoints = [576, 768, 992, 1200];
-const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
-const styles = css(mq({ fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"] }));
+import backgroundImage from "../static/images/header-background.png";
 
 // TODO: Find out when this component re-renders
 export default class Header extends React.Component {
@@ -23,21 +22,45 @@ export default class Header extends React.Component {
     const backgroundPositionY = `${offsetY}px`;
 
     return (
-      <Jumbotron fluid style={{ backgroundPositionX, backgroundPositionY }}>
-        <Container fluid>
-          <h1 className={`${styles} text-white`}>
-            Sam & Sue’s 50th Anniversary
-          </h1>
-          <p className="lead text-white">Saturday, June 23, 2018</p>
-          <p className="lead text-white">Somers, Montana</p>
-          <a
-            href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
-            className="btn btn-secondary btn-lg"
-          >
-            RSVP
-          </a>
-        </Container>
+      <Jumbotron style={{ backgroundPositionX, backgroundPositionY }}>
+        <Title>Sam & Sue’s 50th Anniversary</Title>
+        <Subtitle>Saturday, June 23, 2018</Subtitle>
+        <Subtitle>Somers, Montana</Subtitle>
+        <RSVPLink />
       </Jumbotron>
     );
   };
 }
+
+const Subtitle = styled("p")`
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white;
+`;
+
+let breakpoints = [576, 768, 992, 1200];
+let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const Title = styled("h1")(
+  css`
+    color: white;
+    margin-bottom: 1rem;
+  `,
+  mq({
+    fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"]
+  })
+);
+
+breakpoints = [1200];
+mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const Jumbotron = styled("section")(
+  css`
+    background-color: ${colors.primary};
+    background-image: ${`url(${backgroundImage})`};
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem 1rem;
+  `,
+  mq({
+    paddingBottom: ["2rem", "4rem"]
+  })
+);

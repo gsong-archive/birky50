@@ -1,52 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
+.emotion-6 {
+  margin: 1rem;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
 .emotion-0 {
-  padding-left: 1.5rem;
-  text-indent: -1.5rem;
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+
+.emotion-2 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .emotion-1 {
-  margin-top: 1rem;
+  color: #8a5e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
 }
 
 <div
-  class="card"
+  class="emotion-7"
 >
   <a
     href="https://example.com"
     rel="nofollow"
   >
     <img
-      width="100%"
       src="https://url_to_img"
       alt="Little Big Burger"
-      class="card-img-top"
+      class="emotion-0"
     />
   </a>
   <div
-    class="card-body"
+    class="emotion-6"
   >
-    <h5
-      class="card-title"
+    <div
+      class="emotion-2"
     >
       <a
         href="https://example.com"
         rel="nofollow"
+        class="emotion-1"
       >
         Little Big Burger
       </a>
-    </h5>
-    <h6
-      class="card-subtitle"
-    >
+    </div>
+    <p>
       100.00
-    </h6>
-    <div
-      class="emotion-1 card-text"
-    >
+    </p>
+    <address>
       <div
-        class="emotion-0"
+        class="emotion-4"
       >
         <span
           role="img"
@@ -56,14 +83,11 @@ exports[`Card is rendered 1`] = `
         </span>
         <a
           href="https://url_to_map"
+          class="emotion-1"
         >
           123 Main Street
         </a>
       </div>
-    </div>
-    <div
-      class="card-text"
-    >
       <div>
         <span
           role="img"
@@ -73,11 +97,12 @@ exports[`Card is rendered 1`] = `
         </span>
         <a
           href="tel:503-543-2345"
+          class="emotion-1"
         >
           503-543-2345
         </a>
       </div>
-    </div>
+    </address>
   </div>
 </div>
 `;
@@ -87,15 +112,12 @@ exports[`Card w/o phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -48,25 +48,7 @@
+@@ -44,23 +44,8 @@
+            href=\\"https://url_to_map\\"
           >
             123 Main Street
           </a>
         </div>
-      </div>
--     <div
--       class=\\"card-text\\"
--     >
 -       <div>
 -         <span
 -           aria-label=\\"phone receiver\\"
@@ -105,14 +127,15 @@ exports[`Card w/o phone is rendered 1`] = `
 -         </span>
 -          
 -         <a
+-           class=\\"css-vwa0qy\\"
 -           href=\\"tel:503-543-2345\\"
 -         >
 -           503-543-2345
 -         </a>
+-       </div>
+      </address>
     </div>
-  </div>
--   </div>
-- </div>"
+  </div>"
 `;
 
 exports[`Card w/o price and phone is rendered 1`] = `
@@ -120,31 +143,26 @@ exports[`Card w/o price and phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -23,15 +23,10 @@
+@@ -23,13 +23,10 @@
           rel=\\"nofollow\\"
         >
           Little Big Burger
         </a>
-      </h5>
--     <h6
--       class=\\"card-subtitle\\"
--     >
+      </div>
+-     <p>
 -       100.00
--     </h6>
-      <div
-        class=\\"css-1b2x0kn card-text\\"
-      >
+-     </p>
+      <address>
         <div
-          class=\\"css-vb40eg\\"
-@@ -48,25 +43,7 @@
+          class=\\"css-10ryyyv\\"
+        >
+          <span
+@@ -44,23 +41,8 @@
+            href=\\"https://url_to_map\\"
           >
             123 Main Street
           </a>
         </div>
-      </div>
--     <div
--       class=\\"card-text\\"
--     >
 -       <div>
 -         <span
 -           aria-label=\\"phone receiver\\"
@@ -154,14 +172,15 @@ exports[`Card w/o price and phone is rendered 1`] = `
 -         </span>
 -          
 -         <a
+-           class=\\"css-vwa0qy\\"
 -           href=\\"tel:503-543-2345\\"
 -         >
 -           503-543-2345
 -         </a>
+-       </div>
+      </address>
     </div>
-  </div>
--   </div>
-- </div>"
+  </div>"
 `;
 
 exports[`Card w/o price is rendered 1`] = `
@@ -169,20 +188,18 @@ exports[`Card w/o price is rendered 1`] = `
 - First value
 + Second value
 
-@@ -23,15 +23,10 @@
+@@ -23,13 +23,10 @@
           rel=\\"nofollow\\"
         >
           Little Big Burger
         </a>
-      </h5>
--     <h6
--       class=\\"card-subtitle\\"
--     >
+      </div>
+-     <p>
 -       100.00
--     </h6>
-      <div
-        class=\\"css-1b2x0kn card-text\\"
-      >
+-     </p>
+      <address>
         <div
-          class=\\"css-vb40eg\\""
+          class=\\"css-10ryyyv\\"
+        >
+          <span"
 `;

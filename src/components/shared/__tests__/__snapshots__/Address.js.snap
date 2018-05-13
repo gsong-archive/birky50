@@ -1,13 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Address is rendered 1`] = `
-.emotion-0 {
-  padding-left: 1.5rem;
+.emotion-1 {
+  margin-left: 1.5rem;
   text-indent: -1.5rem;
 }
 
+.emotion-0 {
+  color: #8a5e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div
-  class="emotion-0"
+  class="emotion-1"
 >
   <span
     role="img"
@@ -17,6 +23,7 @@ exports[`Address is rendered 1`] = `
   </span>
   <a
     href="https://example.com"
+    class="emotion-0"
   >
     123 Main Street
   </a>

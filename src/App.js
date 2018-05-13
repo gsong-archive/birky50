@@ -2,13 +2,12 @@ import React from "react";
 
 import { css } from "emotion";
 
+import "./styles/global";
 import Header from "./components/Header";
 import NavMenu from "./components/NavMenu";
 import Section from "./components/Section";
 import sections from "./data/sections";
 import { WindowSizeProvider } from "./contexts/WindowSizeContext";
-
-import "./App.css";
 
 export default class App extends React.Component {
   _refs = {};
@@ -17,9 +16,7 @@ export default class App extends React.Component {
     <React.StrictMode>
       <WindowSizeProvider>
         <Header />
-        <nav>
-          <NavMenu sections={sections} onClick={this.scrollTo} />
-        </nav>
+        <NavMenu sections={sections} onClick={this.scrollTo} />
         {this.renderSections()}
       </WindowSizeProvider>
     </React.StrictMode>
@@ -34,8 +31,16 @@ export default class App extends React.Component {
     { id, sectionLabel, SectionComponent, LabelComponent },
     i
   ) => {
-    const style = i % 2 === 0 ? backgroundColor1 : backgroundColor2;
+    const style =
+      i % 2 === 0
+        ? css`
+            background-color: rgba(64, 60, 127, 0.2);
+          `
+        : css`
+            background-color: rgba(182, 174, 71, 0.2);
+          `;
     this._refs[id] = React.createRef();
+
     return (
       <Section
         id={id}
@@ -61,10 +66,3 @@ export default class App extends React.Component {
     });
   };
 }
-
-const backgroundColor1 = css`
-  background-color: rgba(64, 60, 127, 0.2);
-`;
-const backgroundColor2 = css`
-  background-color: rgba(182, 174, 71, 0.2);
-`;

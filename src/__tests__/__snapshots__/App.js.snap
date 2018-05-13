@@ -1,7 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders 1`] = `
+.emotion-4 {
+  background-color: #100d44;
+  background-image: url(header-background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 1rem 1rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width:1200px) {
+  .emotion-4 {
+    padding-bottom: 4rem;
+  }
+}
+
 .emotion-0 {
+  color: white;
+  margin-bottom: 1rem;
   font-size: 14vw;
 }
 
@@ -30,68 +47,309 @@ exports[`App renders 1`] = `
 }
 
 .emotion-1 {
-  padding-left: 1.5rem;
-  text-indent: -1.5rem;
-}
-
-.emotion-5 {
-  margin-top: 1rem;
-}
-
-.emotion-2 {
-  background-color: rgba(64,60,127,0.2);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white;
 }
 
 .emotion-3 {
-  background-color: rgba(182,174,71,0.2);
+  color: white;
+  background-color: deeppink;
+  width: auto;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.3rem;
 }
 
-.emotion-20 {
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.emotion-6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.emotion-5 {
+  color: #8a5e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 1rem;
+}
+
+.emotion-34 {
+  background-color: rgba(64,60,127,0.2);
+  padding: 1.5rem;
+}
+
+.emotion-22 {
+  margin-top: 1.5rem;
+}
+
+.emotion-29 {
+  padding: 0;
+}
+
+.emotion-18 {
+  margin-bottom: 1rem;
+}
+
+.emotion-33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -1rem;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:900px) {
+  .emotion-33 {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+.emotion-31 {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 0 1rem;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+@media (min-width:900px) {
+  .emotion-31 {
+    -webkit-flex-basis: calc(100% / 3);
+    -ms-flex-preferred-size: calc(100% / 3);
+    flex-basis: calc(100% / 3);
+  }
+}
+
+.emotion-19 {
+  margin: 0.25rem 0;
+}
+
+.emotion-21 {
+  color: #8a5e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-25 {
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+.emotion-27 {
+  margin-left: 1.5rem;
+}
+
+.emotion-30 {
+  color: white;
+  background-color: deeppink;
+  width: 100%;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.emotion-32 {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 0 1rem;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-top: 1.5rem;
+}
+
+@media (min-width:900px) {
+  .emotion-32 {
+    -webkit-flex-basis: calc(100% / 3 * 2);
+    -ms-flex-preferred-size: calc(100% / 3 * 2);
+    flex-basis: calc(100% / 3 * 2);
+    margin-top: 0px;
+  }
+}
+
+.emotion-38 {
+  background-color: rgba(182,174,71,0.2);
+  padding: 1.5rem;
+}
+
+.emotion-37 {
+  font-weight: bold;
+}
+
+.emotion-102 {
   display: grid;
   grid-gap: 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+  margin-bottom: 0.75em;
+}
+
+.emotion-46 {
+  margin: 1rem;
+}
+
+.emotion-47 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+.emotion-40 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+
+.emotion-42 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.emotion-242 {
+  display: block;
+}
+
+@media (min-width:600px) {
+  .emotion-242 {
+    display: grid;
+    grid-template-columns: 5rem 30rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+.emotion-238 {
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  display: block;
+  width: 100%;
+  margin: .5rem 0 1rem;
+}
+
+@media (min-width:600px) {
+  .emotion-238 {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.emotion-241 {
+  grid-column-start: 2;
+  justify-self: start;
+  cursor: pointer;
+  background-color: #100d44;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
 }
 
 <div>
-  <div
+  <section
     style="background-position-x: 0px; background-position-y: -61.44px;"
-    class="jumbotron jumbotron-fluid"
+    class="emotion-4"
   >
-    <div
-      class="container-fluid"
+    <h1
+      class="emotion-0"
     >
-      <h1
-        class="emotion-0 text-white"
-      >
-        Sam & Sue’s 50th Anniversary
-      </h1>
-      <p
-        class="lead text-white"
-      >
-        Saturday, June 23, 2018
-      </p>
-      <p
-        class="lead text-white"
-      >
-        Somers, Montana
-      </p>
-      <a
-        href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
-        class="btn btn-secondary btn-lg"
-      >
-        RSVP
-      </a>
-    </div>
-  </div>
+      Sam & Sue’s 50th Anniversary
+    </h1>
+    <p
+      class="emotion-1"
+    >
+      Saturday, June 23, 2018
+    </p>
+    <p
+      class="emotion-1"
+    >
+      Somers, Montana
+    </p>
+    <a
+      href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
+      class="emotion-3"
+    >
+      RSVP
+    </a>
+  </section>
   <nav>
     <ul
-      class="nav nav-fill"
+      class="emotion-17"
     >
       <li
-        class="nav-item"
+        class="emotion-6"
       >
         <a
           href="#event"
-          class="nav-link"
+          class="emotion-5"
         >
           <span
             role="img"
@@ -103,11 +361,11 @@ exports[`App renders 1`] = `
         </a>
       </li>
       <li
-        class="nav-item"
+        class="emotion-6"
       >
         <a
           href="#airport"
-          class="nav-link"
+          class="emotion-5"
         >
           <span
             role="img"
@@ -119,11 +377,11 @@ exports[`App renders 1`] = `
         </a>
       </li>
       <li
-        class="nav-item"
+        class="emotion-6"
       >
         <a
           href="#lodgingList"
-          class="nav-link"
+          class="emotion-5"
         >
           <span
             role="img"
@@ -135,11 +393,11 @@ exports[`App renders 1`] = `
         </a>
       </li>
       <li
-        class="nav-item"
+        class="emotion-6"
       >
         <a
           href="#foodList"
-          class="nav-link"
+          class="emotion-5"
         >
           <span
             role="img"
@@ -151,11 +409,11 @@ exports[`App renders 1`] = `
         </a>
       </li>
       <li
-        class="nav-item"
+        class="emotion-6"
       >
         <a
           href="#activityList"
-          class="nav-link"
+          class="emotion-5"
         >
           <span
             role="img"
@@ -167,11 +425,11 @@ exports[`App renders 1`] = `
         </a>
       </li>
       <li
-        class="nav-item"
+        class="emotion-6"
       >
         <a
           href="#contactUs"
-          class="nav-link"
+          class="emotion-5"
         >
           <span
             role="img"
@@ -186,76 +444,68 @@ exports[`App renders 1`] = `
   </nav>
   <section
     id="event"
-    class="emotion-2"
+    class="emotion-34"
     aria-labelledby="event-description"
   >
+    <h1
+      id="event-description"
+      class="emotion-18"
+    >
+      <span
+        role="img"
+        aria-label="party hat"
+      >
+        🎉
+      </span>
+      Celebration Details
+    </h1>
     <div
-      class="p-md-4 py-4 container-fluid"
+      class="emotion-33"
     >
       <div
-        class="row"
+        class="emotion-31"
       >
-        <div
-          class="col"
+        <h2>
+          When?
+        </h2>
+        <p
+          class="emotion-19"
         >
-          <h1
-            id="event-description"
-            class="mb-3"
-          >
-            <span
-              role="img"
-              aria-label="party hat"
-            >
-              🎉
-            </span>
-            Celebration Details
-          </h1>
-        </div>
-      </div>
-      <div
-        class="row"
-      >
-        <div
-          class="col-md-4"
+          Saturday, June 23, 2018
+        </p>
+        <p
+          class="emotion-19"
         >
-          <h2>
-            When?
-          </h2>
-          <p
-            class="mb-0"
+          Starts at 4:00pm, dinner buffet at 5:00pm
+        </p>
+        <a
+          href="event.ics"
+          download=""
+          class="emotion-21"
+        >
+          <span
+            role="img"
+            aria-label="calendar"
           >
-            Saturday, June 23, 2018
-          </p>
-          <p
-            class="mb-0"
-          >
-            Starts at 4:00pm, dinner buffet at 5:00pm
-          </p>
-          <a
-            href="event.ics"
-            download=""
-          >
-            <span
-              role="img"
-              aria-label="calendar"
-            >
-              📆
-            </span>
-            Add to calendar
-          </a>
-          <h2
-            class="mt-4"
-          >
-            Where?
-          </h2>
-          <a
-            href="http://vistalindacatering.com/"
-            rel="nofollow"
-          >
-            Vista Linda Mexican & Catering
-          </a>
+            📆
+          </span>
+          Add to calendar
+        </a>
+        <h2
+          class="emotion-22"
+        >
+          Where?
+        </h2>
+        <a
+          href="http://vistalindacatering.com/"
+          rel="nofollow"
+          class="emotion-21"
+        >
+          Vista Linda Mexican & Catering
+        </a>
+        <address>
           <div
-            class="emotion-1"
+            class="emotion-25"
           >
             <span
               role="img"
@@ -265,6 +515,7 @@ exports[`App renders 1`] = `
             </span>
             <a
               href="https://goo.gl/maps/THRyvih62562"
+              class="emotion-21"
             >
               240 Boon Rd, Somers, MT 59932
             </a>
@@ -278,1847 +529,1665 @@ exports[`App renders 1`] = `
             </span>
             <a
               href="tel:(406) 857-3158"
+              class="emotion-21"
             >
               (406) 857-3158
             </a>
           </div>
-          <ul
-            class="pt-4 pl-3"
-          >
-            <li>
-              Event will take place outdoors in a covered pavilion
-            </li>
-            <li>
-              Dressy casual attire
-            </li>
-          </ul>
-          <a
-            href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
-            class="btn btn-secondary btn-lg btn-block mb-4 mb-md-0"
-          >
-            RSVP
-          </a>
-        </div>
-        <div
-          class="col-md-8"
+        </address>
+        <ul
+          class="emotion-29"
         >
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
-              title="map"
-              width="0"
-              height="300"
-              frameborder="0"
-              allowfullscreen=""
-            />
-          </div>
+          <li
+            class="emotion-27"
+          >
+            Event will take place outdoors in a covered pavilion
+          </li>
+          <li
+            class="emotion-27"
+          >
+            Dressy casual attire
+          </li>
+        </ul>
+        <a
+          href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
+          width="100%"
+          class="emotion-30"
+        >
+          RSVP
+        </a>
+      </div>
+      <div
+        class="emotion-32"
+      >
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.5868734347823!2d-114.24015338435312!3d48.07961667921895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5366535871876905%3A0x3088f2289bea6c!2sVista+Linda+Mexican+%26+Catering!5e0!3m2!1sen!2sus!4v1520397563655"
+            title="map"
+            width="100%"
+            height="300"
+            frameborder="0"
+            allowfullscreen=""
+          />
         </div>
       </div>
     </div>
   </section>
   <section
     id="airport"
-    class="emotion-3"
+    class="emotion-38"
     aria-labelledby="airport-description"
   >
-    <div
-      class="p-md-4 py-4 container-fluid"
+    <h1
+      id="airport-description"
+      class="emotion-18"
     >
-      <div
-        class="row"
+      <span
+        role="img"
+        aria-label="airplane"
       >
-        <div
-          class="col"
+        ✈️
+      </span>
+      Where to Fly Into?
+    </h1>
+    <div>
+      <span
+        role="img"
+        aria-label="flight arrival"
+      >
+        🛬
+      </span>
+      <a
+        href="http://www.iflyglacier.com"
+        rel="nofollow"
+        class="emotion-21"
+      >
+        Glacier Park International Airport
+      </a>
+      <p>
+        <span
+          class="emotion-37"
         >
-          <h1
-            id="airport-description"
-            class="mb-3"
-          >
-            <span
-              role="img"
-              aria-label="airplane"
-            >
-              ✈️
-            </span>
-            Where to Fly Into?
-          </h1>
-          <div>
-            <span
-              role="img"
-              aria-label="flight arrival"
-            >
-              🛬
-            </span>
-            <a
-              href="http://www.iflyglacier.com"
-              rel="nofollow"
-            >
-              Glacier Park International Airport
-            </a>
-            <p>
-              <span
-                class="font-weight-bold"
-              >
-                Code
-              </span>
-              : FCA
-            </p>
-          </div>
-        </div>
-      </div>
+          Code
+        </span>
+        : FCA
+      </p>
     </div>
   </section>
   <section
     id="lodgingList"
-    class="emotion-2"
+    class="emotion-34"
     aria-labelledby="lodgingList-description"
   >
+    <h1
+      id="lodgingList-description"
+      class="emotion-18"
+    >
+      <span
+        role="img"
+        aria-label="hotel"
+      >
+        🏩
+      </span>
+      Where to Stay?
+    </h1>
     <div
-      class="p-md-4 py-4 container-fluid"
+      class="emotion-102"
     >
       <div
-        class="row"
+        class="emotion-47"
       >
-        <div
-          class="col"
+        <a
+          href="http://outlookinnbandb.com"
+          rel="nofollow"
         >
-          <h1
-            id="lodgingList-description"
-            class="mb-3"
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipP6DfmJnGhCT_brALxXqoV-ldPxWuavT-KKvPPe=w408-h273-k-no"
+            alt="Outlook Inn Bed and Breakfast"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
+          <div
+            class="emotion-42"
           >
-            <span
-              role="img"
-              aria-label="hotel"
+            <a
+              href="http://outlookinnbandb.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              🏩
-            </span>
-            Where to Stay?
-          </h1>
+              Outlook Inn Bed and Breakfast
+            </a>
+          </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/am3u2e5nG9Q2"
+                class="emotion-21"
+              >
+                175 Boon Rd, Somers, MT 59932
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 857-2060"
+                class="emotion-21"
+              >
+                (406) 857-2060
+              </a>
+            </div>
+          </address>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-47"
       >
-        <div
-          class="card"
+        <a
+          href="http://bestwesternflatheadlake.com"
+          rel="nofollow"
         >
-          <a
-            href="http://outlookinnbandb.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh5.googleusercontent.com/p/AF1QipP6DfmJnGhCT_brALxXqoV-ldPxWuavT-KKvPPe=w408-h273-k-no"
-              alt="Outlook Inn Bed and Breakfast"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536"
+            alt="Best Western Plus Flathead Lake Inn and Suites"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://bestwesternflatheadlake.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://outlookinnbandb.com"
-                rel="nofollow"
-              >
-                Outlook Inn Bed and Breakfast
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/am3u2e5nG9Q2"
-                >
-                  175 Boon Rd, Somers, MT 59932
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 857-2060"
-                >
-                  (406) 857-2060
-                </a>
-              </div>
-            </div>
+              Best Western Plus Flathead Lake Inn and Suites
+            </a>
           </div>
+          <p>
+            $199–$219
+          </p>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/GshRHRYWWHT2"
+                class="emotion-21"
+              >
+                4824 US Highway 93 S, Kalispell, MT 59901
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 857-2400"
+                class="emotion-21"
+              >
+                (406) 857-2400
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
+          rel="nofollow"
         >
-          <a
-            href="http://bestwesternflatheadlake.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536"
-              alt="Best Western Plus Flathead Lake Inn and Suites"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no"
+            alt="Hilton Garden Inn Kalispell"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://bestwesternflatheadlake.com"
-                rel="nofollow"
-              >
-                Best Western Plus Flathead Lake Inn and Suites
-              </a>
-            </h5>
-            <h6
-              class="card-subtitle"
-            >
-              $199–$219
-            </h6>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/GshRHRYWWHT2"
-                >
-                  4824 US Highway 93 S, Kalispell, MT 59901
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 857-2400"
-                >
-                  (406) 857-2400
-                </a>
-              </div>
-            </div>
+              Hilton Garden Inn Kalispell
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/ZdHX7Scv3Z22"
+                class="emotion-21"
+              >
+                1840 Highway 93 South, Kalispell, MT, 59901
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 756-4500"
+                class="emotion-21"
+              >
+                (406) 756-4500
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.somersbaycabins.com"
+          rel="nofollow"
         >
-          <a
-            href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no"
-              alt="Hilton Garden Inn Kalispell"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://cdn.ostrovok.ru/t/1024x768/mec/hotels/8000000/7120000/7118600/7118558/7118558_15_b.jpg"
+            alt="Somer’s Bay Log Cabin"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.somersbaycabins.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
-                rel="nofollow"
-              >
-                Hilton Garden Inn Kalispell
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/ZdHX7Scv3Z22"
-                >
-                  1840 Highway 93 South, Kalispell, MT, 59901
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 756-4500"
-                >
-                  (406) 756-4500
-                </a>
-              </div>
-            </div>
+              Somer’s Bay Log Cabin
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/BbkY5V9RMDw"
+                class="emotion-21"
+              >
+                5496 Highway 93 South, Somers, MT 59932
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
+          rel="nofollow"
         >
-          <a
-            href="http://www.somersbaycabins.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://cdn.ostrovok.ru/t/1024x768/mec/hotels/8000000/7120000/7118600/7118558/7118558_15_b.jpg"
-              alt="Somer’s Bay Log Cabin"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipMwGIaY-rFy-uL4pYwy2zgApjQdN9ZJiCn_ZYSj=s1024"
+            alt="FairBridge Inn & Suites"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.somersbaycabins.com"
-                rel="nofollow"
-              >
-                Somer’s Bay Log Cabin
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/BbkY5V9RMDw"
-                >
-                  5496 Highway 93 South, Somers, MT 59932
-                </a>
-              </div>
-            </div>
+              FairBridge Inn & Suites
+            </a>
           </div>
+          <p>
+            $129–$159
+          </p>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/5rr3juZy5Yz"
+                class="emotion-21"
+              >
+                1701 Highway 93 South, Kalispell, MT, 59901
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 755-6100"
+                class="emotion-21"
+              >
+                (406) 755-6100
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://sunrisevistainn.weebly.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipMwGIaY-rFy-uL4pYwy2zgApjQdN9ZJiCn_ZYSj=s1024"
-              alt="FairBridge Inn & Suites"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="http://sunrisevistainn.weebly.com/uploads/5/3/4/1/53416569/8098879_orig.jpg"
+            alt="Sunrise Vista Inn"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://sunrisevistainn.weebly.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
-                rel="nofollow"
-              >
-                FairBridge Inn & Suites
-              </a>
-            </h5>
-            <h6
-              class="card-subtitle"
-            >
-              $129–$159
-            </h6>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/5rr3juZy5Yz"
-                >
-                  1701 Highway 93 South, Kalispell, MT, 59901
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 755-6100"
-                >
-                  (406) 755-6100
-                </a>
-              </div>
-            </div>
+              Sunrise Vista Inn
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/mQ1WixYQD142"
+                class="emotion-21"
+              >
+                7005 Highway 93 S, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-0231"
+                class="emotion-21"
+              >
+                (406) 844-0231
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://edgewaterrv.com"
+          rel="nofollow"
         >
-          <a
-            href="http://sunrisevistainn.weebly.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="http://sunrisevistainn.weebly.com/uploads/5/3/4/1/53416569/8098879_orig.jpg"
-              alt="Sunrise Vista Inn"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="http://www.passportamerica.com/img/campgrounds/3358/CG-3278_4.png"
+            alt="Edgewater RV Resort & Motel"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://edgewaterrv.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://sunrisevistainn.weebly.com"
-                rel="nofollow"
-              >
-                Sunrise Vista Inn
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/mQ1WixYQD142"
-                >
-                  7005 Highway 93 S, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-0231"
-                >
-                  (406) 844-0231
-                </a>
-              </div>
-            </div>
+              Edgewater RV Resort & Motel
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/tVCfyofRppH2"
+                class="emotion-21"
+              >
+                7140 US-93, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-3644"
+                class="emotion-21"
+              >
+                (406) 844-3644
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.peacefulbayresort.com"
+          rel="nofollow"
         >
-          <a
-            href="http://edgewaterrv.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="http://www.passportamerica.com/img/campgrounds/3358/CG-3278_4.png"
-              alt="Edgewater RV Resort & Motel"
-              class="card-img-top"
-            />
-          </a>
-          <div
-            class="card-body"
-          >
-            <h5
-              class="card-title"
-            >
-              <a
-                href="http://edgewaterrv.com"
-                rel="nofollow"
-              >
-                Edgewater RV Resort & Motel
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/tVCfyofRppH2"
-                >
-                  7140 US-93, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-3644"
-                >
-                  (406) 844-3644
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <img
+            src="http://www.peacefulbayresort.com/images/pb-on-the-hill-sm.jpg"
+            alt="Peaceful Bay Resort & Club"
+            class="emotion-40"
+          />
+        </a>
         <div
-          class="card"
+          class="emotion-46"
         >
-          <a
-            href="http://www.peacefulbayresort.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="http://www.peacefulbayresort.com/images/pb-on-the-hill-sm.jpg"
-              alt="Peaceful Bay Resort & Club"
-              class="card-img-top"
-            />
-          </a>
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.peacefulbayresort.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.peacefulbayresort.com"
-                rel="nofollow"
-              >
-                Peaceful Bay Resort & Club
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/V32mgjc37Q62"
-                >
-                  59901, 137 Peaceful Ln, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
+              Peaceful Bay Resort & Club
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/V32mgjc37Q62"
+                class="emotion-21"
+              >
+                59901, 137 Peaceful Ln, Lakeside, MT 59922
+              </a>
+            </div>
+          </address>
         </div>
       </div>
     </div>
   </section>
   <section
     id="foodList"
-    class="emotion-3"
+    class="emotion-38"
     aria-labelledby="foodList-description"
   >
+    <h1
+      id="foodList-description"
+      class="emotion-18"
+    >
+      <span
+        role="img"
+        aria-label="burger"
+      >
+        🍔
+      </span>
+      Where to Eat?
+    </h1>
     <div
-      class="p-md-4 py-4 container-fluid"
+      class="emotion-102"
     >
       <div
-        class="row"
+        class="emotion-47"
       >
-        <div
-          class="col"
+        <a
+          href="https://www.facebook.com/glacier.perks.coffee/"
+          rel="nofollow"
         >
-          <h1
-            id="foodList-description"
-            class="mb-3"
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
+            alt="Glacier Perks Coffee House"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
+          <div
+            class="emotion-42"
           >
-            <span
-              role="img"
-              aria-label="burger"
+            <a
+              href="https://www.facebook.com/glacier.perks.coffee/"
+              rel="nofollow"
+              class="emotion-21"
             >
-              🍔
-            </span>
-            Where to Eat?
-          </h1>
+              Glacier Perks Coffee House
+            </a>
+          </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/jugv4Y9a1cB2"
+                class="emotion-21"
+              >
+                7235 US Highway 93 S, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-0908"
+                class="emotion-21"
+              >
+                (406) 844-0908
+              </a>
+            </div>
+          </address>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-47"
       >
-        <div
-          class="card"
+        <a
+          href="http://www.farmhouselakeside.com"
+          rel="nofollow"
         >
-          <a
-            href="https://www.facebook.com/glacier.perks.coffee/"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
-              alt="Glacier Perks Coffee House"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024"
+            alt="The Farmhouse Restaurant"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.farmhouselakeside.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="https://www.facebook.com/glacier.perks.coffee/"
-                rel="nofollow"
-              >
-                Glacier Perks Coffee House
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/jugv4Y9a1cB2"
-                >
-                  7235 US Highway 93 S, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-0908"
-                >
-                  (406) 844-0908
-                </a>
-              </div>
-            </div>
+              The Farmhouse Restaurant
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/torto64XEY12"
+                class="emotion-21"
+              >
+                306 Stoner Loop, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-0610"
+                class="emotion-21"
+              >
+                (406) 844-0610
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="https://www.tamarackbrewing.com/lakeside"
+          rel="nofollow"
         >
-          <a
-            href="http://www.farmhouselakeside.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024"
-              alt="The Farmhouse Restaurant"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024"
+            alt="Tamarack Brewing Company"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="https://www.tamarackbrewing.com/lakeside"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.farmhouselakeside.com"
-                rel="nofollow"
-              >
-                The Farmhouse Restaurant
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/torto64XEY12"
-                >
-                  306 Stoner Loop, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-0610"
-                >
-                  (406) 844-0610
-                </a>
-              </div>
-            </div>
+              Tamarack Brewing Company
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/sTZ8XbjgAiG2"
+                class="emotion-21"
+              >
+                105 Blacktail Road, Lakeside, MT
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-0244"
+                class="emotion-21"
+              >
+                (406) 844-0244
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="https://www.facebook.com/homesteadcafebarandcasino/"
+          rel="nofollow"
         >
-          <a
-            href="https://www.tamarackbrewing.com/lakeside"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024"
-              alt="Tamarack Brewing Company"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024"
+            alt="Homestead Cafe"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="https://www.facebook.com/homesteadcafebarandcasino/"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="https://www.tamarackbrewing.com/lakeside"
-                rel="nofollow"
-              >
-                Tamarack Brewing Company
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/sTZ8XbjgAiG2"
-                >
-                  105 Blacktail Road, Lakeside, MT
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-0244"
-                >
-                  (406) 844-0244
-                </a>
-              </div>
-            </div>
+              Homestead Cafe
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/9YQK8DymPK52"
+                class="emotion-21"
+              >
+                7262 US Highway 93, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-3926"
+                class="emotion-21"
+              >
+                (406) 844-3926
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
+          rel="nofollow"
         >
-          <a
-            href="https://www.facebook.com/homesteadcafebarandcasino/"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024"
-              alt="Homestead Cafe"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
+            alt="Dairy Queen"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="https://www.facebook.com/homesteadcafebarandcasino/"
-                rel="nofollow"
-              >
-                Homestead Cafe
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/9YQK8DymPK52"
-                >
-                  7262 US Highway 93, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-3926"
-                >
-                  (406) 844-3926
-                </a>
-              </div>
-            </div>
+              Dairy Queen
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/LR9qrqDZ3DN2"
+                class="emotion-21"
+              >
+                7170 HWY 93 S, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-3844"
+                class="emotion-21"
+              >
+                (406) 844-3844
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
+          rel="nofollow"
         >
-          <a
-            href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
-              alt="Dairy Queen"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
+            alt="Winchester Steak House"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
-                rel="nofollow"
-              >
-                Dairy Queen
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/LR9qrqDZ3DN2"
-                >
-                  7170 HWY 93 S, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-3844"
-                >
-                  (406) 844-3844
-                </a>
-              </div>
-            </div>
+              Winchester Steak House
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/RN46pwo4Be92"
+                class="emotion-21"
+              >
+                2205 US Highway 93 S, Kalispell, MT 59901
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 257-8188"
+                class="emotion-21"
+              >
+                (406) 257-8188
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://scottysmt.com"
+          rel="nofollow"
         >
-          <a
-            href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
-              alt="Winchester Steak House"
-              class="card-img-top"
-            />
-          </a>
-          <div
-            class="card-body"
-          >
-            <h5
-              class="card-title"
-            >
-              <a
-                href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
-                rel="nofollow"
-              >
-                Winchester Steak House
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/RN46pwo4Be92"
-                >
-                  2205 US Highway 93 S, Kalispell, MT 59901
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 257-8188"
-                >
-                  (406) 257-8188
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
+            alt="Scotty's Bar"
+            class="emotion-40"
+          />
+        </a>
         <div
-          class="card"
+          class="emotion-46"
         >
-          <a
-            href="http://scottysmt.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
-              alt="Scotty's Bar"
-              class="card-img-top"
-            />
-          </a>
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://scottysmt.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://scottysmt.com"
-                rel="nofollow"
-              >
-                Scotty's Bar
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/fpx285LR8JL2"
-                >
-                  2205 US Highway 93 S, Kalispell, MT 59901
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 257-8188"
-                >
-                  (406) 257-8188
-                </a>
-              </div>
-            </div>
+              Scotty's Bar
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/fpx285LR8JL2"
+                class="emotion-21"
+              >
+                2205 US Highway 93 S, Kalispell, MT 59901
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 257-8188"
+                class="emotion-21"
+              >
+                (406) 257-8188
+              </a>
+            </div>
+          </address>
         </div>
       </div>
     </div>
   </section>
   <section
     id="activityList"
-    class="emotion-2"
+    class="emotion-34"
     aria-labelledby="activityList-description"
   >
+    <h1
+      id="activityList-description"
+      class="emotion-18"
+    >
+      <span
+        role="img"
+        aria-label="biking woman"
+      >
+        🚴🏽‍♀️
+      </span>
+      What to Do?
+    </h1>
     <div
-      class="p-md-4 py-4 container-fluid"
+      class="emotion-102"
     >
       <div
-        class="row"
+        class="emotion-47"
       >
-        <div
-          class="col"
+        <a
+          href="https://www.nps.gov/glac/index.htm"
+          rel="nofollow"
         >
-          <h1
-            id="activityList-description"
-            class="mb-3"
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipMneZ7VhRLaiEaUTBhRo1CWqUzv3hs-gBP3fYkM=s1024"
+            alt="Glacier National Park"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
+          <div
+            class="emotion-42"
           >
-            <span
-              role="img"
-              aria-label="biking woman"
+            <a
+              href="https://www.nps.gov/glac/index.htm"
+              rel="nofollow"
+              class="emotion-21"
             >
-              🚴🏽‍♀️
-            </span>
-            What to Do?
-          </h1>
+              Glacier National Park
+            </a>
+          </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/SR32JLrbeb62"
+                class="emotion-21"
+              >
+                Glacier National Park, MT
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 888-7800"
+                class="emotion-21"
+              >
+                (406) 888-7800
+              </a>
+            </div>
+          </address>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-47"
       >
-        <div
-          class="card"
+        <a
+          href="http://www.flatheadlakeboattour.com"
+          rel="nofollow"
         >
-          <a
-            href="https://www.nps.gov/glac/index.htm"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipMneZ7VhRLaiEaUTBhRo1CWqUzv3hs-gBP3fYkM=s1024"
-              alt="Glacier National Park"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
+            alt="Far West Boat Tours"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.flatheadlakeboattour.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="https://www.nps.gov/glac/index.htm"
-                rel="nofollow"
-              >
-                Glacier National Park
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/SR32JLrbeb62"
-                >
-                  Glacier National Park, MT
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 888-7800"
-                >
-                  (406) 888-7800
-                </a>
-              </div>
-            </div>
+              Far West Boat Tours
+            </a>
           </div>
+          <p>
+            Adults $22, Children 6–12: $10
+          </p>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/9eSbLLUZ58L2"
+                class="emotion-21"
+              >
+                Lakeside Marina, 7135 Hwy 93 South, Lakeside, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 844-2628"
+                class="emotion-21"
+              >
+                (406) 844-2628
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.spokeandpaddle.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.flatheadlakeboattour.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
-              alt="Far West Boat Tours"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="http://www.spokeandpaddle.com/images/sandflats.jpg"
+            alt="Spoke & Paddle Outdoor Adventures"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.spokeandpaddle.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.flatheadlakeboattour.com"
-                rel="nofollow"
-              >
-                Far West Boat Tours
-              </a>
-            </h5>
-            <h6
-              class="card-subtitle"
-            >
-              Adults $22, Children 6–12: $10
-            </h6>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/9eSbLLUZ58L2"
-                >
-                  Lakeside Marina, 7135 Hwy 93 South, Lakeside, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 844-2628"
-                >
-                  (406) 844-2628
-                </a>
-              </div>
-            </div>
+              Spoke & Paddle Outdoor Adventures
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/CJPCsbMfwdP2"
+                class="emotion-21"
+              >
+                10 Somers Rd, Somers, MT 59932
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 393-2133"
+                class="emotion-21"
+              >
+                (406) 393-2133
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.seamepaddle.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.spokeandpaddle.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="http://www.spokeandpaddle.com/images/sandflats.jpg"
-              alt="Spoke & Paddle Outdoor Adventures"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipNbgLiDCF3vj9_AMegijlQMaBJf9OvAImYPjqyN=s1024"
+            alt="Sea Me Paddle Kayaking Tours"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.seamepaddle.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.spokeandpaddle.com"
-                rel="nofollow"
-              >
-                Spoke & Paddle Outdoor Adventures
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/CJPCsbMfwdP2"
-                >
-                  10 Somers Rd, Somers, MT 59932
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 393-2133"
-                >
-                  (406) 393-2133
-                </a>
-              </div>
-            </div>
+              Sea Me Paddle Kayaking Tours
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/sJHiaKQe8zk"
+                class="emotion-21"
+              >
+                7220 Hwy 93 S #3, Lakeside,, MT 59922
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 249-1153"
+                class="emotion-21"
+              >
+                (406) 249-1153
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="https://glacierraftco.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.seamepaddle.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipNbgLiDCF3vj9_AMegijlQMaBJf9OvAImYPjqyN=s1024"
-              alt="Sea Me Paddle Kayaking Tours"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://www.bmwunstoppable.com/wp-content/uploads/2017/04/maxresdefault-1-7.jpg"
+            alt="Glacier Raft Company"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="https://glacierraftco.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.seamepaddle.com"
-                rel="nofollow"
-              >
-                Sea Me Paddle Kayaking Tours
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/sJHiaKQe8zk"
-                >
-                  7220 Hwy 93 S #3, Lakeside,, MT 59922
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 249-1153"
-                >
-                  (406) 249-1153
-                </a>
-              </div>
-            </div>
+              Glacier Raft Company
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/cRRSk9WZ6ny"
+                class="emotion-21"
+              >
+                106 Going-To-The-Sun Rd, West Glacier, MT 59936
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 888-5454"
+                class="emotion-21"
+              >
+                (406) 888-5454
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
+          rel="nofollow"
         >
-          <a
-            href="https://glacierraftco.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://www.bmwunstoppable.com/wp-content/uploads/2017/04/maxresdefault-1-7.jpg"
-              alt="Glacier Raft Company"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg"
+            alt="Bigfork"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="https://glacierraftco.com"
-                rel="nofollow"
-              >
-                Glacier Raft Company
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/cRRSk9WZ6ny"
-                >
-                  106 Going-To-The-Sun Rd, West Glacier, MT 59936
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 888-5454"
-                >
-                  (406) 888-5454
-                </a>
-              </div>
-            </div>
+              Bigfork
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/nd9GxmGTmJv"
+                class="emotion-21"
+              >
+                Bigfork, MT
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.boatrentalsandrides.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg"
-              alt="Bigfork"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipPOnBM5O5btlHaud1AH-QlcdmbFp-apN3jGtF8j=s1024"
+            alt="Boat Rentals and Rides"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.boatrentalsandrides.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
-                rel="nofollow"
-              >
-                Bigfork
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/nd9GxmGTmJv"
-                >
-                  Bigfork, MT
-                </a>
-              </div>
-            </div>
+              Boat Rentals and Rides
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/WvUwTE5xy882"
+                class="emotion-21"
+              >
+                44227 A St, Big Arm, MT 59910
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 260-5090"
+                class="emotion-21"
+              >
+                (406) 260-5090
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.flatheadlakesailing.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.boatrentalsandrides.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipPOnBM5O5btlHaud1AH-QlcdmbFp-apN3jGtF8j=s1024"
-              alt="Boat Rentals and Rides"
-              class="card-img-top"
-            />
-          </a>
+          <img
+            src="https://static1.squarespace.com/static/54da76f0e4b004762df44faa/t/54f7394ce4b0aff87aef4f08/1425488206828/FLR2032.jpg"
+            alt="Flathead Lake Sailing & Charters"
+            class="emotion-40"
+          />
+        </a>
+        <div
+          class="emotion-46"
+        >
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.flatheadlakesailing.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.boatrentalsandrides.com"
-                rel="nofollow"
-              >
-                Boat Rentals and Rides
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/WvUwTE5xy882"
-                >
-                  44227 A St, Big Arm, MT 59910
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 260-5090"
-                >
-                  (406) 260-5090
-                </a>
-              </div>
-            </div>
+              Flathead Lake Sailing & Charters
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/nzUd172fAPr"
+                class="emotion-21"
+              >
+                150 Flathead Lodge Rd, Bigfork, MT 59911
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 837-5569"
+                class="emotion-21"
+              >
+                (406) 837-5569
+              </a>
+            </div>
+          </address>
         </div>
-        <div
-          class="card"
+      </div>
+      <div
+        class="emotion-47"
+      >
+        <a
+          href="http://www.wildhorseislandboattrips.com"
+          rel="nofollow"
         >
-          <a
-            href="http://www.flatheadlakesailing.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://static1.squarespace.com/static/54da76f0e4b004762df44faa/t/54f7394ce4b0aff87aef4f08/1425488206828/FLR2032.jpg"
-              alt="Flathead Lake Sailing & Charters"
-              class="card-img-top"
-            />
-          </a>
-          <div
-            class="card-body"
-          >
-            <h5
-              class="card-title"
-            >
-              <a
-                href="http://www.flatheadlakesailing.com"
-                rel="nofollow"
-              >
-                Flathead Lake Sailing & Charters
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/nzUd172fAPr"
-                >
-                  150 Flathead Lodge Rd, Bigfork, MT 59911
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 837-5569"
-                >
-                  (406) 837-5569
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <img
+            src="https://lh3.ggpht.com/p/AF1QipMuV4H2G2h4_I0oCPKyTxmuMVOBeEEqjqcTvdDb=s1024"
+            alt="WildHorse Island Boat Trips"
+            class="emotion-40"
+          />
+        </a>
         <div
-          class="card"
+          class="emotion-46"
         >
-          <a
-            href="http://www.wildhorseislandboattrips.com"
-            rel="nofollow"
-          >
-            <img
-              width="100%"
-              src="https://lh3.ggpht.com/p/AF1QipMuV4H2G2h4_I0oCPKyTxmuMVOBeEEqjqcTvdDb=s1024"
-              alt="WildHorse Island Boat Trips"
-              class="card-img-top"
-            />
-          </a>
           <div
-            class="card-body"
+            class="emotion-42"
           >
-            <h5
-              class="card-title"
+            <a
+              href="http://www.wildhorseislandboattrips.com"
+              rel="nofollow"
+              class="emotion-21"
             >
-              <a
-                href="http://www.wildhorseislandboattrips.com"
-                rel="nofollow"
-              >
-                WildHorse Island Boat Trips
-              </a>
-            </h5>
-            <div
-              class="emotion-5 card-text"
-            >
-              <div
-                class="emotion-1"
-              >
-                <span
-                  role="img"
-                  aria-label="round pushpin"
-                >
-                  📍
-                </span>
-                <a
-                  href="https://goo.gl/maps/Ni7GehCRdDR2"
-                >
-                  452 Grand Drive, Bigfork, MT 59911
-                </a>
-              </div>
-            </div>
-            <div
-              class="card-text"
-            >
-              <div>
-                <span
-                  role="img"
-                  aria-label="phone receiver"
-                >
-                  📞
-                </span>
-                <a
-                  href="tel:(406) 837-5617"
-                >
-                  (406) 837-5617
-                </a>
-              </div>
-            </div>
+              WildHorse Island Boat Trips
+            </a>
           </div>
+          <address>
+            <div
+              class="emotion-25"
+            >
+              <span
+                role="img"
+                aria-label="round pushpin"
+              >
+                📍
+              </span>
+              <a
+                href="https://goo.gl/maps/Ni7GehCRdDR2"
+                class="emotion-21"
+              >
+                452 Grand Drive, Bigfork, MT 59911
+              </a>
+            </div>
+            <div>
+              <span
+                role="img"
+                aria-label="phone receiver"
+              >
+                📞
+              </span>
+              <a
+                href="tel:(406) 837-5617"
+                class="emotion-21"
+              >
+                (406) 837-5617
+              </a>
+            </div>
+          </address>
         </div>
       </div>
     </div>
   </section>
   <section
     id="contactUs"
-    class="emotion-3"
+    class="emotion-38"
     aria-labelledby="contactUs-description"
   >
-    <div
-      class="p-md-4 py-4 container-fluid"
+    <h1
+      id="contactUs-description"
+      class="emotion-18"
     >
-      <div
-        class="row"
+      <span
+        role="img"
+        aria-label="woman raising hand"
       >
-        <div
-          class="col"
-        >
-          <h1
-            id="contactUs-description"
-            class="mb-3"
-          >
-            <span
-              role="img"
-              aria-label="woman raising hand"
-            >
-              🙋🏻‍♀️
-            </span>
-            Questions?
-          </h1>
-          <form
-            action="https://formspree.io/birky50@damacy.net"
-            method="POST"
-            class=""
-          >
-            <div
-              class="row form-group"
-            >
-              <label
-                for="contact_us_name"
-                class="col-md-1 col-form-label"
-              >
-                Name
-              </label>
-              <div
-                class="col-md-6 col-lg-5"
-              >
-                <input
-                  name="name"
-                  id="contact_us_name"
-                  placeholder="Your Name"
-                  required=""
-                  type="text"
-                  class="form-control"
-                />
-              </div>
-            </div>
-            <div
-              class="row form-group"
-            >
-              <label
-                for="contact_us_email"
-                class="col-md-1 col-form-label"
-              >
-                Email
-              </label>
-              <div
-                class="col-md-6 col-lg-5"
-              >
-                <input
-                  name="email"
-                  id="contact_us_email"
-                  placeholder="Your Email"
-                  required=""
-                  type="email"
-                  class="form-control"
-                />
-              </div>
-            </div>
-            <div
-              class="row form-group"
-            >
-              <label
-                for="contact_us_message"
-                class="col-md-1 col-form-label"
-              >
-                Message
-              </label>
-              <div
-                class="col-md-6 col-lg-5"
-              >
-                <textarea
-                  name="message"
-                  id="contact_us_message"
-                  placeholder="Message"
-                  rows="3"
-                  required=""
-                  type="textarea"
-                  class="form-control"
-                />
-              </div>
-            </div>
-            <input
-              type="hidden"
-              name="_subject"
-              value="Birky 50th Anniversary Message"
-            />
-            <input
-              type="hidden"
-              name="_gotcha"
-            />
-            <div
-              class="row"
-            >
-              <div
-                class="col-md-5 offset-md-1"
-              >
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                >
-                  Send
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+        🙋🏻‍♀️
+      </span>
+      Questions?
+    </h1>
+    <form
+      action="https://formspree.io/birky50@damacy.net"
+      method="POST"
+      class="emotion-242"
+    >
+      <label
+        for="contact_us_name"
+      >
+        Name
+      </label>
+      <input
+        type="text"
+        name="name"
+        id="contact_us_name"
+        placeholder="Your Name"
+        required=""
+        class="emotion-238"
+      />
+      <label
+        for="contact_us_email"
+      >
+        Email
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="contact_us_email"
+        placeholder="Your Email"
+        required=""
+        class="emotion-238"
+      />
+      <label
+        for="contact_us_message"
+      >
+        Message
+      </label>
+      <textarea
+        name="message"
+        id="contact_us_message"
+        placeholder="Message"
+        rows="3"
+        required=""
+        class="emotion-238"
+      />
+      <input
+        type="hidden"
+        name="_subject"
+        value="Birky 50th Anniversary Message"
+      />
+      <input
+        type="hidden"
+        name="_gotcha"
+      />
+      <button
+        type="submit"
+        class="emotion-241"
+      >
+        Send
+      </button>
+    </form>
   </section>
 </div>
 `;

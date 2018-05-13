@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "reactstrap";
+import { css } from "emotion";
 
 import { SectionProvider } from "../contexts/SectionContext";
 
@@ -12,10 +12,15 @@ const forwardRef = (render, displayName = "") => {
 export default forwardRef(
   (props, ref) => (
     <SectionProvider id={props.id}>
-      <section {...props} ref={ref}>
-        <Container fluid className="p-md-4 py-4">
-          {props.children}
-        </Container>
+      <section
+        {...props}
+        ref={ref}
+        className={css`
+          ${props.className};
+          padding: 1.5rem;
+        `}
+      >
+        {props.children}
       </section>
     </SectionProvider>
   ),

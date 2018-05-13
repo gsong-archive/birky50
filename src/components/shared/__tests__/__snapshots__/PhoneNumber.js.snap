@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PhoneNumber is rendered 1`] = `
+.emotion-0 {
+  color: #8a5e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div>
   <span
     role="img"
@@ -10,6 +16,7 @@ exports[`PhoneNumber is rendered 1`] = `
   </span>
   <a
     href="tel:503-123-4567"
+    class="emotion-0"
   >
     503-123-4567
   </a>

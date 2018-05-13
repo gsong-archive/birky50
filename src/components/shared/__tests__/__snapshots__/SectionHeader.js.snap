@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionHeader is rendered 1`] = `
+.emotion-0 {
+  margin-bottom: 1rem;
+}
+
 <h1
   id="uniqueId-description"
-  class="mb-3"
+  class="emotion-0"
 >
   I'm a child.
 </h1>

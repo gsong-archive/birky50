@@ -1,9 +1,10 @@
 import React from "react";
+import styled from "react-emotion";
 
-import { Nav, NavItem, NavLink } from "reactstrap";
+import { Link } from "../styles/components";
 
 export default ({ sections, onClick }) => {
-  const navItems = sections.map(({ id, navLabel, LabelComponent }) => (
+  const navItems = sections.map(({ id, navLabel, LabelComponent }, i) => (
     <NavItem key={id}>
       <NavLink href={`#${id}`} onClick={onClick(id)}>
         <LabelComponent label={navLabel} />
@@ -11,5 +12,28 @@ export default ({ sections, onClick }) => {
     </NavItem>
   ));
 
-  return <Nav fill={true}>{navItems}</Nav>;
+  return (
+    <nav>
+      <NavContainer>{navItems}</NavContainer>
+    </nav>
+  );
 };
+
+const NavContainer = styled("ul")`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const NavItem = styled("li")`
+  flex-grow: 1;
+  text-align: center;
+`;
+
+const NavLink = styled(Link)`
+  display: block;
+  padding: 0.75rem 1rem;
+`;
