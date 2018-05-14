@@ -2,8 +2,8 @@
 
 exports[`Address is rendered 1`] = `
 .emotion-1 {
-  margin-left: 1.5rem;
-  text-indent: -1.5rem;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
 }
 
 .emotion-0 {

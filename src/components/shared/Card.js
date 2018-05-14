@@ -47,6 +47,6 @@ const CardImg = styled("img")`
 
 const CardTitle = styled("div")`
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.4;
   margin-bottom: 0.75rem;
 `;

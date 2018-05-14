@@ -118,6 +118,9 @@ exports[`App renders 1`] = `
 }
 
 .emotion-18 {
+  margin-left: 1.4em;
+  text-indent: -1.4em;
+  line-height: 1.1;
   margin-bottom: 1rem;
 }
 
@@ -173,8 +176,8 @@ exports[`App renders 1`] = `
 }
 
 .emotion-25 {
-  margin-left: 1.5rem;
-  text-indent: -1.5rem;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
 }
 
 .emotion-27 {
@@ -270,7 +273,7 @@ exports[`App renders 1`] = `
 
 .emotion-43 {
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 

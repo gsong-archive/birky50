@@ -8,8 +8,8 @@ import { Location } from "./EmojiLabels";
 export default ({ address, url }) => (
   <div
     className={css`
-      margin-left: 1.5rem;
-      text-indent: -1.5rem;
+      margin-left: 1.5em;
+      text-indent: -1.5em;
     `}
   >
     <Location label={<Link href={url}>{address}</Link>} />
