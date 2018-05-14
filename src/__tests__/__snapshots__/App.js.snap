@@ -450,7 +450,7 @@ exports[`App renders 1`] = `
       </li>
     </ul>
   </nav>
-  <section
+  <main
     id="event"
     class="emotion-35"
     aria-labelledby="event-description"
@@ -583,7 +583,7 @@ exports[`App renders 1`] = `
         </div>
       </div>
     </div>
-  </section>
+  </main>
   <section
     id="airport"
     class="emotion-39"

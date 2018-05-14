@@ -23,9 +23,10 @@ export default class App extends React.Component {
   );
 
   renderSection = (
-    { id, sectionLabel, SectionComponent, LabelComponent },
+    { id, sectionLabel, sectionTag, SectionComponent, LabelComponent },
     i
   ) => {
+    const tag = sectionTag ? sectionTag : "section";
     const style = this._getStyle(i);
     this._refs[id] = React.createRef();
 
@@ -34,6 +35,7 @@ export default class App extends React.Component {
         id={id}
         ref={this._refs[id]}
         key={id}
+        tag={tag}
         className={style}
         aria-labelledby={`${id}-description`}
       >

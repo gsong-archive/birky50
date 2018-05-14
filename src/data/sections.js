@@ -18,6 +18,7 @@ export default [
     id: "event",
     navLabel: "Details",
     sectionLabel: "Celebration Details",
+    sectionTag: "main",
     SectionComponent: Event,
     LabelComponent: PartyHat
   },

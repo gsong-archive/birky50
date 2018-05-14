@@ -7,7 +7,7 @@ import Section from "../Section";
 test("Section renders properly", () => {
   const ref = React.createRef();
   const { container } = render(
-    <Section id="id" ref={ref}>
+    <Section tag="section" id="id" ref={ref}>
       Child
     </Section>
   );

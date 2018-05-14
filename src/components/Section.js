@@ -9,20 +9,16 @@ const forwardRef = (render, displayName = "") => {
   return React.forwardRef(render);
 };
 
-export default forwardRef(
-  (props, ref) => (
-    <SectionProvider id={props.id}>
-      <section
-        {...props}
-        ref={ref}
-        className={css`
-          ${props.className};
-          padding: 1.5rem;
-        `}
-      >
-        {props.children}
-      </section>
-    </SectionProvider>
-  ),
-  "Section"
-);
+export default forwardRef((props, ref) => {
+  const sectionProps = Object.assign({}, props, {
+    ref,
+    className: css`
+      ${props.className};
+      padding: 1.5rem;
+    `
+  });
+  delete sectionProps.tag;
+  const section = React.createElement(props.tag, sectionProps);
+
+  return <SectionProvider id={props.id}>{section}</SectionProvider>;
+}, "Section");
