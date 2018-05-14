@@ -26,14 +26,7 @@ export default class App extends React.Component {
     { id, sectionLabel, SectionComponent, LabelComponent },
     i
   ) => {
-    const style =
-      i % 2 === 0
-        ? css`
-            background-color: rgba(64, 60, 127, 0.2);
-          `
-        : css`
-            background-color: rgba(182, 174, 71, 0.2);
-          `;
+    const style = this._getStyle(i);
     this._refs[id] = React.createRef();
 
     return (
@@ -60,4 +53,13 @@ export default class App extends React.Component {
       block: "start"
     });
   };
+
+  _getStyle = index =>
+    index % 2 === 0
+      ? css`
+          background-color: rgba(64, 60, 127, 0.2);
+        `
+      : css`
+          background-color: rgba(182, 174, 71, 0.2);
+        `;
 }
