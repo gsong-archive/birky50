@@ -16,18 +16,18 @@ beforeAll(async () => {
 
 describe("Click item in nav menu should scroll to section", () => {
   const sections = {
-    Details: "Details",
-    Airport: "Where to Fly",
+    Details: "Celebration Details",
+    Airport: "Where to Fly Into",
     Lodging: "Where to Stay",
     Food: "Where to Eat",
     Activities: "What to Do",
     Questions: "Questions"
   };
 
-  Object.entries(sections).forEach(([item, sectionLabel], i) => {
-    test(item, async () => {
-      const link = await getByText(page, "a", item);
-      const section = await getByText(page, "section//*", sectionLabel);
+  Object.entries(sections).forEach(([navLabel, sectionLabel], i) => {
+    test(navLabel, async () => {
+      const link = await getByText(page, "nav//*", navLabel);
+      const section = await getByText(page, "h1", sectionLabel);
 
       // 1. Click on nav menu link
       // 2. Wait for the screen to stop scrolling
@@ -36,7 +36,7 @@ describe("Click item in nav menu should scroll to section", () => {
       await stoppedScrolling(section);
       await isVisibleInViewPort(section);
 
-      await screenshot(`${i}-${item}`);
+      await screenshot(`${i}-${navLabel}`);
     });
   });
 });

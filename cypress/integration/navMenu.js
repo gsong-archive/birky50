@@ -11,8 +11,8 @@ before(() => {
 
 describe("Click item in nav menu should scroll to section", () => {
   const sections = {
-    Details: "Details",
-    Airport: "Where to Fly",
+    Details: "Celebration Details",
+    Airport: "Where to Fly Into",
     Lodging: "Where to Stay",
     Food: "Where to Eat",
     Activities: "What to Do",
@@ -20,26 +20,29 @@ describe("Click item in nav menu should scroll to section", () => {
   };
   let boundingBox;
 
-  Object.entries(sections).forEach(([item, section], i) => {
-    it(item, () => {
+  Object.entries(sections).forEach(([navLabel, sectionLabel], i) => {
+    it(navLabel, () => {
       cy
-        .get("section")
-        .contains(section)
-        .as("sections")
-        .then(sections => (boundingBox = getBoundingBox(sections)));
+        .get("h1")
+        .contains(sectionLabel)
+        .as("section")
+        .then(section => (boundingBox = getBoundingBox(section)));
 
       // 1. Click on nav menu link
       // 2. Wait for the screen to stop scrolling
       // 3. The section associated with the link should be visible
-      cy.contains(item).click();
+      cy
+        .get("nav")
+        .contains(navLabel)
+        .click();
       cy.window().then(window => {
         cy
-          .get("@sections")
+          .get("@section")
           .should(stopScrolling)
           .and(beVisibleIn(window));
       });
 
-      cy.screenshot(`${i}-${item}`);
+      cy.screenshot(`${i}-${navLabel}`);
     });
   });
 
