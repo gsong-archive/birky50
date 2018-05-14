@@ -274,12 +274,12 @@ exports[`App renders 1`] = `
   margin-bottom: 0.75rem;
 }
 
-.emotion-243 {
+.emotion-246 {
   display: block;
 }
 
 @media (min-width:600px) {
-  .emotion-243 {
+  .emotion-246 {
     display: grid;
     grid-template-columns: 5rem 30rem;
     grid-row-gap: 1rem;
@@ -287,6 +287,16 @@ exports[`App renders 1`] = `
 }
 
 .emotion-239 {
+  padding-top: 0;
+}
+
+@media (min-width:600px) {
+  .emotion-239 {
+    padding-top: 0.375rem;
+  }
+}
+
+.emotion-240 {
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
   border: 1px solid #ced4da;
@@ -297,13 +307,13 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-239 {
+  .emotion-240 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-242 {
+.emotion-245 {
   grid-column-start: 2;
   justify-self: start;
   cursor: pointer;
@@ -2142,10 +2152,11 @@ exports[`App renders 1`] = `
     <form
       action="https://formspree.io/birky50@damacy.net"
       method="POST"
-      class="emotion-243"
+      class="emotion-246"
     >
       <label
         for="contact_us_name"
+        class="emotion-239"
       >
         Name
       </label>
@@ -2155,10 +2166,11 @@ exports[`App renders 1`] = `
         id="contact_us_name"
         placeholder="Your Name"
         required=""
-        class="emotion-239"
+        class="emotion-240"
       />
       <label
         for="contact_us_email"
+        class="emotion-239"
       >
         Email
       </label>
@@ -2168,10 +2180,11 @@ exports[`App renders 1`] = `
         id="contact_us_email"
         placeholder="Your Email"
         required=""
-        class="emotion-239"
+        class="emotion-240"
       />
       <label
         for="contact_us_message"
+        class="emotion-239"
       >
         Message
       </label>
@@ -2181,7 +2194,7 @@ exports[`App renders 1`] = `
         placeholder="Message"
         rows="3"
         required=""
-        class="emotion-239"
+        class="emotion-240"
       />
       <input
         type="hidden"
@@ -2194,7 +2207,7 @@ exports[`App renders 1`] = `
       />
       <button
         type="submit"
-        class="emotion-242"
+        class="emotion-245"
       >
         Send
       </button>

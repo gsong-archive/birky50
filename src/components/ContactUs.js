@@ -17,7 +17,7 @@ export default ({ LabelComponent, sectionLabel }) => {
       </SectionHeader>
 
       <Form action={`https://formspree.io/${sendTo}`} method="POST">
-        <label htmlFor="contact_us_name">Name</label>
+        <Label htmlFor="contact_us_name">Name</Label>
         <Input
           type="text"
           name="name"
@@ -26,7 +26,7 @@ export default ({ LabelComponent, sectionLabel }) => {
           required
         />
 
-        <label htmlFor="contact_us_email">Email</label>
+        <Label htmlFor="contact_us_email">Email</Label>
         <Input
           type="email"
           name="email"
@@ -35,7 +35,7 @@ export default ({ LabelComponent, sectionLabel }) => {
           required
         />
 
-        <label htmlFor="contact_us_message">Message</label>
+        <Label htmlFor="contact_us_message">Message</Label>
         <Textarea
           name="message"
           id="contact_us_message"
@@ -76,6 +76,8 @@ const Form = styled("form")(
     gridRowGap: [null, "1rem"]
   })
 );
+
+const Label = styled("label")(mq({ paddingTop: [0, "0.375rem"] }));
 
 const Input = styled("input")(
   formInput,
