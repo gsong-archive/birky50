@@ -7,13 +7,14 @@ export const borderRadius = css`
 `;
 
 export const formInput = css`
+  ${borderRadius};
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
   border: 1px solid ${colors.gray};
-  ${borderRadius};
 `;
 
 export const btn = css`
+  ${borderRadius};
   display: inline-block;
   font-size: 1rem;
   text-align: center;
@@ -21,7 +22,6 @@ export const btn = css`
   white-space: nowrap;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  ${borderRadius};
 `;
 
 export const btnLg = css`

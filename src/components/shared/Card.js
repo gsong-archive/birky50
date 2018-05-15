@@ -32,10 +32,8 @@ export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
 );
 
 const Card = styled("div")`
-  display: flex;
-  flex-direction: column;
-  background-color: white;
   ${borderRadius};
+  background-color: white;
 `;
 
 const CardImg = styled("img")`
@@ -43,6 +41,8 @@ const CardImg = styled("img")`
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   width: 100%;
+  height: 12rem;
+  object-fit: cover;
 `;
 
 const CardTitle = styled("div")`

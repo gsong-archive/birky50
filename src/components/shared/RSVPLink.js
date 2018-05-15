@@ -12,10 +12,10 @@ export default props => (
 );
 
 const Link = styled("a")`
+  ${btn};
+  ${btnLg};
   color: white;
   font-weight: bold;
   background-color: ${colors.secondary};
   width: ${props => (props.width ? props.width : "auto")};
-  ${btn};
-  ${btnLg};
 `;

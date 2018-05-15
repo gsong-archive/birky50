@@ -49,15 +49,22 @@ export default ({ LabelComponent, sectionLabel }) => {
 
           <ul
             className={css`
-              padding: 0;
               ${spanned};
+              padding: 0;
+              margin-top: 1.5rem;
             `}
           >
             <LI>Event will take place outdoors in a covered pavilion</LI>
             <LI>Dressy casual attire</LI>
           </ul>
 
-          <RSVPLink width="100%" className={spanned} />
+          <RSVPLink
+            width="100%"
+            className={css`
+              ${spanned};
+              margin-top: 0.5rem;
+            `}
+          />
         </EventDetails>
         <EventMap>
           <Map />
@@ -114,8 +121,8 @@ const TightP = styled("p")`
   margin: 0.25rem 0;
 `;
 
-const breakpoints = [900];
-const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+let breakpoints = [900];
+let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
 const Event = styled("div")(
   mq({
@@ -125,20 +132,23 @@ const Event = styled("div")(
   })
 );
 
-const EventDetails = styled("div")(
-  mq({
-    display: ["grid", "block"],
-    gridTemplateColumns: ["1fr 1fr"],
-    gridColumnGap: ["1rem"]
-  })
-);
-
 const EventMap = styled("div")(
   mq({
     marginTop: ["1.5rem", "0"]
   })
 );
 
-const whereHeader = css(mq({ marginTop: [0, "1.5rem"] }));
-
 const spanned = css(mq({ gridColumn: ["1 / 3"] }));
+
+breakpoints = [540, 900];
+mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+
+const EventDetails = styled("div")(
+  mq({
+    display: ["block", "grid", "block"],
+    gridTemplateColumns: [null, "1fr 1fr"],
+    gridColumnGap: [null, "3rem"]
+  })
+);
+
+const whereHeader = css(mq({ marginTop: ["1.5rem", 0, "1.5rem"] }));

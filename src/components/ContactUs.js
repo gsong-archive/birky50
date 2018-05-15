@@ -1,7 +1,7 @@
 import React from "react";
 
 import facepaint from "facepaint";
-import styled, { css } from "react-emotion";
+import styled from "react-emotion";
 
 import SectionHeader from "./shared/SectionHeader";
 import { btn, formInput } from "../styles";
@@ -58,12 +58,12 @@ export default ({ LabelComponent, sectionLabel }) => {
 };
 
 const Button = styled("button")`
+  ${btn};
   grid-column-start: 2;
   justify-self: start;
   cursor: pointer;
   background-color: ${colors.primary};
   color: white;
-  ${btn};
 `;
 
 const breakpoints = [600];
@@ -81,9 +81,7 @@ const Label = styled("label")(mq({ paddingTop: [0, "0.375rem"] }));
 
 const Input = styled("input")(
   formInput,
-  css`
-    display: block;
-  `,
+  { display: "block" },
   mq({ width: ["100%", "auto"], margin: [".5rem 0 1rem", 0] })
 );
 
