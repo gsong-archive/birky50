@@ -9,6 +9,7 @@ export const borderRadius = css`
 export const formInput = css`
   ${borderRadius};
   font-size: 1rem;
+  line-height: 1.5;
   padding: 0.375rem 0.75rem;
   border: 1px solid ${colors.gray};
 `;
