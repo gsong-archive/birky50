@@ -22,43 +22,42 @@ export default ({ LabelComponent, sectionLabel }) => {
 
       <Event>
         <EventDetails>
-          <h2>When?</h2>
-          <TightP>
-            <time dateTime="2018-06-23 16:00">Saturday, June 23, 2018</time>
-          </TightP>
-          <TightP>Starts at 4:00pm, dinner buffet at 5:00pm</TightP>
-          <Link href={eventIcs} download>
-            <Calendar label="Add to calendar" />
-          </Link>
+          <div>
+            <h2>When?</h2>
+            <TightP>
+              <time dateTime="2018-06-23 16:00">Saturday, June 23, 2018</time>
+            </TightP>
+            <TightP>Starts at 4:00pm, dinner buffet at 5:00pm</TightP>
+            <Link href={eventIcs} download>
+              <Calendar label="Add to calendar" />
+            </Link>
+          </div>
 
-          <h2
-            className={css`
-              margin-top: 1.5rem;
-            `}
-          >
-            Where?
-          </h2>
-          <Link href="http://vistalindacatering.com/" rel="nofollow">
-            Vista Linda Mexican & Catering
-          </Link>
-          <address>
-            <Address
-              address="240 Boon Rd, Somers, MT 59932"
-              url="https://goo.gl/maps/THRyvih62562"
-            />
-            <PhoneNumber number="(406) 857-3158" />
-          </address>
+          <div>
+            <h2 className={whereHeader}>Where?</h2>
+            <Link href="http://vistalindacatering.com/" rel="nofollow">
+              Vista Linda Mexican & Catering
+            </Link>
+            <address>
+              <Address
+                address="240 Boon Rd, Somers, MT 59932"
+                url="https://goo.gl/maps/THRyvih62562"
+              />
+              <PhoneNumber number="(406) 857-3158" />
+            </address>
+          </div>
 
           <ul
             className={css`
               padding: 0;
+              ${spanned};
             `}
           >
             <LI>Event will take place outdoors in a covered pavilion</LI>
             <LI>Dressy casual attire</LI>
           </ul>
 
-          <RSVPLink width="100%" />
+          <RSVPLink width="100%" className={spanned} />
         </EventDetails>
         <EventMap>
           <Map />
@@ -115,36 +114,31 @@ const TightP = styled("p")`
   margin: 0.25rem 0;
 `;
 
-const eventItem = css`
-  flex-grow: 0;
-  flex-shrink: 0;
-  padding: 0 1rem;
-`;
-
 const breakpoints = [900];
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
 const Event = styled("div")(
-  css`
-    display: flex;
-    margin: 0 -1rem;
-  `,
   mq({
-    flexWrap: ["wrap", "nowrap"]
+    display: ["block", "grid"],
+    gridTemplateColumns: [null, "1fr 2fr"],
+    gridColumnGap: [null, "1rem"]
   })
 );
 
 const EventDetails = styled("div")(
-  eventItem,
   mq({
-    flexBasis: ["100%", "calc(100% / 3)"]
+    display: ["grid", "block"],
+    gridTemplateColumns: ["1fr 1fr"],
+    gridColumnGap: ["1rem"]
   })
 );
 
 const EventMap = styled("div")(
-  eventItem,
   mq({
-    flexBasis: ["100%", "calc(100% / 3 * 2)"],
     marginTop: ["1.5rem", "0"]
   })
 );
+
+const whereHeader = css(mq({ marginTop: [0, "1.5rem"] }));
+
+const spanned = css(mq({ gridColumn: ["1 / 3"] }));
