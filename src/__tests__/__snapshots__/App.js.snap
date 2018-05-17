@@ -138,6 +138,12 @@ exports[`App renders 1`] = `
   margin-bottom: 1rem;
 }
 
+@media (max-width:350px) {
+  .emotion-18 {
+    font-size: 2.4rem;
+  }
+}
+
 .emotion-34 {
   display: block;
 }

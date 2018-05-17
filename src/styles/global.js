@@ -17,7 +17,7 @@ injectGlobal`
     margin: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2 {
     font-family: Work Sans,sans-serif;
     font-weight: 500;
     margin: 0 0 .5rem;

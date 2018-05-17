@@ -8,6 +8,12 @@ exports[`SectionHeader is rendered 1`] = `
   margin-bottom: 1rem;
 }
 
+@media (max-width:350px) {
+  .emotion-0 {
+    font-size: 2.4rem;
+  }
+}
+
 <h1
   id="uniqueId-description"
   class="emotion-0"
