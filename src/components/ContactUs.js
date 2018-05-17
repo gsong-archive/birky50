@@ -71,13 +71,13 @@ const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
 const Form = styled("form")(
   mq({
-    display: ["block", "grid"],
+    display: [null, "grid"],
     gridTemplateColumns: [null, "5rem 30rem"],
     gridRowGap: [null, "1rem"]
   })
 );
 
-const Label = styled("label")(mq({ paddingTop: [0, "0.375rem"] }));
+const Label = styled("label")(mq({ marginTop: [null, "0.575rem"] }));
 
 const Input = styled("input")(
   formInput,

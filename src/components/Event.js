@@ -126,7 +126,7 @@ let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
 const Event = styled("div")(
   mq({
-    display: ["block", "grid"],
+    display: [null, "grid"],
     gridTemplateColumns: [null, "1fr 2fr"],
     gridColumnGap: [null, "1rem"]
   })
@@ -145,7 +145,7 @@ mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
 const EventDetails = styled("div")(
   mq({
-    display: ["block", "grid", "block"],
+    display: [null, "grid", "block"],
     gridTemplateColumns: [null, "1fr 1fr"],
     gridColumnGap: [null, "3rem"]
   })

@@ -144,20 +144,12 @@ exports[`App renders 1`] = `
   }
 }
 
-.emotion-34 {
-  display: block;
-}
-
 @media (min-width:900px) {
   .emotion-34 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 1rem;
   }
-}
-
-.emotion-31 {
-  display: block;
 }
 
 @media (min-width:540px) {
@@ -268,10 +260,6 @@ exports[`App renders 1`] = `
   margin-bottom: 0.75rem;
 }
 
-.emotion-246 {
-  display: block;
-}
-
 @media (min-width:600px) {
   .emotion-246 {
     display: grid;
@@ -280,13 +268,9 @@ exports[`App renders 1`] = `
   }
 }
 
-.emotion-239 {
-  padding-top: 0;
-}
-
 @media (min-width:600px) {
   .emotion-239 {
-    padding-top: 0.375rem;
+    margin-top: 0.575rem;
   }
 }
 
