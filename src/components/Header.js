@@ -10,7 +10,6 @@ import { colors } from "../styles/variables";
 
 import backgroundImage from "../static/images/header-background.png";
 
-// TODO: Find out when this component re-renders
 export default class Header extends React.Component {
   render = () => (
     <WindowSizeContext.Consumer>{this.renderHeader}</WindowSizeContext.Consumer>
