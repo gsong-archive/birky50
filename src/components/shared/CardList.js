@@ -8,9 +8,10 @@ import SectionHeader from "./SectionHeader";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 
 import type { CardType } from "./Card";
+import type { LabelComponent } from "./EmojiLabels";
 
 type Props = {
-  title: React.Node,
+  title: React.Element<LabelComponent>,
   items: Array<CardType>
 };
 

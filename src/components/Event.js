@@ -12,9 +12,9 @@ import WindowSizeContext from "../contexts/WindowSizeContext";
 import { Calendar } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
 
-import type { Props } from "./SectionTypes";
-
 import eventIcs from "../static/files/event.ics";
+
+import type { Props } from "./SectionTypes";
 
 export default ({ LabelComponent, sectionLabel }: Props) => {
   return (

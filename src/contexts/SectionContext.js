@@ -3,7 +3,7 @@ import * as React from "react";
 
 const SectionContext = React.createContext("uniqueId");
 
-type Props = { id: string, children: React.Node };
+type Props = { id: string, children: React.Element<"main" | "section"> };
 
 export class SectionProvider extends React.Component<Props> {
   render = () => (
