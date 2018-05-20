@@ -26,29 +26,33 @@ export default ({
   addressUrl,
   phone,
   imgUrl,
-}: CardType) => (
-  <Card>
-    <a href={url} rel="nofollow">
-      <CardImg src={imgUrl} alt={name} />
-    </a>
-    <div
-      className={css`
-        margin: 1rem;
-      `}
-    >
-      <CardTitle>
-        <Link href={url} rel="nofollow">
-          {name}
-        </Link>
-      </CardTitle>
-      {price !== undefined && <p>{price}</p>}
-      <address>
-        <Address address={address} url={addressUrl} />
-        {phone !== undefined && <PhoneNumber number={phone} />}
-      </address>
-    </div>
-  </Card>
-);
+}: CardType) => {
+  const [priceDisplay, phoneDisplay] = [price, phone].map(displayValue);
+
+  return (
+    <Card>
+      <a href={url} rel="nofollow">
+        <CardImg src={imgUrl} alt={name} />
+      </a>
+      <div
+        className={css`
+          margin: 1rem;
+        `}
+      >
+        <CardTitle>
+          <Link href={url} rel="nofollow">
+            {name}
+          </Link>
+        </CardTitle>
+        {priceDisplay !== null && <p>{priceDisplay}</p>}
+        <address>
+          <Address address={address} url={addressUrl} />
+          {phoneDisplay !== null && <PhoneNumber number={phoneDisplay} />}
+        </address>
+      </div>
+    </Card>
+  );
+};
 
 const Card = styled("div")`
   ${borderRadius};
@@ -69,3 +73,11 @@ const CardTitle = styled("div")`
   line-height: 1.4;
   margin-bottom: 0.75rem;
 `;
+
+const displayValue = item => {
+  if (item === undefined || item === "") {
+    return null;
+  } else {
+    return item;
+  }
+};
