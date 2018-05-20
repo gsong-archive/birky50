@@ -4,7 +4,7 @@ const address = () =>
   [
     faker.address.streetAddress(),
     faker.address.city(),
-    `${faker.address.stateAbbr()} ${faker.address.zipCode()}`
+    `${faker.address.stateAbbr()} ${faker.address.zipCode()}`,
   ].join(", ");
 
 const card = () => ({
@@ -14,7 +14,7 @@ const card = () => ({
   address: address(),
   addressUrl: faker.internet.url(),
   phone: faker.phone.phoneNumber(),
-  imgUrl: faker.image.imageUrl()
+  imgUrl: faker.image.imageUrl(),
 });
 
 const generate = {
@@ -22,7 +22,7 @@ const generate = {
   card,
   phoneNumber: faker.phone.phoneNumber,
   url: faker.internet.url,
-  words: faker.random.words
+  words: faker.random.words,
 };
 
 export { generate };

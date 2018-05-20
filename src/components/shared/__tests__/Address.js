@@ -18,7 +18,7 @@ test("User can see address and map link", () => {
 test("Address is rendered", () => {
   const props = {
     address: "123 Main Street",
-    url: "https://example.com"
+    url: "https://example.com",
   };
   const { container } = render(<Address {...props} />);
 

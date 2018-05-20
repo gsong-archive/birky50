@@ -32,7 +32,7 @@ export default class App extends React.Component<{}> {
       sectionLabel,
       sectionTag,
       SectionComponent,
-      LabelComponent
+      LabelComponent,
     }: SectionDatum,
     i: number
   ) => {
@@ -64,7 +64,7 @@ export default class App extends React.Component<{}> {
     window.history.pushState(null, null, `#${ref}`);
     this._refs[ref].current.scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     });
   };
 

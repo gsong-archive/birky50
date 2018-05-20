@@ -10,7 +10,7 @@ import {
   Hotel,
   PartyHat,
   WomanBiking,
-  WomanRaisingHand
+  WomanRaisingHand,
 } from "../components/shared/EmojiLabels";
 
 export default [
@@ -20,41 +20,41 @@ export default [
     sectionLabel: "Celebration Details",
     sectionTag: "main",
     SectionComponent: Event,
-    LabelComponent: PartyHat
+    LabelComponent: PartyHat,
   },
   {
     id: "airport",
     navLabel: "Airport",
     sectionLabel: "Where to Fly Into?",
     SectionComponent: Airport,
-    LabelComponent: Airplane
+    LabelComponent: Airplane,
   },
   {
     id: "lodgingList",
     navLabel: "Lodging",
     sectionLabel: "Where to Stay?",
     SectionComponent: LodgingList,
-    LabelComponent: Hotel
+    LabelComponent: Hotel,
   },
   {
     id: "foodList",
     navLabel: "Food",
     sectionLabel: "Where to Eat?",
     SectionComponent: FoodList,
-    LabelComponent: Burger
+    LabelComponent: Burger,
   },
   {
     id: "activityList",
     navLabel: "Activities",
     sectionLabel: "What to Do?",
     SectionComponent: ActivityList,
-    LabelComponent: WomanBiking
+    LabelComponent: WomanBiking,
   },
   {
     id: "contactUs",
     navLabel: "Questions?",
     sectionLabel: "Questions?",
     SectionComponent: ContactUs,
-    LabelComponent: WomanRaisingHand
-  }
+    LabelComponent: WomanRaisingHand,
+  },
 ];

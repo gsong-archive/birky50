@@ -68,5 +68,5 @@ const snapshotProps = {
   address: "123 Main Street",
   addressUrl: "https://url_to_map",
   phone: "503-543-2345",
-  imgUrl: "https://url_to_img"
+  imgUrl: "https://url_to_img",
 };

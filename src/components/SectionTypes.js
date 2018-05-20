@@ -5,7 +5,7 @@ import type { LabelComponent } from "./shared/EmojiLabels";
 
 export type Props = {
   LabelComponent: LabelComponent,
-  sectionLabel: string
+  sectionLabel: string,
 };
 
 export type SectionDatum = {
@@ -14,7 +14,7 @@ export type SectionDatum = {
   sectionLabel: string,
   sectionTag?: string,
   SectionComponent: React.ComponentType<Props>,
-  LabelComponent: LabelComponent
+  LabelComponent: LabelComponent,
 };
 
 export type SectionData = Array<SectionDatum>;

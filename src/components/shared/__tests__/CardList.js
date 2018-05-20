@@ -9,7 +9,7 @@ import CardList from "../CardList";
 describe("CardList renders", () => {
   const props = {
     title: generate.words(),
-    items: [generate.card(), generate.card()]
+    items: [generate.card(), generate.card()],
   };
   const { container } = render(<CardList {...props} />);
 

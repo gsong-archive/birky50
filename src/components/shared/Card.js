@@ -15,7 +15,7 @@ export type CardType = {
   address: string,
   addressUrl: string,
   phone?: string,
-  imgUrl: string
+  imgUrl: string,
 };
 
 export default ({
@@ -25,7 +25,7 @@ export default ({
   address,
   addressUrl,
   phone,
-  imgUrl
+  imgUrl,
 }: CardType) => (
   <Card>
     <a href={url} rel="nofollow">

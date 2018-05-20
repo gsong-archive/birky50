@@ -8,7 +8,7 @@ import { Location } from "./EmojiLabels";
 
 type Props = {
   address: string,
-  url: string
+  url: string,
 };
 
 export default ({ address, url }: Props) => (

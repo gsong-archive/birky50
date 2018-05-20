@@ -8,7 +8,7 @@ import type { SectionData } from "./SectionTypes";
 
 type Props = {
   sections: SectionData,
-  onClick: string => (SyntheticMouseEvent<HTMLLinkElement>) => void
+  onClick: string => (SyntheticMouseEvent<HTMLLinkElement>) => void,
 };
 
 export default ({ sections, onClick }: Props) => {

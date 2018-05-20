@@ -49,7 +49,7 @@ const Title = styled("h1")(
     margin-bottom: 1rem;
   `,
   mq({
-    fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"]
+    fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"],
   })
 );
 
@@ -64,6 +64,6 @@ const Jumbotron = styled("header")(
     padding: 1rem 1rem;
   `,
   mq({
-    paddingBottom: ["2rem", "4rem"]
+    paddingBottom: ["2rem", "4rem"],
   })
 );

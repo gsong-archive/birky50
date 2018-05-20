@@ -131,13 +131,13 @@ const Event = styled("div")(
   mq({
     display: [null, "grid"],
     gridTemplateColumns: [null, "1fr 2fr"],
-    gridColumnGap: [null, "1rem"]
+    gridColumnGap: [null, "1rem"],
   })
 );
 
 const EventMap = styled("div")(
   mq({
-    marginTop: ["1.5rem", "0"]
+    marginTop: ["1.5rem", "0"],
   })
 );
 
@@ -150,7 +150,7 @@ const EventDetails = styled("div")(
   mq({
     display: [null, "grid", "block"],
     gridTemplateColumns: [null, "1fr 1fr"],
-    gridColumnGap: [null, "3rem"]
+    gridColumnGap: [null, "3rem"],
   })
 );
 

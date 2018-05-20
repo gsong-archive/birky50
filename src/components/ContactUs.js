@@ -76,7 +76,7 @@ const Form = styled("form")(
   mq({
     display: [null, "grid"],
     gridTemplateColumns: [null, "5rem 30rem"],
-    gridRowGap: [null, "1rem"]
+    gridRowGap: [null, "1rem"],
   })
 );
 

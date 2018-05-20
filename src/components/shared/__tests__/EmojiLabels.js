@@ -15,7 +15,7 @@ import {
   Phone,
   WomanBiking,
   WomanRaisingHand,
-  EmojiLabel
+  EmojiLabel,
 } from "../EmojiLabels";
 
 test("Emojis are rendered properly", () => {
@@ -29,7 +29,7 @@ test("Emojis are rendered properly", () => {
     [PartyHat, "🎉"],
     [Phone, "📞"],
     [WomanBiking, "🚴🏽‍♀️"],
-    [WomanRaisingHand, "🙋🏻‍♀️"]
+    [WomanRaisingHand, "🙋🏻‍♀️"],
   ];
 
   emojis.forEach(([Component, emoji]) => {

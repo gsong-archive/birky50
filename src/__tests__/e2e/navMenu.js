@@ -21,7 +21,7 @@ describe("Click item in nav menu should scroll to section", () => {
     Lodging: "Where to Stay",
     Food: "Where to Eat",
     Activities: "What to Do",
-    Questions: "Questions"
+    Questions: "Questions",
   };
 
   Object.entries(sections).forEach(([navLabel, sectionLabel], i) => {
@@ -80,7 +80,7 @@ const getByText = async (container, selector, text) => {
 const screenshot = async (imageName, options = {}) => {
   await page.screenshot({
     path: `${screenshotsFolder}/${imageName}.png`,
-    ...options
+    ...options,
   });
 };
 
@@ -101,7 +101,7 @@ const launchOptions = {
   args:
     process.env.IN_DOCKER === undefined
       ? []
-      : ["--no-sandbox", "--disable-setuid-sandbox"]
+      : ["--no-sandbox", "--disable-setuid-sandbox"],
 };
 const appUrl =
   process.env.APP_URL === undefined ? DEFAULT_APP_URL : process.env.APP_URL;

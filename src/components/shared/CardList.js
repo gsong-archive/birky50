@@ -12,7 +12,7 @@ import type { LabelComponent } from "./EmojiLabels";
 
 type Props = {
   title: React.Element<LabelComponent>,
-  items: Array<CardType>
+  items: Array<CardType>,
 };
 
 export default ({ title, items }: Props) => {
@@ -25,7 +25,7 @@ export default ({ title, items }: Props) => {
         {({ width }) => {
           const numberOfColumns = Math.max(1, Math.floor(width / 275));
           const style = {
-            gridTemplateColumns: `repeat(${numberOfColumns}, 1fr)`
+            gridTemplateColumns: `repeat(${numberOfColumns}, 1fr)`,
           };
 
           return <Container style={style}>{cards}</Container>;

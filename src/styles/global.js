@@ -3,8 +3,8 @@ import { injectGlobal } from "emotion";
 
 WebFont.load({
   google: {
-    families: ["Lato", "Work Sans"]
-  }
+    families: ["Lato", "Work Sans"],
+  },
 });
 
 injectGlobal`

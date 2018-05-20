@@ -17,7 +17,7 @@ export default forwardRef((props, ref) => {
     className: css`
       ${props.className};
       padding: 1.5rem;
-    `
+    `,
   });
   delete sectionProps.tag;
   const section = React.createElement(props.tag, sectionProps);
