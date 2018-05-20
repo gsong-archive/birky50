@@ -7,7 +7,7 @@ import Card from "./Card";
 import SectionHeader from "./SectionHeader";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 
-import type { CardType } from "./Card";
+import type { Props as CardType } from "./Card";
 import type { LabelComponent } from "./EmojiLabels";
 
 type Props = {

@@ -8,51 +8,47 @@ import PhoneNumber from "./PhoneNumber";
 import { Link } from "../../styles/components";
 import { borderRadius } from "../../styles";
 
-export type CardType = {
+export type Props = {
   name: string,
   url: string,
-  price?: string,
+  price: string,
   address: string,
   addressUrl: string,
-  phone?: string,
+  phone: string,
   imgUrl: string,
 };
 
-export default ({
-  name,
-  url,
-  price,
-  address,
-  addressUrl,
-  phone,
-  imgUrl,
-}: CardType) => {
-  const [priceDisplay, phoneDisplay] = [price, phone].map(displayValue);
+export default class CardComponent extends React.Component<Props> {
+  static defaultProps = { price: "", phone: "" };
 
-  return (
-    <Card>
-      <a href={url} rel="nofollow">
-        <CardImg src={imgUrl} alt={name} />
-      </a>
-      <div
-        className={css`
-          margin: 1rem;
-        `}
-      >
-        <CardTitle>
-          <Link href={url} rel="nofollow">
-            {name}
-          </Link>
-        </CardTitle>
-        {priceDisplay !== null && <p>{priceDisplay}</p>}
-        <address>
-          <Address address={address} url={addressUrl} />
-          {phoneDisplay !== null && <PhoneNumber number={phoneDisplay} />}
-        </address>
-      </div>
-    </Card>
-  );
-};
+  render = () => {
+    const { name, url, price, address, addressUrl, phone, imgUrl } = this.props;
+
+    return (
+      <Card>
+        <a href={url} rel="nofollow">
+          <CardImg src={imgUrl} alt={name} />
+        </a>
+        <div
+          className={css`
+            margin: 1rem;
+          `}
+        >
+          <CardTitle>
+            <Link href={url} rel="nofollow">
+              {name}
+            </Link>
+          </CardTitle>
+          {price !== "" && <p>{price}</p>}
+          <address>
+            <Address address={address} url={addressUrl} />
+            {phone !== "" && <PhoneNumber number={phone} />}
+          </address>
+        </div>
+      </Card>
+    );
+  };
+}
 
 const Card = styled("div")`
   ${borderRadius};
@@ -73,11 +69,3 @@ const CardTitle = styled("div")`
   line-height: 1.4;
   margin-bottom: 0.75rem;
 `;
-
-const displayValue = item => {
-  if (item === undefined || item === "") {
-    return null;
-  } else {
-    return item;
-  }
-};
