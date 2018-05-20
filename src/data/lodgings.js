@@ -2,7 +2,6 @@ const LODGINGS = [
   {
     name: "Outlook Inn Bed and Breakfast",
     url: "http://outlookinnbandb.com",
-    price: "",
     address: "175 Boon Rd, Somers, MT 59932",
     addressUrl: "https://goo.gl/maps/am3u2e5nG9Q2",
     phone: "(406) 857-2060",
@@ -23,7 +22,6 @@ const LODGINGS = [
     name: "Hilton Garden Inn Kalispell",
     url:
       "http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html",
-    price: "",
     address: "1840 Highway 93 South, Kalispell, MT, 59901",
     addressUrl: "https://goo.gl/maps/ZdHX7Scv3Z22",
     phone: "(406) 756-4500",
@@ -33,7 +31,6 @@ const LODGINGS = [
   {
     name: "Somer’s Bay Log Cabin",
     url: "http://www.somersbaycabins.com",
-    price: "",
     address: "5496 Highway 93 South, Somers, MT 59932",
     addressUrl: "https://goo.gl/maps/BbkY5V9RMDw",
     imgUrl:
@@ -53,7 +50,6 @@ const LODGINGS = [
   {
     name: "Sunrise Vista Inn",
     url: "http://sunrisevistainn.weebly.com",
-    price: "",
     address: "7005 Highway 93 S, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/mQ1WixYQD142",
     phone: "(406) 844-0231",
@@ -63,7 +59,6 @@ const LODGINGS = [
   {
     name: "Edgewater RV Resort & Motel",
     url: "http://edgewaterrv.com",
-    price: "",
     address: "7140 US-93, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/tVCfyofRppH2",
     phone: "(406) 844-3644",
@@ -72,7 +67,6 @@ const LODGINGS = [
   {
     name: "Peaceful Bay Resort & Club",
     url: "http://www.peacefulbayresort.com",
-    price: "",
     address: "59901, 137 Peaceful Ln, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/V32mgjc37Q62",
     imgUrl: "http://www.peacefulbayresort.com/images/pb-on-the-hill-sm.jpg"

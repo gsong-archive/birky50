@@ -1,4 +1,5 @@
-function calculateBackgroundOffset(width) {
+//@flow strict
+export function calculateBackgroundOffset(width: number) {
   let offsetX = 0;
   let offsetY = 0;
   switch (true) {
@@ -51,5 +52,3 @@ function calculateBackgroundOffset(width) {
 
   return { offsetX, offsetY };
 }
-
-export { calculateBackgroundOffset };

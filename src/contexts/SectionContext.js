@@ -1,8 +1,11 @@
-import React from "react";
+//@flow strict
+import * as React from "react";
 
 const SectionContext = React.createContext("uniqueId");
 
-export class SectionProvider extends React.Component {
+type Props = { id: string, children: React.Node };
+
+export class SectionProvider extends React.Component<Props> {
   render = () => (
     <SectionContext.Provider value={this.props.id}>
       {this.props.children}

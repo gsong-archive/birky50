@@ -1,8 +1,12 @@
-import React from "react";
+//@flow strict
+import * as React from "react";
 
 const WindowSizeContext = React.createContext({ width: 800 });
 
-export class WindowSizeProvider extends React.Component {
+type Props = { children: React.Node };
+type State = { width: number };
+
+export class WindowSizeProvider extends React.Component<Props, State> {
   state = { width: window.innerWidth };
 
   componentDidMount = () => {

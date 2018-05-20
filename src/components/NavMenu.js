@@ -1,9 +1,17 @@
+//@flow strict
 import React from "react";
 import styled from "react-emotion";
 
 import { Link } from "../styles/components";
 
-export default ({ sections, onClick }) => {
+import type { SectionData } from "./SectionTypes";
+
+type Props = {
+  sections: SectionData,
+  onClick: string => (SyntheticMouseEvent<HTMLLinkElement>) => void
+};
+
+export default ({ sections, onClick }: Props) => {
   const navItems = sections.map(({ id, navLabel, LabelComponent }, i) => (
     <NavItem key={id}>
       <NavLink href={`#${id}`} onClick={onClick(id)}>

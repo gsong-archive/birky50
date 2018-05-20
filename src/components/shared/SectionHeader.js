@@ -1,11 +1,14 @@
-import React from "react";
+//@flow strict
+import * as React from "react";
 
 import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
 import SectionContext from "../../contexts/SectionContext";
 
-export default ({ children }) => (
+type Props = { children: React.Node };
+
+export default ({ children }: Props) => (
   <SectionContext.Consumer>
     {id => <H1 id={`${id}-description`}>{children}</H1>}
   </SectionContext.Consumer>

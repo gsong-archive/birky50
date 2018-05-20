@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import styled, { css } from "react-emotion";
@@ -7,7 +8,25 @@ import PhoneNumber from "./PhoneNumber";
 import { Link } from "../../styles/components";
 import { borderRadius } from "../../styles";
 
-export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
+export type CardType = {
+  name: string,
+  url: string,
+  price?: string,
+  address: string,
+  addressUrl: string,
+  phone?: string,
+  imgUrl: string
+};
+
+export default ({
+  name,
+  url,
+  price,
+  address,
+  addressUrl,
+  phone,
+  imgUrl
+}: CardType) => (
   <Card>
     <a href={url} rel="nofollow">
       <CardImg src={imgUrl} alt={name} />
@@ -22,10 +41,10 @@ export default ({ name, url, price, address, addressUrl, phone, imgUrl }) => (
           {name}
         </Link>
       </CardTitle>
-      {price && <p>{price}</p>}
+      {price !== undefined && <p>{price}</p>}
       <address>
         <Address address={address} url={addressUrl} />
-        {phone && <PhoneNumber number={phone} />}
+        {phone !== undefined && <PhoneNumber number={phone} />}
       </address>
     </div>
   </Card>

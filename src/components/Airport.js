@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import SectionHeader from "./shared/SectionHeader";
@@ -5,7 +6,9 @@ import { Airport } from "./shared/EmojiLabels";
 import { Bold } from "../styles/components";
 import { Link } from "../styles/components";
 
-export default ({ LabelComponent, sectionLabel }) => (
+import type { Props } from "./SectionTypes";
+
+export default ({ LabelComponent, sectionLabel }: Props) => (
   <React.Fragment>
     <SectionHeader>
       <LabelComponent label={sectionLabel} />

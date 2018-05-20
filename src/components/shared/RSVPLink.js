@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import styled from "react-emotion";
@@ -5,7 +6,9 @@ import styled from "react-emotion";
 import { btn, btnLg } from "../../styles";
 import { colors } from "../../styles/variables";
 
-export default props => (
+type Props = { className?: string, width?: string };
+
+export default (props: Props) => (
   <Link href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2" {...props}>
     RSVP
   </Link>

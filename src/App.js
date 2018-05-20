@@ -1,3 +1,4 @@
+//@flow
 import React from "react";
 
 import { css } from "emotion";
@@ -9,10 +10,13 @@ import Section from "./components/Section";
 import sections from "./data/sections";
 import { WindowSizeProvider } from "./contexts/WindowSizeContext";
 
-export default class App extends React.Component {
+import type { SectionDatum } from "./components/SectionTypes";
+
+export default class App extends React.Component<{}> {
   _refs = {};
 
   render = () => (
+    // $FlowFixMe
     <React.StrictMode>
       <WindowSizeProvider>
         <Header />
@@ -23,8 +27,14 @@ export default class App extends React.Component {
   );
 
   renderSection = (
-    { id, sectionLabel, sectionTag, SectionComponent, LabelComponent },
-    i
+    {
+      id,
+      sectionLabel,
+      sectionTag,
+      SectionComponent,
+      LabelComponent
+    }: SectionDatum,
+    i: number
   ) => {
     const tag = sectionTag ? sectionTag : "section";
     const style = this._getStyle(i);
@@ -47,7 +57,9 @@ export default class App extends React.Component {
     );
   };
 
-  scrollTo = ref => event => {
+  scrollTo = (ref: string) => (
+    event: SyntheticMouseEvent<HTMLLinkElement>
+  ): void => {
     event.preventDefault();
     window.history.pushState(null, null, `#${ref}`);
     this._refs[ref].current.scrollIntoView({
@@ -56,7 +68,7 @@ export default class App extends React.Component {
     });
   };
 
-  _getStyle = index =>
+  _getStyle = (index: number) =>
     index % 2 === 0
       ? css`
           background-color: rgba(64, 60, 127, 0.2);

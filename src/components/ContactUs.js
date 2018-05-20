@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import facepaint from "facepaint";
@@ -7,7 +8,9 @@ import SectionHeader from "./shared/SectionHeader";
 import { btn, formInput } from "../styles";
 import { colors } from "../styles/variables";
 
-export default ({ LabelComponent, sectionLabel }) => {
+import type { Props } from "./SectionTypes";
+
+export default ({ LabelComponent, sectionLabel }: Props) => {
   const sendTo = "birky50@damacy.net";
 
   return (

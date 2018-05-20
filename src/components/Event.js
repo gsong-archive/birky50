@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import facepaint from "facepaint";
@@ -11,9 +12,11 @@ import WindowSizeContext from "../contexts/WindowSizeContext";
 import { Calendar } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
 
+import type { Props } from "./SectionTypes";
+
 import eventIcs from "../static/files/event.ics";
 
-export default ({ LabelComponent, sectionLabel }) => {
+export default ({ LabelComponent, sectionLabel }: Props) => {
   return (
     <React.Fragment>
       <SectionHeader>
@@ -74,7 +77,7 @@ export default ({ LabelComponent, sectionLabel }) => {
   );
 };
 
-class Map extends React.Component {
+class Map extends React.Component<{}> {
   defaultWidth = 400;
   mapContainer = React.createRef();
 

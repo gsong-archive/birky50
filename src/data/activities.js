@@ -2,7 +2,6 @@ const ACTIVITIES = [
   {
     name: "Glacier National Park",
     url: "https://www.nps.gov/glac/index.htm",
-    price: "",
     address: "Glacier National Park, MT",
     addressUrl: "https://goo.gl/maps/SR32JLrbeb62",
     phone: "(406) 888-7800",
@@ -22,7 +21,6 @@ const ACTIVITIES = [
   {
     name: "Spoke & Paddle Outdoor Adventures",
     url: "http://www.spokeandpaddle.com",
-    price: "",
     address: "10 Somers Rd, Somers, MT 59932",
     addressUrl: "https://goo.gl/maps/CJPCsbMfwdP2",
     phone: "(406) 393-2133",
@@ -31,7 +29,6 @@ const ACTIVITIES = [
   {
     name: "Sea Me Paddle Kayaking Tours",
     url: "http://www.seamepaddle.com",
-    price: "",
     address: "7220 Hwy 93 S #3, Lakeside,, MT 59922",
     addressUrl: "https://goo.gl/maps/sJHiaKQe8zk",
     phone: "(406) 249-1153",
@@ -41,7 +38,6 @@ const ACTIVITIES = [
   {
     name: "Glacier Raft Company",
     url: "https://glacierraftco.com",
-    price: "",
     address: "106 Going-To-The-Sun Rd, West Glacier, MT 59936",
     addressUrl: "https://goo.gl/maps/cRRSk9WZ6ny",
     phone: "(406) 888-5454",
@@ -51,17 +47,14 @@ const ACTIVITIES = [
   {
     name: "Bigfork",
     url: "http://www.bigfork.org/contents/view/bigfork-montana-chamber",
-    price: "",
     address: "Bigfork, MT",
     addressUrl: "https://goo.gl/maps/nd9GxmGTmJv",
-    phone: "",
     imgUrl:
       "https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg"
   },
   {
     name: "Boat Rentals and Rides",
     url: "http://www.boatrentalsandrides.com",
-    price: "",
     address: "44227 A St, Big Arm, MT 59910",
     addressUrl: "https://goo.gl/maps/WvUwTE5xy882",
     phone: "(406) 260-5090",
@@ -71,7 +64,6 @@ const ACTIVITIES = [
   {
     name: "Flathead Lake Sailing & Charters",
     url: "http://www.flatheadlakesailing.com",
-    price: "",
     address: "150 Flathead Lodge Rd, Bigfork, MT 59911",
     addressUrl: "https://goo.gl/maps/nzUd172fAPr",
     phone: "(406) 837-5569",
@@ -81,7 +73,6 @@ const ACTIVITIES = [
   {
     name: "WildHorse Island Boat Trips",
     url: "http://www.wildhorseislandboattrips.com",
-    price: "",
     address: "452 Grand Drive, Bigfork, MT 59911",
     addressUrl: "https://goo.gl/maps/Ni7GehCRdDR2",
     phone: "(406) 837-5617",

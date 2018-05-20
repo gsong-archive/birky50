@@ -1,4 +1,5 @@
-import React from "react";
+//@flow strict
+import * as React from "react";
 
 import styled from "react-emotion";
 
@@ -6,7 +7,14 @@ import Card from "./Card";
 import SectionHeader from "./SectionHeader";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 
-export default ({ title, items }) => {
+import type { CardType } from "./Card";
+
+type Props = {
+  title: React.Node,
+  items: Array<CardType>
+};
+
+export default ({ title, items }: Props) => {
   const cards = items.map((item, i) => <Card key={i} {...item} />);
 
   return (

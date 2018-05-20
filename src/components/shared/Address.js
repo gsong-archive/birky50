@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import { css } from "emotion";
@@ -5,7 +6,12 @@ import { css } from "emotion";
 import { Link } from "../../styles/components";
 import { Location } from "./EmojiLabels";
 
-export default ({ address, url }) => (
+type Props = {
+  address: string,
+  url: string
+};
+
+export default ({ address, url }: Props) => (
   <div
     className={css`
       margin-left: 1.5em;

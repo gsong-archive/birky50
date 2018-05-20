@@ -2,7 +2,6 @@ const FOOD = [
   {
     name: "Glacier Perks Coffee House",
     url: "https://www.facebook.com/glacier.perks.coffee/",
-    price: "",
     address: "7235 US Highway 93 S, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/jugv4Y9a1cB2",
     phone: "(406) 844-0908",
@@ -12,7 +11,6 @@ const FOOD = [
   {
     name: "The Farmhouse Restaurant",
     url: "http://www.farmhouselakeside.com",
-    price: "",
     address: "306 Stoner Loop, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/torto64XEY12",
     phone: "(406) 844-0610",
@@ -22,7 +20,6 @@ const FOOD = [
   {
     name: "Tamarack Brewing Company",
     url: "https://www.tamarackbrewing.com/lakeside",
-    price: "",
     address: "105 Blacktail Road, Lakeside, MT",
     addressUrl: "https://goo.gl/maps/sTZ8XbjgAiG2",
     phone: "(406) 844-0244",
@@ -32,7 +29,6 @@ const FOOD = [
   {
     name: "Homestead Cafe",
     url: "https://www.facebook.com/homesteadcafebarandcasino/",
-    price: "",
     address: "7262 US Highway 93, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/9YQK8DymPK52",
     phone: "(406) 844-3926",
@@ -43,7 +39,6 @@ const FOOD = [
     name: "Dairy Queen",
     url:
       "https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&",
-    price: "",
     address: "7170 HWY 93 S, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/LR9qrqDZ3DN2",
     phone: "(406) 844-3844",
@@ -54,7 +49,6 @@ const FOOD = [
     name: "Winchester Steak House",
     url:
       "https://www.facebook.com/pages/Winchester-Steak-House/325894450829601",
-    price: "",
     address: "2205 US Highway 93 S, Kalispell, MT 59901",
     addressUrl: "https://goo.gl/maps/RN46pwo4Be92",
     phone: "(406) 257-8188",
@@ -64,7 +58,6 @@ const FOOD = [
   {
     name: "Scotty's Bar",
     url: "http://scottysmt.com",
-    price: "",
     address: "2205 US Highway 93 S, Kalispell, MT 59901",
     addressUrl: "https://goo.gl/maps/fpx285LR8JL2",
     phone: "(406) 257-8188",

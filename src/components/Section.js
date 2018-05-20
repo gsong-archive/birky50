@@ -1,3 +1,4 @@
+//@flow
 import React from "react";
 
 import { css } from "emotion";
@@ -6,6 +7,7 @@ import { SectionProvider } from "../contexts/SectionContext";
 
 const forwardRef = (render, displayName = "") => {
   render.displayName = displayName;
+  // $FlowFixMe
   return React.forwardRef(render);
 };
 

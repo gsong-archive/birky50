@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import facepaint from "facepaint";
@@ -10,12 +11,12 @@ import { colors } from "../styles/variables";
 
 import backgroundImage from "../static/images/header-background.png";
 
-export default class Header extends React.Component {
+export default class Header extends React.Component<{}> {
   render = () => (
     <WindowSizeContext.Consumer>{this.renderHeader}</WindowSizeContext.Consumer>
   );
 
-  renderHeader = ({ width }) => {
+  renderHeader = ({ width }: { width: number }) => {
     const { offsetX, offsetY } = calculateBackgroundOffset(width);
     const backgroundPositionX = `${offsetX}px`;
     const backgroundPositionY = `${offsetY}px`;
