@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build",
-    "eslint:watch": "onchange 'src/**/*.js' -- onerror 'eslint --quiet src' -t birky50:eslint",
+    "eslint:watch": "onchange 'src/**/*.js' -- onerror 'eslint src' -t birky50:eslint",
     "flow": "onchange 'src/**/*.js' -- onerror 'flow' -t birky50:flow",
-    "flow-stop": "flow stop",
     "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom --modulePaths=src",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -36,6 +35,7 @@
     "onchange": "^4.0.0",
     "prettier": "^1.11.1",
     "puppeteer": "^1.4.0",
+    "react-cosmos": "^4.3.0",
     "react-perf-devtool": "^3.0.7",
     "react-testing-library": "~3.0.2",
     "snapshot-diff": "^0.3.0"
