@@ -8,7 +8,7 @@ import SectionHeader from "./shared/SectionHeader";
 import { btn, formInput } from "../styles";
 import { colors } from "../styles/variables";
 
-import type { Props } from "./SectionTypes";
+import type { Props } from "./Section.type";
 
 export default ({ LabelComponent, sectionLabel }: Props) => {
   const sendTo = "birky50@damacy.net";

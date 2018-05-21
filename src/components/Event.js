@@ -14,7 +14,7 @@ import { Link } from "../styles/components";
 
 import eventIcs from "../static/files/event.ics";
 
-import type { Props } from "./SectionTypes";
+import type { Props } from "./Section.type";
 
 export default ({ LabelComponent, sectionLabel }: Props) => {
   return (

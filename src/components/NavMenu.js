@@ -4,7 +4,7 @@ import styled from "react-emotion";
 
 import { Link } from "../styles/components";
 
-import type { SectionData } from "./SectionTypes";
+import type { SectionData } from "./Section.type";
 
 type Props = {
   sections: SectionData,

@@ -6,7 +6,7 @@ import { Airport } from "./shared/EmojiLabels";
 import { Bold } from "../styles/components";
 import { Link } from "../styles/components";
 
-import type { Props } from "./SectionTypes";
+import type { Props } from "./Section.type";
 
 export default ({ LabelComponent, sectionLabel }: Props) => (
   <React.Fragment>
