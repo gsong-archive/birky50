@@ -21,8 +21,6 @@ const mq = facepaint(breakpoints.map(bp => `@media (max-width: ${bp}px)`));
 
 const H1 = styled("h1")(
   css`
-    margin-left: 1.4em;
-    text-indent: -1.4em;
     line-height: 1.1;
     margin-bottom: 1rem;
   `,

@@ -1,13 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmojiLabel is rendered 1`] = `
+.emotion-0 {
+  display: inline-block;
+  margin-left: 1.4em;
+  text-indent: -1.4em;
+}
+
 <div>
   <span
-    role="img"
-    aria-label="unicorn"
+    class="emotion-0"
   >
-    🦄
+    <span
+      role="img"
+      aria-label="unicorn"
+    >
+      🦄
+    </span>
+    Very Important
   </span>
-  Very Important
 </div>
 `;

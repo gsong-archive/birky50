@@ -2,8 +2,9 @@
 
 exports[`Address is rendered 1`] = `
 .emotion-1 {
-  margin-left: 1.5em;
-  text-indent: -1.5em;
+  display: inline-block;
+  margin-left: 1.4em;
+  text-indent: -1.4em;
 }
 
 .emotion-0 {
@@ -12,20 +13,22 @@ exports[`Address is rendered 1`] = `
   text-decoration: none;
 }
 
-<div
-  class="emotion-1"
->
+<div>
   <span
-    role="img"
-    aria-label="round pushpin"
+    class="emotion-1"
   >
-    📍
+    <span
+      role="img"
+      aria-label="round pushpin"
+    >
+      📍
+    </span>
+    <a
+      href="https://example.com"
+      class="emotion-0"
+    >
+      123 Main Street
+    </a>
   </span>
-  <a
-    href="https://example.com"
-    class="emotion-0"
-  >
-    123 Main Street
-  </a>
 </div>
 `;

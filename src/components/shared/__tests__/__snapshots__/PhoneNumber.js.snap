@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PhoneNumber is rendered 1`] = `
+.emotion-1 {
+  display: inline-block;
+  margin-left: 1.4em;
+  text-indent: -1.4em;
+}
+
 .emotion-0 {
   color: maroon;
   -webkit-text-decoration: none;
@@ -9,16 +15,20 @@ exports[`PhoneNumber is rendered 1`] = `
 
 <div>
   <span
-    role="img"
-    aria-label="phone receiver"
+    class="emotion-1"
   >
-    📞
+    <span
+      role="img"
+      aria-label="phone receiver"
+    >
+      📞
+    </span>
+    <a
+      href="tel:503-123-4567"
+      class="emotion-0"
+    >
+      503-123-4567
+    </a>
   </span>
-  <a
-    href="tel:503-123-4567"
-    class="emotion-0"
-  >
-    503-123-4567
-  </a>
 </div>
 `;
