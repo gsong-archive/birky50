@@ -18,12 +18,12 @@ export type Props = {
   imgUrl: string,
 };
 
-export default class CardComponent extends React.Component<Props> {
+export default class Card extends React.Component<Props> {
   render = () => {
     const { name, url, price, address, addressUrl, phone, imgUrl } = this.props;
 
     return (
-      <Card>
+      <Container>
         <a href={url} rel="nofollow">
           <CardImg src={imgUrl} alt={name} />
         </a>
@@ -45,12 +45,12 @@ export default class CardComponent extends React.Component<Props> {
             {phone && <PhoneNumber number={phone} />}
           </address>
         </div>
-      </Card>
+      </Container>
     );
   };
 }
 
-const Card = styled("div")`
+const Container = styled("div")`
   ${borderRadius};
   background-color: white;
 `;
