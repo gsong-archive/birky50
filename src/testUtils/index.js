@@ -8,13 +8,13 @@ const address = () =>
   ].join(", ");
 
 const card = () => ({
-  name: `${faker.name.firstName()} ${faker.name.lastName()}`,
+  name: faker.company.companyName(),
   url: faker.internet.url(),
-  price: faker.random.word(),
+  price: faker.commerce.price(),
   address: address(),
   addressUrl: faker.internet.url(),
   phone: faker.phone.phoneNumber(),
-  imgUrl: faker.image.imageUrl(),
+  imgUrl: `https://loremflickr.com/320/240/${faker.random.word()}`,
 });
 
 const generate = {
