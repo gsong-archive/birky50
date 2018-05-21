@@ -36,6 +36,7 @@ export default class App extends React.Component<{}> {
     }: SectionDatum,
     i: number
   ) => {
+    // flowlint-next-line sketchy-null-string:off
     const tag = sectionTag ? sectionTag : "section";
     const style = this._getStyle(i);
     this._refs[id] = React.createRef();

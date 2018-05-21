@@ -6,14 +6,15 @@
 [libs]
 
 [lints]
+sketchy-null=warn
 
 [options]
+include_warnings=true
 module.file_ext=.ics
 module.file_ext=.js
 
 [strict]
 nonstrict-import
-sketchy-null
 unclear-type
 unsafe-getters-setters
 untyped-type-import

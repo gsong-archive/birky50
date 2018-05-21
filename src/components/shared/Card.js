@@ -11,16 +11,14 @@ import { borderRadius } from "../../styles";
 export type Props = {
   name: string,
   url: string,
-  price: string,
+  price?: string,
   address: string,
   addressUrl: string,
-  phone: string,
+  phone?: string,
   imgUrl: string,
 };
 
 export default class CardComponent extends React.Component<Props> {
-  static defaultProps = { price: "", phone: "" };
-
   render = () => {
     const { name, url, price, address, addressUrl, phone, imgUrl } = this.props;
 
@@ -39,10 +37,12 @@ export default class CardComponent extends React.Component<Props> {
               {name}
             </Link>
           </CardTitle>
-          {price !== "" && <p>{price}</p>}
+          {/* flowlint-next-line sketchy-null-string:off */}
+          {price && <p>{price}</p>}
           <address>
             <Address address={address} url={addressUrl} />
-            {phone !== "" && <PhoneNumber number={phone} />}
+            {/* flowlint-next-line sketchy-null-string:off */}
+            {phone && <PhoneNumber number={phone} />}
           </address>
         </div>
       </Card>
