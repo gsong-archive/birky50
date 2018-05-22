@@ -27,7 +27,7 @@ describe("Click item in nav menu should scroll to section", () => {
   Object.entries(sections).forEach(([navLabel, sectionLabel], i) => {
     test(navLabel, async () => {
       const link = await getByText(page, "nav//*", navLabel);
-      const section = await getByText(page, "h1", sectionLabel);
+      const section = await getByText(page, "h1//*", sectionLabel);
 
       // 1. Click on nav menu link
       // 2. Wait for the screen to stop scrolling
