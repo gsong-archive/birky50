@@ -10,7 +10,7 @@ import type { LabelComponent } from "./EmojiLabels";
 
 type Props = { children: React.Element<LabelComponent> };
 
-export default ({ children }: Props) => (
+const SectionHeader = ({ children }: Props) => (
   <SectionContext.Consumer>
     {id => <H1 id={`${id}-description`}>{children}</H1>}
   </SectionContext.Consumer>
@@ -26,3 +26,5 @@ const H1 = styled.h1(
   `,
   mq({ fontSize: [null, "2.4rem"] })
 );
+
+export default SectionHeader;

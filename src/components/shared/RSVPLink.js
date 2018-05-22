@@ -8,7 +8,7 @@ import { colors } from "../../styles/variables";
 
 type Props = { className?: string, width?: string };
 
-export default (props: Props) => (
+const RSVPLink = (props: Props) => (
   <Link href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2" {...props}>
     RSVP
   </Link>
@@ -22,3 +22,5 @@ const Link = styled.a`
   background-color: ${colors.secondary};
   width: ${props => (props.width ? props.width : "auto")};
 `;
+
+export default RSVPLink;

@@ -10,7 +10,7 @@ import WindowSizeContext from "../../contexts/WindowSizeContext";
 import type { Props as CardType } from "./Card";
 import type { LabelComponent } from "./EmojiLabels";
 
-type Props = {
+export type Props = {
   title: React.Element<LabelComponent>,
   items: Array<CardType>,
 };
