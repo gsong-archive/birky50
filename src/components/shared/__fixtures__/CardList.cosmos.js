@@ -1,10 +1,15 @@
+//@flow strict
 import React from "react";
 
-import CardList from "../CardList";
+import CardListImpl from "../CardList";
 import { WindowSizeProvider } from "../../../contexts/WindowSizeContext";
 
-export default props => (
+import type { Props } from "../CardList";
+
+const CardList = (props: Props) => (
   <WindowSizeProvider>
-    <CardList {...props} />
+    <CardListImpl {...props} />
   </WindowSizeProvider>
 );
+
+export default CardList;

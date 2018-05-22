@@ -1,3 +1,6 @@
+//@flow
+import { createFixture } from "react-cosmos-flow/fixture";
+
 import { generate } from "testUtils";
 
 import Card from "../Card";
@@ -11,24 +14,24 @@ const noPricePhoneCard = Object.assign(generate.card(), {
 });
 
 export default [
-  {
+  createFixture({
     name: "Complete data",
     component: Card,
     props: completeCard,
-  },
-  {
+  }),
+  createFixture({
     name: "No price",
     component: Card,
     props: noPriceCard,
-  },
-  {
+  }),
+  createFixture({
     name: "No phone",
     component: Card,
     props: noPhoneCard,
-  },
-  {
+  }),
+  createFixture({
     name: "No price & phone",
     component: Card,
     props: noPricePhoneCard,
-  },
+  }),
 ];
