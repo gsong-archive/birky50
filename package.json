@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
+    "build": "react-app-rewired build",
     "eslint:watch": "onchange 'src/**/*.js' -- onerror 'eslint src' -t birky50:eslint",
     "flow": "onchange 'src/**/*.js' -- onerror 'flow' -t birky50:flow",
-    "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -16,6 +16,9 @@
     "eslint": "^4.19.1",
     "facepaint": "^1.2.1",
     "react": "^16.3.0",
+    "react-app-rewire-babel-loader": "^0.1.1",
+    "react-app-rewire-emotion": "^4.0.0",
+    "react-app-rewired": "^1.5.2",
     "react-dom": "^16.3.0",
     "react-emotion": "^9.1.3",
     "react-scripts": "^1.1.1",
@@ -36,6 +39,7 @@
     "prettier": "^1.11.1",
     "puppeteer": "^1.4.0",
     "react-cosmos": "^4.3.0",
+    "react-cosmos-flow": "^4.3.0",
     "react-perf-devtool": "^3.0.7",
     "react-testing-library": "~3.0.2",
     "snapshot-diff": "^0.3.0"
