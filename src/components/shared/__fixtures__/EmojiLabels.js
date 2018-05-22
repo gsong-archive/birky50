@@ -16,6 +16,7 @@ export default [
   }),
   createFixture({
     name: "Predefined EmojiLabel with link label",
+    description: "`label` prop is a React node.",
     component: Airplane,
     props: {
       label: <Link href={generate.url()}>{generate.words()}</Link>,
@@ -32,6 +33,7 @@ export default [
   }),
   createFixture({
     name: "With link label",
+    description: "`label` prop is a React node.",
     component: EmojiLabel,
     props: {
       emoji: "😜",

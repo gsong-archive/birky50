@@ -11,6 +11,7 @@ import { Airplane } from "../EmojiLabels";
 export default [
   createFixture({
     name: "With EmojiLabel",
+    description: "`children` prop is a React node.",
     component: SectionHeader,
     props: {
       children: <Airplane label={generate.words()} />,

@@ -16,6 +16,7 @@ export default [
   }),
   createFixture({
     name: "Override with CSS class",
+    description: "`className` prop is an Emotion `css` class name.",
     component: RSVPLink,
     props: {
       className: css`

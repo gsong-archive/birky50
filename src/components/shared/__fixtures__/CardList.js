@@ -11,6 +11,7 @@ import { Burger } from "../EmojiLabels";
 export default [
   createFixture({
     name: "With EmojiLabel title",
+    description: "`title` prop is a React node.",
     component: CardList,
     props: {
       title: <Burger label={generate.words()} />,
