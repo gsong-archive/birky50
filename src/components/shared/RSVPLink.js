@@ -14,7 +14,7 @@ export default (props: Props) => (
   </Link>
 );
 
-const Link = styled("a")`
+const Link = styled.a`
   ${btn};
   ${btnLg};
   color: white;

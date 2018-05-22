@@ -116,18 +116,18 @@ const getHeightFromWidth = width => {
   return height;
 };
 
-const LI = styled("li")`
+const LI = styled.li`
   margin-left: 1.5rem;
 `;
 
-const TightP = styled("p")`
+const TightP = styled.p`
   margin: 0.25rem 0;
 `;
 
 let breakpoints = [900];
 let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
-const Event = styled("div")(
+const Event = styled.div(
   mq({
     display: [null, "grid"],
     gridTemplateColumns: [null, "1fr 2fr"],
@@ -135,7 +135,7 @@ const Event = styled("div")(
   })
 );
 
-const EventMap = styled("div")(
+const EventMap = styled.div(
   mq({
     marginTop: ["1.5rem", "0"],
   })
@@ -146,7 +146,7 @@ const spanned = css(mq({ gridColumn: ["1 / 3"] }));
 breakpoints = [540, 900];
 mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
-const EventDetails = styled("div")(
+const EventDetails = styled.div(
   mq({
     display: [null, "grid", "block"],
     gridTemplateColumns: [null, "1fr 1fr"],

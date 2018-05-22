@@ -35,7 +35,7 @@ export default ({ title, items }: Props) => {
   );
 };
 
-const Container = styled("div")`
+const Container = styled.div`
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;

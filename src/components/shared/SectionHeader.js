@@ -19,7 +19,7 @@ export default ({ children }: Props) => (
 const breakpoints = [350];
 const mq = facepaint(breakpoints.map(bp => `@media (max-width: ${bp}px)`));
 
-const H1 = styled("h1")(
+const H1 = styled.h1(
   css`
     line-height: 1.1;
     margin-bottom: 1rem;

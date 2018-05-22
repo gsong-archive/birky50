@@ -35,7 +35,7 @@ export default class Header extends React.Component<{}> {
   };
 }
 
-const Subtitle = styled("p")`
+const Subtitle = styled.p`
   font-size: 1.25rem;
   font-weight: 300;
   color: white;
@@ -43,7 +43,7 @@ const Subtitle = styled("p")`
 
 let breakpoints = [576, 768, 992, 1200];
 let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
-const Title = styled("h1")(
+const Title = styled.h1(
   css`
     color: white;
     margin-bottom: 1rem;
@@ -55,7 +55,7 @@ const Title = styled("h1")(
 
 breakpoints = [1200];
 mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
-const Jumbotron = styled("header")(
+const Jumbotron = styled.header(
   css`
     background-color: ${colors.primary};
     background-image: ${`url(${backgroundImage})`};

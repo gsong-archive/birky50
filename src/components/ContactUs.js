@@ -60,7 +60,7 @@ export default ({ LabelComponent, sectionLabel }: Props) => {
   );
 };
 
-const Button = styled("button")`
+const Button = styled.button`
   ${btn};
   grid-column-start: 2;
   justify-self: start;
@@ -72,7 +72,7 @@ const Button = styled("button")`
 const breakpoints = [600];
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
-const Form = styled("form")(
+const Form = styled.form(
   mq({
     display: [null, "grid"],
     gridTemplateColumns: [null, "5rem 30rem"],
@@ -80,9 +80,9 @@ const Form = styled("form")(
   })
 );
 
-const Label = styled("label")(mq({ marginTop: [null, "0.575rem"] }));
+const Label = styled.label(mq({ marginTop: [null, "0.575rem"] }));
 
-const Input = styled("input")(
+const Input = styled.input(
   formInput,
   { display: "block" },
   mq({ width: ["100%", "auto"], margin: [".5rem 0 1rem", 0] })

@@ -27,7 +27,7 @@ export default ({ sections, onClick }: Props) => {
   );
 };
 
-const NavContainer = styled("ul")`
+const NavContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,7 +36,7 @@ const NavContainer = styled("ul")`
   margin: 0;
 `;
 
-const NavItem = styled("li")`
+const NavItem = styled.li`
   flex-grow: 1;
   text-align: center;
 `;

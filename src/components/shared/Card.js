@@ -50,12 +50,12 @@ export default class Card extends React.Component<Props> {
   };
 }
 
-const Container = styled("div")`
+const Container = styled.div`
   ${borderRadius};
   background-color: white;
 `;
 
-const CardImg = styled("img")`
+const CardImg = styled.img`
   ${borderRadius};
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -64,7 +64,7 @@ const CardImg = styled("img")`
   object-fit: cover;
 `;
 
-const CardTitle = styled("div")`
+const CardTitle = styled.div`
   font-size: 1.25rem;
   line-height: 1.4;
   margin-bottom: 0.75rem;
