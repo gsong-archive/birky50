@@ -14,7 +14,7 @@ exports[`SectionHeader is rendered 1`] = `
 
 <h1
   id="uniqueId-description"
-  class="emotion-0"
+  class="emotion-0 emotion-1"
 >
   I'm a child.
 </h1>

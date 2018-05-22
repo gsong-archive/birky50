@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-7 {
+.emotion-12 {
   margin: 1rem;
 }
 
-.emotion-8 {
+.emotion-13 {
   border-radius: 0.25rem;
   background-color: white;
 }
@@ -19,26 +19,26 @@ exports[`Card is rendered 1`] = `
   object-fit: cover;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-size: 1.25rem;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 
-.emotion-1 {
+.emotion-2 {
   color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-8 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
 }
 
 <div
-  class="emotion-8"
+  class="emotion-13 emotion-14"
 >
   <a
     href="https://example.com"
@@ -47,19 +47,19 @@ exports[`Card is rendered 1`] = `
     <img
       src="https://url_to_img"
       alt="Little Big Burger"
-      class="emotion-0"
+      class="emotion-0 emotion-1"
     />
   </a>
   <div
-    class="emotion-7"
+    class="emotion-12"
   >
     <div
-      class="emotion-2"
+      class="emotion-4 emotion-5"
     >
       <a
         href="https://example.com"
         rel="nofollow"
-        class="emotion-1"
+        class="emotion-2 emotion-3"
       >
         Little Big Burger
       </a>
@@ -70,7 +70,7 @@ exports[`Card is rendered 1`] = `
     <address>
       <div>
         <span
-          class="emotion-4"
+          class="emotion-8"
         >
           <span
             role="img"
@@ -80,7 +80,7 @@ exports[`Card is rendered 1`] = `
           </span>
           <a
             href="https://url_to_map"
-            class="emotion-1"
+            class="emotion-2 emotion-3"
           >
             123 Main Street
           </a>
@@ -88,7 +88,7 @@ exports[`Card is rendered 1`] = `
       </div>
       <div>
         <span
-          class="emotion-4"
+          class="emotion-8"
         >
           <span
             role="img"
@@ -98,7 +98,7 @@ exports[`Card is rendered 1`] = `
           </span>
           <a
             href="tel:503-543-2345"
-            class="emotion-1"
+            class="emotion-2 emotion-3"
           >
             503-543-2345
           </a>
@@ -122,7 +122,7 @@ exports[`Card w/o phone is rendered 1`] = `
         </div>
 -       <div>
 -         <span
--           class=\\"css-1kozala\\"
+-           class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
@@ -132,7 +132,7 @@ exports[`Card w/o phone is rendered 1`] = `
 -           </span>
 -            
 -           <a
--             class=\\"css-8s3g3u\\"
+-             class=\\"css-1l6go11-Link ek86r7m1\\"
 -             href=\\"tel:503-543-2345\\"
 -           >
 -             503-543-2345
@@ -161,7 +161,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
       <address>
         <div>
           <span
-            class=\\"css-1kozala\\"
+            class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
           >
 @@ -46,27 +43,8 @@
             >
@@ -171,7 +171,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
         </div>
 -       <div>
 -         <span
--           class=\\"css-1kozala\\"
+-           class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
@@ -181,7 +181,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
 -           </span>
 -            
 -           <a
--             class=\\"css-8s3g3u\\"
+-             class=\\"css-1l6go11-Link ek86r7m1\\"
 -             href=\\"tel:503-543-2345\\"
 -           >
 -             503-543-2345
@@ -210,6 +210,6 @@ exports[`Card w/o price is rendered 1`] = `
       <address>
         <div>
           <span
-            class=\\"css-1kozala\\"
+            class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
           >"
 `;

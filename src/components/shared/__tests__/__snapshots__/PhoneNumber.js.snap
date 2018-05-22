@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PhoneNumber is rendered 1`] = `
-.emotion-1 {
+.emotion-2 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
@@ -15,7 +15,7 @@ exports[`PhoneNumber is rendered 1`] = `
 
 <div>
   <span
-    class="emotion-1"
+    class="emotion-2"
   >
     <span
       role="img"
@@ -25,7 +25,7 @@ exports[`PhoneNumber is rendered 1`] = `
     </span>
     <a
       href="tel:503-123-4567"
-      class="emotion-0"
+      class="emotion-0 emotion-1"
     >
       503-123-4567
     </a>
