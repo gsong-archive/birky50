@@ -26,4 +26,7 @@ injectGlobal`
   h2 { font-size: 2rem; }
 
   address { font-style: normal }
+
+  // IE 11
+  main { display: block }
 `;

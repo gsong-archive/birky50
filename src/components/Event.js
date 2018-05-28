@@ -11,6 +11,7 @@ import SectionHeader from "./shared/SectionHeader";
 import WindowSizeContext from "../contexts/WindowSizeContext";
 import { Calendar } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
+import { supportsGrid } from "../styles/cssFeatures";
 
 import eventIcs from "../static/files/event.ics";
 
@@ -111,7 +112,7 @@ class Map extends React.Component<{}> {
 const getHeightFromWidth = width => {
   const max = 500;
   const min = 300;
-  let height = Math.min(Math.floor(width / 4 * 3), max);
+  let height = Math.min(Math.floor((width / 4) * 3), max);
   height = Math.max(height, min);
   return height;
 };
@@ -125,33 +126,62 @@ const TightP = styled.p`
 `;
 
 let breakpoints = [900];
-let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+let mq1 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
-const Event = styled.div(
-  mq({
+const Event = styled.div(() => {
+  let style = mq1({
     display: [null, "grid"],
     gridTemplateColumns: [null, "1fr 2fr"],
     gridColumnGap: [null, "1rem"],
-  })
-);
+  });
+  if (!supportsGrid) {
+    style = css(
+      style,
+      mq1({
+        display: [null, "flex"],
+        justifyContent: [null, "space-between"],
+        "> *:first-child": {
+          flex: [null, `0 0 32%`],
+        },
+        "> *:last-child": {
+          flex: [null, `0 0 65%`],
+        },
+      })
+    );
+  }
+  return style;
+});
 
 const EventMap = styled.div(
-  mq({
+  mq1({
     marginTop: ["1.5rem", "0"],
   })
 );
 
-const spanned = css(mq({ gridColumn: ["1 / 3"] }));
+const spanned = css(mq1({ gridColumn: ["1 / 3"] }));
 
 breakpoints = [540, 900];
-mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const mq2 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
-const EventDetails = styled.div(
-  mq({
+const EventDetails = styled.div(() => {
+  let style = mq2({
     display: [null, "grid", "block"],
     gridTemplateColumns: [null, "1fr 1fr"],
     gridColumnGap: [null, "3rem"],
-  })
-);
+  });
+  if (!supportsGrid) {
+    style = css(
+      style,
+      mq2({
+        display: [null, "flex", "block"],
+        flexWrap: "wrap",
+        "> *:first-child": {
+          marginRight: [null, "3rem"],
+        },
+      })
+    );
+  }
+  return style;
+});
 
-const whereHeader = css(mq({ marginTop: ["1.5rem", 0, "1.5rem"] }));
+const whereHeader = css(mq2({ marginTop: ["1.5rem", 0, "1.5rem"] }));

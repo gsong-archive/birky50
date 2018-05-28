@@ -42,19 +42,19 @@ const Subtitle = styled.p`
 `;
 
 let breakpoints = [576, 768, 992, 1200];
-let mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const mq1 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 const Title = styled.h1(
   css`
     color: white;
     margin-bottom: 1rem;
   `,
-  mq({
+  mq1({
     fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"],
   })
 );
 
 breakpoints = [1200];
-mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const mq2 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 const Jumbotron = styled.header(
   css`
     background-color: ${colors.primary};
@@ -63,7 +63,7 @@ const Jumbotron = styled.header(
     background-repeat: no-repeat;
     padding: 1rem 1rem;
   `,
-  mq({
+  mq2({
     paddingBottom: ["2rem", "4rem"],
   })
 );

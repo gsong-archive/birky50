@@ -1,12 +1,13 @@
 //@flow strict
 import React from "react";
 
-import styled, { css } from "react-emotion";
+import styled, { cx, css } from "react-emotion";
 
 import Address from "./Address";
 import PhoneNumber from "./PhoneNumber";
 import { Link } from "../../styles/components";
 import { borderRadius } from "../../styles";
+import { supportsObjectFit } from "../../styles/cssFeatures";
 
 export type Props = {
   name: string,
@@ -24,9 +25,9 @@ export default class Card extends React.Component<Props> {
 
     return (
       <Container>
-        <a href={url} rel="nofollow">
-          <CardImg src={imgUrl} alt={name} />
-        </a>
+        <ImgLink href={url} imgUrl={imgUrl} rel="nofollow">
+          {supportsObjectFit && <CardImg src={imgUrl} alt={name} />}
+        </ImgLink>
         <div
           className={css`
             margin: 1rem;
@@ -50,19 +51,39 @@ export default class Card extends React.Component<Props> {
   };
 }
 
+const noBottomBorderRadius = css`
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+`;
+
 const Container = styled.div`
   ${borderRadius};
   background-color: white;
 `;
 
-const CardImg = styled.img`
-  ${borderRadius};
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-`;
+const ImgLink = styled.a(props => {
+  let style;
+  if (!supportsObjectFit) {
+    style = css`
+      display: block;
+      height: 12rem;
+      background-image: url(${props.imgUrl});
+      background-size: cover;
+      background-position: center center;
+    `;
+    return cx(borderRadius, noBottomBorderRadius, style);
+  }
+});
+
+const CardImg = styled.img(
+  borderRadius,
+  noBottomBorderRadius,
+  css`
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  `
+);
 
 const CardTitle = styled.div`
   font-size: 1.25rem;

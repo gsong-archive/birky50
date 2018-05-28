@@ -2,11 +2,12 @@
 import React from "react";
 
 import facepaint from "facepaint";
-import styled from "react-emotion";
+import styled, { css } from "react-emotion";
 
 import SectionHeader from "./shared/SectionHeader";
 import { btn, formInput } from "../styles";
 import { colors } from "../styles/variables";
+import { supportsGrid } from "../styles/cssFeatures";
 
 import type { Props } from "./Section.type";
 
@@ -60,32 +61,78 @@ export default ({ LabelComponent, sectionLabel }: Props) => {
   );
 };
 
-const Button = styled.button`
-  ${btn};
-  grid-column-start: 2;
-  justify-self: start;
-  cursor: pointer;
-  background-color: ${colors.primary};
-  color: white;
-`;
-
 const breakpoints = [600];
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
-const Form = styled.form(
-  mq({
+const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, "1rem"] }));
+
+const Form = styled.form(() => {
+  let style = mq({
     display: [null, "grid"],
     gridTemplateColumns: [null, "5rem 30rem"],
     gridRowGap: [null, "1rem"],
-  })
-);
+  });
+  if (!supportsGrid) {
+    style = css(
+      style,
+      mq({
+        display: [null, "flex"],
+        flexWrap: [null, "wrap"],
+        alignItems: [null, "baseline"],
+        width: [null, "40rem"],
+      })
+    );
+  }
+  return style;
+});
 
-const Label = styled.label(mq({ marginTop: [null, "0.575rem"] }));
+const Label = styled.label(() => {
+  let style = mq({ marginTop: [null, "0.575rem"] });
+  if (!supportsGrid) {
+    style = css(
+      style,
+      mq({
+        flex: [null, "0 0 5rem"],
+      })
+    );
+  }
+  return style;
+});
 
-const Input = styled.input(
-  formInput,
-  { display: "block" },
-  mq({ width: ["100%", "auto"], margin: [".5rem 0 1rem", 0] })
-);
+const Input = styled.input(() => {
+  let style = css(
+    formInput,
+    { display: "block" },
+    mq({
+      width: ["100%", "auto"],
+      margin: [".5rem 0 1rem", 0],
+    })
+  );
+  if (!supportsGrid) {
+    style = css(
+      style,
+      mq({
+        flex: [null, "0 0 30rem"],
+      }),
+      IEMarginTop
+    );
+  }
+  return style;
+});
 
 const Textarea = Input.withComponent("textarea");
+
+const Button = styled.button(() => {
+  let style = css`
+    ${btn};
+    grid-column-start: 2;
+    justify-self: start;
+    cursor: pointer;
+    background-color: ${colors.primary};
+    color: white;
+  `;
+  if (!supportsGrid) {
+    style = css(style, mq({ marginLeft: [null, "5rem"] }), IEMarginTop);
+  }
+  return style;
+});

@@ -1,11 +1,13 @@
 //@flow strict
 import * as React from "react";
 
-import styled from "react-emotion";
+import styled, { css } from "react-emotion";
 
 import Card from "./Card";
 import SectionHeader from "./SectionHeader";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
+import { getBaseFontSize } from "../../styles/utils";
+import { supportsGrid } from "../../styles/cssFeatures";
 
 import type { Props as CardType } from "./Card";
 import type { LabelComponent } from "./EmojiLabels";
@@ -23,20 +25,54 @@ export default ({ title, items }: Props) => {
       <SectionHeader>{title}</SectionHeader>
       <WindowSizeContext.Consumer>
         {({ width }) => {
-          const numberOfColumns = Math.max(1, Math.floor(width / 275));
-          const style = {
-            gridTemplateColumns: `repeat(${numberOfColumns}, 1fr)`,
-          };
+          const baseFontSize = getBaseFontSize();
+          const numberOfColumns = Math.max(
+            1,
+            Math.floor(width / (baseFontSize * 18))
+          );
 
-          return <Container style={style}>{cards}</Container>;
+          let style;
+          if (supportsGrid) {
+            style = css`
+              grid-template-columns: repeat(${numberOfColumns}, 1fr);
+            `;
+          } else {
+            const totalGridGap = baseFontSize * 1.5 * (numberOfColumns + 3);
+            const cardWidth =
+              (width - totalGridGap) / numberOfColumns / baseFontSize;
+            style = css`
+              > div {
+                flex: 0 0 ${cardWidth}rem;
+              }
+            `;
+          }
+
+          return <Container className={style}>{cards}</Container>;
         }}
       </WindowSizeContext.Consumer>
     </React.Fragment>
   );
 };
 
-const Container = styled.div`
-  display: grid;
-  grid-gap: 1.5rem;
-  margin-bottom: 0.75em;
-`;
+const Container = styled.div(() => {
+  let style = css`
+    display: grid;
+    grid-gap: 1.5rem;
+    margin-bottom: 0.75em;
+  `;
+  if (!supportsGrid) {
+    style = css(
+      style,
+      css`
+        display: flex;
+        flex-wrap: wrap;
+
+        > div {
+          margin-right: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+      `
+    );
+  }
+  return style;
+});
