@@ -156,6 +156,41 @@ exports[`App renders 1`] = `
   }
 }
 
+@media (min-width:900px) {
+  .emotion-73 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-73 > *:first-child {
+    -webkit-flex: 0 0 32%;
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-73 > *:last-child {
+    -webkit-flex: 0 0 65%;
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
+  }
+}
+
+.emotion-68 {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 @media (min-width:540px) {
   .emotion-68 {
     display: grid;
@@ -167,6 +202,27 @@ exports[`App renders 1`] = `
 @media (min-width:900px) {
   .emotion-68 {
     display: block;
+  }
+}
+
+@media (min-width:540px) {
+  .emotion-68 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-68 {
+    display: block;
+  }
+}
+
+@media (min-width:540px) {
+  .emotion-68 > *:first-child {
+    margin-right: 3rem;
   }
 }
 
@@ -229,18 +285,35 @@ exports[`App renders 1`] = `
   font-weight: bold;
 }
 
-.emotion-218 {
+.emotion-202 {
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;
-  grid-template-columns: repeat(3,1fr);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-102 {
+.emotion-202 > div {
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.emotion-202 > div {
+  -webkit-flex: 0 0 18.333333333333332rem;
+  -ms-flex: 0 0 18.333333333333332rem;
+  flex: 0 0 18.333333333333332rem;
+}
+
+.emotion-100 {
   margin: 1rem;
 }
 
-.emotion-103 {
+.emotion-101 {
   border-radius: 0.25rem;
   background-color: white;
 }
@@ -249,19 +322,274 @@ exports[`App renders 1`] = `
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  width: 100%;
+  display: block;
   height: 12rem;
-  object-fit: cover;
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipP6DfmJnGhCT_brALxXqoV-ldPxWuavT-KKvPPe=w408-h273-k-no);
+  background-size: cover;
+  background-position: center center;
 }
 
-.emotion-94 {
+.emotion-92 {
   font-size: 1.25rem;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 
+.emotion-103 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-118 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-133 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://cdn.ostrovok.ru/t/1024x768/mec/hotels/8000000/7120000/7118600/7118558/7118558_15_b.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-145 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipMwGIaY-rFy-uL4pYwy2zgApjQdN9ZJiCn_ZYSj=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-160 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(http://sunrisevistainn.weebly.com/uploads/5/3/4/1/53416569/8098879_orig.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-175 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(http://www.passportamerica.com/img/campgrounds/3358/CG-3278_4.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-190 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(http://www.peacefulbayresort.com/images/pb-on-the-hill-sm.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-208 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-223 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-238 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-253 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-268 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-283 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-298 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-319 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipMneZ7VhRLaiEaUTBhRo1CWqUzv3hs-gBP3fYkM=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-334 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-349 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(http://www.spokeandpaddle.com/images/sandflats.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-364 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipNbgLiDCF3vj9_AMegijlQMaBJf9OvAImYPjqyN=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-379 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://www.bmwunstoppable.com/wp-content/uploads/2017/04/maxresdefault-1-7.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-394 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-406 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipPOnBM5O5btlHaud1AH-QlcdmbFp-apN3jGtF8j=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-421 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://static1.squarespace.com/static/54da76f0e4b004762df44faa/t/54f7394ce4b0aff87aef4f08/1425488206828/FLR2032.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.emotion-436 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: block;
+  height: 12rem;
+  background-image: url(https://lh3.ggpht.com/p/AF1QipMuV4H2G2h4_I0oCPKyTxmuMVOBeEEqjqcTvdDb=s1024);
+  background-size: cover;
+  background-position: center center;
+}
+
 @media (min-width:600px) {
-  .emotion-519 {
+  .emotion-471 {
     display: grid;
     grid-template-columns: 5rem 30rem;
     grid-row-gap: 1rem;
@@ -269,12 +597,37 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-505 {
+  .emotion-471 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    width: 40rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-457 {
     margin-top: 0.575rem;
   }
 }
 
-.emotion-507 {
+@media (min-width:600px) {
+  .emotion-457 {
+    -webkit-flex: 0 0 5rem;
+    -ms-flex: 0 0 5rem;
+    flex: 0 0 5rem;
+  }
+}
+
+.emotion-459 {
   border-radius: 0.25rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -286,13 +639,27 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-507 {
+  .emotion-459 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-515 {
+@media (min-width:600px) {
+  .emotion-459 {
+    -webkit-flex: 0 0 30rem;
+    -ms-flex: 0 0 30rem;
+    flex: 0 0 30rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-459 {
+    margin-top: 1rem;
+  }
+}
+
+.emotion-467 {
   border-radius: 0.25rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -304,13 +671,27 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-515 {
+  .emotion-467 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-517 {
+@media (min-width:600px) {
+  .emotion-467 {
+    -webkit-flex: 0 0 30rem;
+    -ms-flex: 0 0 30rem;
+    flex: 0 0 30rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-467 {
+    margin-top: 1rem;
+  }
+}
+
+.emotion-469 {
   border-radius: 0.25rem;
   display: inline-block;
   font-size: 1rem;
@@ -325,6 +706,18 @@ exports[`App renders 1`] = `
   cursor: pointer;
   background-color: #100d44;
   color: white;
+}
+
+@media (min-width:600px) {
+  .emotion-469 {
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-469 {
+    margin-top: 1rem;
+  }
 }
 
 <div>
@@ -704,27 +1097,21 @@ exports[`App renders 1`] = `
       </span>
     </h1>
     <div
-      class="emotion-218 emotion-219"
+      class="emotion-202 emotion-203"
     >
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://outlookinnbandb.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh5.googleusercontent.com/p/AF1QipP6DfmJnGhCT_brALxXqoV-ldPxWuavT-KKvPPe=w408-h273-k-no"
-            alt="Outlook Inn Bed and Breakfast"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-88 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://outlookinnbandb.com"
@@ -775,24 +1162,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://bestwesternflatheadlake.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536"
-            alt="Best Western Plus Flathead Lake Inn and Suites"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-103 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://bestwesternflatheadlake.com"
@@ -846,24 +1227,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no"
-            alt="Hilton Garden Inn Kalispell"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-118 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
@@ -914,24 +1289,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.somersbaycabins.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://cdn.ostrovok.ru/t/1024x768/mec/hotels/8000000/7120000/7118600/7118558/7118558_15_b.jpg"
-            alt="Somer’s Bay Log Cabin"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-133 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.somersbaycabins.com"
@@ -964,24 +1333,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipMwGIaY-rFy-uL4pYwy2zgApjQdN9ZJiCn_ZYSj=s1024"
-            alt="FairBridge Inn & Suites"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-145 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
@@ -1035,24 +1398,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://sunrisevistainn.weebly.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="http://sunrisevistainn.weebly.com/uploads/5/3/4/1/53416569/8098879_orig.jpg"
-            alt="Sunrise Vista Inn"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-160 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://sunrisevistainn.weebly.com"
@@ -1103,24 +1460,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://edgewaterrv.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="http://www.passportamerica.com/img/campgrounds/3358/CG-3278_4.png"
-            alt="Edgewater RV Resort & Motel"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-175 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://edgewaterrv.com"
@@ -1171,24 +1522,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.peacefulbayresort.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="http://www.peacefulbayresort.com/images/pb-on-the-hill-sm.jpg"
-            alt="Peaceful Bay Resort & Club"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-190 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.peacefulbayresort.com"
@@ -1244,27 +1589,21 @@ exports[`App renders 1`] = `
       </span>
     </h1>
     <div
-      class="emotion-218 emotion-219"
+      class="emotion-202 emotion-203"
     >
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://www.facebook.com/glacier.perks.coffee/"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
-            alt="Glacier Perks Coffee House"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-208 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://www.facebook.com/glacier.perks.coffee/"
@@ -1315,24 +1654,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.farmhouselakeside.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024"
-            alt="The Farmhouse Restaurant"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-223 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.farmhouselakeside.com"
@@ -1383,24 +1716,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://www.tamarackbrewing.com/lakeside"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024"
-            alt="Tamarack Brewing Company"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-238 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://www.tamarackbrewing.com/lakeside"
@@ -1451,24 +1778,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://www.facebook.com/homesteadcafebarandcasino/"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024"
-            alt="Homestead Cafe"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-253 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://www.facebook.com/homesteadcafebarandcasino/"
@@ -1519,24 +1840,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
-            alt="Dairy Queen"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-268 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
@@ -1587,24 +1902,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
-            alt="Winchester Steak House"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-283 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
@@ -1655,24 +1964,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://scottysmt.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
-            alt="Scotty's Bar"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-298 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://scottysmt.com"
@@ -1746,27 +2049,21 @@ exports[`App renders 1`] = `
       </span>
     </h1>
     <div
-      class="emotion-218 emotion-219"
+      class="emotion-202 emotion-203"
     >
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://www.nps.gov/glac/index.htm"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipMneZ7VhRLaiEaUTBhRo1CWqUzv3hs-gBP3fYkM=s1024"
-            alt="Glacier National Park"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-319 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://www.nps.gov/glac/index.htm"
@@ -1817,24 +2114,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.flatheadlakeboattour.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
-            alt="Far West Boat Tours"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-334 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.flatheadlakeboattour.com"
@@ -1888,24 +2179,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.spokeandpaddle.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="http://www.spokeandpaddle.com/images/sandflats.jpg"
-            alt="Spoke & Paddle Outdoor Adventures"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-349 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.spokeandpaddle.com"
@@ -1956,24 +2241,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.seamepaddle.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipNbgLiDCF3vj9_AMegijlQMaBJf9OvAImYPjqyN=s1024"
-            alt="Sea Me Paddle Kayaking Tours"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-364 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.seamepaddle.com"
@@ -2024,24 +2303,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="https://glacierraftco.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://www.bmwunstoppable.com/wp-content/uploads/2017/04/maxresdefault-1-7.jpg"
-            alt="Glacier Raft Company"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-379 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="https://glacierraftco.com"
@@ -2092,24 +2365,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg"
-            alt="Bigfork"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-394 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
@@ -2142,24 +2409,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.boatrentalsandrides.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipPOnBM5O5btlHaud1AH-QlcdmbFp-apN3jGtF8j=s1024"
-            alt="Boat Rentals and Rides"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-406 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.boatrentalsandrides.com"
@@ -2210,24 +2471,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.flatheadlakesailing.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://static1.squarespace.com/static/54da76f0e4b004762df44faa/t/54f7394ce4b0aff87aef4f08/1425488206828/FLR2032.jpg"
-            alt="Flathead Lake Sailing & Charters"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-421 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.flatheadlakesailing.com"
@@ -2278,24 +2533,18 @@ exports[`App renders 1`] = `
         </div>
       </div>
       <div
-        class="emotion-103 emotion-104"
+        class="emotion-101 emotion-102"
       >
         <a
           href="http://www.wildhorseislandboattrips.com"
           rel="nofollow"
-          class="emotion-90 emotion-91"
-        >
-          <img
-            src="https://lh3.ggpht.com/p/AF1QipMuV4H2G2h4_I0oCPKyTxmuMVOBeEEqjqcTvdDb=s1024"
-            alt="WildHorse Island Boat Trips"
-            class="emotion-88 emotion-89"
-          />
-        </a>
+          class="emotion-436 emotion-89"
+        />
         <div
-          class="emotion-102"
+          class="emotion-100"
         >
           <div
-            class="emotion-94 emotion-95"
+            class="emotion-92 emotion-93"
           >
             <a
               href="http://www.wildhorseislandboattrips.com"
@@ -2371,11 +2620,11 @@ exports[`App renders 1`] = `
     <form
       action="https://formspree.io/birky50@damacy.net"
       method="POST"
-      class="emotion-519 emotion-520"
+      class="emotion-471 emotion-472"
     >
       <label
         for="contact_us_name"
-        class="emotion-505 emotion-506"
+        class="emotion-457 emotion-458"
       >
         Name
       </label>
@@ -2385,11 +2634,11 @@ exports[`App renders 1`] = `
         id="contact_us_name"
         placeholder="Your Name"
         required=""
-        class="emotion-507 emotion-508"
+        class="emotion-459 emotion-460"
       />
       <label
         for="contact_us_email"
-        class="emotion-505 emotion-506"
+        class="emotion-457 emotion-458"
       >
         Email
       </label>
@@ -2399,11 +2648,11 @@ exports[`App renders 1`] = `
         id="contact_us_email"
         placeholder="Your Email"
         required=""
-        class="emotion-507 emotion-508"
+        class="emotion-459 emotion-460"
       />
       <label
         for="contact_us_message"
-        class="emotion-505 emotion-506"
+        class="emotion-457 emotion-458"
       >
         Message
       </label>
@@ -2413,7 +2662,7 @@ exports[`App renders 1`] = `
         placeholder="Message"
         rows="3"
         required=""
-        class="emotion-515 emotion-516"
+        class="emotion-467 emotion-468"
       />
       <input
         type="hidden"
@@ -2426,7 +2675,7 @@ exports[`App renders 1`] = `
       />
       <button
         type="submit"
-        class="emotion-517 emotion-518"
+        class="emotion-469 emotion-470"
       >
         Send
       </button>

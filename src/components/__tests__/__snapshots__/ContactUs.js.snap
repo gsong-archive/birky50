@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactUs renders properly 1`] = `
+.emotion-1 {
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+@media (max-width:350px) {
+  .emotion-1 {
+    font-size: 2.4rem;
+  }
+}
+
+.emotion-0 {
+  display: inline-block;
+  margin-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+@media (min-width:600px) {
+  .emotion-17 {
+    display: grid;
+    grid-template-columns: 5rem 30rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-3 {
+    margin-top: 0.575rem;
+  }
+}
+
+.emotion-5 {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  display: block;
+  width: 100%;
+  margin: .5rem 0 1rem;
+}
+
+@media (min-width:600px) {
+  .emotion-5 {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.emotion-13 {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  display: block;
+  width: 100%;
+  margin: .5rem 0 1rem;
+}
+
+@media (min-width:600px) {
+  .emotion-13 {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.emotion-15 {
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  grid-column-start: 2;
+  justify-self: start;
+  cursor: pointer;
+  background-color: #100d44;
+  color: white;
+}
+
+<div>
+  <h1
+    id="uniqueId-description"
+    class="emotion-1 emotion-2"
+  >
+    <span
+      class="emotion-0"
+    >
+      <span
+        role="img"
+        aria-label="woman raising hand"
+      >
+        🙋🏻‍♀️
+      </span>
+      Questions?
+    </span>
+  </h1>
+  <form
+    action="https://formspree.io/birky50@damacy.net"
+    method="POST"
+    class="emotion-17 emotion-18"
+  >
+    <label
+      for="contact_us_name"
+      class="emotion-3 emotion-4"
+    >
+      Name
+    </label>
+    <input
+      type="text"
+      name="name"
+      id="contact_us_name"
+      placeholder="Your Name"
+      required=""
+      class="emotion-5 emotion-6"
+    />
+    <label
+      for="contact_us_email"
+      class="emotion-3 emotion-4"
+    >
+      Email
+    </label>
+    <input
+      type="email"
+      name="email"
+      id="contact_us_email"
+      placeholder="Your Email"
+      required=""
+      class="emotion-5 emotion-6"
+    />
+    <label
+      for="contact_us_message"
+      class="emotion-3 emotion-4"
+    >
+      Message
+    </label>
+    <textarea
+      name="message"
+      id="contact_us_message"
+      placeholder="Message"
+      rows="3"
+      required=""
+      class="emotion-13 emotion-14"
+    />
+    <input
+      type="hidden"
+      name="_subject"
+      value="Birky 50th Anniversary Message"
+    />
+    <input
+      type="hidden"
+      name="_gotcha"
+    />
+    <button
+      type="submit"
+      class="emotion-15 emotion-16"
+    >
+      Send
+    </button>
+  </form>
+</div>
+`;

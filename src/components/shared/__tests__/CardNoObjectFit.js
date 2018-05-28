@@ -1,19 +1,20 @@
 import React from "react";
 
-import { render } from "react-testing-library";
+import * as emotion from "emotion";
 import snapshotDiff from "snapshot-diff";
+import { getStyles } from "jest-emotion";
+import { render } from "react-testing-library";
 
 import { generate } from "testUtils";
 import { mockSupportsObjectFit } from "testUtils/mocks";
 
 import Card from "../Card";
 
-mockSupportsObjectFit(true);
+mockSupportsObjectFit(false);
 
 describe("User sees a card", () => {
   const props = generate.card();
   const { container } = render(<Card {...props} />);
-  const imgNode = container.querySelector("img");
 
   test("text elements are present", () => {
     ["name", "price", "address", "phone"].forEach(prop =>
@@ -22,8 +23,8 @@ describe("User sees a card", () => {
   });
 
   test("image is present", () => {
-    expect(imgNode.src).toBe(props.imgUrl);
-    expect(imgNode.parentNode.href).toMatch(props.url);
+    const regex = RegExp(`background-image:url\\(${props.imgUrl}\\)`);
+    expect(regex.test(getStyles(emotion))).not.toBe(null);
   });
 });
 

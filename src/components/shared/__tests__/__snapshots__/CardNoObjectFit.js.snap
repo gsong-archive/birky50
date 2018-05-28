@@ -1,66 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-14 {
+.emotion-12 {
   margin: 1rem;
 }
 
-.emotion-15 {
+.emotion-13 {
   border-radius: 0.25rem;
   background-color: white;
+}
+
+.emotion-4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.emotion-2 {
+  color: maroon;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-8 {
+  display: inline-block;
+  margin-left: 1.4em;
+  text-indent: -1.4em;
 }
 
 .emotion-0 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  width: 100%;
+  display: block;
   height: 12rem;
-  object-fit: cover;
-}
-
-.emotion-6 {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  margin-bottom: 0.75rem;
-}
-
-.emotion-4 {
-  color: maroon;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10 {
-  display: inline-block;
-  margin-left: 1.4em;
-  text-indent: -1.4em;
+  background-image: url(https://url_to_img);
+  background-size: cover;
+  background-position: center center;
 }
 
 <div
-  class="emotion-15 emotion-16"
+  class="emotion-13 emotion-14"
 >
   <a
     href="https://example.com"
     rel="nofollow"
-    class="emotion-2 emotion-3"
-  >
-    <img
-      src="https://url_to_img"
-      alt="Little Big Burger"
-      class="emotion-0 emotion-1"
-    />
-  </a>
+    class="emotion-0 emotion-1"
+  />
   <div
-    class="emotion-14"
+    class="emotion-12"
   >
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-4 emotion-5"
     >
       <a
         href="https://example.com"
         rel="nofollow"
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
       >
         Little Big Burger
       </a>
@@ -71,7 +67,7 @@ exports[`Card is rendered 1`] = `
     <address>
       <div>
         <span
-          class="emotion-10"
+          class="emotion-8"
         >
           <span
             role="img"
@@ -81,7 +77,7 @@ exports[`Card is rendered 1`] = `
           </span>
           <a
             href="https://url_to_map"
-            class="emotion-4 emotion-5"
+            class="emotion-2 emotion-3"
           >
             123 Main Street
           </a>
@@ -89,7 +85,7 @@ exports[`Card is rendered 1`] = `
       </div>
       <div>
         <span
-          class="emotion-10"
+          class="emotion-8"
         >
           <span
             role="img"
@@ -99,7 +95,7 @@ exports[`Card is rendered 1`] = `
           </span>
           <a
             href="tel:503-543-2345"
-            class="emotion-4 emotion-5"
+            class="emotion-2 emotion-3"
           >
             503-543-2345
           </a>
@@ -115,7 +111,7 @@ exports[`Card w/o phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -47,27 +47,8 @@
+@@ -41,27 +41,8 @@
             >
               123 Main Street
             </a>
@@ -150,7 +146,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -24,13 +24,10 @@
+@@ -18,13 +18,10 @@
           rel=\\"nofollow\\"
         >
           Little Big Burger
@@ -164,7 +160,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
           <span
             class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
           >
-@@ -47,27 +44,8 @@
+@@ -41,27 +38,8 @@
             >
               123 Main Street
             </a>
@@ -199,7 +195,7 @@ exports[`Card w/o price is rendered 1`] = `
 - First value
 + Second value
 
-@@ -24,13 +24,10 @@
+@@ -18,13 +18,10 @@
           rel=\\"nofollow\\"
         >
           Little Big Burger

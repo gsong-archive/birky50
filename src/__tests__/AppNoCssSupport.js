@@ -11,8 +11,8 @@ import {
 import App from "../App";
 
 mockGetBaseFontSize.mock();
-mockSupportsGrid(true);
-mockSupportsObjectFit(true);
+mockSupportsGrid(false);
+mockSupportsObjectFit(false);
 
 test("App renders without crashing", () => {
   const { container } = render(<App />);

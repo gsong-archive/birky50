@@ -8,7 +8,7 @@ import { mockGetBaseFontSize, mockSupportsGrid } from "testUtils/mocks";
 import CardList from "../CardList";
 
 mockGetBaseFontSize.mock();
-mockSupportsGrid(true);
+mockSupportsGrid(false);
 
 describe("CardList renders", () => {
   const props = {
