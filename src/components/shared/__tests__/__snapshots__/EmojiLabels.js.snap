@@ -1,17 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmojiLabel is rendered 1`] = `
-.emotion-0 {
+.emotion-1 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
 }
 
+.emotion-0 {
+  font-family: "Segoe UI Emoji";
+}
+
 <div>
   <span
-    class="emotion-0"
+    class="emotion-1"
   >
     <span
+      class="emotion-0"
       role="img"
       aria-label="unicorn"
     >

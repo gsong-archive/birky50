@@ -1,25 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactUs renders properly 1`] = `
-.emotion-1 {
+.emotion-2 {
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 @media (max-width:21.875em) {
-  .emotion-1 {
+  .emotion-2 {
     font-size: 2.4rem;
   }
 }
 
-.emotion-0 {
+.emotion-1 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
 }
 
+.emotion-0 {
+  font-family: "Segoe UI Emoji";
+}
+
 @media (min-width:37.5em) {
-  .emotion-17 {
+  .emotion-18 {
     display: grid;
     grid-template-columns: 5rem 30rem;
     grid-row-gap: 1rem;
@@ -27,12 +31,12 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-3 {
+  .emotion-4 {
     margin-top: 0.575rem;
   }
 }
 
-.emotion-5 {
+.emotion-6 {
   border-radius: 0.25rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -44,13 +48,13 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-5 {
+  .emotion-6 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-13 {
+.emotion-14 {
   border-radius: 0.25rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -62,13 +66,13 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-13 {
+  .emotion-14 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-15 {
+.emotion-16 {
   border-radius: 0.25rem;
   display: inline-block;
   font-size: 1rem;
@@ -88,12 +92,13 @@ exports[`ContactUs renders properly 1`] = `
 <div>
   <h1
     id="uniqueId-description"
-    class="emotion-1 emotion-2"
+    class="emotion-2 emotion-3"
   >
     <span
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
+        class="emotion-0"
         role="img"
         aria-label="woman raising hand"
       >
@@ -105,11 +110,11 @@ exports[`ContactUs renders properly 1`] = `
   <form
     action="https://formspree.io/birky50@damacy.net"
     method="POST"
-    class="emotion-17 emotion-18"
+    class="emotion-18 emotion-19"
   >
     <label
       for="contact_us_name"
-      class="emotion-3 emotion-4"
+      class="emotion-4 emotion-5"
     >
       Name
     </label>
@@ -119,11 +124,11 @@ exports[`ContactUs renders properly 1`] = `
       id="contact_us_name"
       placeholder="Your Name"
       required=""
-      class="emotion-5 emotion-6"
+      class="emotion-6 emotion-7"
     />
     <label
       for="contact_us_email"
-      class="emotion-3 emotion-4"
+      class="emotion-4 emotion-5"
     >
       Email
     </label>
@@ -133,11 +138,11 @@ exports[`ContactUs renders properly 1`] = `
       id="contact_us_email"
       placeholder="Your Email"
       required=""
-      class="emotion-5 emotion-6"
+      class="emotion-6 emotion-7"
     />
     <label
       for="contact_us_message"
-      class="emotion-3 emotion-4"
+      class="emotion-4 emotion-5"
     >
       Message
     </label>
@@ -147,7 +152,7 @@ exports[`ContactUs renders properly 1`] = `
       placeholder="Message"
       rows="3"
       required=""
-      class="emotion-13 emotion-14"
+      class="emotion-14 emotion-15"
     />
     <input
       type="hidden"
@@ -160,7 +165,7 @@ exports[`ContactUs renders properly 1`] = `
     />
     <button
       type="submit"
-      class="emotion-15 emotion-16"
+      class="emotion-16 emotion-17"
     >
       Send
     </button>

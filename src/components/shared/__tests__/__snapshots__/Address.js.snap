@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Address is rendered 1`] = `
-.emotion-2 {
+.emotion-3 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
 }
 
 .emotion-0 {
+  font-family: "Segoe UI Emoji";
+}
+
+.emotion-1 {
   color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -15,9 +19,10 @@ exports[`Address is rendered 1`] = `
 
 <div>
   <span
-    class="emotion-2"
+    class="emotion-3"
   >
     <span
+      class="emotion-0"
       role="img"
       aria-label="round pushpin"
     >
@@ -25,7 +30,7 @@ exports[`Address is rendered 1`] = `
     </span>
     <a
       href="https://example.com"
-      class="emotion-0 emotion-1"
+      class="emotion-1 emotion-2"
     >
       123 Main Street
     </a>

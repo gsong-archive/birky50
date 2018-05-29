@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-12 {
+.emotion-14 {
   margin: 1rem;
 }
 
-.emotion-13 {
+.emotion-15 {
   border-radius: 0.25rem;
   background-color: white;
 }
@@ -22,10 +22,14 @@ exports[`Card is rendered 1`] = `
   text-decoration: none;
 }
 
-.emotion-8 {
+.emotion-9 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
+}
+
+.emotion-6 {
+  font-family: "Segoe UI Emoji";
 }
 
 .emotion-0 {
@@ -40,7 +44,7 @@ exports[`Card is rendered 1`] = `
 }
 
 <div
-  class="emotion-13 emotion-14"
+  class="emotion-15 emotion-16"
 >
   <a
     href="https://example.com"
@@ -48,7 +52,7 @@ exports[`Card is rendered 1`] = `
     class="emotion-0 emotion-1"
   />
   <div
-    class="emotion-12"
+    class="emotion-14"
   >
     <div
       class="emotion-4 emotion-5"
@@ -67,9 +71,10 @@ exports[`Card is rendered 1`] = `
     <address>
       <div>
         <span
-          class="emotion-8"
+          class="emotion-9"
         >
           <span
+            class="emotion-6"
             role="img"
             aria-label="round pushpin"
           >
@@ -85,9 +90,10 @@ exports[`Card is rendered 1`] = `
       </div>
       <div>
         <span
-          class="emotion-8"
+          class="emotion-9"
         >
           <span
+            class="emotion-6"
             role="img"
             aria-label="phone receiver"
           >
@@ -111,7 +117,7 @@ exports[`Card w/o phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -41,27 +41,8 @@
+@@ -42,28 +42,8 @@
             >
               123 Main Street
             </a>
@@ -123,6 +129,7 @@ exports[`Card w/o phone is rendered 1`] = `
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
+-             class=\\"css-1cinni1-EmojiLabel-EmojiLabel\\"
 -             role=\\"img\\"
 -           >
 -             📞
@@ -160,7 +167,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
           <span
             class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
           >
-@@ -41,27 +38,8 @@
+@@ -42,28 +39,8 @@
             >
               123 Main Street
             </a>
@@ -172,6 +179,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
+-             class=\\"css-1cinni1-EmojiLabel-EmojiLabel\\"
 -             role=\\"img\\"
 -           >
 -             📞

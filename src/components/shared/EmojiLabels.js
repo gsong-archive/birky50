@@ -18,7 +18,13 @@ export const EmojiLabel = ({ emoji, ariaLabel, label }: LabelProps) => (
         text-indent: -1.4em;
       `}
     >
-      <span role="img" aria-label={ariaLabel}>
+      <span
+        className={css`
+          font-family: "Segoe UI Emoji";
+        `}
+        role="img"
+        aria-label={ariaLabel}
+      >
         {emoji}
       </span>{" "}
       {label}

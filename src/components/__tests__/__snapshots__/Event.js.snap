@@ -1,47 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Event renders properly 1`] = `
-.emotion-10 {
+.emotion-12 {
   margin-top: 1.5rem;
 }
 
 @media (min-width:33.75em) {
-  .emotion-10 {
+  .emotion-12 {
     margin-top: 0;
   }
 }
 
 @media (min-width:56.25em) {
-  .emotion-10 {
+  .emotion-12 {
     margin-top: 1.5rem;
   }
 }
 
-.emotion-23 {
+.emotion-27 {
   grid-column: 1 / 3;
   padding: 0;
   margin-top: 1.5rem;
 }
 
-.emotion-1 {
+.emotion-2 {
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 @media (max-width:21.875em) {
-  .emotion-1 {
+  .emotion-2 {
     font-size: 2.4rem;
   }
 }
 
-.emotion-0 {
+.emotion-1 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
 }
 
+.emotion-0 {
+  font-family: "Segoe UI Emoji";
+}
+
 @media (min-width:56.25em) {
-  .emotion-31 {
+  .emotion-35 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 1rem;
@@ -49,7 +53,7 @@ exports[`Event renders properly 1`] = `
 }
 
 @media (min-width:33.75em) {
-  .emotion-26 {
+  .emotion-30 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3rem;
@@ -57,26 +61,26 @@ exports[`Event renders properly 1`] = `
 }
 
 @media (min-width:56.25em) {
-  .emotion-26 {
+  .emotion-30 {
     display: block;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
   margin: 0.25rem 0;
 }
 
-.emotion-8 {
+.emotion-10 {
   color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-19 {
+.emotion-23 {
   margin-left: 1.5rem;
 }
 
-.emotion-24 {
+.emotion-28 {
   border-radius: 0.25rem;
   display: inline-block;
   font-size: 1rem;
@@ -97,17 +101,17 @@ exports[`Event renders properly 1`] = `
   margin-top: 0.5rem;
 }
 
-.emotion-29 {
+.emotion-33 {
   margin-top: 1.5rem;
 }
 
 @media (min-width:56.25em) {
-  .emotion-29 {
+  .emotion-33 {
     margin-top: 0px;
   }
 }
 
-.emotion-28 {
+.emotion-32 {
   width: 100%;
   border: 0;
 }
@@ -115,12 +119,13 @@ exports[`Event renders properly 1`] = `
 <div>
   <h1
     id="uniqueId-description"
-    class="emotion-1 emotion-2"
+    class="emotion-2 emotion-3"
   >
     <span
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
+        class="emotion-0"
         role="img"
         aria-label="party hat"
       >
@@ -130,17 +135,17 @@ exports[`Event renders properly 1`] = `
     </span>
   </h1>
   <div
-    class="emotion-31 emotion-32"
+    class="emotion-35 emotion-36"
   >
     <div
-      class="emotion-26 emotion-27"
+      class="emotion-30 emotion-31"
     >
       <div>
         <h2>
           When?
         </h2>
         <p
-          class="emotion-3 emotion-4"
+          class="emotion-4 emotion-5"
         >
           <time
             datetime="2018-06-23 16:00"
@@ -149,19 +154,20 @@ exports[`Event renders properly 1`] = `
           </time>
         </p>
         <p
-          class="emotion-3 emotion-4"
+          class="emotion-4 emotion-5"
         >
           Starts at 4:00pm, dinner buffet at 5:00pm
         </p>
         <a
           href="event.ics"
           download=""
-          class="emotion-8 emotion-9"
+          class="emotion-10 emotion-11"
         >
           <span
-            class="emotion-0"
+            class="emotion-1"
           >
             <span
+              class="emotion-0"
               role="img"
               aria-label="calendar"
             >
@@ -173,23 +179,24 @@ exports[`Event renders properly 1`] = `
       </div>
       <div>
         <h2
-          class="emotion-10"
+          class="emotion-12"
         >
           Where?
         </h2>
         <a
           href="http://vistalindacatering.com/"
           rel="nofollow"
-          class="emotion-8 emotion-9"
+          class="emotion-10 emotion-11"
         >
           Vista Linda Mexican & Catering
         </a>
         <address>
           <div>
             <span
-              class="emotion-0"
+              class="emotion-1"
             >
               <span
+                class="emotion-0"
                 role="img"
                 aria-label="round pushpin"
               >
@@ -197,7 +204,7 @@ exports[`Event renders properly 1`] = `
               </span>
               <a
                 href="https://goo.gl/maps/THRyvih62562"
-                class="emotion-8 emotion-9"
+                class="emotion-10 emotion-11"
               >
                 240 Boon Rd, Somers, MT 59932
               </a>
@@ -205,9 +212,10 @@ exports[`Event renders properly 1`] = `
           </div>
           <div>
             <span
-              class="emotion-0"
+              class="emotion-1"
             >
               <span
+                class="emotion-0"
                 role="img"
                 aria-label="phone receiver"
               >
@@ -215,7 +223,7 @@ exports[`Event renders properly 1`] = `
               </span>
               <a
                 href="tel:(406) 857-3158"
-                class="emotion-8 emotion-9"
+                class="emotion-10 emotion-11"
               >
                 (406) 857-3158
               </a>
@@ -224,15 +232,15 @@ exports[`Event renders properly 1`] = `
         </address>
       </div>
       <ul
-        class="emotion-23"
+        class="emotion-27"
       >
         <li
-          class="emotion-19 emotion-20"
+          class="emotion-23 emotion-24"
         >
           Event will take place outdoors in a covered pavilion
         </li>
         <li
-          class="emotion-19 emotion-20"
+          class="emotion-23 emotion-24"
         >
           Dressy casual attire
         </li>
@@ -240,13 +248,13 @@ exports[`Event renders properly 1`] = `
       <a
         href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
         width="100%"
-        class="emotion-24 emotion-25"
+        class="emotion-28 emotion-29"
       >
         RSVP
       </a>
     </div>
     <div
-      class="emotion-29 emotion-30"
+      class="emotion-33 emotion-34"
     >
       <div>
         <iframe
@@ -254,7 +262,7 @@ exports[`Event renders properly 1`] = `
           title="map"
           height="300"
           allowfullscreen=""
-          class="emotion-28"
+          class="emotion-32"
         />
       </div>
     </div>

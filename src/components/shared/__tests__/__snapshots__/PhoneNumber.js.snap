@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PhoneNumber is rendered 1`] = `
-.emotion-2 {
+.emotion-3 {
   display: inline-block;
   margin-left: 1.4em;
   text-indent: -1.4em;
 }
 
 .emotion-0 {
+  font-family: "Segoe UI Emoji";
+}
+
+.emotion-1 {
   color: maroon;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -15,9 +19,10 @@ exports[`PhoneNumber is rendered 1`] = `
 
 <div>
   <span
-    class="emotion-2"
+    class="emotion-3"
   >
     <span
+      class="emotion-0"
       role="img"
       aria-label="phone receiver"
     >
@@ -25,7 +30,7 @@ exports[`PhoneNumber is rendered 1`] = `
     </span>
     <a
       href="tel:503-123-4567"
-      class="emotion-0 emotion-1"
+      class="emotion-1 emotion-2"
     >
       503-123-4567
     </a>
