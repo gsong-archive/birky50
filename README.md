@@ -9,25 +9,17 @@ Staging site (development): <https://staging.birky50th.com>
 
 ## Development
 
-1.  `npx yarn` to install dependencies
-1.  `npx yarn start` to start development server
-1.  `npx yarn test` to start continuous testing
+1.  `npm install` to install dependencies
+1.  `npm run start` to start development server
+1.  `npm run test` to start continuous testing
 
 ## Cypress Tests
 
 [Cypress][] end-to-end tests are included. To run them:
 
-1.  Install `cypress` globally:
-
-    ```sh
-    npm install -g cypress
-    ```
-
-1.  Run Cypress continuously during development:
-
-    ```sh
-    cypress open -P .
-    ```
+```sh
+npx cypress open
+```
 
 You must have [Chrome][] installed.
 
