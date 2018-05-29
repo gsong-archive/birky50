@@ -3,9 +3,10 @@ import { createFixture } from "react-cosmos-flow/fixture";
 
 import { generate } from "testUtils";
 
-import Address from "../Address";
+import PhoneNumber from "./index";
 
 export default createFixture({
-  component: Address,
-  props: { address: generate.address(), url: generate.url() },
+  component: PhoneNumber,
+  name: "PhoneNumber",
+  props: { number: generate.phoneNumber() },
 });

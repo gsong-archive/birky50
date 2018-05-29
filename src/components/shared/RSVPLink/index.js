@@ -3,8 +3,8 @@ import React from "react";
 
 import styled from "react-emotion";
 
-import { btn, btnLg } from "../../styles";
-import { colors } from "../../styles/variables";
+import { btn, btnLg } from "../../../styles";
+import { colors } from "../../../styles/variables";
 
 type Props = { className?: string, width?: string };
 

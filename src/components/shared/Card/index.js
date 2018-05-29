@@ -3,11 +3,11 @@ import React from "react";
 
 import styled, { css } from "react-emotion";
 
-import Address from "./Address";
-import PhoneNumber from "./PhoneNumber";
-import { Link } from "../../styles/components";
-import { borderRadius } from "../../styles";
-import { supportsObjectFit } from "../../styles/cssFeatures";
+import Address from "../Address";
+import PhoneNumber from "../PhoneNumber";
+import { Link } from "../../../styles/components";
+import { borderRadius } from "../../../styles";
+import { supportsObjectFit } from "../../../styles/cssFeatures";
 
 export type Props = {
   name: string,

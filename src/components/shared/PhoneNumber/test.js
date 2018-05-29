@@ -4,7 +4,7 @@ import { render } from "react-testing-library";
 
 import { generate } from "testUtils";
 
-import PhoneNumber from "../PhoneNumber";
+import PhoneNumber from "./index";
 
 test("User can see phone number and link", () => {
   const props = { number: generate.phoneNumber() };

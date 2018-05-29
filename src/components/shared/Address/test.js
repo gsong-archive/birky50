@@ -4,7 +4,7 @@ import { render } from "react-testing-library";
 
 import { generate } from "testUtils";
 
-import Address from "../Address";
+import Address from "./index";
 
 test("User can see address and map link", () => {
   const props = { address: generate.address(), url: generate.url() };

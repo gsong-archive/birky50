@@ -10,7 +10,7 @@ import { mockSupportsObjectFit } from "testUtils/mocks";
 
 mockSupportsObjectFit(false);
 
-const Card = require("../Card").default;
+const Card = require("./index").default;
 
 describe("User sees a card", () => {
   const props = generate.card();

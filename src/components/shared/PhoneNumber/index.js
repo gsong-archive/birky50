@@ -1,8 +1,8 @@
 //@flow strict
 import React from "react";
 
-import { Link } from "../../styles/components";
-import { Phone } from "./EmojiLabels";
+import { Link } from "../../../styles/components";
+import { Phone } from "../EmojiLabels";
 
 type Props = { number: string };
 

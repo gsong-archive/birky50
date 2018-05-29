@@ -1,8 +1,8 @@
 //@flow strict
 import React from "react";
 
-import { Link } from "../../styles/components";
-import { Location } from "./EmojiLabels";
+import { Link } from "../../../styles/components";
+import { Location } from "../EmojiLabels";
 
 type Props = {
   address: string,

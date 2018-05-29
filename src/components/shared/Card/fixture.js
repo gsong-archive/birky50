@@ -3,7 +3,7 @@ import { createFixture } from "react-cosmos-flow/fixture";
 
 import { generate } from "testUtils";
 
-import Card from "../Card";
+import Card from "./index";
 
 const completeCard = generate.card();
 const noPriceCard = Object.assign(generate.card(), { price: undefined });

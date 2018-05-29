@@ -6,9 +6,9 @@ import { generate } from "testUtils";
 import { mockGetBaseFontSize, mockSupportsGrid } from "testUtils/mocks";
 
 mockGetBaseFontSize.mock();
-mockSupportsGrid(false);
+mockSupportsGrid(true);
 
-const CardList = require("../CardList").default;
+const CardList = require("./index").default;
 
 describe("CardList renders", () => {
   const props = {

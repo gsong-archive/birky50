@@ -16,7 +16,7 @@ import {
   WomanBiking,
   WomanRaisingHand,
   EmojiLabel,
-} from "../EmojiLabels";
+} from "./index";
 
 test("Emojis are rendered properly", () => {
   const emojis = [

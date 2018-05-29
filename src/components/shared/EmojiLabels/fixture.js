@@ -5,7 +5,7 @@ import { createFixture } from "react-cosmos-flow/fixture";
 
 import { generate } from "testUtils";
 
-import { Airplane, EmojiLabel } from "../EmojiLabels";
+import { Airplane, EmojiLabel } from "./index";
 import { Link } from "../../../styles/components";
 
 export default [
