@@ -12,7 +12,7 @@ mockGetBaseFontSize.mock();
 mockSupportsGrid(true);
 mockSupportsObjectFit(true);
 
-const App = require("../App").default;
+const App = require("./index").default;
 
 test("App renders without crashing", () => {
   const { container } = render(<App />);

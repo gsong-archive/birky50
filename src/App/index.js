@@ -3,14 +3,14 @@ import React from "react";
 
 import { css } from "emotion";
 
-import "./styles/global";
-import Header from "./components/Header";
-import NavMenu from "./components/NavMenu";
-import Section from "./components/Section";
-import sections from "./data/sections";
-import { WindowSizeProvider } from "./contexts/WindowSizeContext";
+import "../styles/global";
+import Header from "../components/Header";
+import NavMenu from "../components/NavMenu";
+import Section from "../components/Section";
+import sections from "../data/sections";
+import { WindowSizeProvider } from "../contexts/WindowSizeContext";
 
-import type { SectionDatum } from "./components/Section.type";
+import type { SectionDatum } from "../components/Section.type";
 
 export default class App extends React.Component<{}> {
   _refs = {};

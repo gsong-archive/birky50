@@ -8,7 +8,7 @@ import { WomanRaisingHand } from "../shared/EmojiLabels";
 
 mockSupportsGrid(true);
 
-const ContactUs = require("../ContactUs").default;
+const ContactUs = require("./index").default;
 
 test("ContactUs form elements are properly labeled", () => {
   const NAME = "name";

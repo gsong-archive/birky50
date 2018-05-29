@@ -7,6 +7,6 @@ import PhoneNumber from "./index";
 
 export default createFixture({
   component: PhoneNumber,
-  name: "PhoneNumber",
+  name: "Default",
   props: { number: generate.phoneNumber() },
 });

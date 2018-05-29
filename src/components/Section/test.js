@@ -2,7 +2,7 @@ import React from "react";
 
 import { render } from "react-testing-library";
 
-import Section from "../Section";
+import Section from "./index";
 
 test("Section renders properly", () => {
   const ref = React.createRef();

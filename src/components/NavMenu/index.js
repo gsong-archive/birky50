@@ -2,9 +2,9 @@
 import React from "react";
 import styled from "react-emotion";
 
-import { Link } from "../styles/components";
+import { Link } from "../../styles/components";
 
-import type { SectionData } from "./Section.type";
+import type { SectionData } from "../Section.type";
 
 type Props = {
   sections: SectionData,

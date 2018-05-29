@@ -6,9 +6,9 @@ import { mockSupportsGrid } from "testUtils/mocks";
 
 import { PartyHat } from "../shared/EmojiLabels";
 
-mockSupportsGrid(false);
+mockSupportsGrid(true);
 
-const Event = require("../Event").default;
+const Event = require("./index").default;
 
 test("Event renders properly", () => {
   const { container } = render(

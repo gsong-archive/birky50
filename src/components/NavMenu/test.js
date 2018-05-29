@@ -2,7 +2,7 @@ import React from "react";
 
 import { render } from "react-testing-library";
 
-import NavMenu from "../NavMenu";
+import NavMenu from "./index";
 
 test("NavMenu renders properly", () => {
   const props = {

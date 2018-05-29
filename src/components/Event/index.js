@@ -4,19 +4,19 @@ import React from "react";
 import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
-import Address from "./shared/Address";
-import PhoneNumber from "./shared/PhoneNumber";
-import RSVPLink from "./shared/RSVPLink";
-import SectionHeader from "./shared/SectionHeader";
-import WindowSizeContext from "../contexts/WindowSizeContext";
-import { Calendar } from "./shared/EmojiLabels";
-import { Link } from "../styles/components";
-import { convertListToEm } from "./utils";
-import { supportsGrid } from "../styles/cssFeatures";
+import Address from "../shared/Address";
+import PhoneNumber from "../shared/PhoneNumber";
+import RSVPLink from "../shared/RSVPLink";
+import SectionHeader from "../shared/SectionHeader";
+import WindowSizeContext from "../../contexts/WindowSizeContext";
+import { Calendar } from "../shared/EmojiLabels";
+import { Link } from "../../styles/components";
+import { convertListToEm } from "../utils";
+import { supportsGrid } from "../../styles/cssFeatures";
 
-import eventIcs from "../static/files/event.ics";
+import eventIcs from "../../static/files/event.ics";
 
-import type { Props } from "./Section.type";
+import type { Props } from "../Section.type";
 
 export default ({ LabelComponent, sectionLabel }: Props) => {
   return (

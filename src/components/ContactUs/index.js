@@ -4,13 +4,13 @@ import React from "react";
 import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
-import SectionHeader from "./shared/SectionHeader";
-import { btn, formInput } from "../styles";
-import { colors } from "../styles/variables";
-import { convertListToEm } from "./utils";
-import { supportsGrid } from "../styles/cssFeatures";
+import SectionHeader from "../shared/SectionHeader";
+import { btn, formInput } from "../../styles";
+import { colors } from "../../styles/variables";
+import { convertListToEm } from "../utils";
+import { supportsGrid } from "../../styles/cssFeatures";
 
-import type { Props } from "./Section.type";
+import type { Props } from "../Section.type";
 
 export default ({ LabelComponent, sectionLabel }: Props) => {
   const sendTo = "birky50@damacy.net";

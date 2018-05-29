@@ -1,4 +1,5 @@
 module.exports = {
+  hostname: "0.0.0.0",
   containerQuerySelector: "#root",
   webpackConfigPath: "cosmos.webpack.config.js",
   publicPath: "public",
