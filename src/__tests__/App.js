@@ -8,11 +8,11 @@ import {
   mockSupportsObjectFit,
 } from "testUtils/mocks";
 
-import App from "../App";
-
 mockGetBaseFontSize.mock();
 mockSupportsGrid(true);
 mockSupportsObjectFit(true);
+
+const App = require("../App").default;
 
 test("App renders without crashing", () => {
   const { container } = render(<App />);

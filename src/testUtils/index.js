@@ -14,7 +14,7 @@ const card = () => ({
   address: address(),
   addressUrl: faker.internet.url(),
   phone: faker.phone.phoneNumber(),
-  imgUrl: `https://loremflickr.com/320/240/${faker.random.word()}`,
+  imgUrl: encodeURI(`https://loremflickr.com/320/240/${faker.random.word()}`),
 });
 
 const generate = {

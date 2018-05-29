@@ -5,10 +5,10 @@ import { render } from "react-testing-library";
 import { generate } from "testUtils";
 import { mockGetBaseFontSize, mockSupportsGrid } from "testUtils/mocks";
 
-import CardList from "../CardList";
-
 mockGetBaseFontSize.mock();
 mockSupportsGrid(false);
+
+const CardList = require("../CardList").default;
 
 describe("CardList renders", () => {
   const props = {

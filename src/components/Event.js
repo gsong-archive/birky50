@@ -125,32 +125,27 @@ const TightP = styled.p`
   margin: 0.25rem 0;
 `;
 
-let breakpoints = [900];
-let mq1 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints1 = [900];
+const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}px)`));
 
-const Event = styled.div(() => {
-  let style = mq1({
+const Event = styled.div(
+  mq1({
     display: [null, "grid"],
     gridTemplateColumns: [null, "1fr 2fr"],
     gridColumnGap: [null, "1rem"],
-  });
-  if (!supportsGrid) {
-    style = css(
-      style,
-      mq1({
-        display: [null, "flex"],
-        justifyContent: [null, "space-between"],
-        "> *:first-child": {
-          flex: [null, `0 0 32%`],
-        },
-        "> *:last-child": {
-          flex: [null, `0 0 65%`],
-        },
-      })
-    );
-  }
-  return style;
-});
+  }),
+  !supportsGrid &&
+    mq1({
+      display: [null, "flex"],
+      justifyContent: [null, "space-between"],
+      "> *:first-child": {
+        flex: [null, `0 0 32%`],
+      },
+      "> *:last-child": {
+        flex: [null, `0 0 65%`],
+      },
+    })
+);
 
 const EventMap = styled.div(
   mq1({
@@ -160,28 +155,23 @@ const EventMap = styled.div(
 
 const spanned = css(mq1({ gridColumn: ["1 / 3"] }));
 
-breakpoints = [540, 900];
-const mq2 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints2 = [540, 900];
+const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}px)`));
 
-const EventDetails = styled.div(() => {
-  let style = mq2({
+const EventDetails = styled.div(
+  mq2({
     display: [null, "grid", "block"],
     gridTemplateColumns: [null, "1fr 1fr"],
     gridColumnGap: [null, "3rem"],
-  });
-  if (!supportsGrid) {
-    style = css(
-      style,
-      mq2({
-        display: [null, "flex", "block"],
-        flexWrap: "wrap",
-        "> *:first-child": {
-          marginRight: [null, "3rem"],
-        },
-      })
-    );
-  }
-  return style;
-});
+  }),
+  !supportsGrid &&
+    mq2({
+      display: [null, "flex", "block"],
+      flexWrap: "wrap",
+      "> *:first-child": {
+        marginRight: [null, "3rem"],
+      },
+    })
+);
 
 const whereHeader = css(mq2({ marginTop: ["1.5rem", 0, "1.5rem"] }));

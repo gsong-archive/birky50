@@ -8,9 +8,9 @@ import { render } from "react-testing-library";
 import { generate } from "testUtils";
 import { mockSupportsObjectFit } from "testUtils/mocks";
 
-import Card from "../Card";
-
 mockSupportsObjectFit(false);
+
+const Card = require("../Card").default;
 
 describe("User sees a card", () => {
   const props = generate.card();

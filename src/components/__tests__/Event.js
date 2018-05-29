@@ -4,10 +4,11 @@ import { render } from "react-testing-library";
 
 import { mockSupportsGrid } from "testUtils/mocks";
 
-import Event from "../Event";
 import { PartyHat } from "../shared/EmojiLabels";
 
 mockSupportsGrid(true);
+
+const Event = require("../Event").default;
 
 test("Event renders properly", () => {
   const { container } = render(

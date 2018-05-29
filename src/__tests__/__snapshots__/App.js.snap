@@ -245,6 +245,12 @@ exports[`App renders 1`] = `
   background-color: white;
 }
 
+.emotion-90 {
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .emotion-88 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;

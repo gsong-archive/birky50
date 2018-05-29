@@ -66,73 +66,54 @@ const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
 
 const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, "1rem"] }));
 
-const Form = styled.form(() => {
-  let style = mq({
+const Form = styled.form(
+  mq({
     display: [null, "grid"],
     gridTemplateColumns: [null, "5rem 30rem"],
     gridRowGap: [null, "1rem"],
-  });
-  if (!supportsGrid) {
-    style = css(
-      style,
-      mq({
-        display: [null, "flex"],
-        flexWrap: [null, "wrap"],
-        alignItems: [null, "baseline"],
-        width: [null, "40rem"],
-      })
-    );
-  }
-  return style;
-});
-
-const Label = styled.label(() => {
-  let style = mq({ marginTop: [null, "0.575rem"] });
-  if (!supportsGrid) {
-    style = css(
-      style,
-      mq({
-        flex: [null, "0 0 5rem"],
-      })
-    );
-  }
-  return style;
-});
-
-const Input = styled.input(() => {
-  let style = css(
-    formInput,
-    { display: "block" },
+  }),
+  !supportsGrid &&
     mq({
-      width: ["100%", "auto"],
-      margin: [".5rem 0 1rem", 0],
+      display: [null, "flex"],
+      flexWrap: [null, "wrap"],
+      alignItems: [null, "baseline"],
+      width: [null, "40rem"],
     })
-  );
-  if (!supportsGrid) {
-    style = css(
-      style,
-      mq({
-        flex: [null, "0 0 30rem"],
-      }),
-      IEMarginTop
-    );
-  }
-  return style;
-});
+);
+
+const Label = styled.label(
+  mq({ marginTop: [null, "0.575rem"] }),
+  !supportsGrid &&
+    mq({
+      flex: [null, "0 0 5rem"],
+    })
+);
+
+const Input = styled.input(
+  formInput,
+  { display: "block" },
+  mq({
+    width: ["100%", "auto"],
+    margin: [".5rem 0 1rem", 0],
+  }),
+  !supportsGrid &&
+    mq({
+      flex: [null, "0 0 30rem"],
+    }),
+  IEMarginTop
+);
 
 const Textarea = Input.withComponent("textarea");
 
-const Button = styled.button(() => {
-  let style = css`
-    ${btn};
+const Button = styled.button(
+  btn,
+  css`
     grid-column-start: 2;
     justify-self: start;
     cursor: pointer;
     background-color: ${colors.primary};
     color: white;
-  `;
-  if (!supportsGrid) {
-    style = css(style, mq({ marginLeft: [null, "5rem"] }), IEMarginTop);
-  }
-  return style;
-});
+  `,
+  !supportsGrid && mq({ marginLeft: [null, "5rem"] }),
+  IEMarginTop
+);

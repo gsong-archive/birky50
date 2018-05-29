@@ -1,7 +1,7 @@
 //@flow strict
 import React from "react";
 
-import styled, { cx, css } from "react-emotion";
+import styled, { css } from "react-emotion";
 
 import Address from "./Address";
 import PhoneNumber from "./PhoneNumber";
@@ -62,17 +62,16 @@ const Container = styled.div`
 `;
 
 const ImgLink = styled.a(props => {
-  let style;
-  if (!supportsObjectFit) {
-    style = css`
-      display: block;
-      height: 12rem;
-      background-image: url(${props.imgUrl});
-      background-size: cover;
-      background-position: center center;
-    `;
-    return cx(borderRadius, noBottomBorderRadius, style);
-  }
+  const style = supportsObjectFit
+    ? null
+    : css`
+        display: block;
+        height: 12rem;
+        background-image: url(${props.imgUrl});
+        background-size: cover;
+        background-position: center center;
+      `;
+  return css(borderRadius, noBottomBorderRadius, style);
 });
 
 const CardImg = styled.img(

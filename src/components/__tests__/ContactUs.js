@@ -4,8 +4,11 @@ import { render } from "react-testing-library";
 
 import { mockSupportsGrid } from "testUtils/mocks";
 
-import ContactUs from "../ContactUs";
 import { WomanRaisingHand } from "../shared/EmojiLabels";
+
+mockSupportsGrid(true);
+
+const ContactUs = require("../ContactUs").default;
 
 test("ContactUs form elements are properly labeled", () => {
   const NAME = "name";
@@ -24,7 +27,6 @@ test("ContactUs form elements are properly labeled", () => {
 });
 
 test("ContactUs renders properly", () => {
-  mockSupportsGrid(true);
   const { container } = render(
     <ContactUs LabelComponent={WomanRaisingHand} sectionLabel="Questions?" />
   );

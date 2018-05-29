@@ -54,25 +54,20 @@ export default ({ title, items }: Props) => {
   );
 };
 
-const Container = styled.div(() => {
-  let style = css`
+const Container = styled.div(
+  css`
     display: grid;
     grid-gap: 1.5rem;
     margin-bottom: 0.75em;
-  `;
-  if (!supportsGrid) {
-    style = css(
-      style,
-      css`
-        display: flex;
-        flex-wrap: wrap;
+  `,
+  !supportsGrid &&
+    css`
+      display: flex;
+      flex-wrap: wrap;
 
-        > div {
-          margin-right: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
-      `
-    );
-  }
-  return style;
-});
+      > div {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    `
+);
