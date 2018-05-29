@@ -117,6 +117,7 @@ exports[`App renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   display: block;
+  font-size: 1.15rem;
   padding: 0.75rem 1rem;
 }
 

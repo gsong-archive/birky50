@@ -43,5 +43,6 @@ const NavItem = styled.li`
 
 const NavLink = styled(Link)`
   display: block;
+  font-size: 1.15rem;
   padding: 0.75rem 1rem;
 `;
