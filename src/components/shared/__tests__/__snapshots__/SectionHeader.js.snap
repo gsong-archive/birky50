@@ -6,7 +6,7 @@ exports[`SectionHeader is rendered 1`] = `
   margin-bottom: 1rem;
 }
 
-@media (max-width:350px) {
+@media (max-width:21.875em) {
   .emotion-0 {
     font-size: 2.4rem;
   }

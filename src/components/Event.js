@@ -11,6 +11,7 @@ import SectionHeader from "./shared/SectionHeader";
 import WindowSizeContext from "../contexts/WindowSizeContext";
 import { Calendar } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
+import { convertListToEm } from "./utils";
 import { supportsGrid } from "../styles/cssFeatures";
 
 import eventIcs from "../static/files/event.ics";
@@ -125,8 +126,8 @@ const TightP = styled.p`
   margin: 0.25rem 0;
 `;
 
-const breakpoints1 = [900];
-const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints1 = convertListToEm([900]);
+const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}em)`));
 
 const Event = styled.div(
   mq1({
@@ -155,8 +156,8 @@ const EventMap = styled.div(
 
 const spanned = css(mq1({ gridColumn: ["1 / 3"] }));
 
-const breakpoints2 = [540, 900];
-const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints2 = convertListToEm([540, 900]);
+const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}em)`));
 
 const EventDetails = styled.div(
   mq2({

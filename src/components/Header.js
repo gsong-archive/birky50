@@ -8,6 +8,7 @@ import RSVPLink from "./shared/RSVPLink";
 import WindowSizeContext from "../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
 import { colors } from "../styles/variables";
+import { convertListToEm } from "./utils";
 
 import backgroundImage from "../static/images/header-background.png";
 
@@ -41,8 +42,8 @@ const Subtitle = styled.p`
   color: white;
 `;
 
-const breakpoints1 = [576, 768, 992, 1200];
-const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints1 = convertListToEm([576, 768, 992, 1200]);
+const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}em)`));
 const Title = styled.h1(
   css`
     color: white;
@@ -53,8 +54,8 @@ const Title = styled.h1(
   })
 );
 
-const breakpoints2 = [1200];
-const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints2 = convertListToEm([1200]);
+const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}em)`));
 const Jumbotron = styled.header(
   css`
     background-color: ${colors.primary};

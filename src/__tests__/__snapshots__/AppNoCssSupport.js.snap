@@ -5,13 +5,13 @@ exports[`App renders 1`] = `
   margin-top: 1.5rem;
 }
 
-@media (min-width:540px) {
+@media (min-width:33.75em) {
   .emotion-52 {
     margin-top: 0;
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-52 {
     margin-top: 1.5rem;
   }
@@ -26,7 +26,7 @@ exports[`App renders 1`] = `
   padding-bottom: 2rem;
 }
 
-@media (min-width:1200px) {
+@media (min-width:75em) {
   .emotion-8 {
     padding-bottom: 4rem;
   }
@@ -38,25 +38,25 @@ exports[`App renders 1`] = `
   font-size: 14vw;
 }
 
-@media (min-width:576px) {
+@media (min-width:36em) {
   .emotion-0 {
     font-size: 10vw;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:48em) {
   .emotion-0 {
     font-size: 7vw;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:62em) {
   .emotion-0 {
     font-size: 6vw;
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:75em) {
   .emotion-0 {
     font-size: 5vw;
   }
@@ -142,13 +142,13 @@ exports[`App renders 1`] = `
   margin-bottom: 1rem;
 }
 
-@media (max-width:350px) {
+@media (max-width:21.875em) {
   .emotion-43 {
     font-size: 2.4rem;
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-73 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -156,7 +156,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-73 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -169,7 +169,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-73 > *:first-child {
     -webkit-flex: 0 0 32%;
     -ms-flex: 0 0 32%;
@@ -177,7 +177,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-73 > *:last-child {
     -webkit-flex: 0 0 65%;
     -ms-flex: 0 0 65%;
@@ -191,7 +191,7 @@ exports[`App renders 1`] = `
   flex-wrap: wrap;
 }
 
-@media (min-width:540px) {
+@media (min-width:33.75em) {
   .emotion-68 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -199,13 +199,13 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-68 {
     display: block;
   }
 }
 
-@media (min-width:540px) {
+@media (min-width:33.75em) {
   .emotion-68 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -214,13 +214,13 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-68 {
     display: block;
   }
 }
 
-@media (min-width:540px) {
+@media (min-width:33.75em) {
   .emotion-68 > *:first-child {
     margin-right: 3rem;
   }
@@ -265,7 +265,7 @@ exports[`App renders 1`] = `
   margin-top: 1.5rem;
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25em) {
   .emotion-71 {
     margin-top: 0px;
   }
@@ -588,7 +588,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-471 {
     display: grid;
     grid-template-columns: 5rem 30rem;
@@ -596,7 +596,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-471 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -613,13 +613,13 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-457 {
     margin-top: 0.575rem;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-457 {
     -webkit-flex: 0 0 5rem;
     -ms-flex: 0 0 5rem;
@@ -638,14 +638,14 @@ exports[`App renders 1`] = `
   margin: .5rem 0 1rem;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-459 {
     width: auto;
     margin: 0;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-459 {
     -webkit-flex: 0 0 30rem;
     -ms-flex: 0 0 30rem;
@@ -653,7 +653,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-459 {
     margin-top: 1rem;
   }
@@ -670,14 +670,14 @@ exports[`App renders 1`] = `
   margin: .5rem 0 1rem;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-467 {
     width: auto;
     margin: 0;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-467 {
     -webkit-flex: 0 0 30rem;
     -ms-flex: 0 0 30rem;
@@ -685,7 +685,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-467 {
     margin-top: 1rem;
   }
@@ -708,13 +708,13 @@ exports[`App renders 1`] = `
   color: white;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-469 {
     margin-left: 5rem;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-469 {
     margin-top: 1rem;
   }

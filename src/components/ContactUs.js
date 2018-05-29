@@ -7,6 +7,7 @@ import styled, { css } from "react-emotion";
 import SectionHeader from "./shared/SectionHeader";
 import { btn, formInput } from "../styles";
 import { colors } from "../styles/variables";
+import { convertListToEm } from "./utils";
 import { supportsGrid } from "../styles/cssFeatures";
 
 import type { Props } from "./Section.type";
@@ -61,8 +62,8 @@ export default ({ LabelComponent, sectionLabel }: Props) => {
   );
 };
 
-const breakpoints = [600];
-const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints = convertListToEm([600]);
+const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}em)`));
 
 const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, "1rem"] }));
 

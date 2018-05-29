@@ -5,6 +5,7 @@ import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
 import SectionContext from "../../contexts/SectionContext";
+import { convertListToEm } from "../utils";
 
 import type { LabelComponent } from "./EmojiLabels";
 
@@ -16,8 +17,8 @@ const SectionHeader = ({ children }: Props) => (
   </SectionContext.Consumer>
 );
 
-const breakpoints = [350];
-const mq = facepaint(breakpoints.map(bp => `@media (max-width: ${bp}px)`));
+const breakpoints = convertListToEm([350]);
+const mq = facepaint(breakpoints.map(bp => `@media (max-width: ${bp}em)`));
 
 const H1 = styled.h1(
   css`

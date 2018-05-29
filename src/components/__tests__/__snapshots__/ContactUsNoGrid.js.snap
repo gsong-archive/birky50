@@ -6,7 +6,7 @@ exports[`ContactUs renders properly 1`] = `
   margin-bottom: 1rem;
 }
 
-@media (max-width:350px) {
+@media (max-width:21.875em) {
   .emotion-1 {
     font-size: 2.4rem;
   }
@@ -18,7 +18,7 @@ exports[`ContactUs renders properly 1`] = `
   text-indent: -1.4em;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-17 {
     display: grid;
     grid-template-columns: 5rem 30rem;
@@ -26,7 +26,7 @@ exports[`ContactUs renders properly 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-17 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -43,13 +43,13 @@ exports[`ContactUs renders properly 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-3 {
     margin-top: 0.575rem;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-3 {
     -webkit-flex: 0 0 5rem;
     -ms-flex: 0 0 5rem;
@@ -68,14 +68,14 @@ exports[`ContactUs renders properly 1`] = `
   margin: .5rem 0 1rem;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-5 {
     width: auto;
     margin: 0;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-5 {
     -webkit-flex: 0 0 30rem;
     -ms-flex: 0 0 30rem;
@@ -83,7 +83,7 @@ exports[`ContactUs renders properly 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-5 {
     margin-top: 1rem;
   }
@@ -100,14 +100,14 @@ exports[`ContactUs renders properly 1`] = `
   margin: .5rem 0 1rem;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-13 {
     width: auto;
     margin: 0;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-13 {
     -webkit-flex: 0 0 30rem;
     -ms-flex: 0 0 30rem;
@@ -115,7 +115,7 @@ exports[`ContactUs renders properly 1`] = `
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-13 {
     margin-top: 1rem;
   }
@@ -138,13 +138,13 @@ exports[`ContactUs renders properly 1`] = `
   color: white;
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-15 {
     margin-left: 5rem;
   }
 }
 
-@media (min-width:600px) {
+@media (min-width:37.5em) {
   .emotion-15 {
     margin-top: 1rem;
   }
