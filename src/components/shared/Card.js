@@ -74,15 +74,13 @@ const ImgLink = styled.a(props => {
   return css(borderRadius, noBottomBorderRadius, style);
 });
 
-const CardImg = styled.img(
-  borderRadius,
-  noBottomBorderRadius,
-  css`
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-  `
-);
+const CardImg = styled.img`
+  ${borderRadius};
+  ${noBottomBorderRadius};
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+`;
 
 const CardTitle = styled.div`
   font-size: 1.25rem;

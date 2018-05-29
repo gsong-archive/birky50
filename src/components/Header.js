@@ -41,8 +41,8 @@ const Subtitle = styled.p`
   color: white;
 `;
 
-let breakpoints = [576, 768, 992, 1200];
-const mq1 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints1 = [576, 768, 992, 1200];
+const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}px)`));
 const Title = styled.h1(
   css`
     color: white;
@@ -53,8 +53,8 @@ const Title = styled.h1(
   })
 );
 
-breakpoints = [1200];
-const mq2 = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
+const breakpoints2 = [1200];
+const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}px)`));
 const Jumbotron = styled.header(
   css`
     background-color: ${colors.primary};

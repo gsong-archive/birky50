@@ -71,10 +71,6 @@ export default class App extends React.Component<{}> {
 
   _getStyle = (index: number) =>
     index % 2 === 0
-      ? css`
-          background-color: rgba(64, 60, 127, 0.2);
-        `
-      : css`
-          background-color: rgba(182, 174, 71, 0.2);
-        `;
+      ? css({ backgroundColor: "rgba(64, 60, 127, 0.2)" })
+      : css({ backgroundColor: "rgba(182, 174, 71, 0.2)" });
 }
