@@ -1,3 +1,4 @@
+//@flow strict
 import styled from "react-emotion";
 
 import { colors } from "./variables";

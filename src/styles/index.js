@@ -1,3 +1,4 @@
+//@flow strict
 import { css } from "emotion";
 
 import { colors } from "./variables";

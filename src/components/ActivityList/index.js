@@ -1,10 +1,10 @@
 //@flow strict
 import React from "react";
 
-import ACTIVITIES from "../data/activities.js";
-import CardList from "./shared/CardList";
+import ACTIVITIES from "../../data/activities.js";
+import CardList from "../shared/CardList";
 
-import type { Props } from "./Section.type";
+import type { Props } from "../Section.type";
 
 export default ({ LabelComponent, sectionLabel }: Props) => (
   <CardList

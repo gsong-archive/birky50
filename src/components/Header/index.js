@@ -4,13 +4,12 @@ import React from "react";
 import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
-import RSVPLink from "./shared/RSVPLink";
-import WindowSizeContext from "../contexts/WindowSizeContext";
-import { calculateBackgroundOffset } from "./utils";
-import { colors } from "../styles/variables";
-import { convertListToEm } from "./utils";
+import RSVPLink from "../shared/RSVPLink";
+import WindowSizeContext from "../../contexts/WindowSizeContext";
+import { calculateBackgroundOffset, convertListToEm } from "../utils";
+import { colors } from "../../styles/variables";
 
-import backgroundImage from "../static/images/header-background.png";
+import backgroundImage from "../../static/images/header-background.png";
 
 export default class Header extends React.Component<{}> {
   render = () => (

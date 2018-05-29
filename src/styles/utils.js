@@ -1,3 +1,4 @@
+//@flow strict
 export const getBaseFontSize = () =>
   Number(
     window

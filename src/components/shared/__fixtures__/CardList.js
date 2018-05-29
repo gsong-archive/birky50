@@ -5,7 +5,7 @@ import { createFixture } from "react-cosmos-flow/fixture";
 
 import { generate } from "testUtils";
 
-import CardList from "./CardList.cosmos";
+import CardList from "../CardList/cosmos";
 import { Burger } from "../EmojiLabels";
 
 export default [

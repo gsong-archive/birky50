@@ -3,14 +3,14 @@ import * as React from "react";
 
 import styled, { css } from "react-emotion";
 
-import Card from "./Card";
-import SectionHeader from "./SectionHeader";
-import WindowSizeContext from "../../contexts/WindowSizeContext";
-import { getBaseFontSize } from "../../styles/utils";
-import { supportsGrid } from "../../styles/cssFeatures";
+import Card from "../Card";
+import SectionHeader from "../SectionHeader";
+import WindowSizeContext from "../../../contexts/WindowSizeContext";
+import { getBaseFontSize } from "../../../styles/utils";
+import { supportsGrid } from "../../../styles/cssFeatures";
 
-import type { Props as CardType } from "./Card";
-import type { LabelComponent } from "./EmojiLabels";
+import type { Props as CardType } from "../Card";
+import type { LabelComponent } from "../EmojiLabels";
 
 export type Props = {
   title: React.Element<LabelComponent>,

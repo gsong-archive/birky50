@@ -1,13 +1,11 @@
 //@flow strict
 import React from "react";
 
-import ActivityList from "../ActivityList";
+import Header from "./index";
 import { WindowSizeProvider } from "../../contexts/WindowSizeContext";
 
-import type { Props } from "../Section.type";
-
-export default (props: Props) => (
+export default () => (
   <WindowSizeProvider>
-    <ActivityList {...props} />
+    <Header />
   </WindowSizeProvider>
 );
