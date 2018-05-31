@@ -15,7 +15,7 @@ describe("Click item in nav menu should scroll to section", () => {
 
   Object.entries(sections).forEach(([navLabel, sectionLabel], i) => {
     it(navLabel, () => {
-      cy.get("h1")
+      cy.get("main > h1, section > h1")
         .contains(sectionLabel)
         .as("section")
         .then(section => (boundingBox = getBoundingBox(section)));
