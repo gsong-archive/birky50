@@ -1,12 +1,5 @@
-const DEFAULT_APP_URL = "http://localhost:3000";
-
 before(() => {
-  const appUrl =
-    Cypress.env("APP_URL") !== undefined
-      ? Cypress.env("APP_URL")
-      : DEFAULT_APP_URL;
-
-  cy.visit(appUrl);
+  cy.visit("");
 });
 
 describe("Click item in nav menu should scroll to section", () => {
@@ -16,14 +9,13 @@ describe("Click item in nav menu should scroll to section", () => {
     Lodging: "Where to Stay",
     Food: "Where to Eat",
     Activities: "What to Do",
-    Questions: "Questions"
+    Questions: "Questions",
   };
   let boundingBox;
 
   Object.entries(sections).forEach(([navLabel, sectionLabel], i) => {
     it(navLabel, () => {
-      cy
-        .get("h1")
+      cy.get("h1")
         .contains(sectionLabel)
         .as("section")
         .then(section => (boundingBox = getBoundingBox(section)));
@@ -31,18 +23,16 @@ describe("Click item in nav menu should scroll to section", () => {
       // 1. Click on nav menu link
       // 2. Wait for the screen to stop scrolling
       // 3. The section associated with the link should be visible
-      cy
-        .get("nav")
+      cy.get("nav")
         .contains(navLabel)
         .click();
       cy.window().then(window => {
-        cy
-          .get("@section")
+        cy.get("@section")
           .should(stopScrolling)
           .and(beVisibleIn(window));
       });
 
-      cy.screenshot(`${i}-${navLabel}`);
+      cy.screenshot(`${i}-${navLabel}`, { capture: "viewport" });
     });
   });
 
