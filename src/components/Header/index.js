@@ -6,8 +6,9 @@ import styled, { css } from "react-emotion";
 
 import RSVPLink from "../shared/RSVPLink";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
-import { calculateBackgroundOffset, convertListToEm } from "../utils";
+import { calculateBackgroundOffset } from "./utils";
 import { colors } from "../../styles/variables";
+import { convertListToEm } from "../utils";
 
 import backgroundImage from "../../static/images/header-background.png";
 

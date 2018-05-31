@@ -2,7 +2,7 @@
 export const getBaseFontSize = () =>
   Number(
     window
-      .getComputedStyle(document.body)
+      .getComputedStyle(document.documentElement)
       .getPropertyValue("font-size")
       .match(/\d+/)[0]
   );
