@@ -1,76 +1,79 @@
-//@flow
 import React from "react";
 
-import { css } from "emotion";
+import styled, { css } from "react-emotion";
+
+import { getBaseFontSize } from "../styles/utils";
+import WindowSizeContext, {
+  WindowSizeProvider,
+} from "../contexts/WindowSizeContext";
 
 import "../styles/global";
-import Header from "../components/Header";
-import NavMenu from "../components/NavMenu";
-import Section from "../components/Section";
-import sections from "../data/sections";
-import { WindowSizeProvider } from "../contexts/WindowSizeContext";
 
-import type { SectionDatum } from "../components/Section.type";
+export default () => {
+  const base = getBaseFontSize();
 
-export default class App extends React.Component<{}> {
-  _refs = {};
-
-  render = () => (
-    // $FlowFixMe
-    <React.StrictMode>
-      <WindowSizeProvider>
-        <Header />
-        <NavMenu sections={sections} onClick={this.scrollTo} />
-        {sections.map(this.renderSection)}
-      </WindowSizeProvider>
-    </React.StrictMode>
+  return (
+    <WindowSizeProvider>
+      <WindowSizeContext.Consumer>
+        {width => (
+          <div
+            className={css`
+              ${flex};
+              height: 100vh;
+            `}
+          >
+            <Header />
+            <main
+              className={css`
+                ${flex};
+                flex: 1;
+              `}
+            >
+              <Section color="red" mq={px}>
+                <h1>{px}</h1>
+              </Section>
+              <Section color="green" mq={em}>
+                <h1>
+                  {em} ({base * multiplier}px)
+                </h1>
+              </Section>
+              <Section color="blue" mq={rem}>
+                <h1>
+                  {rem} ({base * multiplier}px)
+                </h1>
+              </Section>
+            </main>
+          </div>
+        )}
+      </WindowSizeContext.Consumer>
+    </WindowSizeProvider>
   );
+};
 
-  renderSection = (
-    {
-      id,
-      sectionLabel,
-      sectionTag,
-      SectionComponent,
-      LabelComponent,
-    }: SectionDatum,
-    i: number
-  ) => {
-    // flowlint-next-line sketchy-null-string:off
-    const tag = sectionTag ? sectionTag : "section";
-    const style = this._getStyle(i);
-    this._refs[id] = React.createRef();
+const multiplier = 40;
+const px = `@media (min-width: ${16 * multiplier}px)`;
+const em = `@media (min-width: ${multiplier}em)`;
+const rem = `@media (min-width: ${multiplier}rem)`;
 
-    return (
-      <Section
-        id={id}
-        ref={this._refs[id]}
-        key={id}
-        tag={tag}
-        className={style}
-        aria-labelledby={`${id}-description`}
-      >
-        <SectionComponent
-          LabelComponent={LabelComponent}
-          sectionLabel={sectionLabel}
-        />
-      </Section>
-    );
-  };
+const Header = () => (
+  <header>
+    <h2>device pixel ratio: {window.devicePixelRatio}</h2>
+    <h2>viewport width: {window.innerWidth}px</h2>
+    <h2>base font-size: {getBaseFontSize()}px</h2>
+  </header>
+);
 
-  scrollTo = (ref: string) => (
-    event: SyntheticMouseEvent<HTMLLinkElement>
-  ): void => {
-    event.preventDefault();
-    window.history.pushState(null, null, `#${ref}`);
-    this._refs[ref].current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
+const Section = styled.div(
+  props => css`
+    flex: 1;
+    background: ${props.color};
+    ${props.mq} {
+      opacity: 0.5;
+    }
+  `
+);
 
-  _getStyle = (index: number) =>
-    index % 2 === 0
-      ? css({ backgroundColor: "rgba(64, 60, 127, 0.2)" })
-      : css({ backgroundColor: "rgba(182, 174, 71, 0.2)" });
-}
+const flex = css`
+  display: flex;
+  flex-direction: column;
+`;

@@ -7,9 +7,15 @@ WebFont.load({
   },
 });
 
+const size = "100%";
+
 injectGlobal`
- * {
+  * {
     box-sizing: border-box;
+  }
+
+  html {
+    font-size: ${size};
   }
 
   body {
