@@ -21,6 +21,7 @@ injectGlobal`
   body {
     font-family: Lato, sans-serif;
     margin: 0;
+    border: 0.25rem solid purple;
   }
 
   // IE 11
