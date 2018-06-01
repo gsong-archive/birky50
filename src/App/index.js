@@ -126,10 +126,10 @@ class Header extends React.Component {
 
   render = () => (
     <header>
-      <div>user-agent: {navigator.userAgent}</div>
-      <div>device pixel ratio: {window.devicePixelRatio}</div>
-      <div>viewport width: {window.innerWidth}px</div>
-      <div>base font-size: {getBaseFontSize()}px</div>
+      <p>user-agent: {navigator.userAgent}</p>
+      <p>device pixel ratio: {window.devicePixelRatio}</p>
+      <p>viewport width: {window.innerWidth}px</p>
+      <p>base font-size: {getBaseFontSize()}px</p>
       <p
         ref={this.em}
         className={css`
@@ -154,11 +154,16 @@ const MqSection = styled.div(
   props => css`
     flex: 1 1 auto;
     display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: white;
     background: ${props.color};
     padding: 1rem;
     ${props.mq} {
-      opacity: 0.5;
+      opacity: 0.25;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: italic;
     }
   `
 );
