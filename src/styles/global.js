@@ -8,7 +8,7 @@ WebFont.load({
 });
 
 injectGlobal`
- * {
+  * {
     box-sizing: border-box;
   }
 
@@ -27,6 +27,5 @@ injectGlobal`
 
   address { font-style: normal }
 
-  // IE 11
   main { display: block }
 `;
