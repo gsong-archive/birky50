@@ -63,7 +63,7 @@ class Header extends React.Component {
   componentDidMount = () => {
     this.setState({
       em: getFontSize(this.em.current),
-      rem: getBaseFontSize(this.rem.current),
+      rem: getFontSize(this.rem.current),
     });
   };
 
@@ -82,6 +82,7 @@ class Header extends React.Component {
         I'm 1em: {this.state.em}px
       </p>
       <p
+        ref={this.rem}
         className={css`
           font-size: 1rem;
         `}
