@@ -58,11 +58,13 @@ export default () => {
 class Header extends React.Component {
   state = { em: 0, rem: 0 };
   em = React.createRef();
+  px = React.createRef();
   rem = React.createRef();
 
   componentDidMount = () => {
     this.setState({
       em: getFontSize(this.em.current),
+      px: getFontSize(this.px.current),
       rem: getFontSize(this.rem.current),
     });
   };
@@ -74,12 +76,20 @@ class Header extends React.Component {
       <h2>viewport width: {window.innerWidth}px</h2>
       <h2>base font-size: {getBaseFontSize()}px</h2>
       <p
+        ref={this.px}
+        className={css`
+          font-size: 16px;
+        `}
+      >
+        I’m 16px: {this.state.px}px
+      </p>
+      <p
         ref={this.em}
         className={css`
           font-size: 1em;
         `}
       >
-        I'm 1em: {this.state.em}px
+        I’m 1em: {this.state.em}px
       </p>
       <p
         ref={this.rem}
@@ -87,7 +97,7 @@ class Header extends React.Component {
           font-size: 1rem;
         `}
       >
-        I'm 1rem: {this.state.rem}px
+        I’m 1rem: {this.state.rem}px
       </p>
     </header>
   );
