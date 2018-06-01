@@ -152,11 +152,11 @@ class Header extends React.Component {
 
 const MqSection = styled.div(
   props => css`
-    flex: 1 1 2rem;
+    flex: 1 1 auto;
     display: flex;
-    align-items: center;
     color: white;
     background: ${props.color};
+    padding: 1rem;
     ${props.mq} {
       opacity: 0.5;
     }
