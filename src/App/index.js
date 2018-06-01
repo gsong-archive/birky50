@@ -9,6 +9,11 @@ import WindowSizeContext, {
 
 import "../styles/global";
 
+const multiplier = 50;
+const pxMq = `@media (min-width: ${16 * multiplier}px)`;
+const emMq = `@media (min-width: ${multiplier}em)`;
+const remMq = `@media (min-width: ${multiplier}rem)`;
+
 export default () => {
   const base = getBaseFontSize();
 
@@ -49,11 +54,6 @@ export default () => {
     </WindowSizeProvider>
   );
 };
-
-const multiplier = 40;
-const pxMq = `@media (min-width: ${16 * multiplier}px)`;
-const emMq = `@media (min-width: ${multiplier}em)`;
-const remMq = `@media (min-width: ${multiplier}rem)`;
 
 class Header extends React.Component {
   state = { em: 0, rem: 0 };
