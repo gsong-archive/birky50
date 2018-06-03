@@ -1,9 +1,11 @@
 import WebFont from "webfontloader";
 import { injectGlobal } from "emotion";
 
+import { fontFamily, textColors } from "./variables";
+
 WebFont.load({
   google: {
-    families: ["Lato", "Work Sans"],
+    families: [`${fontFamily}:400,600`, "Playfair Display:400"],
   },
 });
 
@@ -13,17 +15,10 @@ injectGlobal`
   }
 
   body {
-    font-family: Lato, sans-serif;
+    font-family: ${fontFamily}, sans-serif;
+    color: ${textColors.dark};
     margin: 0;
   }
-
-  h1, h2 {
-    font-family: Work Sans,sans-serif;
-    font-weight: 500;
-    margin: 0 0 .5rem;
-  }
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
 
   address { font-style: normal }
 

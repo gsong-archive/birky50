@@ -3,8 +3,7 @@ import React from "react";
 
 import styled from "react-emotion";
 
-import { btn, btnLg } from "../../../styles";
-import { colors } from "../../../styles/variables";
+import { btnLg } from "../../../styles";
 
 type Props = { className?: string, width?: string };
 
@@ -15,11 +14,9 @@ const RSVPLink = (props: Props) => (
 );
 
 const Link = styled.a`
-  ${btn};
   ${btnLg};
-  color: white;
-  font-weight: bold;
-  background-color: ${colors.secondary};
+  background-color: hsl(328, 85%, 48%);
+  color: hsl(328, 85%, 95%);
   width: ${props => (props.width ? props.width : "auto")};
 `;
 

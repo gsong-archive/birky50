@@ -7,7 +7,6 @@ import styled, { css } from "react-emotion";
 import RSVPLink from "../shared/RSVPLink";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
-import { colors } from "../../styles/variables";
 import { convertListToEm } from "../utils";
 
 import backgroundImage from "../../static/images/header-background.png";
@@ -36,35 +35,38 @@ export default class Header extends React.Component<{}> {
   };
 }
 
-const Subtitle = styled.p`
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: white;
-`;
-
 const breakpoints1 = convertListToEm([576, 768, 992, 1200]);
 const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}em)`));
 const Title = styled.h1(
   css`
-    color: white;
-    margin-bottom: 1rem;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    color: hsl(243, 68%, 95%);
+    margin: 0 0 0.5em;
   `,
   mq1({
-    fontSize: ["14vw", "10vw", "7vw", "6vw", "5vw"],
+    fontSize: ["13vw", "9vw", "6vw", "5vw", "4vw"],
   })
+);
+
+const Subtitle = styled.p(
+  css`
+    color: hsl(243, 68%, 85%);
+  `,
+  mq1({ fontSize: ["1.1rem", "1.25rem"] })
 );
 
 const breakpoints2 = convertListToEm([1200]);
 const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}em)`));
 const Jumbotron = styled.header(
   css`
-    background-color: ${colors.primary};
     background-image: ${`url(${backgroundImage})`};
+    background-color: hsl(243, 68%, 16%);
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 1rem 1rem;
+    padding: 16px 16px;
   `,
   mq2({
-    paddingBottom: ["2rem", "4rem"],
+    paddingBottom: ["32px", "64px"],
   })
 );

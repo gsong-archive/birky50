@@ -13,20 +13,20 @@ export const EmojiLabel = ({ emoji, ariaLabel, label }: LabelProps) => (
   <React.Fragment>
     <span
       className={css`
-        display: inline-block;
-        margin-left: 1.4em;
-        text-indent: -1.4em;
+        display: flex;
+        align-items: baseline;
       `}
     >
       <span
         className={css`
           font-family: "Segoe UI Emoji";
+          margin-right: 0.25em;
         `}
         role="img"
         aria-label={ariaLabel}
       >
         {emoji}
-      </span>{" "}
+      </span>
       {label}
     </span>
   </React.Fragment>

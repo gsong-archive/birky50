@@ -11,8 +11,10 @@ import SectionHeader from "../shared/SectionHeader";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { Calendar } from "../shared/EmojiLabels";
 import { Link } from "../../styles/components";
+import { boxShadow1 } from "../../styles";
 import { convertListToEm } from "../utils";
 import { supportsGrid } from "../../styles/cssFeatures";
+import { textColors } from "../../styles/variables";
 
 import eventIcs from "../../static/files/event.ics";
 
@@ -28,35 +30,55 @@ export default ({ LabelComponent, sectionLabel }: Props) => {
       <Event>
         <EventDetails>
           <div>
-            <h2>When?</h2>
-            <TightP>
-              <time dateTime="2018-06-23 16:00">Saturday, June 23, 2018</time>
-            </TightP>
-            <TightP>Starts at 4:00pm, dinner buffet at 5:00pm</TightP>
-            <Link href={eventIcs} download>
-              <Calendar label="Add to calendar" />
-            </Link>
+            <EventDetailTitle>When?</EventDetailTitle>
+            <EventDetailContent>
+              <p
+                className={css`
+                  font-weight: bold;
+                `}
+              >
+                <time dateTime="2018-06-23 16:00">Saturday, June 23, 2018</time>
+              </p>
+              <p>Starts at 4:00pm, dinner buffet at 5:00pm</p>
+              <Link
+                href={eventIcs}
+                className={css`
+                  display: inline-block;
+                `}
+                download
+              >
+                <Calendar label="Add to calendar" />
+              </Link>
+            </EventDetailContent>
           </div>
 
           <div>
-            <h2 className={whereHeader}>Where?</h2>
-            <Link href="http://vistalindacatering.com/" rel="nofollow">
-              Vista Linda Mexican & Catering
-            </Link>
-            <address>
-              <Address
-                address="240 Boon Rd, Somers, MT 59932"
-                url="https://goo.gl/maps/THRyvih62562"
-              />
-              <PhoneNumber number="(406) 857-3158" />
-            </address>
+            <EventDetailTitle className={whereHeader}>Where?</EventDetailTitle>
+            <EventDetailContent>
+              <Link
+                href="http://vistalindacatering.com/"
+                rel="nofollow"
+                className={css`
+                  font-weight: bold;
+                `}
+              >
+                Vista Linda Mexican & Catering
+              </Link>
+              <address>
+                <Address
+                  address="240 Boon Rd, Somers, MT 59932"
+                  url="https://goo.gl/maps/THRyvih62562"
+                />
+                <PhoneNumber number="(406) 857-3158" />
+              </address>
+            </EventDetailContent>
           </div>
 
           <ul
             className={css`
               ${spanned};
               padding: 0;
-              margin-top: 1.5rem;
+              margin-top: 2em;
             `}
           >
             <LI>Event will take place outdoors in a covered pavilion</LI>
@@ -102,6 +124,7 @@ class Map extends React.Component<{}> {
         height={height}
         allowFullScreen
         className={css`
+          ${boxShadow1};
           width: 100%;
           border: 0;
         `}
@@ -118,15 +141,26 @@ const getHeightFromWidth = width => {
   return height;
 };
 
+const EventDetailTitle = styled.h2`
+  font-size: 1rem;
+  font-weight: normal;
+  color: ${textColors.lightGray};
+  margin: 0 0 1em;
+`;
+
+const EventDetailContent = styled.div`
+  a,
+  p {
+    margin: 0.75em 0 0;
+  }
+`;
+
 const LI = styled.li`
+  color: ${textColors.lightGray};
   margin-left: 1.5rem;
 `;
 
-const TightP = styled.p`
-  margin: 0.25rem 0;
-`;
-
-const breakpoints1 = convertListToEm([900]);
+const breakpoints1 = convertListToEm([980]);
 const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}em)`));
 
 const Event = styled.div(
@@ -156,23 +190,23 @@ const EventMap = styled.div(
 
 const spanned = css(mq1({ gridColumn: ["1 / 3"] }));
 
-const breakpoints2 = convertListToEm([540, 900]);
+const breakpoints2 = convertListToEm([590, 980]);
 const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}em)`));
 
 const EventDetails = styled.div(
   mq2({
     display: [null, "grid", "block"],
     gridTemplateColumns: [null, "1fr 1fr"],
-    gridColumnGap: [null, "3rem"],
+    gridColumnGap: [null, "10vw"],
   }),
   !supportsGrid &&
     mq2({
       display: [null, "flex", "block"],
       flexWrap: "wrap",
       "> *:first-child": {
-        marginRight: [null, "3rem"],
+        marginRight: [null, "10vw"],
       },
     })
 );
 
-const whereHeader = css(mq2({ marginTop: ["1.5rem", 0, "1.5rem"] }));
+const whereHeader = css(mq2({ marginTop: ["2.25em", 0, "2.25em"] }));

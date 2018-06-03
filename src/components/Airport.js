@@ -1,10 +1,12 @@
 //@flow strict
 import React from "react";
 
+import { css } from "emotion";
+
 import SectionHeader from "./shared/SectionHeader";
 import { Airport } from "./shared/EmojiLabels";
-import { Bold } from "../styles/components";
 import { Link } from "../styles/components";
+import { textColors } from "../styles/variables";
 
 import type { Props } from "./Section.type";
 
@@ -22,7 +24,20 @@ export default ({ LabelComponent, sectionLabel }: Props) => (
         }
       />
       <p>
-        <Bold>Code</Bold>: FCA
+        <span
+          className={css`
+            color: ${textColors.lightGray};
+          `}
+        >
+          Code:
+        </span>{" "}
+        <span
+          className={css`
+            font-weight: bold;
+          `}
+        >
+          FCA
+        </span>
       </p>
     </div>
   </React.Fragment>

@@ -2,13 +2,19 @@
 
 exports[`EmojiLabel is rendered 1`] = `
 .emotion-1 {
-  display: inline-block;
-  margin-left: 1.4em;
-  text-indent: -1.4em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .emotion-0 {
   font-family: "Segoe UI Emoji";
+  margin-right: 0.25em;
 }
 
 <div>

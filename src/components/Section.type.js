@@ -15,6 +15,7 @@ export type SectionDatum = {
   sectionTag?: string,
   SectionComponent: React.ComponentType<Props>,
   LabelComponent: LabelComponent,
+  color: string,
 };
 
 export type SectionData = Array<SectionDatum>;

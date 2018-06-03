@@ -2,7 +2,7 @@
 
 exports[`Section renders properly 1`] = `
 .emotion-0 {
-  padding: 1.5rem;
+  padding: 16px 24px 24px;
 }
 
 <section

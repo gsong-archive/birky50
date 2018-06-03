@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-16 {
+.emotion-17 {
   margin: 1rem;
 }
 
-.emotion-17 {
+.emotion-8 {
+  color: hsl(0,0%,45%);
+}
+
+.emotion-18 {
   border-radius: 0.25rem;
-  background-color: white;
+  box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
 
 .emotion-2 {
@@ -26,29 +30,35 @@ exports[`Card is rendered 1`] = `
 }
 
 .emotion-6 {
-  font-size: 1.25rem;
+  font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 
 .emotion-4 {
-  color: maroon;
+  color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-11 {
-  display: inline-block;
-  margin-left: 1.4em;
-  text-indent: -1.4em;
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: "Segoe UI Emoji";
+  margin-right: 0.25em;
 }
 
 <div
-  class="emotion-17 emotion-18"
+  class="emotion-18 emotion-19"
 >
   <a
     href="https://example.com"
@@ -62,7 +72,7 @@ exports[`Card is rendered 1`] = `
     />
   </a>
   <div
-    class="emotion-16"
+    class="emotion-17"
   >
     <div
       class="emotion-6 emotion-7"
@@ -75,16 +85,18 @@ exports[`Card is rendered 1`] = `
         Little Big Burger
       </a>
     </div>
-    <p>
+    <p
+      class="emotion-8"
+    >
       100.00
     </p>
     <address>
       <div>
         <span
-          class="emotion-11"
+          class="emotion-12"
         >
           <span
-            class="emotion-8"
+            class="emotion-9"
             role="img"
             aria-label="round pushpin"
           >
@@ -100,10 +112,10 @@ exports[`Card is rendered 1`] = `
       </div>
       <div>
         <span
-          class="emotion-11"
+          class="emotion-12"
         >
           <span
-            class="emotion-8"
+            class="emotion-9"
             role="img"
             aria-label="phone receiver"
           >
@@ -127,7 +139,7 @@ exports[`Card w/o phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -48,28 +48,8 @@
+@@ -49,27 +49,8 @@
             >
               123 Main Street
             </a>
@@ -135,18 +147,17 @@ exports[`Card w/o phone is rendered 1`] = `
         </div>
 -       <div>
 -         <span
--           class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
+-           class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
--             class=\\"css-1cinni1-EmojiLabel-EmojiLabel\\"
+-             class=\\"css-lm9lwg-EmojiLabel-EmojiLabel\\"
 -             role=\\"img\\"
 -           >
 -             📞
 -           </span>
--            
 -           <a
--             class=\\"css-1l6go11-Link ek86r7m1\\"
+-             class=\\"css-yhnxzn-Link ek86r7m0\\"
 -             href=\\"tel:503-543-2345\\"
 -           >
 -             503-543-2345
@@ -163,21 +174,23 @@ exports[`Card w/o price and phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -24,13 +24,10 @@
+@@ -24,15 +24,10 @@
           rel=\\"nofollow\\"
         >
           Little Big Burger
         </a>
       </div>
--     <p>
+-     <p
+-       class=\\"css-1nmt006-Card-Card\\"
+-     >
 -       100.00
 -     </p>
       <address>
         <div>
           <span
-            class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
+            class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
           >
-@@ -48,28 +45,8 @@
+@@ -49,27 +44,8 @@
             >
               123 Main Street
             </a>
@@ -185,18 +198,17 @@ exports[`Card w/o price and phone is rendered 1`] = `
         </div>
 -       <div>
 -         <span
--           class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
+-           class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
--             class=\\"css-1cinni1-EmojiLabel-EmojiLabel\\"
+-             class=\\"css-lm9lwg-EmojiLabel-EmojiLabel\\"
 -             role=\\"img\\"
 -           >
 -             📞
 -           </span>
--            
 -           <a
--             class=\\"css-1l6go11-Link ek86r7m1\\"
+-             class=\\"css-yhnxzn-Link ek86r7m0\\"
 -             href=\\"tel:503-543-2345\\"
 -           >
 -             503-543-2345
@@ -213,18 +225,20 @@ exports[`Card w/o price is rendered 1`] = `
 - First value
 + Second value
 
-@@ -24,13 +24,10 @@
+@@ -24,15 +24,10 @@
           rel=\\"nofollow\\"
         >
           Little Big Burger
         </a>
       </div>
--     <p>
+-     <p
+-       class=\\"css-1nmt006-Card-Card\\"
+-     >
 -       100.00
 -     </p>
       <address>
         <div>
           <span
-            class=\\"css-1kssyo4-EmojiLabel-EmojiLabel\\"
+            class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
           >"
 `;

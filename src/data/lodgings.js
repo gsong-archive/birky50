@@ -69,6 +69,7 @@ const LODGINGS = [
     url: "http://www.peacefulbayresort.com",
     address: "59901, 137 Peaceful Ln, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/V32mgjc37Q62",
+    phone: "(406) 709-2202",
     imgUrl: "http://www.peacefulbayresort.com/assets/img/PBR-Hero3.jpg",
   },
 ];

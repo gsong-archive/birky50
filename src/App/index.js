@@ -33,12 +33,12 @@ export default class App extends React.Component<{}> {
       sectionTag,
       SectionComponent,
       LabelComponent,
+      color,
     }: SectionDatum,
     i: number
   ) => {
     // flowlint-next-line sketchy-null-string:off
     const tag = sectionTag ? sectionTag : "section";
-    const style = this._getStyle(i);
     this._refs[id] = React.createRef();
 
     return (
@@ -47,7 +47,9 @@ export default class App extends React.Component<{}> {
         ref={this._refs[id]}
         key={id}
         tag={tag}
-        className={style}
+        className={css`
+          border-top: 8px solid ${color};
+        `}
         aria-labelledby={`${id}-description`}
       >
         <SectionComponent
@@ -68,9 +70,4 @@ export default class App extends React.Component<{}> {
       block: "start",
     });
   };
-
-  _getStyle = (index: number) =>
-    index % 2 === 0
-      ? css({ backgroundColor: "rgba(64, 60, 127, 0.2)" })
-      : css({ backgroundColor: "rgba(182, 174, 71, 0.2)" });
 }

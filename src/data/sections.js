@@ -12,6 +12,7 @@ import {
   WomanBiking,
   WomanRaisingHand,
 } from "../components/shared/EmojiLabels";
+import { colors } from "../styles/variables";
 
 export default [
   {
@@ -21,6 +22,7 @@ export default [
     sectionTag: "main",
     SectionComponent: Event,
     LabelComponent: PartyHat,
+    color: colors.event,
   },
   {
     id: "airport",
@@ -28,6 +30,7 @@ export default [
     sectionLabel: "Where to Fly Into?",
     SectionComponent: Airport,
     LabelComponent: Airplane,
+    color: colors.airport,
   },
   {
     id: "lodgingList",
@@ -35,6 +38,7 @@ export default [
     sectionLabel: "Where to Stay?",
     SectionComponent: LodgingList,
     LabelComponent: Hotel,
+    color: colors.lodging,
   },
   {
     id: "foodList",
@@ -42,6 +46,7 @@ export default [
     sectionLabel: "Where to Eat?",
     SectionComponent: FoodList,
     LabelComponent: Burger,
+    color: colors.food,
   },
   {
     id: "activityList",
@@ -49,6 +54,7 @@ export default [
     sectionLabel: "What to Do?",
     SectionComponent: ActivityList,
     LabelComponent: WomanBiking,
+    color: colors.activities,
   },
   {
     id: "contactUs",
@@ -56,5 +62,6 @@ export default [
     sectionLabel: "Questions?",
     SectionComponent: ContactUs,
     LabelComponent: WomanRaisingHand,
+    color: colors.questions,
   },
 ];

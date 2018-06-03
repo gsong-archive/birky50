@@ -6,7 +6,6 @@ import styled, { css } from "react-emotion";
 
 import SectionHeader from "../shared/SectionHeader";
 import { btn, formInput } from "../../styles";
-import { colors } from "../../styles/variables";
 import { convertListToEm } from "../utils";
 import { supportsGrid } from "../../styles/cssFeatures";
 
@@ -112,8 +111,10 @@ const Button = styled.button(
     grid-column-start: 2;
     justify-self: start;
     cursor: pointer;
-    background-color: ${colors.primary};
-    color: white;
+    color: hsl(288, 50%, 48%);
+    border: 4px solid hsl(288, 50%, 78%);
+    background-color: transparent;
+    width: 6em;
   `,
   !supportsGrid && mq({ marginLeft: [null, "5rem"] }),
   IEMarginTop

@@ -6,8 +6,9 @@ import styled, { css } from "react-emotion";
 import Address from "../Address";
 import PhoneNumber from "../PhoneNumber";
 import { Link } from "../../../styles/components";
-import { borderRadius } from "../../../styles";
+import { borderRadius, boxShadow1 } from "../../../styles";
 import { supportsObjectFit } from "../../../styles/cssFeatures";
+import { textColors } from "../../../styles/variables";
 
 export type Props = {
   name: string,
@@ -39,7 +40,15 @@ export default class Card extends React.Component<Props> {
             </Link>
           </CardTitle>
           {/* flowlint-next-line sketchy-null-string:off */}
-          {price && <p>{price}</p>}
+          {price && (
+            <p
+              className={css`
+                color: ${textColors.lightGray};
+              `}
+            >
+              {price}
+            </p>
+          )}
           <address>
             <Address address={address} url={addressUrl} />
             {/* flowlint-next-line sketchy-null-string:off */}
@@ -58,7 +67,7 @@ const noBottomBorderRadius = css`
 
 const Container = styled.div`
   ${borderRadius};
-  background-color: white;
+  ${boxShadow1};
 `;
 
 const ImgLink = styled.a(props => {
@@ -83,7 +92,7 @@ const CardImg = styled.img`
 `;
 
 const CardTitle = styled.div`
-  font-size: 1.25rem;
+  font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 `;
