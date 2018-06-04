@@ -11,12 +11,16 @@ import { supportsObjectFit } from "../../../styles/cssFeatures";
 import { textColors } from "../../../styles/variables";
 
 export type Props = {
+  /** Title */
   name: string,
+  /** External link to resource that the card is referencing */
   url: string,
   price?: string,
   address: string,
+  /** Link to map of address */
   addressUrl: string,
   phone?: string,
+  /** Link to image shown at the top of the card */
   imgUrl: string,
 };
 
