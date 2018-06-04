@@ -144,7 +144,7 @@ const getHeightFromWidth = width => {
 const EventDetailTitle = styled.h2`
   font-size: 1rem;
   font-weight: normal;
-  color: ${textColors.lightGray};
+  color: ${textColors.gray};
   margin: 0 0 1em;
 `;
 

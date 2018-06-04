@@ -121,7 +121,7 @@ exports[`Event renders properly 1`] = `
 .emotion-4 {
   font-size: 1rem;
   font-weight: normal;
-  color: hsl(0,0%,45%);
+  color: hsl(0,0%,29%);
   margin: 0 0 1em;
 }
 
@@ -140,7 +140,7 @@ exports[`Event renders properly 1`] = `
 .emotion-13 {
   font-size: 1rem;
   font-weight: normal;
-  color: hsl(0,0%,45%);
+  color: hsl(0,0%,29%);
   margin: 0 0 1em;
   margin-top: 2.25em;
 }
