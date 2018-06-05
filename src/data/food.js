@@ -56,7 +56,7 @@ const FOOD = [
       "https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024",
   },
   {
-    name: "Scotty's Bar",
+    name: "Scotty’s Bar",
     url: "http://scottysmt.com",
     address: "2205 US Highway 93 S, Kalispell, MT 59901",
     addressUrl: "https://goo.gl/maps/fpx285LR8JL2",
