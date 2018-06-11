@@ -69,38 +69,61 @@ class Header extends React.Component {
     });
   };
 
-  render = () => (
-    <header>
-      <h2>user-agent: {navigator.userAgent}</h2>
-      <h2>device pixel ratio: {window.devicePixelRatio}</h2>
-      <h2>viewport width: {window.innerWidth}px</h2>
-      <h2>base font-size: {getBaseFontSize()}px</h2>
-      <p
-        ref={this.px}
-        className={css`
-          font-size: 16px;
-        `}
-      >
-        I’m 16px: {this.state.px}px
-      </p>
-      <p
-        ref={this.em}
-        className={css`
-          font-size: 1em;
-        `}
-      >
-        I’m 1em: {this.state.em}px
-      </p>
-      <p
-        ref={this.rem}
-        className={css`
-          font-size: 1rem;
-        `}
-      >
-        I’m 1rem: {this.state.rem}px
-      </p>
-    </header>
-  );
+  render = () => {
+    const attributes = {
+      "user-agent": navigator.userAgent,
+      "device pixel ratio": window.devicePixelRatio,
+      "screen width": `${window.screen.width}px`,
+      "screen height": `${window.screen.height}px`,
+      "viewport width": `${document.documentElement.clientWidth}px`,
+      "viewport height": `${document.documentElement.clientHeight}px`,
+      "base font-size": `${getBaseFontSize()}px`,
+    };
+
+    return (
+      <header>
+        <table className={table}>
+          {Object.entries(attributes).map(([attrName, attrValue], index) => (
+            <tr key={index}>
+              <td
+                className={css`
+                  min-width: 10rem;
+                `}
+              >
+                {attrName}
+              </td>
+              <td>{attrValue}</td>
+            </tr>
+          ))}
+        </table>
+
+        <p
+          ref={this.px}
+          className={css`
+            font-size: 16px;
+          `}
+        >
+          I’m 16px: {this.state.px}px
+        </p>
+        <p
+          ref={this.em}
+          className={css`
+            font-size: 1em;
+          `}
+        >
+          I’m 1em: {this.state.em}px
+        </p>
+        <p
+          ref={this.rem}
+          className={css`
+            font-size: 1rem;
+          `}
+        >
+          I’m 1rem: {this.state.rem}px
+        </p>
+      </header>
+    );
+  };
 }
 
 const Section = styled.div(
@@ -117,6 +140,14 @@ const Section = styled.div(
 const flex = css`
   display: flex;
   flex-direction: column;
+`;
+
+const table = css`
+  font-size: 1.1rem;
+  border-collapse: collapse;
+  tr td {
+    border: 1px solid gray;
+  }
 `;
 
 const getFontSize = el => parseFloat(window.getComputedStyle(el).fontSize);
