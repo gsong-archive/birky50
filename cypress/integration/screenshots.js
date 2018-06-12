@@ -8,7 +8,7 @@ describe("Screenshots at different resolutions", () => {
     devices.forEach(device => {
       it(device, () => {
         cy.viewport(device);
-        cy.screenshot(device);
+        cy.screenshot(device, { scale: true });
       });
     });
   });
@@ -20,7 +20,7 @@ describe("Screenshots at different resolutions", () => {
       orientations.forEach(orientation => {
         it(`${device}-${orientation}`, () => {
           cy.viewport(device, orientation);
-          cy.screenshot(`${device}-${orientation}`);
+          cy.screenshot(`${device}-${orientation}`, { scale: true });
         });
       });
     });
