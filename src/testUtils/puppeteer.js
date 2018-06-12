@@ -1,47 +1,25 @@
-import puppeteer from "puppeteer";
-
 import "../env";
 
 const DEFAULT_APP_URL = "http://localhost:3000";
-const DEFAULT_SCROLL_CHECK_DELAY = 100;
+const DEFAULT_JEST_TIMEOUT = 5000;
 const DEFAULT_SCREENSHOTS_FOLDER = "screenshots/puppeteer";
-
-const launchOptions = {
-  executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
-  headless:
-    process.env.PUPPETEER_HEADLESS === undefined
-      ? true
-      : process.env.PUPPETEER_HEADLESS.toLowerCase() === "true"
-        ? true
-        : false,
-  slowMo:
-    process.env.PUPPETEER_SLOW_MO === undefined
-      ? 0
-      : Number(process.env.PUPPETEER_SLOW_MO),
-  args:
-    process.env.IN_DOCKER === undefined
-      ? []
-      : ["--no-sandbox", "--disable-setuid-sandbox"],
-};
+const DEFAULT_SCROLL_CHECK_DELAY = 100;
 
 const appUrl =
   process.env.APP_URL === undefined ? DEFAULT_APP_URL : process.env.APP_URL;
+
+const jestTimeOut =
+  parseInt(process.env.JEST_TIMEOUT, 10) || DEFAULT_JEST_TIMEOUT;
 
 const screenshotsFolder =
   process.env.PUPPETEER_SCREENSHOTS_FOLDER === undefined
     ? DEFAULT_SCREENSHOTS_FOLDER
     : process.env.PUPPETEER_SCREENSHOTS_FOLDER;
 
-export const scrollCheckDelay =
+const scrollCheckDelay =
   process.env.PUPPETEER_SCROLL_CHECK_DELAY || DEFAULT_SCROLL_CHECK_DELAY;
 
-export const setup = async () => {
-  const browser = await puppeteer.launch(launchOptions);
-  console.log(await browser.version(), appUrl);
-  const page = await browser.newPage();
-  await page.goto(appUrl);
-  return { browser, page };
-};
+export const settings = { appUrl, jestTimeOut, scrollCheckDelay };
 
 export const screenshot = async (imageName, page, options = {}) => {
   await page.screenshot({

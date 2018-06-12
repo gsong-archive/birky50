@@ -8,6 +8,7 @@
     "flow": "onchange 'src/**/*.js' -- onerror 'flow' -t birky50:flow",
     "start": "react-app-rewired start",
     "test": "react-app-rewired test --env=jsdom",
+    "e2e-test": "jest -c jest-e2e.config.js",
     "eject": "react-app-rewired eject"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "babel-plugin-module-resolver": "^3.1.1",
     "cli-error-notifier": "^2.0.1",
     "cypress": "^3.0.1",
     "dotenv": "^6.0.0",
@@ -33,7 +35,9 @@
     "eslint-plugin-prettier": "^2.6.0",
     "faker": "^4.1.0",
     "flow-bin": "^0.74.0",
+    "jest": "^22.4.4",
     "jest-emotion": "^9.2.2",
+    "jest-puppeteer": "^3.0.1",
     "ntl": "^3.0.0",
     "onchange": "^4.0.0",
     "prettier": "^1.13.5",
@@ -42,7 +46,7 @@
     "react-cosmos-flow": "^4.3.0",
     "react-docgen": "^2.20.1",
     "react-perf-devtool": "^3.0.7",
-    "react-testing-library": "^3.1.4",
+    "react-testing-library": "^3.1.6",
     "snapshot-diff": "^0.4.0"
   }
 }

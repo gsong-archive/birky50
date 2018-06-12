@@ -1,11 +1,8 @@
-import { devices, screenshot, setup } from "testUtils/puppeteer";
-
-let browser, page;
+import { devices, screenshot, settings } from "testUtils/puppeteer";
 
 beforeAll(async () => {
-  const objects = await setup();
-  browser = objects.browser;
-  page = objects.page;
+  jest.setTimeout(settings.jestTimeOut);
+  await page.goto(settings.appUrl);
 });
 
 describe("Take screenshots at various sizes", () => {
@@ -15,8 +12,4 @@ describe("Take screenshots at various sizes", () => {
       await screenshot(device, page, { fullPage: true });
     });
   });
-});
-
-afterAll(async () => {
-  await browser.close();
 });

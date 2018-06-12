@@ -1,11 +1,8 @@
-import { screenshot, scrollCheckDelay, setup } from "testUtils/puppeteer";
-
-let browser, page;
+import { screenshot, settings } from "testUtils/puppeteer";
 
 beforeAll(async () => {
-  const objects = await setup();
-  browser = objects.browser;
-  page = objects.page;
+  jest.setTimeout(settings.jestTimeOut);
+  await page.goto(settings.appUrl);
 });
 
 describe("Click item in nav menu should scroll to section", () => {
@@ -35,16 +32,12 @@ describe("Click item in nav menu should scroll to section", () => {
   });
 });
 
-afterAll(async () => {
-  await browser.close();
-});
-
 const stoppedScrolling = async element => {
   let boundingBox = await element.boundingBox();
   let stillScrolling = true;
 
   while (stillScrolling) {
-    await delay(scrollCheckDelay);
+    await delay(settings.scrollCheckDelay);
     const oldBoundingBox = boundingBox;
     boundingBox = await element.boundingBox();
     if (oldBoundingBox.y === boundingBox.y) stillScrolling = false;

@@ -10,6 +10,7 @@
     "Cypress": false,
     "before": false,
     "context": false,
-    "cy": false
+    "cy": false,
+    "page": false
   }
 }
