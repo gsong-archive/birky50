@@ -28,7 +28,7 @@ export default () => {
             `}
           >
             <Header />
-            <main
+            <section
               className={css`
                 ${flex};
                 flex: 1;
@@ -47,7 +47,7 @@ export default () => {
                   {remMq} ({base * multiplier}px)
                 </h1>
               </Section>
-            </main>
+            </section>
           </div>
         )}
       </WindowSizeContext.Consumer>
@@ -83,18 +83,20 @@ class Header extends React.Component {
     return (
       <header>
         <table className={table}>
-          {Object.entries(attributes).map(([attrName, attrValue], index) => (
-            <tr key={index}>
-              <td
-                className={css`
-                  min-width: 10rem;
-                `}
-              >
-                {attrName}
-              </td>
-              <td>{attrValue}</td>
-            </tr>
-          ))}
+          <tbody>
+            {Object.entries(attributes).map(([attrName, attrValue], index) => (
+              <tr key={index}>
+                <td
+                  className={css`
+                    min-width: 10rem;
+                  `}
+                >
+                  {attrName}
+                </td>
+                <td>{attrValue}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
 
         <p
