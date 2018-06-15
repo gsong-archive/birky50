@@ -6,7 +6,7 @@ import { css } from "emotion";
 import "../styles/global";
 import Header from "../components/Header";
 import NavMenu from "../components/NavMenu";
-import Section from "../components/Section";
+import Section from "../components/shared/Section";
 import sections from "../data/sections";
 import { WindowSizeProvider } from "../contexts/WindowSizeContext";
 

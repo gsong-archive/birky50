@@ -7,7 +7,7 @@ import styled, { css } from "react-emotion";
 import Address from "../shared/Address";
 import PhoneNumber from "../shared/PhoneNumber";
 import RSVPLink from "../shared/RSVPLink";
-import SectionHeader from "../shared/SectionHeader";
+import SectionHeader from "../shared/Section/Header";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { Calendar } from "../shared/EmojiLabels";
 import { Link } from "../../styles/components";

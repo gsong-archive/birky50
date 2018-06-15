@@ -4,7 +4,7 @@ import * as React from "react";
 import styled, { css } from "react-emotion";
 
 import Card from "../Card";
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../Section/Header";
 import WindowSizeContext from "../../../contexts/WindowSizeContext";
 import { getBaseFontSize } from "../../../styles/utils";
 import { supportsGrid } from "../../../styles/cssFeatures";

@@ -4,10 +4,10 @@ import * as React from "react";
 import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
-import SectionContext from "../../../contexts/SectionContext";
-import { convertListToEm } from "../../utils";
+import SectionContext from "../../../../contexts/SectionContext";
+import { convertListToEm } from "../../../utils";
 
-import type { LabelComponent } from "../EmojiLabels";
+import type { LabelComponent } from "../../EmojiLabels";
 
 type Props = { children: React.Element<LabelComponent> };
 

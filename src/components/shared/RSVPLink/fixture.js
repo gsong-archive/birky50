@@ -2,7 +2,7 @@
 import { createFixture } from "react-cosmos-flow/fixture";
 import { css } from "emotion";
 
-import RSVPLink from "../RSVPLink";
+import RSVPLink from "./index";
 
 export default [
   createFixture({

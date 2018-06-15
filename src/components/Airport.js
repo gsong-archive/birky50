@@ -3,7 +3,7 @@ import React from "react";
 
 import { css } from "emotion";
 
-import SectionHeader from "./shared/SectionHeader";
+import SectionHeader from "./shared/Section/Header";
 import { Airport } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
 import { textColors } from "../styles/variables";

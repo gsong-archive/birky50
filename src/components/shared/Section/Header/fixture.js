@@ -5,8 +5,8 @@ import { createFixture } from "react-cosmos-flow/fixture";
 
 import { generate } from "testUtils";
 
-import SectionHeader from "../SectionHeader";
-import { Airplane } from "../EmojiLabels";
+import SectionHeader from "./index";
+import { Airplane } from "../../EmojiLabels";
 
 export default [
   createFixture({

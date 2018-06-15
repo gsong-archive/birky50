@@ -4,7 +4,7 @@ import React from "react";
 import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
-import SectionHeader from "../shared/SectionHeader";
+import SectionHeader from "../shared/Section/Header";
 import { btn, formInput } from "../../styles";
 import { convertListToEm } from "../utils";
 import { supportsGrid } from "../../styles/cssFeatures";
