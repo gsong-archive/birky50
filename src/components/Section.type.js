@@ -3,10 +3,7 @@ import * as React from "react";
 
 import type { LabelComponent } from "./shared/EmojiLabels";
 
-export type Props = {
-  LabelComponent: LabelComponent,
-  sectionLabel: string,
-};
+export type Props = {};
 
 export type SectionDatum = {
   id: string,

@@ -12,13 +12,9 @@ const CardList = require("./index").default;
 
 describe("CardList renders", () => {
   const props = {
-    title: generate.words(),
     items: [...Array(10)].map(() => generate.card()),
   };
   const { container } = render(<CardList {...props} />);
-
-  test("title is visible", () =>
-    expect(container.textContent).toMatch(props.title));
 
   test("cards are visible", () =>
     props.items.forEach(item =>
@@ -27,7 +23,6 @@ describe("CardList renders", () => {
 
   test("CardList is rendered", () => {
     const props = {
-      title: "A Title",
       items: [
         {
           name: "ABC Co.",

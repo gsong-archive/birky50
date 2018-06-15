@@ -4,10 +4,8 @@ import React from "react";
 import ActivityList from "./index";
 import { WindowSizeProvider } from "../../contexts/WindowSizeContext";
 
-import type { Props } from "../Section.type";
-
-export default (props: Props) => (
+export default () => (
   <WindowSizeProvider>
-    <ActivityList {...props} />
+    <ActivityList />
   </WindowSizeProvider>
 );

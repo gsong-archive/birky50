@@ -9,11 +9,20 @@ import { convertListToEm } from "../../../utils";
 
 import type { LabelComponent } from "../../EmojiLabels";
 
-type Props = { children: React.Element<LabelComponent> };
+type Props = { color: string, children: React.Element<LabelComponent> };
 
-const SectionHeader = ({ children }: Props) => (
+const SectionHeader = ({ color, children }: Props) => (
   <SectionContext.Consumer>
-    {id => <H1 id={`${id}-description`}>{children}</H1>}
+    {id => (
+      <div
+        className={css`
+          border-top: 8px solid ${color};
+          padding: 16px 24px 0;
+        `}
+      >
+        <H1 id={`${id}-description`}>{children}</H1>
+      </div>
+    )}
   </SectionContext.Consumer>
 );
 

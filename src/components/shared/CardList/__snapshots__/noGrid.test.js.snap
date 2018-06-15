@@ -1,20 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardList renders CardList is rendered 1`] = `
-.emotion-0 {
-  font-weight: normal;
-  line-height: 1.1;
-  margin: 0 0 1em;
-  font-size: 1.75rem;
-}
-
-@media (max-width:21.875em) {
-  .emotion-0 {
-    font-size: 1.5rem;
-  }
-}
-
-.emotion-20 {
+.emotion-18 {
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;
@@ -27,43 +14,43 @@ exports[`CardList renders CardList is rendered 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-20 > div {
+.emotion-18 > div {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.emotion-20 > div {
+.emotion-18 > div {
   -webkit-flex: 0 0 21.25rem;
   -ms-flex: 0 0 21.25rem;
   flex: 0 0 21.25rem;
 }
 
-.emotion-17 {
+.emotion-15 {
   margin: 1rem;
 }
 
-.emotion-8 {
+.emotion-6 {
   color: hsl(0,0%,45%);
 }
 
-.emotion-18 {
+.emotion-16 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
 
-.emotion-6 {
+.emotion-4 {
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 
-.emotion-4 {
+.emotion-2 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,12 +61,12 @@ exports[`CardList renders CardList is rendered 1`] = `
   align-items: baseline;
 }
 
-.emotion-9 {
+.emotion-7 {
   font-family: "Segoe UI Emoji";
   margin-right: 0.25em;
 }
 
-.emotion-2 {
+.emotion-0 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -91,49 +78,43 @@ exports[`CardList renders CardList is rendered 1`] = `
 }
 
 <div>
-  <h1
-    id="uniqueId-description"
-    class="emotion-0 emotion-1"
-  >
-    A Title
-  </h1>
   <div
-    class="emotion-20 emotion-21"
+    class="emotion-18 emotion-19"
   >
     <div
-      class="emotion-18 emotion-19"
+      class="emotion-16 emotion-17"
     >
       <a
         href="https://som_url/"
         rel="nofollow"
-        class="emotion-2 emotion-3"
+        class="emotion-0 emotion-1"
       />
       <div
-        class="emotion-17"
+        class="emotion-15"
       >
         <div
-          class="emotion-6 emotion-7"
+          class="emotion-4 emotion-5"
         >
           <a
             href="https://som_url/"
             rel="nofollow"
-            class="emotion-4 emotion-5"
+            class="emotion-2 emotion-3"
           >
             ABC Co.
           </a>
         </div>
         <p
-          class="emotion-8"
+          class="emotion-6"
         >
           $100–$200
         </p>
         <address>
           <div>
             <span
-              class="emotion-12"
+              class="emotion-10"
             >
               <span
-                class="emotion-9"
+                class="emotion-7"
                 role="img"
                 aria-label="round pushpin"
               >
@@ -141,7 +122,7 @@ exports[`CardList renders CardList is rendered 1`] = `
               </span>
               <a
                 href="https://url_to_map/"
-                class="emotion-4 emotion-5"
+                class="emotion-2 emotion-3"
               >
                 123 Main Street
               </a>
@@ -149,10 +130,10 @@ exports[`CardList renders CardList is rendered 1`] = `
           </div>
           <div>
             <span
-              class="emotion-12"
+              class="emotion-10"
             >
               <span
-                class="emotion-9"
+                class="emotion-7"
                 role="img"
                 aria-label="phone receiver"
               >
@@ -160,7 +141,7 @@ exports[`CardList renders CardList is rendered 1`] = `
               </span>
               <a
                 href="tel:415-123-4567"
-                class="emotion-4 emotion-5"
+                class="emotion-2 emotion-3"
               >
                 415-123-4567
               </a>

@@ -1,12 +1,12 @@
 //@flow
 import React from "react";
 
-import { css } from "emotion";
-
 import "../styles/global";
 import Header from "../components/Header";
 import NavMenu from "../components/NavMenu";
 import Section from "../components/shared/Section";
+import SectionDetail from "../components/shared/Section/Detail";
+import SectionHeader from "../components/shared/Section/Header";
 import sections from "../data/sections";
 import { WindowSizeProvider } from "../contexts/WindowSizeContext";
 
@@ -43,19 +43,18 @@ export default class App extends React.Component<{}> {
 
     return (
       <Section
-        id={id}
-        ref={this._refs[id]}
-        key={id}
         tag={tag}
-        className={css`
-          border-top: 8px solid ${color};
-        `}
+        id={id}
+        key={id}
+        ref={this._refs[id]}
         aria-labelledby={`${id}-description`}
       >
-        <SectionComponent
-          LabelComponent={LabelComponent}
-          sectionLabel={sectionLabel}
-        />
+        <SectionHeader color={color}>
+          <LabelComponent label={sectionLabel} />
+        </SectionHeader>
+        <SectionDetail>
+          <SectionComponent />
+        </SectionDetail>
       </Section>
     );
   };

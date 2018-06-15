@@ -1,37 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactUs renders properly 1`] = `
-.emotion-2 {
-  font-weight: normal;
-  line-height: 1.1;
-  margin: 0 0 1em;
-  font-size: 1.75rem;
-}
-
-@media (max-width:21.875em) {
-  .emotion-2 {
-    font-size: 1.5rem;
-  }
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.emotion-0 {
-  font-family: "Segoe UI Emoji";
-  margin-right: 0.25em;
-}
-
 @media (min-width:37.5em) {
-  .emotion-18 {
+  .emotion-14 {
     display: grid;
     grid-template-columns: 5rem 30rem;
     grid-row-gap: 1rem;
@@ -39,12 +10,12 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-4 {
+  .emotion-0 {
     margin-top: 0.575rem;
   }
 }
 
-.emotion-6 {
+.emotion-2 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -58,13 +29,13 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-6 {
+  .emotion-2 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-14 {
+.emotion-10 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -78,13 +49,13 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-14 {
+  .emotion-10 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-16 {
+.emotion-12 {
   border-radius: 0.25rem;
   box-shadow: 0 3px 8px 0 hsla(0,0%,0%,0.15);
   display: inline-block;
@@ -105,31 +76,14 @@ exports[`ContactUs renders properly 1`] = `
 }
 
 <div>
-  <h1
-    id="uniqueId-description"
-    class="emotion-2 emotion-3"
-  >
-    <span
-      class="emotion-1"
-    >
-      <span
-        class="emotion-0"
-        role="img"
-        aria-label="woman raising hand"
-      >
-        🙋🏻‍♀️
-      </span>
-      Questions?
-    </span>
-  </h1>
   <form
     action="https://formspree.io/birky50@damacy.net"
     method="POST"
-    class="emotion-18 emotion-19"
+    class="emotion-14 emotion-15"
   >
     <label
       for="contact_us_name"
-      class="emotion-4 emotion-5"
+      class="emotion-0 emotion-1"
     >
       Name
     </label>
@@ -139,11 +93,11 @@ exports[`ContactUs renders properly 1`] = `
       id="contact_us_name"
       placeholder="Your Name"
       required=""
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     />
     <label
       for="contact_us_email"
-      class="emotion-4 emotion-5"
+      class="emotion-0 emotion-1"
     >
       Email
     </label>
@@ -153,11 +107,11 @@ exports[`ContactUs renders properly 1`] = `
       id="contact_us_email"
       placeholder="Your Email"
       required=""
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     />
     <label
       for="contact_us_message"
-      class="emotion-4 emotion-5"
+      class="emotion-0 emotion-1"
     >
       Message
     </label>
@@ -167,7 +121,7 @@ exports[`ContactUs renders properly 1`] = `
       placeholder="Message"
       rows="3"
       required=""
-      class="emotion-14 emotion-15"
+      class="emotion-10 emotion-11"
     />
     <input
       type="hidden"
@@ -180,7 +134,7 @@ exports[`ContactUs renders properly 1`] = `
     />
     <button
       type="submit"
-      class="emotion-16 emotion-17"
+      class="emotion-12 emotion-13"
     >
       Send
     </button>

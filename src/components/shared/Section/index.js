@@ -16,7 +16,7 @@ export default forwardRef((props, ref) => {
     ref,
     className: css`
       ${props.className};
-      padding: 16px 24px 24px;
+      padding: 0 0 24px;
     `,
   });
   delete sectionProps.tag;

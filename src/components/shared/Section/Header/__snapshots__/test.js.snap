@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionHeader is rendered 1`] = `
+.emotion-2 {
+  border-top: 8px solid;
+  padding: 16px 24px 0;
+}
+
 .emotion-0 {
   font-weight: normal;
   line-height: 1.1;
@@ -14,10 +19,14 @@ exports[`SectionHeader is rendered 1`] = `
   }
 }
 
-<h1
-  id="uniqueId-description"
-  class="emotion-0 emotion-1"
+<div
+  class="emotion-2"
 >
-  I'm a child.
-</h1>
+  <h1
+    id="uniqueId-description"
+    class="emotion-0 emotion-1"
+  >
+    I'm a child.
+  </h1>
+</div>
 `;

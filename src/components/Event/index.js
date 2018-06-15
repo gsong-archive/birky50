@@ -7,7 +7,6 @@ import styled, { css } from "react-emotion";
 import Address from "../shared/Address";
 import PhoneNumber from "../shared/PhoneNumber";
 import RSVPLink from "../shared/RSVPLink";
-import SectionHeader from "../shared/Section/Header";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { Calendar } from "../shared/EmojiLabels";
 import { Link } from "../../styles/components";
@@ -18,86 +17,78 @@ import { textColors } from "../../styles/variables";
 
 import eventIcs from "../../static/files/event.ics";
 
-import type { Props } from "../Section.type";
-
-export default ({ LabelComponent, sectionLabel }: Props) => {
+export default () => {
   return (
-    <React.Fragment>
-      <SectionHeader>
-        <LabelComponent label={sectionLabel} />
-      </SectionHeader>
+    <Event>
+      <EventDetails>
+        <div>
+          <EventDetailTitle>When?</EventDetailTitle>
+          <EventDetailContent>
+            <p
+              className={css`
+                font-weight: bold;
+              `}
+            >
+              <time dateTime="2018-06-23 16:00">Saturday, June 23, 2018</time>
+            </p>
+            <p>Starts at 4:00pm, dinner buffet at 5:00pm</p>
+            <Link
+              href={eventIcs}
+              className={css`
+                display: inline-block;
+              `}
+              download
+            >
+              <Calendar label="Add to calendar" />
+            </Link>
+          </EventDetailContent>
+        </div>
 
-      <Event>
-        <EventDetails>
-          <div>
-            <EventDetailTitle>When?</EventDetailTitle>
-            <EventDetailContent>
-              <p
-                className={css`
-                  font-weight: bold;
-                `}
-              >
-                <time dateTime="2018-06-23 16:00">Saturday, June 23, 2018</time>
-              </p>
-              <p>Starts at 4:00pm, dinner buffet at 5:00pm</p>
-              <Link
-                href={eventIcs}
-                className={css`
-                  display: inline-block;
-                `}
-                download
-              >
-                <Calendar label="Add to calendar" />
-              </Link>
-            </EventDetailContent>
-          </div>
+        <div>
+          <EventDetailTitle className={whereHeader}>Where?</EventDetailTitle>
+          <EventDetailContent>
+            <Link
+              href="http://vistalindacatering.com/"
+              rel="nofollow"
+              className={css`
+                font-weight: bold;
+              `}
+            >
+              Vista Linda Mexican & Catering
+            </Link>
+            <address>
+              <Address
+                address="240 Boon Rd, Somers, MT 59932"
+                url="https://goo.gl/maps/THRyvih62562"
+              />
+              <PhoneNumber number="(406) 857-3158" />
+            </address>
+          </EventDetailContent>
+        </div>
 
-          <div>
-            <EventDetailTitle className={whereHeader}>Where?</EventDetailTitle>
-            <EventDetailContent>
-              <Link
-                href="http://vistalindacatering.com/"
-                rel="nofollow"
-                className={css`
-                  font-weight: bold;
-                `}
-              >
-                Vista Linda Mexican & Catering
-              </Link>
-              <address>
-                <Address
-                  address="240 Boon Rd, Somers, MT 59932"
-                  url="https://goo.gl/maps/THRyvih62562"
-                />
-                <PhoneNumber number="(406) 857-3158" />
-              </address>
-            </EventDetailContent>
-          </div>
+        <ul
+          className={css`
+            ${spanned};
+            padding: 0;
+            margin-top: 2em;
+          `}
+        >
+          <LI>Event will take place outdoors in a covered pavilion</LI>
+          <LI>Dressy casual attire</LI>
+        </ul>
 
-          <ul
-            className={css`
-              ${spanned};
-              padding: 0;
-              margin-top: 2em;
-            `}
-          >
-            <LI>Event will take place outdoors in a covered pavilion</LI>
-            <LI>Dressy casual attire</LI>
-          </ul>
-
-          <RSVPLink
-            width="100%"
-            className={css`
-              ${spanned};
-              margin-top: 0.5rem;
-            `}
-          />
-        </EventDetails>
-        <EventMap>
-          <Map />
-        </EventMap>
-      </Event>
-    </React.Fragment>
+        <RSVPLink
+          width="100%"
+          className={css`
+            ${spanned};
+            margin-top: 0.5rem;
+          `}
+        />
+      </EventDetails>
+      <EventMap>
+        <Map />
+      </EventMap>
+    </Event>
   );
 };
 

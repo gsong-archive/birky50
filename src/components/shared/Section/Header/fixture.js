@@ -14,6 +14,7 @@ export default [
     description: "`children` prop is a React node.",
     component: SectionHeader,
     props: {
+      color: "red",
       children: <Airplane label={generate.words()} />,
     },
   }),
@@ -21,6 +22,7 @@ export default [
     name: "With text label",
     component: SectionHeader,
     props: {
+      color: "blue",
       children: generate.words(),
     },
   }),
