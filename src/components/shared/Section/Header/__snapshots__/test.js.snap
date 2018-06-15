@@ -4,12 +4,17 @@ exports[`SectionHeader is rendered 1`] = `
 .emotion-2 {
   border-top: 8px solid;
   padding: 16px 24px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: hsla(0,0%,100%,0.8);
 }
 
 .emotion-0 {
   font-weight: normal;
   line-height: 1.1;
-  margin: 0 0 1em;
+  margin: 0 0;
+  padding: 0 0 1em;
   font-size: 1.75rem;
 }
 
@@ -20,7 +25,7 @@ exports[`SectionHeader is rendered 1`] = `
 }
 
 <div
-  class="emotion-2"
+  class="emotion-2 emotion-3"
 >
   <h1
     id="uniqueId-description"
