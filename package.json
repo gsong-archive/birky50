@@ -16,11 +16,11 @@
     "emotion": "^9.2.3",
     "eslint": "^4.19.1",
     "facepaint": "^1.2.1",
-    "react": "^16.4.0",
+    "react": "^16.4.1",
     "react-app-rewire-babel-loader": "^0.1.1",
     "react-app-rewire-emotion": "^4.0.0",
     "react-app-rewired": "^1.5.2",
-    "react-dom": "^16.4.0",
+    "react-dom": "^16.4.1",
     "react-emotion": "^9.2.3",
     "react-scripts": "^1.1.1",
     "webfontloader": "^1.6.28"
@@ -46,7 +46,7 @@
     "react-cosmos-flow": "^4.3.0",
     "react-docgen": "^2.20.1",
     "react-perf-devtool": "^3.0.7",
-    "react-testing-library": "^3.1.6",
+    "react-testing-library": "^3.1.7",
     "snapshot-diff": "^0.4.0"
   }
 }
