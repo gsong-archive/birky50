@@ -39,7 +39,7 @@ export default ({ data, forwardedRef }: Props) => {
 
       <div
         className={css`
-          padding: 0 24px;
+          padding: 12px 24px 0;
         `}
       >
         <SectionComponent />

@@ -1,4 +1,4 @@
-import { convertListToEm } from "./index";
+import { convertListToEm } from "./utils";
 
 const listOfPx = [15, 200, 400, 1200];
 

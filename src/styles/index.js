@@ -33,12 +33,12 @@ export const btn = css`
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.625rem 1.125rem;
   border: 0;
 `;
 
 export const btnLg = css`
   ${btn};
   font-size: 1.25rem;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1.125rem;
 `;

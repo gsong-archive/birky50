@@ -4,8 +4,8 @@ exports[`ContactUs renders properly 1`] = `
 @media (min-width:37.5em) {
   .emotion-14 {
     display: grid;
-    grid-template-columns: 5rem 30rem;
-    grid-row-gap: 1rem;
+    grid-template-columns: 5.25rem 30rem;
+    grid-row-gap: 1.125rem;
   }
 }
 
@@ -22,21 +22,21 @@ exports[`ContactUs renders properly 1`] = `
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-    width: 40rem;
+    width: 40.5rem;
   }
 }
 
 @media (min-width:37.5em) {
   .emotion-0 {
-    margin-top: 0.575rem;
+    margin-top: 0.5625rem;
   }
 }
 
 @media (min-width:37.5em) {
   .emotion-0 {
-    -webkit-flex: 0 0 5rem;
-    -ms-flex: 0 0 5rem;
-    flex: 0 0 5rem;
+    -webkit-flex: 0 0 5.25rem;
+    -ms-flex: 0 0 5.25rem;
+    flex: 0 0 5.25rem;
   }
 }
 
@@ -50,7 +50,7 @@ exports[`ContactUs renders properly 1`] = `
   -webkit-appearance: none;
   display: block;
   width: 100%;
-  margin: .5rem 0 1rem;
+  margin: 0.375rem 0 1.125rem;
 }
 
 @media (min-width:37.5em) {
@@ -70,7 +70,7 @@ exports[`ContactUs renders properly 1`] = `
 
 @media (min-width:37.5em) {
   .emotion-2 {
-    margin-top: 1rem;
+    margin-top: 1.125rem;
   }
 }
 
@@ -84,7 +84,7 @@ exports[`ContactUs renders properly 1`] = `
   -webkit-appearance: none;
   display: block;
   width: 100%;
-  margin: .5rem 0 1rem;
+  margin: 0.375rem 0 1.125rem;
 }
 
 @media (min-width:37.5em) {
@@ -104,7 +104,7 @@ exports[`ContactUs renders properly 1`] = `
 
 @media (min-width:37.5em) {
   .emotion-10 {
-    margin-top: 1rem;
+    margin-top: 1.125rem;
   }
 }
 
@@ -117,7 +117,7 @@ exports[`ContactUs renders properly 1`] = `
   vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.625rem 1.125rem;
   border: 0;
   grid-column-start: 2;
   justify-self: start;
@@ -130,13 +130,13 @@ exports[`ContactUs renders properly 1`] = `
 
 @media (min-width:37.5em) {
   .emotion-12 {
-    margin-left: 5rem;
+    margin-left: 5.25rem;
   }
 }
 
 @media (min-width:37.5em) {
   .emotion-12 {
-    margin-top: 1rem;
+    margin-top: 1.125rem;
   }
 }
 

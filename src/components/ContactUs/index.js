@@ -5,7 +5,7 @@ import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
 import { btn, formInput } from "../../styles";
-import { convertListToEm } from "../utils";
+import { convertListToEm } from "../../styles/utils";
 import { supportsGrid } from "../../styles/cssFeatures";
 
 export default () => {
@@ -55,28 +55,28 @@ export default () => {
 const breakpoints = convertListToEm([600]);
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}em)`));
 
-const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, "1rem"] }));
+const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, "1.125rem"] }));
 
 const Form = styled.form(
   mq({
     display: [null, "grid"],
-    gridTemplateColumns: [null, "5rem 30rem"],
-    gridRowGap: [null, "1rem"],
+    gridTemplateColumns: [null, "5.25rem 30rem"],
+    gridRowGap: [null, "1.125rem"],
   }),
   !supportsGrid &&
     mq({
       display: [null, "flex"],
       flexWrap: [null, "wrap"],
       alignItems: [null, "baseline"],
-      width: [null, "40rem"],
+      width: [null, "40.5rem"],
     })
 );
 
 const Label = styled.label(
-  mq({ marginTop: [null, "0.575rem"] }),
+  mq({ marginTop: [null, "0.5625rem"] }),
   !supportsGrid &&
     mq({
-      flex: [null, "0 0 5rem"],
+      flex: [null, "0 0 5.25rem"],
     })
 );
 
@@ -85,7 +85,7 @@ const Input = styled.input(
   { display: "block" },
   mq({
     width: ["100%", "auto"],
-    margin: [".5rem 0 1rem", 0],
+    margin: ["0.375rem 0 1.125rem", 0],
   }),
   !supportsGrid &&
     mq({
@@ -107,6 +107,6 @@ const Button = styled.button(
     background-color: transparent;
     width: 6em;
   `,
-  !supportsGrid && mq({ marginLeft: [null, "5rem"] }),
+  !supportsGrid && mq({ marginLeft: [null, "5.25rem"] }),
   IEMarginTop
 );

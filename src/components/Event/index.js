@@ -11,7 +11,7 @@ import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { Calendar } from "../shared/EmojiLabels";
 import { Link } from "../../styles/components";
 import { boxShadow1 } from "../../styles";
-import { convertListToEm } from "../utils";
+import { convertListToEm } from "../../styles/utils";
 import { supportsGrid } from "../../styles/cssFeatures";
 import { textColors } from "../../styles/variables";
 
@@ -70,7 +70,7 @@ export default () => {
           className={css`
             ${spanned};
             padding: 0;
-            margin-top: 2em;
+            margin-top: 2.25em;
           `}
         >
           <LI>Event will take place outdoors in a covered pavilion</LI>
@@ -81,7 +81,7 @@ export default () => {
           width="100%"
           className={css`
             ${spanned};
-            margin-top: 0.5rem;
+            margin-top: 0.375rem;
           `}
         />
       </EventDetails>
@@ -136,7 +136,7 @@ const EventDetailTitle = styled.h2`
   font-size: 1rem;
   font-weight: normal;
   color: ${textColors.gray};
-  margin: 0 0 1em;
+  margin: 0 0 0.75em;
 `;
 
 const EventDetailContent = styled.div`
@@ -151,14 +151,14 @@ const LI = styled.li`
   margin-left: 1.5rem;
 `;
 
-const breakpoints1 = convertListToEm([980]);
+const breakpoints1 = convertListToEm([1040]);
 const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}em)`));
 
 const Event = styled.div(
   mq1({
     display: [null, "grid"],
     gridTemplateColumns: [null, "1fr 2fr"],
-    gridColumnGap: [null, "1rem"],
+    gridColumnGap: [null, "1.125rem"],
   }),
   !supportsGrid &&
     mq1({
@@ -181,7 +181,7 @@ const EventMap = styled.div(
 
 const spanned = css(mq1({ gridColumn: ["1 / 3"] }));
 
-const breakpoints2 = convertListToEm([590, 980]);
+const breakpoints2 = convertListToEm([590, 1040]);
 const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}em)`));
 
 const EventDetails = styled.div(

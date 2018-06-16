@@ -3,7 +3,7 @@
 exports[`SectionHeader is rendered 1`] = `
 .emotion-2 {
   border-top: 8px solid;
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -12,9 +12,7 @@ exports[`SectionHeader is rendered 1`] = `
 
 .emotion-0 {
   font-weight: normal;
-  line-height: 1.1;
   margin: 0 0;
-  padding: 0 0 1em;
   font-size: 1.75rem;
 }
 

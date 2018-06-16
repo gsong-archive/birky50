@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardList renders CardList is rendered 1`] = `
-.emotion-18 {
+.emotion-19 {
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;
@@ -14,34 +14,41 @@ exports[`CardList renders CardList is rendered 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-18 > div {
+.emotion-19 > div {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.emotion-18 > div {
+.emotion-19 > div {
   -webkit-flex: 0 0 21.25rem;
   -ms-flex: 0 0 21.25rem;
   flex: 0 0 21.25rem;
 }
 
-.emotion-15 {
-  margin: 1rem;
+.emotion-16 {
+  margin: 0.75rem;
 }
 
 .emotion-6 {
+  margin: 0.75rem 0 0;
   color: hsl(0,0%,45%);
 }
 
-.emotion-16 {
+.emotion-15 {
+  margin-top: 0.75rem;
+}
+
+.emotion-15 >:not(:first-child) {
+  margin-top: 0.75em;
+}
+
+.emotion-17 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
 
 .emotion-4 {
   font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 0.75rem;
 }
 
 .emotion-2 {
@@ -79,10 +86,10 @@ exports[`CardList renders CardList is rendered 1`] = `
 
 <div>
   <div
-    class="emotion-18 emotion-19"
+    class="emotion-19 emotion-20"
   >
     <div
-      class="emotion-16 emotion-17"
+      class="emotion-17 emotion-18"
     >
       <a
         href="https://som_url/"
@@ -90,7 +97,7 @@ exports[`CardList renders CardList is rendered 1`] = `
         class="emotion-0 emotion-1"
       />
       <div
-        class="emotion-15"
+        class="emotion-16"
       >
         <div
           class="emotion-4 emotion-5"
@@ -108,7 +115,9 @@ exports[`CardList renders CardList is rendered 1`] = `
         >
           $100–$200
         </p>
-        <address>
+        <address
+          class="emotion-15"
+        >
           <div>
             <span
               class="emotion-10"

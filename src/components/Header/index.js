@@ -7,7 +7,7 @@ import styled, { css } from "react-emotion";
 import RSVPLink from "../shared/RSVPLink";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
-import { convertListToEm } from "../utils";
+import { convertListToEm } from "../../styles/utils";
 
 import backgroundImage from "../../static/images/header-background.png";
 
@@ -52,6 +52,7 @@ const Title = styled.h1(
 const Subtitle = styled.p(
   css`
     color: hsl(243, 68%, 85%);
+    margin: 0.75em 0;
   `,
   mq1({ fontSize: ["1.1rem", "1.25rem"] })
 );
@@ -64,9 +65,9 @@ const Jumbotron = styled.header(
     background-color: hsl(243, 68%, 16%);
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 16px 16px;
+    padding: 18px 18px;
   `,
   mq2({
-    paddingBottom: ["32px", "64px"],
+    paddingBottom: ["30px", "60px"],
   })
 );

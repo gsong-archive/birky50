@@ -20,7 +20,7 @@ export default ({ sections, onClick }: Props) => {
             className={css`
               display: inline-block;
               border-bottom: 4px solid ${color};
-              padding-bottom: 0.15em;
+              padding-bottom: 0.1875em;
             `}
           >
             <LabelComponent label={navLabel} />
@@ -42,12 +42,12 @@ const NavContainer = styled.ul`
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
-  padding: 0.25rem 0 0.75rem;
+  padding: 0.375rem 0 0.75rem;
   margin: 0;
 `;
 
 const NavLink = styled(Link)`
   display: block;
-  font-size: 1.1rem;
-  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.125rem;
 `;

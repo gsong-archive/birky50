@@ -2,7 +2,7 @@
 
 exports[`Section is rendered 1`] = `
 .emotion-12 {
-  padding: 0 24px;
+  padding: 12px 24px 0;
 }
 
 .emotion-13 {
@@ -11,7 +11,7 @@ exports[`Section is rendered 1`] = `
 
 .emotion-4 {
   border-top: 8px solid hsl(199,71%,51%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -20,9 +20,7 @@ exports[`Section is rendered 1`] = `
 
 .emotion-2 {
   font-weight: normal;
-  line-height: 1.1;
   margin: 0 0;
-  padding: 0 0 1em;
   font-size: 1.75rem;
 }
 

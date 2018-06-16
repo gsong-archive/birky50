@@ -31,7 +31,7 @@ export default class Card extends React.Component<Props> {
         </ImgLink>
         <div
           className={css`
-            margin: 1rem;
+            margin: 0.75rem;
           `}
         >
           <CardTitle>
@@ -43,13 +43,22 @@ export default class Card extends React.Component<Props> {
           {price && (
             <p
               className={css`
+                margin: 0.75rem 0 0;
                 color: ${textColors.lightGray};
               `}
             >
               {price}
             </p>
           )}
-          <address>
+          <address
+            className={css`
+              margin-top: 0.75rem;
+
+              > :not(:first-child) {
+                margin-top: 0.75em;
+              }
+            `}
+          >
             <Address address={address} url={addressUrl} />
             {/* flowlint-next-line sketchy-null-string:off */}
             {phone && <PhoneNumber number={phone} />}
@@ -93,6 +102,4 @@ const CardImg = styled.img`
 
 const CardTitle = styled.div`
   font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 0.75rem;
 `;

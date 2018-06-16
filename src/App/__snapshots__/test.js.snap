@@ -6,13 +6,13 @@ exports[`App renders 1`] = `
   background-color: hsl(243,68%,16%);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 16px 16px;
-  padding-bottom: 32px;
+  padding: 18px 18px;
+  padding-bottom: 30px;
 }
 
 @media (min-width:75em) {
   .emotion-8 {
-    padding-bottom: 64px;
+    padding-bottom: 60px;
   }
 }
 
@@ -50,6 +50,7 @@ exports[`App renders 1`] = `
 
 .emotion-2 {
   color: hsl(243,68%,85%);
+  margin: 0.75em 0;
   font-size: 1.1rem;
 }
 
@@ -68,10 +69,10 @@ exports[`App renders 1`] = `
   vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.625rem 1.125rem;
   border: 0;
   font-size: 1.25rem;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1.125rem;
   background-color: hsl(328,85%,48%);
   color: hsl(328,85%,95%);
   width: auto;
@@ -80,37 +81,37 @@ exports[`App renders 1`] = `
 .emotion-12 {
   display: inline-block;
   border-bottom: 4px solid hsl(48,93%,47%);
-  padding-bottom: 0.15em;
+  padding-bottom: 0.1875em;
 }
 
 .emotion-17 {
   display: inline-block;
   border-bottom: 4px solid hsl(199,71%,51%);
-  padding-bottom: 0.15em;
+  padding-bottom: 0.1875em;
 }
 
 .emotion-22 {
   display: inline-block;
   border-bottom: 4px solid hsl(335,82%,70%);
-  padding-bottom: 0.15em;
+  padding-bottom: 0.1875em;
 }
 
 .emotion-27 {
   display: inline-block;
   border-bottom: 4px solid hsl(30,83%,65%);
-  padding-bottom: 0.15em;
+  padding-bottom: 0.1875em;
 }
 
 .emotion-32 {
   display: inline-block;
   border-bottom: 4px solid hsl(354,63%,51%);
-  padding-bottom: 0.15em;
+  padding-bottom: 0.1875em;
 }
 
 .emotion-37 {
   display: inline-block;
   border-bottom: 4px solid hsl(288,50%,48%);
-  padding-bottom: 0.15em;
+  padding-bottom: 0.1875em;
 }
 
 .emotion-40 {
@@ -126,7 +127,7 @@ exports[`App renders 1`] = `
   -ms-flex-pack: space-around;
   justify-content: space-around;
   list-style-type: none;
-  padding: 0.25rem 0 0.75rem;
+  padding: 0.375rem 0 0.75rem;
   margin: 0;
 }
 
@@ -135,8 +136,8 @@ exports[`App renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   display: block;
-  font-size: 1.1rem;
-  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.125rem;
 }
 
 .emotion-11 {
@@ -156,7 +157,7 @@ exports[`App renders 1`] = `
 }
 
 .emotion-85 {
-  padding: 0 24px;
+  padding: 12px 24px 0;
 }
 
 .emotion-86 {
@@ -165,7 +166,7 @@ exports[`App renders 1`] = `
 
 .emotion-46 {
   border-top: 8px solid hsl(48,93%,47%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -174,9 +175,7 @@ exports[`App renders 1`] = `
 
 .emotion-44 {
   font-weight: normal;
-  line-height: 1.1;
   margin: 0 0;
-  padding: 0 0 1em;
   font-size: 1.75rem;
 }
 
@@ -193,14 +192,14 @@ exports[`App renders 1`] = `
 .emotion-75 {
   grid-column: 1 / 3;
   padding: 0;
-  margin-top: 2em;
+  margin-top: 2.25em;
 }
 
-@media (min-width:61.25em) {
+@media (min-width:65em) {
   .emotion-83 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-column-gap: 1rem;
+    grid-column-gap: 1.125rem;
   }
 }
 
@@ -212,7 +211,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:61.25em) {
+@media (min-width:65em) {
   .emotion-78 {
     display: block;
   }
@@ -222,7 +221,7 @@ exports[`App renders 1`] = `
   font-size: 1rem;
   font-weight: normal;
   color: hsl(0,0%,29%);
-  margin: 0 0 1em;
+  margin: 0 0 0.75em;
 }
 
 .emotion-55 a,
@@ -241,7 +240,7 @@ exports[`App renders 1`] = `
   font-size: 1rem;
   font-weight: normal;
   color: hsl(0,0%,29%);
-  margin: 0 0 1em;
+  margin: 0 0 0.75em;
   margin-top: 2.25em;
 }
 
@@ -251,7 +250,7 @@ exports[`App renders 1`] = `
   }
 }
 
-@media (min-width:61.25em) {
+@media (min-width:65em) {
   .emotion-57 {
     margin-top: 2.25em;
   }
@@ -284,22 +283,22 @@ exports[`App renders 1`] = `
   vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.625rem 1.125rem;
   border: 0;
   font-size: 1.25rem;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1.125rem;
   background-color: hsl(328,85%,48%);
   color: hsl(328,85%,95%);
   width: 100%;
   grid-column: 1 / 3;
-  margin-top: 0.5rem;
+  margin-top: 0.375rem;
 }
 
 .emotion-81 {
   margin-top: 1.5rem;
 }
 
-@media (min-width:61.25em) {
+@media (min-width:65em) {
   .emotion-81 {
     margin-top: 0px;
   }
@@ -313,7 +312,7 @@ exports[`App renders 1`] = `
 
 .emotion-91 {
   border-top: 8px solid hsl(199,71%,51%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -326,25 +325,33 @@ exports[`App renders 1`] = `
 
 .emotion-105 {
   border-top: 8px solid hsl(335,82%,70%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-257 {
+.emotion-265 {
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;
   grid-template-columns: repeat(3,1fr);
 }
 
-.emotion-123 {
-  margin: 1rem;
+.emotion-124 {
+  margin: 0.75rem;
 }
 
-.emotion-124 {
+.emotion-123 {
+  margin-top: 0.75rem;
+}
+
+.emotion-123 >:not(:first-child) {
+  margin-top: 0.75em;
+}
+
+.emotion-125 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
@@ -366,35 +373,34 @@ exports[`App renders 1`] = `
 
 .emotion-113 {
   font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 0.75rem;
 }
 
-.emotion-134 {
+.emotion-135 {
+  margin: 0.75rem 0 0;
   color: hsl(0,0%,45%);
 }
 
-.emotion-265 {
+.emotion-273 {
   border-top: 8px solid hsl(30,83%,65%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-408 {
+.emotion-423 {
   border-top: 8px solid hsl(354,63%,51%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-586 {
+.emotion-610 {
   border-top: 8px solid hsl(288,50%,48%);
-  padding: 16px 24px 0;
+  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -402,20 +408,20 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-602 {
+  .emotion-626 {
     display: grid;
-    grid-template-columns: 5rem 30rem;
-    grid-row-gap: 1rem;
+    grid-template-columns: 5.25rem 30rem;
+    grid-row-gap: 1.125rem;
   }
 }
 
 @media (min-width:37.5em) {
-  .emotion-588 {
-    margin-top: 0.575rem;
+  .emotion-612 {
+    margin-top: 0.5625rem;
   }
 }
 
-.emotion-590 {
+.emotion-614 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -425,17 +431,17 @@ exports[`App renders 1`] = `
   -webkit-appearance: none;
   display: block;
   width: 100%;
-  margin: .5rem 0 1rem;
+  margin: 0.375rem 0 1.125rem;
 }
 
 @media (min-width:37.5em) {
-  .emotion-590 {
+  .emotion-614 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-598 {
+.emotion-622 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -445,17 +451,17 @@ exports[`App renders 1`] = `
   -webkit-appearance: none;
   display: block;
   width: 100%;
-  margin: .5rem 0 1rem;
+  margin: 0.375rem 0 1.125rem;
 }
 
 @media (min-width:37.5em) {
-  .emotion-598 {
+  .emotion-622 {
     width: auto;
     margin: 0;
   }
 }
 
-.emotion-600 {
+.emotion-624 {
   border-radius: 0.25rem;
   box-shadow: 0 3px 8px 0 hsla(0,0%,0%,0.15);
   display: inline-block;
@@ -464,7 +470,7 @@ exports[`App renders 1`] = `
   vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.625rem 1.125rem;
   border: 0;
   grid-column-start: 2;
   justify-self: start;
@@ -913,10 +919,10 @@ exports[`App renders 1`] = `
       class="emotion-85"
     >
       <div
-        class="emotion-257 emotion-258"
+        class="emotion-265 emotion-266"
       >
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://outlookinnbandb.com"
@@ -930,7 +936,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -943,7 +949,9 @@ exports[`App renders 1`] = `
                 Outlook Inn Bed and Breakfast
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -986,7 +994,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://bestwesternflatheadlake.com"
@@ -1000,7 +1008,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1014,11 +1022,13 @@ exports[`App renders 1`] = `
               </a>
             </div>
             <p
-              class="emotion-134"
+              class="emotion-135"
             >
               $199–$219
             </p>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1061,7 +1071,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
@@ -1075,7 +1085,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1088,7 +1098,9 @@ exports[`App renders 1`] = `
                 Hilton Garden Inn Kalispell
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1131,7 +1143,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.somersbaycabins.com"
@@ -1145,7 +1157,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1158,7 +1170,9 @@ exports[`App renders 1`] = `
                 Somer’s Bay Log Cabin
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1182,7 +1196,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
@@ -1196,7 +1210,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1210,11 +1224,13 @@ exports[`App renders 1`] = `
               </a>
             </div>
             <p
-              class="emotion-134"
+              class="emotion-135"
             >
               $129–$159
             </p>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1257,7 +1273,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://sunrisevistainn.weebly.com"
@@ -1271,7 +1287,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1284,7 +1300,9 @@ exports[`App renders 1`] = `
                 Sunrise Vista Inn
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1327,7 +1345,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://edgewaterrv.com"
@@ -1341,7 +1359,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1354,7 +1372,9 @@ exports[`App renders 1`] = `
                 Edgewater RV Resort & Motel
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1397,7 +1417,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.peacefulbayresort.com"
@@ -1411,7 +1431,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1424,7 +1444,9 @@ exports[`App renders 1`] = `
                 Peaceful Bay Resort & Club
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1476,7 +1498,7 @@ exports[`App renders 1`] = `
   >
     <div
       color="hsl(30, 83%, 65%)"
-      class="emotion-265 emotion-47"
+      class="emotion-273 emotion-47"
     >
       <h1
         id="foodList-description"
@@ -1500,10 +1522,10 @@ exports[`App renders 1`] = `
       class="emotion-85"
     >
       <div
-        class="emotion-257 emotion-258"
+        class="emotion-265 emotion-266"
       >
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://www.facebook.com/glacier.perks.coffee/"
@@ -1517,7 +1539,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1530,7 +1552,9 @@ exports[`App renders 1`] = `
                 Glacier Perks Coffee House
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1573,7 +1597,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.farmhouselakeside.com"
@@ -1587,7 +1611,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1600,7 +1624,9 @@ exports[`App renders 1`] = `
                 The Farmhouse Restaurant
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1643,7 +1669,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://www.tamarackbrewing.com/lakeside"
@@ -1657,7 +1683,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1670,7 +1696,9 @@ exports[`App renders 1`] = `
                 Tamarack Brewing Company
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1713,7 +1741,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://www.facebook.com/homesteadcafebarandcasino/"
@@ -1727,7 +1755,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1740,7 +1768,9 @@ exports[`App renders 1`] = `
                 Homestead Cafe
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1783,7 +1813,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
@@ -1797,7 +1827,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1810,7 +1840,9 @@ exports[`App renders 1`] = `
                 Dairy Queen
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1853,7 +1885,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
@@ -1867,7 +1899,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1880,7 +1912,9 @@ exports[`App renders 1`] = `
                 Winchester Steak House
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -1923,7 +1957,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://scottysmt.com"
@@ -1937,7 +1971,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -1950,7 +1984,9 @@ exports[`App renders 1`] = `
                 Scotty’s Bar
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2002,7 +2038,7 @@ exports[`App renders 1`] = `
   >
     <div
       color="hsl(354, 63%, 51%)"
-      class="emotion-408 emotion-47"
+      class="emotion-423 emotion-47"
     >
       <h1
         id="activityList-description"
@@ -2026,10 +2062,10 @@ exports[`App renders 1`] = `
       class="emotion-85"
     >
       <div
-        class="emotion-257 emotion-258"
+        class="emotion-265 emotion-266"
       >
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://www.nps.gov/glac/index.htm"
@@ -2043,7 +2079,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2056,7 +2092,9 @@ exports[`App renders 1`] = `
                 Glacier National Park
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2099,7 +2137,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.flatheadlakeboattour.com"
@@ -2113,7 +2151,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2127,11 +2165,13 @@ exports[`App renders 1`] = `
               </a>
             </div>
             <p
-              class="emotion-134"
+              class="emotion-135"
             >
               Adults $22, Children 6–12: $10
             </p>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2174,7 +2214,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.spokeandpaddle.com"
@@ -2188,7 +2228,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2201,7 +2241,9 @@ exports[`App renders 1`] = `
                 Spoke & Paddle Outdoor Adventures
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2244,7 +2286,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.seamepaddle.com"
@@ -2258,7 +2300,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2271,7 +2313,9 @@ exports[`App renders 1`] = `
                 Sea Me Paddle Kayaking Tours
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2314,7 +2358,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="https://glacierraftco.com"
@@ -2328,7 +2372,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2341,7 +2385,9 @@ exports[`App renders 1`] = `
                 Glacier Raft Company
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2384,7 +2430,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
@@ -2398,7 +2444,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2411,7 +2457,9 @@ exports[`App renders 1`] = `
                 Bigfork
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2435,7 +2483,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.boatrentalsandrides.com"
@@ -2449,7 +2497,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2462,7 +2510,9 @@ exports[`App renders 1`] = `
                 Boat Rentals and Rides
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2505,7 +2555,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.flatheadlakesailing.com"
@@ -2519,7 +2569,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2532,7 +2582,9 @@ exports[`App renders 1`] = `
                 Flathead Lake Sailing & Charters
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2575,7 +2627,7 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-124 emotion-125"
+          class="emotion-125 emotion-126"
         >
           <a
             href="http://www.wildhorseislandboattrips.com"
@@ -2589,7 +2641,7 @@ exports[`App renders 1`] = `
             />
           </a>
           <div
-            class="emotion-123"
+            class="emotion-124"
           >
             <div
               class="emotion-113 emotion-114"
@@ -2602,7 +2654,9 @@ exports[`App renders 1`] = `
                 WildHorse Island Boat Trips
               </a>
             </div>
-            <address>
+            <address
+              class="emotion-123"
+            >
               <div>
                 <span
                   class="emotion-11"
@@ -2654,7 +2708,7 @@ exports[`App renders 1`] = `
   >
     <div
       color="hsl(288, 50%, 48%)"
-      class="emotion-586 emotion-47"
+      class="emotion-610 emotion-47"
     >
       <h1
         id="contactUs-description"
@@ -2680,11 +2734,11 @@ exports[`App renders 1`] = `
       <form
         action="https://formspree.io/birky50@damacy.net"
         method="POST"
-        class="emotion-602 emotion-603"
+        class="emotion-626 emotion-627"
       >
         <label
           for="contact_us_name"
-          class="emotion-588 emotion-589"
+          class="emotion-612 emotion-613"
         >
           Name
         </label>
@@ -2694,11 +2748,11 @@ exports[`App renders 1`] = `
           id="contact_us_name"
           placeholder="Your Name"
           required=""
-          class="emotion-590 emotion-591"
+          class="emotion-614 emotion-615"
         />
         <label
           for="contact_us_email"
-          class="emotion-588 emotion-589"
+          class="emotion-612 emotion-613"
         >
           Email
         </label>
@@ -2708,11 +2762,11 @@ exports[`App renders 1`] = `
           id="contact_us_email"
           placeholder="Your Email"
           required=""
-          class="emotion-590 emotion-591"
+          class="emotion-614 emotion-615"
         />
         <label
           for="contact_us_message"
-          class="emotion-588 emotion-589"
+          class="emotion-612 emotion-613"
         >
           Message
         </label>
@@ -2722,7 +2776,7 @@ exports[`App renders 1`] = `
           placeholder="Message"
           rows="3"
           required=""
-          class="emotion-598 emotion-599"
+          class="emotion-622 emotion-623"
         />
         <input
           type="hidden"
@@ -2735,7 +2789,7 @@ exports[`App renders 1`] = `
         />
         <button
           type="submit"
-          class="emotion-600 emotion-601"
+          class="emotion-624 emotion-625"
         >
           Send
         </button>

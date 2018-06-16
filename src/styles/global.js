@@ -17,6 +17,7 @@ injectGlobal`
 
   body {
     font-family: ${fontFamily}, sans-serif;
+    line-height: 1.5;
     color: ${textColors.dark};
     margin: 0;
   }

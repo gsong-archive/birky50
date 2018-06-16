@@ -1,23 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-15 {
-  margin: 1rem;
+.emotion-16 {
+  margin: 0.75rem;
 }
 
 .emotion-6 {
+  margin: 0.75rem 0 0;
   color: hsl(0,0%,45%);
 }
 
-.emotion-16 {
+.emotion-15 {
+  margin-top: 0.75rem;
+}
+
+.emotion-15 >:not(:first-child) {
+  margin-top: 0.75em;
+}
+
+.emotion-17 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
 
 .emotion-4 {
   font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 0.75rem;
 }
 
 .emotion-2 {
@@ -54,7 +61,7 @@ exports[`Card is rendered 1`] = `
 }
 
 <div
-  class="emotion-16 emotion-17"
+  class="emotion-17 emotion-18"
 >
   <a
     href="https://example.com"
@@ -62,7 +69,7 @@ exports[`Card is rendered 1`] = `
     class="emotion-0 emotion-1"
   />
   <div
-    class="emotion-15"
+    class="emotion-16"
   >
     <div
       class="emotion-4 emotion-5"
@@ -80,7 +87,9 @@ exports[`Card is rendered 1`] = `
     >
       100.00
     </p>
-    <address>
+    <address
+      class="emotion-15"
+    >
       <div>
         <span
           class="emotion-10"
@@ -129,7 +138,7 @@ exports[`Card w/o phone is rendered 1`] = `
 - First value
 + Second value
 
-@@ -43,27 +43,8 @@
+@@ -45,27 +45,8 @@
             >
               123 Main Street
             </a>
@@ -171,16 +180,16 @@ exports[`Card w/o price and phone is rendered 1`] = `
         </a>
       </div>
 -     <p
--       class=\\"css-1nmt006-Card-Card\\"
+-       class=\\"css-omfnqx-Card-Card\\"
 -     >
 -       100.00
 -     </p>
-      <address>
+      <address
+        class=\\"css-124ml5u-Card-Card\\"
+      >
         <div>
           <span
-            class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
-          >
-@@ -43,27 +38,8 @@
+@@ -45,27 +40,8 @@
             >
               123 Main Street
             </a>
@@ -222,13 +231,13 @@ exports[`Card w/o price is rendered 1`] = `
         </a>
       </div>
 -     <p
--       class=\\"css-1nmt006-Card-Card\\"
+-       class=\\"css-omfnqx-Card-Card\\"
 -     >
 -       100.00
 -     </p>
-      <address>
+      <address
+        class=\\"css-124ml5u-Card-Card\\"
+      >
         <div>
-          <span
-            class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
-          >"
+          <span"
 `;
