@@ -11,13 +11,13 @@ const ACTIVITIES = [
   },
   {
     name: "Far West Boat Tours",
-    url: "http://www.flatheadlakeboattour.com",
+    url: "https://flatheadlakeboattour.com/",
     price: "Adults $22, Children 6–12: $10",
     address: "Lakeside Marina, 7135 Hwy 93 South, Lakeside, MT 59922",
     addressUrl: "https://goo.gl/maps/9eSbLLUZ58L2",
     phone: "(406) 844-2628",
     imgUrl:
-      "http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg",
+      "https://flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg",
   },
   {
     name: "Spoke & Paddle Outdoor Adventures",
