@@ -5,13 +5,13 @@ import facepaint from "facepaint";
 import styled, { css } from "react-emotion";
 
 import SectionContext from "../../../../contexts/SectionContext";
-import { convertListToEm } from "../../../../styles/utils";
+import { calcSpacing, convertListToEm } from "../../../../styles/utils";
 
 import type { LabelComponent } from "../../EmojiLabels";
 
 type Props = { color: string, children: React.Element<LabelComponent> };
 
-const SectionHeader = ({ color, children }: Props) => (
+export default ({ color, children }: Props) => (
   <SectionContext.Consumer>
     {id => (
       <Container color={color}>
@@ -24,15 +24,23 @@ const SectionHeader = ({ color, children }: Props) => (
 const breakpoints = convertListToEm([350]);
 const mq = facepaint(breakpoints.map(bp => `@media (max-width: ${bp}em)`));
 
+const calcPaddingTopPx = (totalRows, fontSize) =>
+  `${(calcSpacing(totalRows, fontSize) / 2) * 16}px`;
+
 const Container = styled.div(
   props =>
     css`
       border-top: 8px solid ${props.color};
-      padding: 18px 24px 12px;
       position: sticky;
       top: 0;
       background-color: hsla(0, 0%, 100%, 0.8);
-    `
+    `,
+  mq({
+    padding: [
+      `${calcPaddingTopPx(3, 1.75)} 24px`,
+      `${calcPaddingTopPx(2.5, 1.5)} 24px`,
+    ],
+  })
 );
 
 const H1 = styled.h1(
@@ -42,5 +50,3 @@ const H1 = styled.h1(
   `,
   mq({ fontSize: ["1.75rem", "1.5rem"] })
 );
-
-export default SectionHeader;

@@ -7,7 +7,7 @@ import styled, { css } from "react-emotion";
 import RSVPLink from "../shared/RSVPLink";
 import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { calculateBackgroundOffset } from "./utils";
-import { convertListToEm } from "../../styles/utils";
+import { calcSpacing, convertListToEm } from "../../styles/utils";
 
 import backgroundImage from "../../static/images/header-background.png";
 
@@ -29,7 +29,9 @@ export default class Header extends React.Component<{}> {
         <Title>Sam & Sue’s 50th Anniversary</Title>
         <Subtitle>Saturday, June 23, 2018</Subtitle>
         <Subtitle>Somers, Montana</Subtitle>
-        <RSVPLink />
+        <ButtonWrapper>
+          <RSVPLink />
+        </ButtonWrapper>
       </Jumbotron>
     );
   };
@@ -52,9 +54,16 @@ const Title = styled.h1(
 const Subtitle = styled.p(
   css`
     color: hsl(243, 68%, 85%);
-    margin: 0.75em 0;
   `,
-  mq1({ fontSize: ["1.1rem", "1.25rem"] })
+  mq1({
+    fontSize: ["1.1rem", "1.25rem"],
+    margin: [`${calcSpacing(2, 1.1)}rem 0`, `${calcSpacing(2, 1.25)}rem 0`],
+  })
+);
+
+// We need to pad the top with some space, so the spacing between the subtitles and the button will be even
+const ButtonWrapper = styled.div(
+  mq1({ paddingTop: [`${1.1 * 0.25}rem`, `${1.25 * 0.25}rem`] })
 );
 
 const breakpoints2 = convertListToEm([1200]);

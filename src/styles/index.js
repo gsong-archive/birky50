@@ -2,6 +2,7 @@
 import { css } from "emotion";
 
 import { fontFamily } from "./variables";
+import { calcSpacing } from "./utils";
 
 export const borderRadius = css`
   border-radius: 0.25rem;
@@ -19,7 +20,7 @@ export const formInput = css`
   ${borderRadius};
   font: 1rem "${fontFamily}", sans-serif;
   line-height: 1.5;
-  padding: 0.375rem 0.75rem;
+  padding: ${calcSpacing(1.5) / 2}rem 0.75rem;
   border: 1px solid hsla(0, 0%, 0%, 0.16);
   box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
   -webkit-appearance: none;

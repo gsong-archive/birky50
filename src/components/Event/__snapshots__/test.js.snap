@@ -11,7 +11,7 @@ exports[`Event renders properly 1`] = `
   margin-top: 2.25em;
 }
 
-@media (min-width:65em) {
+@media (min-width:63.125em) {
   .emotion-35 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -27,7 +27,7 @@ exports[`Event renders properly 1`] = `
   }
 }
 
-@media (min-width:65em) {
+@media (min-width:63.125em) {
   .emotion-30 {
     display: block;
   }
@@ -37,11 +37,12 @@ exports[`Event renders properly 1`] = `
   font-size: 1rem;
   font-weight: normal;
   color: hsl(0,0%,29%);
-  margin: 0 0 0.75em;
+  margin: 0 0 0;
 }
 
 .emotion-7 a,
 .emotion-7 p {
+  display: block;
   margin: 0.75em 0 0;
 }
 
@@ -72,7 +73,7 @@ exports[`Event renders properly 1`] = `
   font-size: 1rem;
   font-weight: normal;
   color: hsl(0,0%,29%);
-  margin: 0 0 0.75em;
+  margin: 0 0 0;
   margin-top: 2.25em;
 }
 
@@ -82,7 +83,7 @@ exports[`Event renders properly 1`] = `
   }
 }
 
-@media (min-width:65em) {
+@media (min-width:63.125em) {
   .emotion-9 {
     margin-top: 2.25em;
   }
@@ -130,7 +131,7 @@ exports[`Event renders properly 1`] = `
   margin-top: 1.5rem;
 }
 
-@media (min-width:65em) {
+@media (min-width:63.125em) {
   .emotion-33 {
     margin-top: 0px;
   }

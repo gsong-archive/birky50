@@ -3,6 +3,7 @@ import React from "react";
 import styled, { css } from "react-emotion";
 
 import { Link } from "../../styles/components";
+import { calcSpacing } from "../../styles/utils";
 
 import type { SectionData } from "../Section.type";
 
@@ -49,5 +50,5 @@ const NavContainer = styled.ul`
 const NavLink = styled(Link)`
   display: block;
   font-size: 1.25rem;
-  padding: 0.75rem 1.125rem;
+  padding: ${calcSpacing(1.75, 1.25)}rem 1.125rem;
 `;

@@ -11,7 +11,7 @@ import WindowSizeContext from "../../contexts/WindowSizeContext";
 import { Calendar } from "../shared/EmojiLabels";
 import { Link } from "../../styles/components";
 import { boxShadow1 } from "../../styles";
-import { convertListToEm } from "../../styles/utils";
+import { calcSpacing, convertListToEm } from "../../styles/utils";
 import { supportsGrid } from "../../styles/cssFeatures";
 import { textColors } from "../../styles/variables";
 
@@ -136,13 +136,14 @@ const EventDetailTitle = styled.h2`
   font-size: 1rem;
   font-weight: normal;
   color: ${textColors.gray};
-  margin: 0 0 0.75em;
+  margin: 0 0 0;
 `;
 
 const EventDetailContent = styled.div`
   a,
   p {
-    margin: 0.75em 0 0;
+    display: block;
+    margin: ${calcSpacing(1.5)}em 0 0;
   }
 `;
 
@@ -151,7 +152,7 @@ const LI = styled.li`
   margin-left: 1.5rem;
 `;
 
-const breakpoints1 = convertListToEm([1040]);
+const breakpoints1 = convertListToEm([1010]);
 const mq1 = facepaint(breakpoints1.map(bp => `@media (min-width: ${bp}em)`));
 
 const Event = styled.div(
@@ -181,7 +182,7 @@ const EventMap = styled.div(
 
 const spanned = css(mq1({ gridColumn: ["1 / 3"] }));
 
-const breakpoints2 = convertListToEm([590, 1040]);
+const breakpoints2 = convertListToEm([590, 1010]);
 const mq2 = facepaint(breakpoints2.map(bp => `@media (min-width: ${bp}em)`));
 
 const EventDetails = styled.div(

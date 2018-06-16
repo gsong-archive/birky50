@@ -3,11 +3,17 @@
 exports[`SectionHeader is rendered 1`] = `
 .emotion-2 {
   border-top: 8px solid;
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
+}
+
+@media (max-width:21.875em) {
+  .emotion-2 {
+    padding: 12px 24px;
+  }
 }
 
 .emotion-0 {

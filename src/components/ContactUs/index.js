@@ -55,28 +55,31 @@ export default () => {
 const breakpoints = convertListToEm([600]);
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}em)`));
 
-const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, "1.125rem"] }));
+const gridRowGap = "1.125rem";
+const inputWidth = "30rem";
+const labelWidth = "5.25rem";
+const IEMarginTop = css(!supportsGrid && mq({ marginTop: [null, gridRowGap] }));
 
 const Form = styled.form(
   mq({
     display: [null, "grid"],
-    gridTemplateColumns: [null, "5.25rem 30rem"],
-    gridRowGap: [null, "1.125rem"],
+    gridTemplateColumns: [null, `${labelWidth} ${inputWidth}`],
+    gridRowGap: [null, gridRowGap],
   }),
   !supportsGrid &&
     mq({
       display: [null, "flex"],
       flexWrap: [null, "wrap"],
       alignItems: [null, "baseline"],
-      width: [null, "40.5rem"],
+      width: [null, "38rem"],
     })
 );
 
 const Label = styled.label(
-  mq({ marginTop: [null, "0.5625rem"] }),
+  mq({ marginTop: [null, "0.375rem"] }),
   !supportsGrid &&
     mq({
-      flex: [null, "0 0 5.25rem"],
+      flex: [null, `0 0 ${labelWidth}`],
     })
 );
 
@@ -85,11 +88,11 @@ const Input = styled.input(
   { display: "block" },
   mq({
     width: ["100%", "auto"],
-    margin: ["0.375rem 0 1.125rem", 0],
+    margin: ["0.5rem 0 1.625rem", 0],
   }),
   !supportsGrid &&
     mq({
-      flex: [null, "0 0 30rem"],
+      flex: [null, `0 0 ${inputWidth}`],
     }),
   IEMarginTop
 );
@@ -107,6 +110,6 @@ const Button = styled.button(
     background-color: transparent;
     width: 6em;
   `,
-  !supportsGrid && mq({ marginLeft: [null, "5.25rem"] }),
+  !supportsGrid && mq({ marginLeft: [null, labelWidth] }),
   IEMarginTop
 );

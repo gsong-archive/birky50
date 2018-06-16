@@ -17,12 +17,8 @@ exports[`CardList renders CardList is rendered 1`] = `
   color: hsl(0,0%,45%);
 }
 
-.emotion-15 {
+.emotion-15 > * {
   margin-top: 0.75rem;
-}
-
-.emotion-15 >:not(:first-child) {
-  margin-top: 0.75em;
 }
 
 .emotion-17 {

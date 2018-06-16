@@ -7,6 +7,7 @@ import Address from "../Address";
 import PhoneNumber from "../PhoneNumber";
 import { Link } from "../../../styles/components";
 import { borderRadius, boxShadow1 } from "../../../styles";
+import { calcSpacing } from "../../../styles/utils";
 import { supportsObjectFit } from "../../../styles/cssFeatures";
 import { textColors } from "../../../styles/variables";
 
@@ -23,6 +24,7 @@ export type Props = {
 export default class Card extends React.Component<Props> {
   render = () => {
     const { name, url, price, address, addressUrl, phone, imgUrl } = this.props;
+    const verticalRhythm = `${calcSpacing(2) / 2}rem`;
 
     return (
       <Container>
@@ -31,7 +33,7 @@ export default class Card extends React.Component<Props> {
         </ImgLink>
         <div
           className={css`
-            margin: 0.75rem;
+            margin: ${verticalRhythm};
           `}
         >
           <CardTitle>
@@ -43,7 +45,7 @@ export default class Card extends React.Component<Props> {
           {price && (
             <p
               className={css`
-                margin: 0.75rem 0 0;
+                margin: ${verticalRhythm} 0 0;
                 color: ${textColors.lightGray};
               `}
             >
@@ -52,10 +54,8 @@ export default class Card extends React.Component<Props> {
           )}
           <address
             className={css`
-              margin-top: 0.75rem;
-
-              > :not(:first-child) {
-                margin-top: 0.75em;
+              > * {
+                margin-top: ${verticalRhythm};
               }
             `}
           >

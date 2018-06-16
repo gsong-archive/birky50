@@ -10,12 +10,8 @@ exports[`Card is rendered 1`] = `
   color: hsl(0,0%,45%);
 }
 
-.emotion-15 {
+.emotion-15 > * {
   margin-top: 0.75rem;
-}
-
-.emotion-15 >:not(:first-child) {
-  margin-top: 0.75em;
 }
 
 .emotion-17 {
@@ -185,7 +181,7 @@ exports[`Card w/o price and phone is rendered 1`] = `
 -       100.00
 -     </p>
       <address
-        class=\\"css-124ml5u-Card-Card\\"
+        class=\\"css-1t8qzrw-Card-Card\\"
       >
         <div>
           <span
@@ -236,7 +232,7 @@ exports[`Card w/o price is rendered 1`] = `
 -       100.00
 -     </p>
       <address
-        class=\\"css-124ml5u-Card-Card\\"
+        class=\\"css-1t8qzrw-Card-Card\\"
       >
         <div>
           <span"

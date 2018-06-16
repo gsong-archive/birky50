@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders 1`] = `
-.emotion-8 {
+.emotion-10 {
   background-image: url(header-background.png);
   background-color: hsl(243,68%,16%);
   background-size: 100%;
@@ -11,7 +11,7 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:75em) {
-  .emotion-8 {
+  .emotion-10 {
     padding-bottom: 60px;
   }
 }
@@ -50,13 +50,24 @@ exports[`App renders 1`] = `
 
 .emotion-2 {
   color: hsl(243,68%,85%);
-  margin: 0.75em 0;
   font-size: 1.1rem;
+  margin: 1.3499999999999999rem 0;
 }
 
 @media (min-width:36em) {
   .emotion-2 {
     font-size: 1.25rem;
+    margin: 1.125rem 0;
+  }
+}
+
+.emotion-8 {
+  padding-top: 0.275rem;
+}
+
+@media (min-width:36em) {
+  .emotion-8 {
+    padding-top: 0.3125rem;
   }
 }
 
@@ -78,43 +89,43 @@ exports[`App renders 1`] = `
   width: auto;
 }
 
-.emotion-12 {
+.emotion-14 {
   display: inline-block;
   border-bottom: 4px solid hsl(48,93%,47%);
   padding-bottom: 0.1875em;
 }
 
-.emotion-17 {
+.emotion-19 {
   display: inline-block;
   border-bottom: 4px solid hsl(199,71%,51%);
   padding-bottom: 0.1875em;
 }
 
-.emotion-22 {
+.emotion-24 {
   display: inline-block;
   border-bottom: 4px solid hsl(335,82%,70%);
   padding-bottom: 0.1875em;
 }
 
-.emotion-27 {
+.emotion-29 {
   display: inline-block;
   border-bottom: 4px solid hsl(30,83%,65%);
   padding-bottom: 0.1875em;
 }
 
-.emotion-32 {
+.emotion-34 {
   display: inline-block;
   border-bottom: 4px solid hsl(354,63%,51%);
   padding-bottom: 0.1875em;
 }
 
-.emotion-37 {
+.emotion-39 {
   display: inline-block;
   border-bottom: 4px solid hsl(288,50%,48%);
   padding-bottom: 0.1875em;
 }
 
-.emotion-40 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,7 +142,7 @@ exports[`App renders 1`] = `
   margin: 0;
 }
 
-.emotion-13 {
+.emotion-15 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -140,7 +151,7 @@ exports[`App renders 1`] = `
   padding: 0.75rem 1.125rem;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,52 +162,58 @@ exports[`App renders 1`] = `
   align-items: baseline;
 }
 
-.emotion-10 {
+.emotion-12 {
   font-family: "Segoe UI Emoji";
   margin-right: 0.25em;
 }
 
-.emotion-85 {
+.emotion-87 {
   padding: 12px 24px 0;
 }
 
-.emotion-86 {
+.emotion-88 {
   padding: 0 0 24px;
 }
 
-.emotion-46 {
+.emotion-48 {
   border-top: 8px solid hsl(48,93%,47%);
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
 }
 
-.emotion-44 {
+@media (max-width:21.875em) {
+  .emotion-48 {
+    padding: 12px 24px;
+  }
+}
+
+.emotion-46 {
   font-weight: normal;
   margin: 0 0;
   font-size: 1.75rem;
 }
 
 @media (max-width:21.875em) {
-  .emotion-44 {
+  .emotion-46 {
     font-size: 1.5rem;
   }
 }
 
-.emotion-50 {
+.emotion-52 {
   font-weight: bold;
 }
 
-.emotion-75 {
+.emotion-77 {
   grid-column: 1 / 3;
   padding: 0;
   margin-top: 2.25em;
 }
 
-@media (min-width:65em) {
-  .emotion-83 {
+@media (min-width:63.125em) {
+  .emotion-85 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 1.125rem;
@@ -204,77 +221,78 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:36.875em) {
-  .emotion-78 {
+  .emotion-80 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10vw;
   }
 }
 
-@media (min-width:65em) {
-  .emotion-78 {
+@media (min-width:63.125em) {
+  .emotion-80 {
     display: block;
   }
 }
 
-.emotion-48 {
+.emotion-50 {
   font-size: 1rem;
   font-weight: normal;
   color: hsl(0,0%,29%);
-  margin: 0 0 0.75em;
+  margin: 0 0 0;
 }
 
-.emotion-55 a,
-.emotion-55 p {
+.emotion-57 a,
+.emotion-57 p {
+  display: block;
   margin: 0.75em 0 0;
 }
 
-.emotion-53 {
+.emotion-55 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
   display: inline-block;
 }
 
-.emotion-57 {
+.emotion-59 {
   font-size: 1rem;
   font-weight: normal;
   color: hsl(0,0%,29%);
-  margin: 0 0 0.75em;
+  margin: 0 0 0;
   margin-top: 2.25em;
 }
 
 @media (min-width:36.875em) {
-  .emotion-57 {
+  .emotion-59 {
     margin-top: 0;
   }
 }
 
-@media (min-width:65em) {
-  .emotion-57 {
+@media (min-width:63.125em) {
+  .emotion-59 {
     margin-top: 2.25em;
   }
 }
 
-.emotion-59 {
+.emotion-61 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: bold;
 }
 
-.emotion-62 {
+.emotion-64 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-71 {
+.emotion-73 {
   color: hsl(0,0%,45%);
   margin-left: 1.5rem;
 }
 
-.emotion-76 {
+.emotion-78 {
   border-radius: 0.25rem;
   box-shadow: 0 3px 8px 0 hsla(0,0%,0%,0.15);
   display: inline-block;
@@ -294,75 +312,83 @@ exports[`App renders 1`] = `
   margin-top: 0.375rem;
 }
 
-.emotion-81 {
+.emotion-83 {
   margin-top: 1.5rem;
 }
 
-@media (min-width:65em) {
-  .emotion-81 {
+@media (min-width:63.125em) {
+  .emotion-83 {
     margin-top: 0px;
   }
 }
 
-.emotion-80 {
+.emotion-82 {
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
   width: 100%;
   border: 0;
 }
 
-.emotion-91 {
+.emotion-93 {
   border-top: 8px solid hsl(199,71%,51%);
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
 }
 
-.emotion-97 {
+@media (max-width:21.875em) {
+  .emotion-93 {
+    padding: 12px 24px;
+  }
+}
+
+.emotion-99 {
   color: hsl(0,0%,45%);
 }
 
-.emotion-105 {
+.emotion-107 {
   border-top: 8px solid hsl(335,82%,70%);
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
 }
 
-.emotion-265 {
+@media (max-width:21.875em) {
+  .emotion-107 {
+    padding: 12px 24px;
+  }
+}
+
+.emotion-267 {
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;
   grid-template-columns: repeat(3,1fr);
 }
 
-.emotion-124 {
+.emotion-126 {
   margin: 0.75rem;
 }
 
-.emotion-123 {
+.emotion-125 > * {
   margin-top: 0.75rem;
 }
 
-.emotion-123 >:not(:first-child) {
-  margin-top: 0.75em;
-}
-
-.emotion-125 {
+.emotion-127 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
 
-.emotion-109 {
+.emotion-111 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.emotion-107 {
+.emotion-109 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -371,44 +397,62 @@ exports[`App renders 1`] = `
   object-fit: cover;
 }
 
-.emotion-113 {
+.emotion-115 {
   font-weight: bold;
 }
 
-.emotion-135 {
+.emotion-137 {
   margin: 0.75rem 0 0;
   color: hsl(0,0%,45%);
 }
 
-.emotion-273 {
+.emotion-275 {
   border-top: 8px solid hsl(30,83%,65%);
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
 }
 
-.emotion-423 {
+@media (max-width:21.875em) {
+  .emotion-275 {
+    padding: 12px 24px;
+  }
+}
+
+.emotion-425 {
   border-top: 8px solid hsl(354,63%,51%);
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
 }
 
-.emotion-610 {
+@media (max-width:21.875em) {
+  .emotion-425 {
+    padding: 12px 24px;
+  }
+}
+
+.emotion-612 {
   border-top: 8px solid hsl(288,50%,48%);
-  padding: 18px 24px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
+  padding: 15px 24px;
+}
+
+@media (max-width:21.875em) {
+  .emotion-612 {
+    padding: 12px 24px;
+  }
 }
 
 @media (min-width:37.5em) {
-  .emotion-626 {
+  .emotion-628 {
     display: grid;
     grid-template-columns: 5.25rem 30rem;
     grid-row-gap: 1.125rem;
@@ -416,32 +460,12 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-612 {
-    margin-top: 0.5625rem;
-  }
-}
-
-.emotion-614 {
-  border-radius: 0.25rem;
-  font: 1rem "Libre Franklin",sans-serif;
-  line-height: 1.5;
-  padding: 0.375rem 0.75rem;
-  border: 1px solid hsla(0,0%,0%,0.16);
-  box-shadow: inset 0 2px 4px 0 hsla(0,0%,0%,0.08);
-  -webkit-appearance: none;
-  display: block;
-  width: 100%;
-  margin: 0.375rem 0 1.125rem;
-}
-
-@media (min-width:37.5em) {
   .emotion-614 {
-    width: auto;
-    margin: 0;
+    margin-top: 0.375rem;
   }
 }
 
-.emotion-622 {
+.emotion-616 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -451,17 +475,37 @@ exports[`App renders 1`] = `
   -webkit-appearance: none;
   display: block;
   width: 100%;
-  margin: 0.375rem 0 1.125rem;
+  margin: 0.5rem 0 1.625rem;
 }
 
 @media (min-width:37.5em) {
-  .emotion-622 {
+  .emotion-616 {
     width: auto;
     margin: 0;
   }
 }
 
 .emotion-624 {
+  border-radius: 0.25rem;
+  font: 1rem "Libre Franklin",sans-serif;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid hsla(0,0%,0%,0.16);
+  box-shadow: inset 0 2px 4px 0 hsla(0,0%,0%,0.08);
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1.625rem;
+}
+
+@media (min-width:37.5em) {
+  .emotion-624 {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.emotion-626 {
   border-radius: 0.25rem;
   box-shadow: 0 3px 8px 0 hsla(0,0%,0%,0.15);
   display: inline-block;
@@ -485,7 +529,7 @@ exports[`App renders 1`] = `
   <header
     aria-label="Event header"
     style="background-position-x: 0px; background-position-y: -61.44px;"
-    class="emotion-8 emotion-9"
+    class="emotion-10 emotion-11"
   >
     <h1
       class="emotion-0 emotion-1"
@@ -502,30 +546,34 @@ exports[`App renders 1`] = `
     >
       Somers, Montana
     </p>
-    <a
-      href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
-      class="emotion-6 emotion-7"
+    <div
+      class="emotion-8 emotion-9"
     >
-      RSVP
-    </a>
+      <a
+        href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
+        class="emotion-6 emotion-7"
+      >
+        RSVP
+      </a>
+    </div>
   </header>
   <nav>
     <ul
-      class="emotion-40 emotion-41"
+      class="emotion-42 emotion-43"
     >
       <li>
         <a
           href="#event"
-          class="emotion-13 emotion-14"
+          class="emotion-15 emotion-16"
         >
           <span
-            class="emotion-12"
+            class="emotion-14"
           >
             <span
-              class="emotion-11"
+              class="emotion-13"
             >
               <span
-                class="emotion-10"
+                class="emotion-12"
                 role="img"
                 aria-label="party hat"
               >
@@ -539,16 +587,16 @@ exports[`App renders 1`] = `
       <li>
         <a
           href="#airport"
-          class="emotion-13 emotion-14"
+          class="emotion-15 emotion-16"
         >
           <span
-            class="emotion-17"
+            class="emotion-19"
           >
             <span
-              class="emotion-11"
+              class="emotion-13"
             >
               <span
-                class="emotion-10"
+                class="emotion-12"
                 role="img"
                 aria-label="airplane"
               >
@@ -562,16 +610,16 @@ exports[`App renders 1`] = `
       <li>
         <a
           href="#lodgingList"
-          class="emotion-13 emotion-14"
+          class="emotion-15 emotion-16"
         >
           <span
-            class="emotion-22"
+            class="emotion-24"
           >
             <span
-              class="emotion-11"
+              class="emotion-13"
             >
               <span
-                class="emotion-10"
+                class="emotion-12"
                 role="img"
                 aria-label="hotel"
               >
@@ -585,16 +633,16 @@ exports[`App renders 1`] = `
       <li>
         <a
           href="#foodList"
-          class="emotion-13 emotion-14"
+          class="emotion-15 emotion-16"
         >
           <span
-            class="emotion-27"
+            class="emotion-29"
           >
             <span
-              class="emotion-11"
+              class="emotion-13"
             >
               <span
-                class="emotion-10"
+                class="emotion-12"
                 role="img"
                 aria-label="burger"
               >
@@ -608,16 +656,16 @@ exports[`App renders 1`] = `
       <li>
         <a
           href="#activityList"
-          class="emotion-13 emotion-14"
+          class="emotion-15 emotion-16"
         >
           <span
-            class="emotion-32"
+            class="emotion-34"
           >
             <span
-              class="emotion-11"
+              class="emotion-13"
             >
               <span
-                class="emotion-10"
+                class="emotion-12"
                 role="img"
                 aria-label="biking woman"
               >
@@ -631,16 +679,16 @@ exports[`App renders 1`] = `
       <li>
         <a
           href="#contactUs"
-          class="emotion-13 emotion-14"
+          class="emotion-15 emotion-16"
         >
           <span
-            class="emotion-37"
+            class="emotion-39"
           >
             <span
-              class="emotion-11"
+              class="emotion-13"
             >
               <span
-                class="emotion-10"
+                class="emotion-12"
                 role="img"
                 aria-label="woman raising hand"
               >
@@ -656,21 +704,21 @@ exports[`App renders 1`] = `
   <main
     id="event"
     aria-labelledby="event-description"
-    class="emotion-86"
+    class="emotion-88"
   >
     <div
       color="hsl(48, 93%, 47%)"
-      class="emotion-46 emotion-47"
+      class="emotion-48 emotion-49"
     >
       <h1
         id="event-description"
-        class="emotion-44 emotion-45"
+        class="emotion-46 emotion-47"
       >
         <span
-          class="emotion-11"
+          class="emotion-13"
         >
           <span
-            class="emotion-10"
+            class="emotion-12"
             role="img"
             aria-label="party hat"
           >
@@ -681,25 +729,25 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-85"
+      class="emotion-87"
     >
       <div
-        class="emotion-83 emotion-84"
+        class="emotion-85 emotion-86"
       >
         <div
-          class="emotion-78 emotion-79"
+          class="emotion-80 emotion-81"
         >
           <div>
             <h2
-              class="emotion-48 emotion-49"
+              class="emotion-50 emotion-51"
             >
               When?
             </h2>
             <div
-              class="emotion-55 emotion-56"
+              class="emotion-57 emotion-58"
             >
               <p
-                class="emotion-50"
+                class="emotion-52"
               >
                 <time
                   datetime="2018-06-23 16:00"
@@ -712,14 +760,14 @@ exports[`App renders 1`] = `
               </p>
               <a
                 href="event.ics"
-                class="emotion-53 emotion-54"
+                class="emotion-55 emotion-56"
                 download=""
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="calendar"
                   >
@@ -732,27 +780,27 @@ exports[`App renders 1`] = `
           </div>
           <div>
             <h2
-              class="emotion-57 emotion-49"
+              class="emotion-59 emotion-51"
             >
               Where?
             </h2>
             <div
-              class="emotion-55 emotion-56"
+              class="emotion-57 emotion-58"
             >
               <a
                 href="http://vistalindacatering.com/"
                 rel="nofollow"
-                class="emotion-59 emotion-54"
+                class="emotion-61 emotion-56"
               >
                 Vista Linda Mexican & Catering
               </a>
               <address>
                 <div>
                   <span
-                    class="emotion-11"
+                    class="emotion-13"
                   >
                     <span
-                      class="emotion-10"
+                      class="emotion-12"
                       role="img"
                       aria-label="round pushpin"
                     >
@@ -760,7 +808,7 @@ exports[`App renders 1`] = `
                     </span>
                     <a
                       href="https://goo.gl/maps/THRyvih62562"
-                      class="emotion-62 emotion-54"
+                      class="emotion-64 emotion-56"
                     >
                       240 Boon Rd, Somers, MT 59932
                     </a>
@@ -768,10 +816,10 @@ exports[`App renders 1`] = `
                 </div>
                 <div>
                   <span
-                    class="emotion-11"
+                    class="emotion-13"
                   >
                     <span
-                      class="emotion-10"
+                      class="emotion-12"
                       role="img"
                       aria-label="phone receiver"
                     >
@@ -779,7 +827,7 @@ exports[`App renders 1`] = `
                     </span>
                     <a
                       href="tel:(406) 857-3158"
-                      class="emotion-62 emotion-54"
+                      class="emotion-64 emotion-56"
                     >
                       (406) 857-3158
                     </a>
@@ -789,15 +837,15 @@ exports[`App renders 1`] = `
             </div>
           </div>
           <ul
-            class="emotion-75"
+            class="emotion-77"
           >
             <li
-              class="emotion-71 emotion-72"
+              class="emotion-73 emotion-74"
             >
               Event will take place outdoors in a covered pavilion
             </li>
             <li
-              class="emotion-71 emotion-72"
+              class="emotion-73 emotion-74"
             >
               Dressy casual attire
             </li>
@@ -805,13 +853,13 @@ exports[`App renders 1`] = `
           <a
             href="https://goo.gl/forms/SKdVBcUt7LUQmP1K2"
             width="100%"
-            class="emotion-76 emotion-7"
+            class="emotion-78 emotion-7"
           >
             RSVP
           </a>
         </div>
         <div
-          class="emotion-81 emotion-82"
+          class="emotion-83 emotion-84"
         >
           <div>
             <iframe
@@ -819,7 +867,7 @@ exports[`App renders 1`] = `
               title="map"
               height="300"
               allowfullscreen=""
-              class="emotion-80"
+              class="emotion-82"
             />
           </div>
         </div>
@@ -829,21 +877,21 @@ exports[`App renders 1`] = `
   <section
     id="airport"
     aria-labelledby="airport-description"
-    class="emotion-86"
+    class="emotion-88"
   >
     <div
       color="hsl(199, 71%, 51%)"
-      class="emotion-91 emotion-47"
+      class="emotion-93 emotion-49"
     >
       <h1
         id="airport-description"
-        class="emotion-44 emotion-45"
+        class="emotion-46 emotion-47"
       >
         <span
-          class="emotion-11"
+          class="emotion-13"
         >
           <span
-            class="emotion-10"
+            class="emotion-12"
             role="img"
             aria-label="airplane"
           >
@@ -854,13 +902,13 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-85"
+      class="emotion-87"
     >
       <span
-        class="emotion-11"
+        class="emotion-13"
       >
         <span
-          class="emotion-10"
+          class="emotion-12"
           role="img"
           aria-label="flight arrival"
         >
@@ -869,19 +917,19 @@ exports[`App renders 1`] = `
         <a
           href="http://www.iflyglacier.com"
           rel="nofollow"
-          class="emotion-62 emotion-54"
+          class="emotion-64 emotion-56"
         >
           Glacier Park International Airport
         </a>
       </span>
       <p>
         <span
-          class="emotion-97"
+          class="emotion-99"
         >
           Code:
         </span>
         <span
-          class="emotion-50"
+          class="emotion-52"
         >
           FCA
         </span>
@@ -891,21 +939,21 @@ exports[`App renders 1`] = `
   <section
     id="lodgingList"
     aria-labelledby="lodgingList-description"
-    class="emotion-86"
+    class="emotion-88"
   >
     <div
       color="hsl(335, 82%, 70%)"
-      class="emotion-105 emotion-47"
+      class="emotion-107 emotion-49"
     >
       <h1
         id="lodgingList-description"
-        class="emotion-44 emotion-45"
+        class="emotion-46 emotion-47"
       >
         <span
-          class="emotion-11"
+          class="emotion-13"
         >
           <span
-            class="emotion-10"
+            class="emotion-12"
             role="img"
             aria-label="hotel"
           >
@@ -916,48 +964,48 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-85"
+      class="emotion-87"
     >
       <div
-        class="emotion-265 emotion-266"
+        class="emotion-267 emotion-268"
       >
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://outlookinnbandb.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh5.googleusercontent.com/p/AF1QipP6DfmJnGhCT_brALxXqoV-ldPxWuavT-KKvPPe=w408-h273-k-no"
               alt="Outlook Inn Bed and Breakfast"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://outlookinnbandb.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Outlook Inn Bed and Breakfast
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -965,7 +1013,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/am3u2e5nG9Q2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     175 Boon Rd, Somers, MT 59932
                   </a>
@@ -973,10 +1021,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -984,7 +1032,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 857-2060"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 857-2060
                   </a>
@@ -994,47 +1042,47 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://bestwesternflatheadlake.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipPl0yDkYjiWoiJL-9HYuu832fm2Yj02m71GcsNf=s1536"
               alt="Best Western Plus Flathead Lake Inn and Suites"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://bestwesternflatheadlake.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Best Western Plus Flathead Lake Inn and Suites
               </a>
             </div>
             <p
-              class="emotion-135"
+              class="emotion-137"
             >
               $199–$219
             </p>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1042,7 +1090,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/GshRHRYWWHT2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     4824 US Highway 93 S, Kalispell, MT 59901
                   </a>
@@ -1050,10 +1098,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1061,7 +1109,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 857-2400"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 857-2400
                   </a>
@@ -1071,42 +1119,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh5.googleusercontent.com/p/AF1QipMoJX1_n9nNn6tHnv6tNXQo9DG78AxOpHYoTM2x=w408-h271-k-no"
               alt="Hilton Garden Inn Kalispell"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Hilton Garden Inn Kalispell
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1114,7 +1162,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/ZdHX7Scv3Z22"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     1840 Highway 93 South, Kalispell, MT, 59901
                   </a>
@@ -1122,10 +1170,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1133,7 +1181,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 756-4500"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 756-4500
                   </a>
@@ -1143,42 +1191,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.somersbaycabins.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://cdn.ostrovok.ru/t/1024x768/mec/hotels/8000000/7120000/7118600/7118558/7118558_15_b.jpg"
               alt="Somer’s Bay Log Cabin"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.somersbaycabins.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Somer’s Bay Log Cabin
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1186,7 +1234,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/BbkY5V9RMDw"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     5496 Highway 93 South, Somers, MT 59932
                   </a>
@@ -1196,47 +1244,47 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipMwGIaY-rFy-uL4pYwy2zgApjQdN9ZJiCn_ZYSj=s1024"
               alt="FairBridge Inn & Suites"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 FairBridge Inn & Suites
               </a>
             </div>
             <p
-              class="emotion-135"
+              class="emotion-137"
             >
               $129–$159
             </p>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1244,7 +1292,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/5rr3juZy5Yz"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     1701 Highway 93 South, Kalispell, MT, 59901
                   </a>
@@ -1252,10 +1300,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1263,7 +1311,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 755-6100"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 755-6100
                   </a>
@@ -1273,42 +1321,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://sunrisevistainn.weebly.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="http://sunrisevistainn.weebly.com/uploads/5/3/4/1/53416569/8098879_orig.jpg"
               alt="Sunrise Vista Inn"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://sunrisevistainn.weebly.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Sunrise Vista Inn
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1316,7 +1364,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/mQ1WixYQD142"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     7005 Highway 93 S, Lakeside, MT 59922
                   </a>
@@ -1324,10 +1372,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1335,7 +1383,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-0231"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-0231
                   </a>
@@ -1345,42 +1393,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://edgewaterrv.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="http://www.passportamerica.com/img/campgrounds/3358/CG-3278_4.png"
               alt="Edgewater RV Resort & Motel"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://edgewaterrv.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Edgewater RV Resort & Motel
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1388,7 +1436,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/tVCfyofRppH2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     7140 US-93, Lakeside, MT 59922
                   </a>
@@ -1396,10 +1444,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1407,7 +1455,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-3644"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-3644
                   </a>
@@ -1417,42 +1465,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.peacefulbayresort.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="http://www.peacefulbayresort.com/assets/img/PBR-Hero3.jpg"
               alt="Peaceful Bay Resort & Club"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.peacefulbayresort.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Peaceful Bay Resort & Club
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1460,7 +1508,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/V32mgjc37Q62"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     59901, 137 Peaceful Ln, Lakeside, MT 59922
                   </a>
@@ -1468,10 +1516,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1479,7 +1527,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 709-2202"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 709-2202
                   </a>
@@ -1494,21 +1542,21 @@ exports[`App renders 1`] = `
   <section
     id="foodList"
     aria-labelledby="foodList-description"
-    class="emotion-86"
+    class="emotion-88"
   >
     <div
       color="hsl(30, 83%, 65%)"
-      class="emotion-273 emotion-47"
+      class="emotion-275 emotion-49"
     >
       <h1
         id="foodList-description"
-        class="emotion-44 emotion-45"
+        class="emotion-46 emotion-47"
       >
         <span
-          class="emotion-11"
+          class="emotion-13"
         >
           <span
-            class="emotion-10"
+            class="emotion-12"
             role="img"
             aria-label="burger"
           >
@@ -1519,48 +1567,48 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-85"
+      class="emotion-87"
     >
       <div
-        class="emotion-265 emotion-266"
+        class="emotion-267 emotion-268"
       >
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://www.facebook.com/glacier.perks.coffee/"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh5.googleusercontent.com/p/AF1QipNWYhfT5pFGozkX93Vy4k6xyOtuTTOgxU4JPVgr=s792-k-no"
               alt="Glacier Perks Coffee House"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://www.facebook.com/glacier.perks.coffee/"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Glacier Perks Coffee House
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1568,7 +1616,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/jugv4Y9a1cB2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     7235 US Highway 93 S, Lakeside, MT 59922
                   </a>
@@ -1576,10 +1624,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1587,7 +1635,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-0908"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-0908
                   </a>
@@ -1597,42 +1645,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.farmhouselakeside.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipMnq0hRJAZx8v0dzUghoHUTZWIdU0DehUtECS7O=s1024"
               alt="The Farmhouse Restaurant"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.farmhouselakeside.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 The Farmhouse Restaurant
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1640,7 +1688,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/torto64XEY12"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     306 Stoner Loop, Lakeside, MT 59922
                   </a>
@@ -1648,10 +1696,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1659,7 +1707,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-0610"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-0610
                   </a>
@@ -1669,42 +1717,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://www.tamarackbrewing.com/lakeside"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipPunoYdh_MlZieT4exVD5a6x-337zzUaTBV1p9I=s1024"
               alt="Tamarack Brewing Company"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://www.tamarackbrewing.com/lakeside"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Tamarack Brewing Company
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1712,7 +1760,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/sTZ8XbjgAiG2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     105 Blacktail Road, Lakeside, MT
                   </a>
@@ -1720,10 +1768,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1731,7 +1779,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-0244"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-0244
                   </a>
@@ -1741,42 +1789,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://www.facebook.com/homesteadcafebarandcasino/"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipMjDbTEfGaaysS5OVQUaxeGGQHi5adNwoNMYan6=s1024"
               alt="Homestead Cafe"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://www.facebook.com/homesteadcafebarandcasino/"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Homestead Cafe
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1784,7 +1832,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/9YQK8DymPK52"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     7262 US Highway 93, Lakeside, MT 59922
                   </a>
@@ -1792,10 +1840,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1803,7 +1851,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-3926"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-3926
                   </a>
@@ -1813,42 +1861,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&gl=us&photoid=gkRxLlg5XAIAAAQun13VTQ&output=photo"
               alt="Dairy Queen"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Dairy Queen
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1856,7 +1904,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/LR9qrqDZ3DN2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     7170 HWY 93 S, Lakeside, MT 59922
                   </a>
@@ -1864,10 +1912,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1875,7 +1923,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-3844"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-3844
                   </a>
@@ -1885,42 +1933,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipPdnh0NOOANGbddezmt93GNeHsbkV6PtcpZdFws=s1024"
               alt="Winchester Steak House"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Winchester Steak House
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -1928,7 +1976,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/RN46pwo4Be92"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     2205 US Highway 93 S, Kalispell, MT 59901
                   </a>
@@ -1936,10 +1984,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -1947,7 +1995,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 257-8188"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 257-8188
                   </a>
@@ -1957,42 +2005,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://scottysmt.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipNisMxLj0y-kjpFsm7xRX_JufIRw2_K1PXmbjI_=s1024"
               alt="Scotty’s Bar"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://scottysmt.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Scotty’s Bar
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2000,7 +2048,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/fpx285LR8JL2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     2205 US Highway 93 S, Kalispell, MT 59901
                   </a>
@@ -2008,10 +2056,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2019,7 +2067,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 257-8188"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 257-8188
                   </a>
@@ -2034,21 +2082,21 @@ exports[`App renders 1`] = `
   <section
     id="activityList"
     aria-labelledby="activityList-description"
-    class="emotion-86"
+    class="emotion-88"
   >
     <div
       color="hsl(354, 63%, 51%)"
-      class="emotion-423 emotion-47"
+      class="emotion-425 emotion-49"
     >
       <h1
         id="activityList-description"
-        class="emotion-44 emotion-45"
+        class="emotion-46 emotion-47"
       >
         <span
-          class="emotion-11"
+          class="emotion-13"
         >
           <span
-            class="emotion-10"
+            class="emotion-12"
             role="img"
             aria-label="biking woman"
           >
@@ -2059,48 +2107,48 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-85"
+      class="emotion-87"
     >
       <div
-        class="emotion-265 emotion-266"
+        class="emotion-267 emotion-268"
       >
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://www.nps.gov/glac/index.htm"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipMneZ7VhRLaiEaUTBhRo1CWqUzv3hs-gBP3fYkM=s1024"
               alt="Glacier National Park"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://www.nps.gov/glac/index.htm"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Glacier National Park
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2108,7 +2156,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/SR32JLrbeb62"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     Glacier National Park, MT
                   </a>
@@ -2116,10 +2164,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2127,7 +2175,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 888-7800"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 888-7800
                   </a>
@@ -2137,47 +2185,47 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://flatheadlakeboattour.com/"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
               alt="Far West Boat Tours"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://flatheadlakeboattour.com/"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Far West Boat Tours
               </a>
             </div>
             <p
-              class="emotion-135"
+              class="emotion-137"
             >
               Adults $22, Children 6–12: $10
             </p>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2185,7 +2233,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/9eSbLLUZ58L2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     Lakeside Marina, 7135 Hwy 93 South, Lakeside, MT 59922
                   </a>
@@ -2193,10 +2241,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2204,7 +2252,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 844-2628"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 844-2628
                   </a>
@@ -2214,42 +2262,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.spokeandpaddle.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="http://www.spokeandpaddle.com/images/sandflats.jpg"
               alt="Spoke & Paddle Outdoor Adventures"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.spokeandpaddle.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Spoke & Paddle Outdoor Adventures
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2257,7 +2305,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/CJPCsbMfwdP2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     10 Somers Rd, Somers, MT 59932
                   </a>
@@ -2265,10 +2313,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2276,7 +2324,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 393-2133"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 393-2133
                   </a>
@@ -2286,42 +2334,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.seamepaddle.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipNbgLiDCF3vj9_AMegijlQMaBJf9OvAImYPjqyN=s1024"
               alt="Sea Me Paddle Kayaking Tours"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.seamepaddle.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Sea Me Paddle Kayaking Tours
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2329,7 +2377,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/sJHiaKQe8zk"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     7220 Hwy 93 S #3, Lakeside,, MT 59922
                   </a>
@@ -2337,10 +2385,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2348,7 +2396,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 249-1153"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 249-1153
                   </a>
@@ -2358,42 +2406,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="https://glacierraftco.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://www.bmwunstoppable.com/wp-content/uploads/2017/04/maxresdefault-1-7.jpg"
               alt="Glacier Raft Company"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="https://glacierraftco.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Glacier Raft Company
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2401,7 +2449,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/cRRSk9WZ6ny"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     106 Going-To-The-Sun Rd, West Glacier, MT 59936
                   </a>
@@ -2409,10 +2457,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2420,7 +2468,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 888-5454"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 888-5454
                   </a>
@@ -2430,42 +2478,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://images.fineartamerica.com/images-medium-large/bigfork-montana-sunset-jim-pavelle.jpg"
               alt="Bigfork"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Bigfork
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2473,7 +2521,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/nd9GxmGTmJv"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     Bigfork, MT
                   </a>
@@ -2483,42 +2531,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.boatrentalsandrides.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipPOnBM5O5btlHaud1AH-QlcdmbFp-apN3jGtF8j=s1024"
               alt="Boat Rentals and Rides"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.boatrentalsandrides.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Boat Rentals and Rides
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2526,7 +2574,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/WvUwTE5xy882"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     44227 A St, Big Arm, MT 59910
                   </a>
@@ -2534,10 +2582,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2545,7 +2593,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 260-5090"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 260-5090
                   </a>
@@ -2555,42 +2603,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.flatheadlakesailing.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://static1.squarespace.com/static/54da76f0e4b004762df44faa/t/54f7394ce4b0aff87aef4f08/1425488206828/FLR2032.jpg"
               alt="Flathead Lake Sailing & Charters"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.flatheadlakesailing.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 Flathead Lake Sailing & Charters
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2598,7 +2646,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/nzUd172fAPr"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     150 Flathead Lodge Rd, Bigfork, MT 59911
                   </a>
@@ -2606,10 +2654,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2617,7 +2665,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 837-5569"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 837-5569
                   </a>
@@ -2627,42 +2675,42 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-125 emotion-126"
+          class="emotion-127 emotion-128"
         >
           <a
             href="http://www.wildhorseislandboattrips.com"
             rel="nofollow"
-            class="emotion-109 emotion-110"
+            class="emotion-111 emotion-112"
           >
             <img
               src="https://lh3.ggpht.com/p/AF1QipMuV4H2G2h4_I0oCPKyTxmuMVOBeEEqjqcTvdDb=s1024"
               alt="WildHorse Island Boat Trips"
-              class="emotion-107 emotion-108"
+              class="emotion-109 emotion-110"
             />
           </a>
           <div
-            class="emotion-124"
+            class="emotion-126"
           >
             <div
-              class="emotion-113 emotion-114"
+              class="emotion-115 emotion-116"
             >
               <a
                 href="http://www.wildhorseislandboattrips.com"
                 rel="nofollow"
-                class="emotion-62 emotion-54"
+                class="emotion-64 emotion-56"
               >
                 WildHorse Island Boat Trips
               </a>
             </div>
             <address
-              class="emotion-123"
+              class="emotion-125"
             >
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="round pushpin"
                   >
@@ -2670,7 +2718,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="https://goo.gl/maps/Ni7GehCRdDR2"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     452 Grand Drive, Bigfork, MT 59911
                   </a>
@@ -2678,10 +2726,10 @@ exports[`App renders 1`] = `
               </div>
               <div>
                 <span
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <span
-                    class="emotion-10"
+                    class="emotion-12"
                     role="img"
                     aria-label="phone receiver"
                   >
@@ -2689,7 +2737,7 @@ exports[`App renders 1`] = `
                   </span>
                   <a
                     href="tel:(406) 837-5617"
-                    class="emotion-62 emotion-54"
+                    class="emotion-64 emotion-56"
                   >
                     (406) 837-5617
                   </a>
@@ -2704,21 +2752,21 @@ exports[`App renders 1`] = `
   <section
     id="contactUs"
     aria-labelledby="contactUs-description"
-    class="emotion-86"
+    class="emotion-88"
   >
     <div
       color="hsl(288, 50%, 48%)"
-      class="emotion-610 emotion-47"
+      class="emotion-612 emotion-49"
     >
       <h1
         id="contactUs-description"
-        class="emotion-44 emotion-45"
+        class="emotion-46 emotion-47"
       >
         <span
-          class="emotion-11"
+          class="emotion-13"
         >
           <span
-            class="emotion-10"
+            class="emotion-12"
             role="img"
             aria-label="woman raising hand"
           >
@@ -2729,16 +2777,16 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-85"
+      class="emotion-87"
     >
       <form
         action="https://formspree.io/birky50@damacy.net"
         method="POST"
-        class="emotion-626 emotion-627"
+        class="emotion-628 emotion-629"
       >
         <label
           for="contact_us_name"
-          class="emotion-612 emotion-613"
+          class="emotion-614 emotion-615"
         >
           Name
         </label>
@@ -2748,11 +2796,11 @@ exports[`App renders 1`] = `
           id="contact_us_name"
           placeholder="Your Name"
           required=""
-          class="emotion-614 emotion-615"
+          class="emotion-616 emotion-617"
         />
         <label
           for="contact_us_email"
-          class="emotion-612 emotion-613"
+          class="emotion-614 emotion-615"
         >
           Email
         </label>
@@ -2762,11 +2810,11 @@ exports[`App renders 1`] = `
           id="contact_us_email"
           placeholder="Your Email"
           required=""
-          class="emotion-614 emotion-615"
+          class="emotion-616 emotion-617"
         />
         <label
           for="contact_us_message"
-          class="emotion-612 emotion-613"
+          class="emotion-614 emotion-615"
         >
           Message
         </label>
@@ -2776,7 +2824,7 @@ exports[`App renders 1`] = `
           placeholder="Message"
           rows="3"
           required=""
-          class="emotion-622 emotion-623"
+          class="emotion-624 emotion-625"
         />
         <input
           type="hidden"
@@ -2789,7 +2837,7 @@ exports[`App renders 1`] = `
         />
         <button
           type="submit"
-          class="emotion-624 emotion-625"
+          class="emotion-626 emotion-627"
         >
           Send
         </button>
