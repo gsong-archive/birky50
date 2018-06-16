@@ -1,3 +1,4 @@
+//@flow strict
 const FOOD = [
   {
     name: "Glacier Perks Coffee House",

@@ -1,3 +1,4 @@
+//@flow strict
 const LODGINGS = [
   {
     name: "Outlook Inn Bed and Breakfast",

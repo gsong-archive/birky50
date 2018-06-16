@@ -1,3 +1,4 @@
+//@flow strict
 import WebFont from "webfontloader";
 import { injectGlobal } from "emotion";
 

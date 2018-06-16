@@ -1,3 +1,4 @@
+//@flow strict
 import * as faker from "faker";
 
 const address = () =>

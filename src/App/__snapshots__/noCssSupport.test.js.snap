@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders 1`] = `
-.emotion-97 {
-  padding: 0 24px;
-}
-
 .emotion-8 {
   background-image: url(header-background.png);
   background-color: hsl(243,68%,16%);
@@ -163,7 +159,11 @@ exports[`App renders 1`] = `
   margin-right: 0.25em;
 }
 
-.emotion-99 {
+.emotion-97 {
+  padding: 0 24px;
+}
+
+.emotion-98 {
   padding: 0 0 24px;
 }
 
@@ -371,7 +371,7 @@ exports[`App renders 1`] = `
   border: 0;
 }
 
-.emotion-104 {
+.emotion-103 {
   border-top: 8px solid hsl(199,71%,51%);
   padding: 16px 24px 0;
   position: -webkit-sticky;
@@ -380,11 +380,11 @@ exports[`App renders 1`] = `
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-110 {
+.emotion-109 {
   color: hsl(0,0%,45%);
 }
 
-.emotion-119 {
+.emotion-117 {
   border-top: 8px solid hsl(335,82%,70%);
   padding: 16px 24px 0;
   position: -webkit-sticky;
@@ -393,7 +393,7 @@ exports[`App renders 1`] = `
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-255 {
+.emotion-253 {
   display: grid;
   grid-gap: 1.5rem;
   margin-bottom: 0.75em;
@@ -406,27 +406,27 @@ exports[`App renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-255 > div {
+.emotion-253 > div {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.emotion-255 > div {
+.emotion-253 > div {
   -webkit-flex: 0 0 18.333333333333332rem;
   -ms-flex: 0 0 18.333333333333332rem;
   flex: 0 0 18.333333333333332rem;
 }
 
-.emotion-135 {
+.emotion-133 {
   margin: 1rem;
 }
 
-.emotion-136 {
+.emotion-134 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
 
-.emotion-121 {
+.emotion-119 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -437,17 +437,17 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-125 {
+.emotion-123 {
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 }
 
-.emotion-144 {
+.emotion-142 {
   color: hsl(0,0%,45%);
 }
 
-.emotion-138 {
+.emotion-136 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -458,7 +458,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-156 {
+.emotion-154 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -469,7 +469,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-173 {
+.emotion-171 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -480,7 +480,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-186 {
+.emotion-184 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -491,7 +491,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-204 {
+.emotion-202 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -502,7 +502,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-221 {
+.emotion-219 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -513,7 +513,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-238 {
+.emotion-236 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -524,7 +524,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-264 {
+.emotion-261 {
   border-top: 8px solid hsl(30,83%,65%);
   padding: 16px 24px 0;
   position: -webkit-sticky;
@@ -533,7 +533,7 @@ exports[`App renders 1`] = `
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-266 {
+.emotion-263 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -544,7 +544,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-283 {
+.emotion-280 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -555,7 +555,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-300 {
+.emotion-297 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -566,7 +566,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-317 {
+.emotion-314 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -577,7 +577,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-334 {
+.emotion-331 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -588,7 +588,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-351 {
+.emotion-348 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -599,7 +599,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-368 {
+.emotion-365 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -610,7 +610,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-394 {
+.emotion-390 {
   border-top: 8px solid hsl(354,63%,51%);
   padding: 16px 24px 0;
   position: -webkit-sticky;
@@ -619,7 +619,7 @@ exports[`App renders 1`] = `
   background-color: hsla(0,0%,100%,0.8);
 }
 
-.emotion-396 {
+.emotion-392 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -630,7 +630,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-413 {
+.emotion-409 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -641,7 +641,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-431 {
+.emotion-427 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -652,7 +652,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-448 {
+.emotion-444 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -663,7 +663,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-465 {
+.emotion-461 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -674,7 +674,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-482 {
+.emotion-478 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -685,7 +685,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-495 {
+.emotion-491 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -696,7 +696,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-512 {
+.emotion-508 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -707,7 +707,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-529 {
+.emotion-525 {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -718,7 +718,7 @@ exports[`App renders 1`] = `
   background-position: center center;
 }
 
-.emotion-555 {
+.emotion-550 {
   border-top: 8px solid hsl(288,50%,48%);
   padding: 16px 24px 0;
   position: -webkit-sticky;
@@ -728,7 +728,7 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-571 {
+  .emotion-566 {
     display: grid;
     grid-template-columns: 5rem 30rem;
     grid-row-gap: 1rem;
@@ -736,7 +736,7 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-571 {
+  .emotion-566 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -753,20 +753,20 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-557 {
+  .emotion-552 {
     margin-top: 0.575rem;
   }
 }
 
 @media (min-width:37.5em) {
-  .emotion-557 {
+  .emotion-552 {
     -webkit-flex: 0 0 5rem;
     -ms-flex: 0 0 5rem;
     flex: 0 0 5rem;
   }
 }
 
-.emotion-559 {
+.emotion-554 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -780,14 +780,14 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-559 {
+  .emotion-554 {
     width: auto;
     margin: 0;
   }
 }
 
 @media (min-width:37.5em) {
-  .emotion-559 {
+  .emotion-554 {
     -webkit-flex: 0 0 30rem;
     -ms-flex: 0 0 30rem;
     flex: 0 0 30rem;
@@ -795,12 +795,12 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-559 {
+  .emotion-554 {
     margin-top: 1rem;
   }
 }
 
-.emotion-567 {
+.emotion-562 {
   border-radius: 0.25rem;
   font: 1rem "Libre Franklin",sans-serif;
   line-height: 1.5;
@@ -814,14 +814,14 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-567 {
+  .emotion-562 {
     width: auto;
     margin: 0;
   }
 }
 
 @media (min-width:37.5em) {
-  .emotion-567 {
+  .emotion-562 {
     -webkit-flex: 0 0 30rem;
     -ms-flex: 0 0 30rem;
     flex: 0 0 30rem;
@@ -829,12 +829,12 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-567 {
+  .emotion-562 {
     margin-top: 1rem;
   }
 }
 
-.emotion-569 {
+.emotion-564 {
   border-radius: 0.25rem;
   box-shadow: 0 3px 8px 0 hsla(0,0%,0%,0.15);
   display: inline-block;
@@ -855,13 +855,13 @@ exports[`App renders 1`] = `
 }
 
 @media (min-width:37.5em) {
-  .emotion-569 {
+  .emotion-564 {
     margin-left: 5rem;
   }
 }
 
 @media (min-width:37.5em) {
-  .emotion-569 {
+  .emotion-564 {
     margin-top: 1rem;
   }
 }
@@ -1053,7 +1053,7 @@ exports[`App renders 1`] = `
   <main
     id="event"
     aria-labelledby="event-description"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       color="hsl(48, 93%, 47%)"
@@ -1078,7 +1078,7 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-97 emotion-98"
+      class="emotion-97"
     >
       <div
         class="emotion-95 emotion-96"
@@ -1226,11 +1226,11 @@ exports[`App renders 1`] = `
   <section
     id="airport"
     aria-labelledby="airport-description"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       color="hsl(199, 71%, 51%)"
-      class="emotion-104 emotion-59"
+      class="emotion-103 emotion-59"
     >
       <h1
         id="airport-description"
@@ -1251,7 +1251,7 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-97 emotion-98"
+      class="emotion-97"
     >
       <span
         class="emotion-11"
@@ -1273,7 +1273,7 @@ exports[`App renders 1`] = `
       </span>
       <p>
         <span
-          class="emotion-110"
+          class="emotion-109"
         >
           Code:
         </span>
@@ -1288,11 +1288,11 @@ exports[`App renders 1`] = `
   <section
     id="lodgingList"
     aria-labelledby="lodgingList-description"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       color="hsl(335, 82%, 70%)"
-      class="emotion-119 emotion-59"
+      class="emotion-117 emotion-59"
     >
       <h1
         id="lodgingList-description"
@@ -1313,24 +1313,24 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-97 emotion-98"
+      class="emotion-97"
     >
       <div
-        class="emotion-255 emotion-256"
+        class="emotion-253 emotion-254"
       >
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://outlookinnbandb.com"
             rel="nofollow"
-            class="emotion-121 emotion-122"
+            class="emotion-119 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://outlookinnbandb.com"
@@ -1383,18 +1383,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://bestwesternflatheadlake.com"
             rel="nofollow"
-            class="emotion-138 emotion-122"
+            class="emotion-136 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://bestwesternflatheadlake.com"
@@ -1405,7 +1405,7 @@ exports[`App renders 1`] = `
               </a>
             </div>
             <p
-              class="emotion-144"
+              class="emotion-142"
             >
               $199–$219
             </p>
@@ -1452,18 +1452,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
             rel="nofollow"
-            class="emotion-156 emotion-122"
+            class="emotion-154 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://hiltongardeninn3.hilton.com/en/hotels/montana/hilton-garden-inn-kalispell-FCAKSGI/index.html"
@@ -1516,18 +1516,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.somersbaycabins.com"
             rel="nofollow"
-            class="emotion-173 emotion-122"
+            class="emotion-171 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.somersbaycabins.com"
@@ -1561,18 +1561,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
             rel="nofollow"
-            class="emotion-186 emotion-122"
+            class="emotion-184 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.fairbridgeinns.com/Booking_Platform/#/fairbridge/new/20160528012100"
@@ -1583,7 +1583,7 @@ exports[`App renders 1`] = `
               </a>
             </div>
             <p
-              class="emotion-144"
+              class="emotion-142"
             >
               $129–$159
             </p>
@@ -1630,18 +1630,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://sunrisevistainn.weebly.com"
             rel="nofollow"
-            class="emotion-204 emotion-122"
+            class="emotion-202 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://sunrisevistainn.weebly.com"
@@ -1694,18 +1694,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://edgewaterrv.com"
             rel="nofollow"
-            class="emotion-221 emotion-122"
+            class="emotion-219 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://edgewaterrv.com"
@@ -1758,18 +1758,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.peacefulbayresort.com"
             rel="nofollow"
-            class="emotion-238 emotion-122"
+            class="emotion-236 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.peacefulbayresort.com"
@@ -1827,11 +1827,11 @@ exports[`App renders 1`] = `
   <section
     id="foodList"
     aria-labelledby="foodList-description"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       color="hsl(30, 83%, 65%)"
-      class="emotion-264 emotion-59"
+      class="emotion-261 emotion-59"
     >
       <h1
         id="foodList-description"
@@ -1852,24 +1852,24 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-97 emotion-98"
+      class="emotion-97"
     >
       <div
-        class="emotion-255 emotion-256"
+        class="emotion-253 emotion-254"
       >
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://www.facebook.com/glacier.perks.coffee/"
             rel="nofollow"
-            class="emotion-266 emotion-122"
+            class="emotion-263 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://www.facebook.com/glacier.perks.coffee/"
@@ -1922,18 +1922,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.farmhouselakeside.com"
             rel="nofollow"
-            class="emotion-283 emotion-122"
+            class="emotion-280 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.farmhouselakeside.com"
@@ -1986,18 +1986,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://www.tamarackbrewing.com/lakeside"
             rel="nofollow"
-            class="emotion-300 emotion-122"
+            class="emotion-297 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://www.tamarackbrewing.com/lakeside"
@@ -2050,18 +2050,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://www.facebook.com/homesteadcafebarandcasino/"
             rel="nofollow"
-            class="emotion-317 emotion-122"
+            class="emotion-314 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://www.facebook.com/homesteadcafebarandcasino/"
@@ -2114,18 +2114,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
             rel="nofollow"
-            class="emotion-334 emotion-122"
+            class="emotion-331 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://www.dairyqueen.com/us-en/locator/Detail/?localechange=1&store-id=7001&"
@@ -2178,18 +2178,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
             rel="nofollow"
-            class="emotion-351 emotion-122"
+            class="emotion-348 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://www.facebook.com/pages/Winchester-Steak-House/325894450829601"
@@ -2242,18 +2242,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://scottysmt.com"
             rel="nofollow"
-            class="emotion-368 emotion-122"
+            class="emotion-365 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://scottysmt.com"
@@ -2311,11 +2311,11 @@ exports[`App renders 1`] = `
   <section
     id="activityList"
     aria-labelledby="activityList-description"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       color="hsl(354, 63%, 51%)"
-      class="emotion-394 emotion-59"
+      class="emotion-390 emotion-59"
     >
       <h1
         id="activityList-description"
@@ -2336,24 +2336,24 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-97 emotion-98"
+      class="emotion-97"
     >
       <div
-        class="emotion-255 emotion-256"
+        class="emotion-253 emotion-254"
       >
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://www.nps.gov/glac/index.htm"
             rel="nofollow"
-            class="emotion-396 emotion-122"
+            class="emotion-392 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://www.nps.gov/glac/index.htm"
@@ -2406,18 +2406,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.flatheadlakeboattour.com"
             rel="nofollow"
-            class="emotion-413 emotion-122"
+            class="emotion-409 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.flatheadlakeboattour.com"
@@ -2428,7 +2428,7 @@ exports[`App renders 1`] = `
               </a>
             </div>
             <p
-              class="emotion-144"
+              class="emotion-142"
             >
               Adults $22, Children 6–12: $10
             </p>
@@ -2475,18 +2475,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.spokeandpaddle.com"
             rel="nofollow"
-            class="emotion-431 emotion-122"
+            class="emotion-427 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.spokeandpaddle.com"
@@ -2539,18 +2539,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.seamepaddle.com"
             rel="nofollow"
-            class="emotion-448 emotion-122"
+            class="emotion-444 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.seamepaddle.com"
@@ -2603,18 +2603,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="https://glacierraftco.com"
             rel="nofollow"
-            class="emotion-465 emotion-122"
+            class="emotion-461 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="https://glacierraftco.com"
@@ -2667,18 +2667,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
             rel="nofollow"
-            class="emotion-482 emotion-122"
+            class="emotion-478 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.bigfork.org/contents/view/bigfork-montana-chamber"
@@ -2712,18 +2712,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.boatrentalsandrides.com"
             rel="nofollow"
-            class="emotion-495 emotion-122"
+            class="emotion-491 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.boatrentalsandrides.com"
@@ -2776,18 +2776,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.flatheadlakesailing.com"
             rel="nofollow"
-            class="emotion-512 emotion-122"
+            class="emotion-508 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.flatheadlakesailing.com"
@@ -2840,18 +2840,18 @@ exports[`App renders 1`] = `
           </div>
         </div>
         <div
-          class="emotion-136 emotion-137"
+          class="emotion-134 emotion-135"
         >
           <a
             href="http://www.wildhorseislandboattrips.com"
             rel="nofollow"
-            class="emotion-529 emotion-122"
+            class="emotion-525 emotion-120"
           />
           <div
-            class="emotion-135"
+            class="emotion-133"
           >
             <div
-              class="emotion-125 emotion-126"
+              class="emotion-123 emotion-124"
             >
               <a
                 href="http://www.wildhorseislandboattrips.com"
@@ -2909,11 +2909,11 @@ exports[`App renders 1`] = `
   <section
     id="contactUs"
     aria-labelledby="contactUs-description"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       color="hsl(288, 50%, 48%)"
-      class="emotion-555 emotion-59"
+      class="emotion-550 emotion-59"
     >
       <h1
         id="contactUs-description"
@@ -2934,16 +2934,16 @@ exports[`App renders 1`] = `
       </h1>
     </div>
     <div
-      class="emotion-97 emotion-98"
+      class="emotion-97"
     >
       <form
         action="https://formspree.io/birky50@damacy.net"
         method="POST"
-        class="emotion-571 emotion-572"
+        class="emotion-566 emotion-567"
       >
         <label
           for="contact_us_name"
-          class="emotion-557 emotion-558"
+          class="emotion-552 emotion-553"
         >
           Name
         </label>
@@ -2953,11 +2953,11 @@ exports[`App renders 1`] = `
           id="contact_us_name"
           placeholder="Your Name"
           required=""
-          class="emotion-559 emotion-560"
+          class="emotion-554 emotion-555"
         />
         <label
           for="contact_us_email"
-          class="emotion-557 emotion-558"
+          class="emotion-552 emotion-553"
         >
           Email
         </label>
@@ -2967,11 +2967,11 @@ exports[`App renders 1`] = `
           id="contact_us_email"
           placeholder="Your Email"
           required=""
-          class="emotion-559 emotion-560"
+          class="emotion-554 emotion-555"
         />
         <label
           for="contact_us_message"
-          class="emotion-557 emotion-558"
+          class="emotion-552 emotion-553"
         >
           Message
         </label>
@@ -2981,7 +2981,7 @@ exports[`App renders 1`] = `
           placeholder="Message"
           rows="3"
           required=""
-          class="emotion-567 emotion-568"
+          class="emotion-562 emotion-563"
         />
         <input
           type="hidden"
@@ -2994,7 +2994,7 @@ exports[`App renders 1`] = `
         />
         <button
           type="submit"
-          class="emotion-569 emotion-570"
+          class="emotion-564 emotion-565"
         >
           Send
         </button>

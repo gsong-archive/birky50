@@ -1,26 +1,49 @@
 //@flow
-import React from "react";
+import * as React from "react";
 
 import { css } from "emotion";
 
-import { SectionProvider } from "../../../contexts/SectionContext";
+import Container from "./Container";
+import Header from "./Header";
 
-const forwardRef = (render, displayName = "") => {
-  render.displayName = displayName;
-  // $FlowFixMe
-  return React.forwardRef(render);
+import type { SectionDatum } from "../../Section.type";
+
+export type Props = {
+  data: SectionDatum,
+  forwardedRef: { current: null | React$ElementRef<React.ElementType> },
 };
 
-export default forwardRef((props, ref) => {
-  const sectionProps = Object.assign({}, props, {
-    ref,
-    className: css`
-      ${props.className};
-      padding: 0 0 24px;
-    `,
-  });
-  delete sectionProps.tag;
-  const section = React.createElement(props.tag, sectionProps);
+export default ({ data, forwardedRef }: Props) => {
+  const {
+    id,
+    sectionLabel,
+    sectionTag,
+    SectionComponent,
+    LabelComponent,
+    color,
+  } = data;
+  // flowlint-next-line sketchy-null-string:off
+  const tag = sectionTag ? sectionTag : "section";
 
-  return <SectionProvider id={props.id}>{section}</SectionProvider>;
-}, "Section");
+  return (
+    <Container
+      tag={tag}
+      id={id}
+      key={id}
+      ref={forwardedRef}
+      aria-labelledby={`${id}-description`}
+    >
+      <Header color={color}>
+        <LabelComponent label={sectionLabel} />
+      </Header>
+
+      <div
+        className={css`
+          padding: 0 24px;
+        `}
+      >
+        <SectionComponent />
+      </div>
+    </Container>
+  );
+};

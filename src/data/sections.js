@@ -1,3 +1,4 @@
+//@flow
 import ActivityList from "../components/ActivityList";
 import Airport from "../components/Airport";
 import ContactUs from "../components/ContactUs";

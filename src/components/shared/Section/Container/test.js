@@ -2,13 +2,14 @@ import React from "react";
 
 import { render } from "react-testing-library";
 
-import Section from "./index";
-import sections from "../../../data/sections";
+import Container from "./index";
 
-test("Section is rendered", () => {
+test("SectionContainer renders properly", () => {
   const ref = React.createRef();
   const { container } = render(
-    <Section data={sections[1]} forwardedRef={ref} />
+    <Container tag="section" id="id" ref={ref}>
+      Child
+    </Container>
   );
 
   expect(container.firstChild).toMatchSnapshot();

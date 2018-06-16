@@ -1,3 +1,4 @@
+//@flow strict
 const ACTIVITIES = [
   {
     name: "Glacier National Park",

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionContainer renders properly 1`] = `
+.emotion-0 {
+  padding: 0 0 24px;
+}
+
+<section
+  id="id"
+  class="emotion-0"
+>
+  Child
+</section>
+`;
