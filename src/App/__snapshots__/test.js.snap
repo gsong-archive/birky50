@@ -2140,12 +2140,12 @@ exports[`App renders 1`] = `
           class="emotion-125 emotion-126"
         >
           <a
-            href="http://www.flatheadlakeboattour.com"
+            href="https://flatheadlakeboattour.com/"
             rel="nofollow"
             class="emotion-109 emotion-110"
           >
             <img
-              src="http://www.flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
+              src="https://flatheadlakeboattour.com/wp-content/uploads/2017/05/Far-West-Tour-Boat.jpg"
               alt="Far West Boat Tours"
               class="emotion-107 emotion-108"
             />
@@ -2157,7 +2157,7 @@ exports[`App renders 1`] = `
               class="emotion-113 emotion-114"
             >
               <a
-                href="http://www.flatheadlakeboattour.com"
+                href="https://flatheadlakeboattour.com/"
                 rel="nofollow"
                 class="emotion-62 emotion-54"
               >
