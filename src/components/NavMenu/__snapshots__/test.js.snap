@@ -7,7 +7,7 @@ exports[`NavMenu renders properly 1`] = `
   padding-bottom: 0.15em;
 }
 
-.emotion-5 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,10 +24,6 @@ exports[`NavMenu renders properly 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
-  text-align: center;
-}
-
 .emotion-1 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
@@ -39,11 +35,9 @@ exports[`NavMenu renders properly 1`] = `
 
 <nav>
   <ul
-    class="emotion-5 emotion-6"
+    class="emotion-3 emotion-4"
   >
-    <li
-      class="emotion-3 emotion-4"
-    >
+    <li>
       <a
         href="#id"
         class="emotion-1 emotion-2"

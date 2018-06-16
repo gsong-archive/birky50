@@ -14,7 +14,7 @@ type Props = {
 export default ({ sections, onClick }: Props) => {
   const navItems = sections.map(
     ({ id, navLabel, LabelComponent, color }, i) => (
-      <NavItem key={id}>
+      <li key={id}>
         <NavLink href={`#${id}`} onClick={onClick(id)}>
           <span
             className={css`
@@ -26,7 +26,7 @@ export default ({ sections, onClick }: Props) => {
             <LabelComponent label={navLabel} />
           </span>
         </NavLink>
-      </NavItem>
+      </li>
     )
   );
 
@@ -44,10 +44,6 @@ const NavContainer = styled.ul`
   list-style-type: none;
   padding: 0.25rem 0 0.75rem;
   margin: 0;
-`;
-
-const NavItem = styled.li`
-  text-align: center;
 `;
 
 const NavLink = styled(Link)`
