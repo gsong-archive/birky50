@@ -5,6 +5,7 @@ import { css } from "emotion";
 
 import { Airport } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
+import { calcSpacing } from "../styles/utils";
 import { textColors } from "../styles/variables";
 
 export default () => (
@@ -16,7 +17,11 @@ export default () => (
         </Link>
       }
     />
-    <p>
+    <p
+      className={css`
+        margin: ${calcSpacing(1.5)}rem 0 0;
+      `}
+    >
       <span
         className={css`
           color: ${textColors.lightGray};

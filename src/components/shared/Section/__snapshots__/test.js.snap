@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Section is rendered 1`] = `
-.emotion-12 {
-  padding: 12px 24px 0;
+.emotion-13 {
+  padding: 0 24px;
 }
 
-.emotion-13 {
+.emotion-14 {
   padding: 0 0 24px;
 }
 
@@ -52,6 +52,10 @@ exports[`Section is rendered 1`] = `
   margin-right: 0.25em;
 }
 
+.emotion-12 {
+  margin: 0.75rem 0 0;
+}
+
 .emotion-10 {
   color: hsl(0,0%,45%);
 }
@@ -69,7 +73,7 @@ exports[`Section is rendered 1`] = `
 <section
   id="airport"
   aria-labelledby="airport-description"
-  class="emotion-13"
+  class="emotion-14"
 >
   <div
     color="hsl(199, 71%, 51%)"
@@ -94,7 +98,7 @@ exports[`Section is rendered 1`] = `
     </h1>
   </div>
   <div
-    class="emotion-12"
+    class="emotion-13"
   >
     <span
       class="emotion-1"
@@ -114,7 +118,9 @@ exports[`Section is rendered 1`] = `
         Glacier Park International Airport
       </a>
     </span>
-    <p>
+    <p
+      class="emotion-12"
+    >
       <span
         class="emotion-10"
       >
