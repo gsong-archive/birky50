@@ -13,6 +13,7 @@ WebFont.load({
 injectGlobal`
  * {
     box-sizing: border-box;
+    text-size-adjust: 100%;
   }
 
   body {
