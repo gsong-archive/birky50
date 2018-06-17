@@ -10,11 +10,6 @@ export default [
     component: RSVPLink,
   }),
   createFixture({
-    name: "Specify width",
-    component: RSVPLink,
-    props: { width: "50%" },
-  }),
-  createFixture({
     name: "Override with CSS class",
     description: "`className` prop is an Emotion `css` class name.",
     component: RSVPLink,

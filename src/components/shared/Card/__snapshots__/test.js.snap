@@ -1,20 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-18 {
+.emotion-6 {
+  font-weight: bold;
+}
+
+.emotion-17 {
   margin: 0.75rem;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin: 0.75rem 0 0;
   color: hsl(0,0%,45%);
 }
 
-.emotion-17 > * {
+.emotion-16 > * {
   margin-top: 0.75rem;
 }
 
-.emotion-19 {
+.emotion-18 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
 }
@@ -34,17 +38,13 @@ exports[`Card is rendered 1`] = `
   object-fit: cover;
 }
 
-.emotion-6 {
-  font-weight: bold;
-}
-
 .emotion-4 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,13 +55,13 @@ exports[`Card is rendered 1`] = `
   align-items: baseline;
 }
 
-.emotion-9 {
+.emotion-8 {
   font-family: "Segoe UI Emoji";
   margin-right: 0.25em;
 }
 
 <div
-  class="emotion-19 emotion-20"
+  class="emotion-18 emotion-19"
 >
   <a
     href="https://example.com"
@@ -75,10 +75,10 @@ exports[`Card is rendered 1`] = `
     />
   </a>
   <div
-    class="emotion-18"
+    class="emotion-17"
   >
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-6"
     >
       <a
         href="https://example.com"
@@ -89,19 +89,19 @@ exports[`Card is rendered 1`] = `
       </a>
     </div>
     <p
-      class="emotion-8"
+      class="emotion-7"
     >
       100.00
     </p>
     <address
-      class="emotion-17"
+      class="emotion-16"
     >
       <div>
         <span
-          class="emotion-12"
+          class="emotion-11"
         >
           <span
-            class="emotion-9"
+            class="emotion-8"
             role="img"
             aria-label="round pushpin"
           >
@@ -117,10 +117,10 @@ exports[`Card is rendered 1`] = `
       </div>
       <div>
         <span
-          class="emotion-12"
+          class="emotion-11"
         >
           <span
-            class="emotion-9"
+            class="emotion-8"
             role="img"
             aria-label="phone receiver"
           >

@@ -11,6 +11,7 @@ test("NavMenu renders properly", () => {
         id: "id",
         navLabel: "Menu Item",
         LabelComponent: props => props.label,
+        color: "yellow",
       },
     ],
     onClick: jest.fn(),

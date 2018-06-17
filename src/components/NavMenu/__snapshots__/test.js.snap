@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavMenu renders properly 1`] = `
-.emotion-0 {
-  display: inline-block;
-  border-bottom: 4px solid;
-  padding-bottom: 0.1875em;
-}
-
-.emotion-3 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,7 +18,7 @@ exports[`NavMenu renders properly 1`] = `
   margin: 0;
 }
 
-.emotion-1 {
+.emotion-2 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -33,17 +27,23 @@ exports[`NavMenu renders properly 1`] = `
   padding: 0.75rem 1.125rem;
 }
 
+.emotion-0 {
+  display: inline-block;
+  padding: 0 0.25em 0.1875em;
+  border-bottom: 4px solid yellow;
+}
+
 <nav>
   <ul
-    class="emotion-3 emotion-4"
+    class="emotion-4 emotion-5"
   >
     <li>
       <a
         href="#id"
-        class="emotion-1 emotion-2"
+        class="emotion-2 emotion-3"
       >
         <span
-          class="emotion-0"
+          class="emotion-0 emotion-1"
         >
           Menu Item
         </span>

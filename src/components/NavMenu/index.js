@@ -17,15 +17,13 @@ export default ({ sections, onClick }: Props) => {
     ({ id, navLabel, LabelComponent, color }, i) => (
       <li key={id}>
         <NavLink href={`#${id}`} onClick={onClick(id)}>
-          <span
+          <NavLabel
             className={css`
-              display: inline-block;
               border-bottom: 4px solid ${color};
-              padding-bottom: 0.1875em;
             `}
           >
             <LabelComponent label={navLabel} />
-          </span>
+          </NavLabel>
         </NavLink>
       </li>
     )
@@ -51,4 +49,9 @@ const NavLink = styled(Link)`
   display: block;
   font-size: 1.25rem;
   padding: ${calcSpacing(1.75, 1.25)}rem 1.125rem;
+`;
+
+const NavLabel = styled.span`
+  display: inline-block;
+  padding: 0 0.25em 0.1875em;
 `;

@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Section is rendered 1`] = `
+.emotion-11 {
+  font-weight: bold;
+}
+
 .emotion-13 {
   padding: 0 24px;
 }
@@ -10,12 +14,12 @@ exports[`Section is rendered 1`] = `
 }
 
 .emotion-4 {
-  border-top: 8px solid hsl(199,71%,51%);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(0,0%,100%,0.8);
   padding: 15px 24px;
+  border-top: 8px solid hsl(199,71%,51%);
 }
 
 @media (max-width:21.875em) {
@@ -60,10 +64,6 @@ exports[`Section is rendered 1`] = `
   color: hsl(0,0%,45%);
 }
 
-.emotion-11 {
-  font-weight: bold;
-}
-
 .emotion-7 {
   color: hsl(44,56%,32%);
   -webkit-text-decoration: none;
@@ -76,7 +76,6 @@ exports[`Section is rendered 1`] = `
   class="emotion-14"
 >
   <div
-    color="hsl(199, 71%, 51%)"
     class="emotion-4 emotion-5"
   >
     <h1

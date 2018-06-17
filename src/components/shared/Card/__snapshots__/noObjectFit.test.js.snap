@@ -1,26 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card is rendered 1`] = `
-.emotion-16 {
+.emotion-4 {
+  font-weight: bold;
+}
+
+.emotion-15 {
   margin: 0.75rem;
 }
 
-.emotion-6 {
+.emotion-5 {
   margin: 0.75rem 0 0;
   color: hsl(0,0%,45%);
 }
 
-.emotion-15 > * {
+.emotion-14 > * {
   margin-top: 0.75rem;
 }
 
-.emotion-17 {
+.emotion-16 {
   border-radius: 0.25rem;
   box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.2);
-}
-
-.emotion-4 {
-  font-weight: bold;
 }
 
 .emotion-2 {
@@ -29,7 +29,7 @@ exports[`Card is rendered 1`] = `
   text-decoration: none;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -40,7 +40,7 @@ exports[`Card is rendered 1`] = `
   align-items: baseline;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: "Segoe UI Emoji";
   margin-right: 0.25em;
 }
@@ -57,7 +57,7 @@ exports[`Card is rendered 1`] = `
 }
 
 <div
-  class="emotion-17 emotion-18"
+  class="emotion-16 emotion-17"
 >
   <a
     href="https://example.com"
@@ -65,10 +65,10 @@ exports[`Card is rendered 1`] = `
     class="emotion-0 emotion-1"
   />
   <div
-    class="emotion-16"
+    class="emotion-15"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-4"
     >
       <a
         href="https://example.com"
@@ -79,19 +79,19 @@ exports[`Card is rendered 1`] = `
       </a>
     </div>
     <p
-      class="emotion-6"
+      class="emotion-5"
     >
       100.00
     </p>
     <address
-      class="emotion-15"
+      class="emotion-14"
     >
       <div>
         <span
-          class="emotion-10"
+          class="emotion-9"
         >
           <span
-            class="emotion-7"
+            class="emotion-6"
             role="img"
             aria-label="round pushpin"
           >
@@ -107,10 +107,10 @@ exports[`Card is rendered 1`] = `
       </div>
       <div>
         <span
-          class="emotion-10"
+          class="emotion-9"
         >
           <span
-            class="emotion-7"
+            class="emotion-6"
             role="img"
             aria-label="phone receiver"
           >

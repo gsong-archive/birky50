@@ -7,6 +7,7 @@ import { Airport } from "./shared/EmojiLabels";
 import { Link } from "../styles/components";
 import { calcSpacing } from "../styles/utils";
 import { textColors } from "../styles/variables";
+import { bold } from "../styles";
 
 export default () => (
   <React.Fragment>
@@ -29,13 +30,7 @@ export default () => (
       >
         Code:
       </span>{" "}
-      <span
-        className={css`
-          font-weight: bold;
-        `}
-      >
-        FCA
-      </span>
+      <span className={bold}>FCA</span>
     </p>
   </React.Fragment>
 );

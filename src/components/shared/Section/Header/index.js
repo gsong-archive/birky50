@@ -14,7 +14,11 @@ type Props = { color: string, children: React.Element<LabelComponent> };
 export default ({ color, children }: Props) => (
   <SectionContext.Consumer>
     {id => (
-      <Container color={color}>
+      <Container
+        className={css`
+          border-top: 8px solid ${color};
+        `}
+      >
         <H1 id={`${id}-description`}>{children}</H1>
       </Container>
     )}
@@ -28,13 +32,11 @@ const calcPaddingTopPx = (totalRows, fontSize) =>
   `${(calcSpacing(totalRows, fontSize) / 2) * 16}px`;
 
 const Container = styled.div(
-  props =>
-    css`
-      border-top: 8px solid ${props.color};
-      position: sticky;
-      top: 0;
-      background-color: hsla(0, 0%, 100%, 0.8);
-    `,
+  css`
+    position: sticky;
+    top: 0;
+    background-color: hsla(0, 0%, 100%, 0.8);
+  `,
   mq({
     padding: [
       `${calcPaddingTopPx(3, 1.75)} 24px`,

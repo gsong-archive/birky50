@@ -4,6 +4,10 @@ import { css } from "emotion";
 import { fontFamily } from "./variables";
 import { calcSpacing } from "./utils";
 
+export const bold = css`
+  font-weight: bold;
+`;
+
 export const borderRadius = css`
   border-radius: 0.25rem;
 `;

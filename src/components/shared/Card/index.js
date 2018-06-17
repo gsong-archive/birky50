@@ -6,7 +6,7 @@ import styled, { css } from "react-emotion";
 import Address from "../Address";
 import PhoneNumber from "../PhoneNumber";
 import { Link } from "../../../styles/components";
-import { borderRadius, boxShadow1 } from "../../../styles";
+import { bold, borderRadius, boxShadow1 } from "../../../styles";
 import { calcSpacing } from "../../../styles/utils";
 import { supportsObjectFit } from "../../../styles/cssFeatures";
 import { textColors } from "../../../styles/variables";
@@ -36,11 +36,11 @@ export default class Card extends React.Component<Props> {
             margin: ${verticalRhythm};
           `}
         >
-          <CardTitle>
+          <div className={bold}>
             <Link href={url} rel="nofollow">
               {name}
             </Link>
-          </CardTitle>
+          </div>
           {/* flowlint-next-line sketchy-null-string:off */}
           {price && (
             <p
@@ -98,8 +98,4 @@ const CardImg = styled.img`
   width: 100%;
   height: 12rem;
   object-fit: cover;
-`;
-
-const CardTitle = styled.div`
-  font-weight: bold;
 `;
