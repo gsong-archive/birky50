@@ -1,3 +1,4 @@
+//@flow strict
 import React from "react";
 
 import { render } from "react-testing-library";
@@ -10,6 +11,8 @@ test("NavMenu renders properly", () => {
       {
         id: "id",
         navLabel: "Menu Item",
+        sectionLabel: "Section Label",
+        SectionComponent: props => null,
         LabelComponent: props => props.label,
         color: "yellow",
       },

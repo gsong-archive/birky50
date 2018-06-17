@@ -1,3 +1,4 @@
+//@flow
 import React from "react";
 
 import { render } from "react-testing-library";
@@ -21,8 +22,11 @@ test("ContactUs form elements are properly labeled", () => {
   const emailInput = getByLabelText(RegExp(EMAIL, "i"));
   const messageInput = getByLabelText(RegExp(MESSAGE, "i"));
 
+  // $FlowFixMe
   expect(nameInput.name).toBe(NAME);
+  // $FlowFixMe
   expect(emailInput.name).toBe(EMAIL);
+  // $FlowFixMe
   expect(messageInput.name).toBe(MESSAGE);
 });
 

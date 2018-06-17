@@ -1,3 +1,4 @@
+//@flow
 import React from "react";
 
 import { render } from "react-testing-library";
@@ -12,6 +13,7 @@ test("User can see address and map link", () => {
   const link = container.querySelector("a");
 
   expect(container.textContent).toMatch(props.address);
+  // $FlowFixMe
   expect(link.href).toMatch(props.url);
 });
 

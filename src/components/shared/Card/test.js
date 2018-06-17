@@ -1,3 +1,4 @@
+//@flow
 import React from "react";
 
 import { render } from "react-testing-library";
@@ -22,7 +23,9 @@ describe("User sees a card", () => {
   });
 
   test("image is present", () => {
+    // $FlowFixMe
     expect(imgNode.src).toBe(props.imgUrl);
+    // $FlowFixMe
     expect(imgNode.parentNode.href).toMatch(props.url);
   });
 });
