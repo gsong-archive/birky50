@@ -19,7 +19,7 @@ describe("User sees a card", () => {
 
   test("text elements are present", () => {
     ["name", "price", "address", "phone"].forEach(prop =>
-      expect(container.textContent).toMatch(props[prop])
+      expect(container).toHaveTextContent(props[prop])
     );
   });
 

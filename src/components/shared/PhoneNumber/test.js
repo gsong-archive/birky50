@@ -12,7 +12,7 @@ test("User can see phone number and link", () => {
   const { container } = render(<PhoneNumber {...props} />);
   const link = container.querySelector("a");
 
-  expect(container.textContent).toMatch(props.number);
+  expect(container).toHaveTextContent(props.number);
   // $FlowFixMe
   expect(link.href).toBe(`tel:${props.number}`);
 });

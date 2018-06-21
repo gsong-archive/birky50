@@ -19,7 +19,7 @@ describe("CardList renders", () => {
 
   test("cards are visible", () =>
     props.items.forEach(item =>
-      expect(container.textContent).toMatch(item.name)
+      expect(container).toHaveTextContent(item.name)
     ));
 
   test("CardList is rendered", () => {
