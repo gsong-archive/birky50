@@ -18,12 +18,10 @@ const card = () => ({
   imgUrl: encodeURI(`https://loremflickr.com/320/240/${faker.random.word()}`),
 });
 
-const generate = {
+export const generate = {
   address,
   card,
   phoneNumber: faker.phone.phoneNumber,
   url: faker.internet.url,
   words: faker.random.words,
 };
-
-export { generate };
