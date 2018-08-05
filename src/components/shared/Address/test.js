@@ -13,7 +13,6 @@ test("User can see address and map link", () => {
   const link = container.querySelector("a");
 
   expect(container).toHaveTextContent(props.address);
-  // $FlowFixMe
   expect(link.href).toMatch(props.url);
 });
 

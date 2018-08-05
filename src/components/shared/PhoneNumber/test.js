@@ -1,4 +1,4 @@
-//@flow
+//@flow strict
 import React from "react";
 
 import { render } from "react-testing-library";
@@ -13,7 +13,6 @@ test("User can see phone number and link", () => {
   const link = container.querySelector("a");
 
   expect(container).toHaveTextContent(props.number);
-  // $FlowFixMe
   expect(link.href).toBe(`tel:${props.number}`);
 });
 

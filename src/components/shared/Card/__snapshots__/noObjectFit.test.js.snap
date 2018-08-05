@@ -142,11 +142,11 @@ exports[`Card w/o phone is rendered 1`] = `
         </div>
 -       <div>
 -         <span
--           class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
+-           class=\\"css-140yxv7-EmojiLabel-className\\"
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
--             class=\\"css-lm9lwg-EmojiLabel-EmojiLabel\\"
+-             class=\\"css-58cat5-EmojiLabel-className\\"
 -             role=\\"img\\"
 -           >
 -             📞
@@ -176,12 +176,12 @@ exports[`Card w/o price and phone is rendered 1`] = `
         </a>
       </div>
 -     <p
--       class=\\"css-omfnqx-Card-Card\\"
+-       class=\\"css-pys85v-Card-className\\"
 -     >
 -       100.00
 -     </p>
       <address
-        class=\\"css-1t8qzrw-Card-Card\\"
+        class=\\"css-4k4fb5-Card-className\\"
       >
         <div>
           <span
@@ -193,11 +193,11 @@ exports[`Card w/o price and phone is rendered 1`] = `
         </div>
 -       <div>
 -         <span
--           class=\\"css-1nc9tcc-EmojiLabel-EmojiLabel\\"
+-           class=\\"css-140yxv7-EmojiLabel-className\\"
 -         >
 -           <span
 -             aria-label=\\"phone receiver\\"
--             class=\\"css-lm9lwg-EmojiLabel-EmojiLabel\\"
+-             class=\\"css-58cat5-EmojiLabel-className\\"
 -             role=\\"img\\"
 -           >
 -             📞
@@ -227,12 +227,12 @@ exports[`Card w/o price is rendered 1`] = `
         </a>
       </div>
 -     <p
--       class=\\"css-omfnqx-Card-Card\\"
+-       class=\\"css-pys85v-Card-className\\"
 -     >
 -       100.00
 -     </p>
       <address
-        class=\\"css-1t8qzrw-Card-Card\\"
+        class=\\"css-4k4fb5-Card-className\\"
       >
         <div>
           <span"

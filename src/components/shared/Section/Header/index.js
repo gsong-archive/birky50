@@ -7,9 +7,7 @@ import styled, { css } from "react-emotion";
 import SectionContext from "../../../../contexts/SectionContext";
 import { calcSpacing, convertListToEm } from "../../../../styles/utils";
 
-import type { LabelComponent } from "../../EmojiLabels";
-
-type Props = { color: string, children: React.Element<LabelComponent> };
+type Props = { color: string, children: React.Node };
 
 export default ({ color, children }: Props) => (
   <SectionContext.Consumer>
